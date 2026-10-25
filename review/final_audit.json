@@ -1,0 +1,151 @@
+{
+  "reviewed_at_utc": "2026-10-25T07:06:18.186764+00:00",
+  "method": "Independent standard-library arithmetic over fixed dish labels and saved replay totals; no evaluation metric helper imported.",
+  "scope": "Calorie aggregation arithmetic, final selection coverage, and cost ledger; this is not an independent nutrition annotation or validation of model pretraining exposure.",
+  "all_checks_pass": true,
+  "checks": [
+    {
+      "name": "selection_count",
+      "passed": true,
+      "actual": 1000
+    },
+    {
+      "name": "unique_selected_samples",
+      "passed": true
+    },
+    {
+      "name": "summary_uses_final_manifest",
+      "passed": true,
+      "sha256": "c7ab766b7ed73c4e9b7fc04fabf95d8a6298bd31d631f34faf130596eb80da22"
+    },
+    {
+      "name": "baseline_contains_every_selected_sample_once",
+      "passed": true
+    },
+    {
+      "name": "baseline_valid_prediction_count",
+      "passed": true,
+      "independently_computed": 994,
+      "reported": 994
+    },
+    {
+      "name": "baseline_missing_prediction_count",
+      "passed": true,
+      "independently_computed": 6,
+      "reported": 6
+    },
+    {
+      "name": "baseline_mae",
+      "passed": true,
+      "independently_computed": 107.41733431086519,
+      "reported": 107.41733431086519
+    },
+    {
+      "name": "baseline_mape_percent",
+      "passed": true,
+      "independently_computed": 63.73625679937798,
+      "reported": 63.73625679937798
+    },
+    {
+      "name": "baseline_within_15_percent_count",
+      "passed": true,
+      "independently_computed": 190,
+      "reported": 190
+    },
+    {
+      "name": "baseline_within_15_percent_of_all_selected",
+      "passed": true,
+      "independently_computed": 19.0,
+      "reported": 19.0
+    },
+    {
+      "name": "improved_contains_every_selected_sample_once",
+      "passed": true
+    },
+    {
+      "name": "improved_valid_prediction_count",
+      "passed": true,
+      "independently_computed": 994,
+      "reported": 994
+    },
+    {
+      "name": "improved_missing_prediction_count",
+      "passed": true,
+      "independently_computed": 6,
+      "reported": 6
+    },
+    {
+      "name": "improved_mae",
+      "passed": true,
+      "independently_computed": 107.41733431086519,
+      "reported": 107.41733431086519
+    },
+    {
+      "name": "improved_mape_percent",
+      "passed": true,
+      "independently_computed": 63.73625679937798,
+      "reported": 63.73625679937798
+    },
+    {
+      "name": "improved_within_15_percent_count",
+      "passed": true,
+      "independently_computed": 190,
+      "reported": 190
+    },
+    {
+      "name": "improved_within_15_percent_of_all_selected",
+      "passed": true,
+      "independently_computed": 19.0,
+      "reported": 19.0
+    },
+    {
+      "name": "settled_usage_cost_matches_ledger",
+      "passed": true
+    },
+    {
+      "name": "settled_plus_unresolved_reservations_within_30_usd",
+      "passed": true,
+      "usd": 3.4125488
+    },
+    {
+      "name": "no_request_still_reserved_without_terminal_outcome",
+      "passed": true
+    }
+  ],
+  "independent_estimates": {
+    "baseline": {
+      "metrics": {
+        "valid_prediction_count": 994,
+        "missing_prediction_count": 6,
+        "mae": 107.41733431086519,
+        "mape_percent": 63.73625679937798,
+        "within_15_percent_count": 190,
+        "within_15_percent_of_all_selected": 19.0
+      },
+      "status_counts": {
+        "success": 994,
+        "failed": 6
+      }
+    },
+    "improved": {
+      "metrics": {
+        "valid_prediction_count": 994,
+        "missing_prediction_count": 6,
+        "mae": 107.41733431086519,
+        "mape_percent": 63.73625679937798,
+        "within_15_percent_count": 190,
+        "within_15_percent_of_all_selected": 19.0
+      },
+      "status_counts": {
+        "success": 994,
+        "failed": 6
+      }
+    }
+  },
+  "cost": {
+    "generations_attempted": 1022,
+    "usage_estimated_usd": 1.9125488,
+    "settled_plus_unresolved_reserved_usd": 3.4125488,
+    "billing_invoice_verified": false
+  }
+}

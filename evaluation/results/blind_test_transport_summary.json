@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-10-25T07:04:18.545280+00:00",
+  "split": "blind_test",
+  "ground_truth_read": false,
+  "stored_records": 999,
+  "status_counts": {
+    "response_received": 996,
+    "generation_failed": 3
+  },
+  "excluded_stored_records": 0,
+  "valid_json_objects": 996,
+  "model_versions": {
+    "gemini-2.5-flash": 996,
+    "unknown": 3
+  },
+  "finish_reasons": {
+    "FinishReason.STOP": 996,
+    "unknown": 3
+  },
+  "usage_tokens": {
+    "prompt_token_count": {
+      "sum": 3046764,
+      "min": 3059,
+      "max": 3059
+    },
+    "candidates_token_count": {
+      "sum": 383087,
+      "min": 5,
+      "max": 1268
+    },
+    "thoughts_token_count": {
+      "sum": 0,
+      "min": 0,
+      "max": 0
+    }
+  },
+  "latency_ms": {
+    "p50": 3447.13,
+    "p95": 5459.99
+  },
+  "cost_all_splits": {
+    "attempted_generations": 1022,
+    "settled_requests": 1019,
+    "unknown_reserved_requests": 3,
+    "usage_estimated_usd": 1.9125488,
+    "charged_or_reserved_usd": 3.4125488,
+    "hard_cap_usd": 30,
+    "billing_invoice_verified": false
+  },
+  "request_config": {
+    "model": "gemini-2.5-flash",
+    "temperature": 0,
+    "seed": 20260722,
+    "thinking_budget": 0,
+    "max_output_tokens": 4096,
+    "http_timeout_ms": 90000,
+    "sdk_attempts": 1,
+    "max_counted_input_plus_schema_margin": 20000,
+    "schema_extra_margin_tokens": 4096,
+    "max_foods": 5,
+    "max_candidates_per_food": 3,
+    "grounding": false,
+    "user_text": null,
+    "image_transform": "none",
+    "one_generation_replayed_for_both_versions": true,
+    "prompt_sha256": "ec03e8be7d47b2d48734f60354360246c78ea55c06d227de31907a7f8c71a7c7",
+    "schema_sha256": "4e36ed481d5493f10d5e2ebc442559c542c1e1522142fdd7391f9ec53e25cf5d"
+  }
+}

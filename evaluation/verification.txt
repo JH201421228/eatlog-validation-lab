@@ -1,0 +1,16 @@
+test_missing_or_inconsistent_usage_retains_reservation (test_evaluation.BudgetTests.test_missing_or_inconsistent_usage_retains_reservation) ... ok
+test_model_max_is_covered_by_each_reservation (test_evaluation.BudgetTests.test_model_max_is_covered_by_each_reservation) ... ok
+test_restart_does_not_repeat_a_crashed_request (test_evaluation.BudgetTests.test_restart_does_not_repeat_a_crashed_request) ... ok
+test_settlement_frees_unused_reservation_but_not_duplicate_id (test_evaluation.BudgetTests.test_settlement_frees_unused_reservation_but_not_duplicate_id) ... ok
+test_unknown_requests_cannot_cross_thirty_dollars (test_evaluation.BudgetTests.test_unknown_requests_cannot_cross_thirty_dollars) ... ok
+test_usage_charges_thinking_and_full_cached_input (test_evaluation.BudgetTests.test_usage_charges_thinking_and_full_cached_input) ... ok
+test_alternatives_are_not_double_counted (test_evaluation.DishAggregationTests.test_alternatives_are_not_double_counted) ... ok
+test_missing_component_is_not_silently_zero (test_evaluation.DishAggregationTests.test_missing_component_is_not_silently_zero) ... ok
+test_confidence_bins_use_plate_minimum_and_explicit_boundaries (test_evaluation.MetricTests.test_confidence_bins_use_plate_minimum_and_explicit_boundaries) ... ok
+test_failures_remain_in_primary_denominator (test_evaluation.MetricTests.test_failures_remain_in_primary_denominator) ... ok
+test_mape_and_paper_style_percentage_mae_are_distinct (test_evaluation.MetricTests.test_mape_and_paper_style_percentage_mae_are_distinct) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.722s
+
+OK

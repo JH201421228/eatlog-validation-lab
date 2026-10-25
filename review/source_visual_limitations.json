@@ -1,0 +1,26 @@
+{
+  "review_date": "2026-10-25",
+  "review_timing": "After all paid evaluation requests completed; model not_food outcomes selected these two cases for diagnostic inspection.",
+  "reviewers": ["AI evaluation agent", "parent agent"],
+  "sampling_is_outcome_conditioned": true,
+  "full_semantic_image_label_audit_performed": false,
+  "selection_or_truth_changed_after_review": false,
+  "primary_selected_denominator_preserved": 1000,
+  "cases": [
+    {
+      "sample_id": "dish_1559172356",
+      "image_path": "data/nutrition5k/images/dish_1559172356.png",
+      "camera_view": "overhead_rgb",
+      "observed": "A smartphone and capture rig are visible; food is not visible.",
+      "interpretation": "Positive nutrition metadata does not establish that this released RGB image visibly contains the labeled food. Do not count the model's no-food response as a proven false rejection."
+    },
+    {
+      "sample_id": "dish_1561997365",
+      "image_path": "data/nutrition5k/images/dish_1561997365.png",
+      "camera_view": "side_camera_B_frame_0",
+      "observed": "The capture rig and lower part of a bowl dominate the frame; its food contents cannot be identified.",
+      "interpretation": "The deterministic first frame has insufficient food visibility. Do not select a more favorable frame after inspecting the model result."
+    }
+  ],
+  "scope": "Hash, decoding, numeric label mapping and lack of duplicate pixels do not by themselves prove semantic image-to-food alignment. Other unreviewed samples may also have input/label limitations."
+}

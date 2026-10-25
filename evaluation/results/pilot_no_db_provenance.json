@@ -1,0 +1,13 @@
+{
+  "replayed_at": "2026-10-25T07:04:36.727550+00:00",
+  "manifest_sha256": "c7ab766b7ed73c4e9b7fc04fabf95d8a6298bd31d631f34faf130596eb80da22",
+  "rows": 20,
+  "source_index_sha256": "d054b20dddad17a7432bb43972d7f31650ce362775bab5aaf83679e465070ff2",
+  "response_archive_sha256": "9c01c1cdb019f74be2ebbf298e7be5a3275ac8cf0e421e9fde0c68c7e6281882",
+  "nutrition_snapshot_sha256": null,
+  "grounding": false,
+  "habit_correction": false,
+  "count_half_steps": false,
+  "selection": "highest confidence among retained candidates per food_index, then sum all food groups",
+  "scope": "Pinned AI normalization and BE nutrition resolution; not end-to-end production traffic"
+}

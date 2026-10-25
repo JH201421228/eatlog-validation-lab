@@ -1,0 +1,10 @@
+{
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "packages": {
+    "google-genai": "1.75.0",
+    "pydantic": "2.10.4",
+    "httpx": "0.28.1"
+  },
+  "baseline_improved_prompt_equal": true,
+  "baseline_improved_schema_equal": true
+}

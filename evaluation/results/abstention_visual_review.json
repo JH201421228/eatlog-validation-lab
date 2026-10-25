@@ -1,0 +1,33 @@
+{
+  "reviewed_at": "2026-10-25T07:08:24.922848+00:00",
+  "method": "Assistant inspected the two original local images with view_image after final collection.",
+  "scope": "Two empty-candidates cases only; not a semantic audit of all 999 images.",
+  "no_image_replacement_or_label_change_or_retry": true,
+  "dataset_limit": "Positive nutrition metadata and checksum-valid image files do not guarantee visible food or correct image-label semantic alignment.",
+  "cases": [
+    {
+      "sample_id": "dish_1559172356",
+      "image_path": "data/nutrition5k/images/dish_1559172356.png",
+      "image_sha256": "fcc000bdeee37d83b6cce15d29c151a8fec02886f9bd7f8ad8f3e5569e0682b0",
+      "source_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/realsense_overhead/dish_1559172356/rgb.png",
+      "camera_view": "overhead_rgb",
+      "raw_model_candidates_empty": true,
+      "baseline_and_improved_reason": "not_food",
+      "visual_observation": "Official overhead RGB visibly shows a mounted smartphone and capture apparatus; no food is visible.",
+      "interpretation": "Abstention is consistent with image visibility. Do not label this a new-filter false rejection or a confirmed food-recognition error.",
+      "primary_denominator_unchanged": true
+    },
+    {
+      "sample_id": "dish_1561997365",
+      "image_path": "data/nutrition5k/images/dish_1561997365.png",
+      "image_sha256": "98d8d028955d189e9aded6328261b712a89de95c6236ac265e415b647c92bd4d",
+      "source_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/side_angles/dish_1561997365/camera_B.h264",
+      "camera_view": "side_camera_B_frame_0",
+      "raw_model_candidates_empty": true,
+      "baseline_and_improved_reason": "not_food",
+      "visual_observation": "Camera B frame 0 shows the outside/bottom of a bowl and capture apparatus; the food contents are not discernible.",
+      "interpretation": "Abstention is consistent with image visibility. Do not label this a new-filter false rejection or a confirmed food-recognition error.",
+      "primary_denominator_unchanged": true
+    }
+  ]
+}

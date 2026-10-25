@@ -1,0 +1,56 @@
+{
+  "recorded_date": "2026-10-25",
+  "personal_repository": "https://github.com/JH201421228/eatlog-validation-lab",
+  "initial_personal_archive_commit": "816c880",
+  "fe_modified_by_this_work": false,
+  "service_code_unchanged_during_relocation": true,
+  "git_history_rewritten": false,
+  "services": {
+    "BE": {
+      "baseline": "dc11453426a3db365fc12321ec1e49f9705e23fb",
+      "validated_improvement": "7249699d09fd0f0d34080990c77c63328da01567",
+      "improvement_pull_requests": [98, 99],
+      "improvement_deployment_run": "https://github.com/team-EBD/BE/actions/runs/40168020623",
+      "relocation_commit": "d9e93a1fd8725169328e567c4b05b75b6b2f286a",
+      "relocation_pull_requests": [100, 101],
+      "latest_main": "5b77e1d59e320fd2c4f84650d103bd4b1c2c8ab0",
+      "latest_deployment_run": "https://github.com/team-EBD/BE/actions/runs/40170460502",
+      "ssm_job": 121100410569,
+      "ssm_completed_at_utc": "2026-10-25T06:51:46Z",
+      "deployment_conclusion": "success",
+      "ci_tests_passed": 1282,
+      "ci_tests_skipped": 5,
+      "postgres_migration_gate": "success",
+      "relocated_fixture_local_tests_passed": 40,
+      "app_diff_improvement_to_latest_main": [],
+      "public_health_checked_at": "2026-10-25T15:54:05.6419515+09:00",
+      "public_health": {"status": "ok"},
+      "public_database_health": {"status": "ok", "db": "ok"}
+    },
+    "AI": {
+      "baseline": "9ce6e9ee029d5891f92b2488672404d861c37ec1",
+      "validated_improvement": "8f41c67c8e6db4f5690bbda4e560c211fa5b65ed",
+      "improvement_pull_requests": [37, 38],
+      "improvement_deployment_run": "https://github.com/team-EBD/AI/actions/runs/40167347533",
+      "relocation_commit": "54e54f9338e49e4b5d20335be5a38d7a56d8f653",
+      "relocation_pull_requests": [39, 40],
+      "latest_main": "a860b2fb3a2c53a4484ddc6673d86d938f039171",
+      "latest_deployment_run": "https://github.com/team-EBD/AI/actions/runs/40170175249",
+      "ssm_job": 121099326535,
+      "ssm_completed_at_utc": "2026-10-25T06:45:31Z",
+      "deployment_conclusion": "success",
+      "local_tests_passed": 236,
+      "app_diff_improvement_to_latest_main": [],
+      "readiness_in_ssm_log": {"status": "ready", "checks": {"gemini": true, "database": true}},
+      "readiness_is_real_food_accuracy_test": false
+    }
+  },
+  "relocation_verification": {
+    "be_calorie_contracts": {"before_passed": 9, "after_passed": 18, "total": 18},
+    "be_display_contracts": {"before_passed": 4, "after_passed": 12, "total": 12},
+    "ai_output_contracts": {"before_passed": 15, "after_passed": 59, "total": 59},
+    "ai_normal_controls": {"passed": 13, "total": 13},
+    "live_model_calls": 0,
+    "not_a_real_photo_accuracy_measurement": true
+  }
+}

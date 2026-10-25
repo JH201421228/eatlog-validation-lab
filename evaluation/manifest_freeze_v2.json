@@ -1,0 +1,6 @@
+{
+  "manifest_path": "data/nutrition5k/selection_manifest_v2.jsonl",
+  "manifest_sha256": "9000890d37127b639684662b63e719b8d2b31e1439ad465057ca5b249fafde1d",
+  "frozen_at": "2026-10-25T06:41:27.621906+00:00",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e"
+}
