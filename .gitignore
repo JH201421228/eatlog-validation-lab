@@ -1,0 +1,40 @@
+# Credentials and local environments
+.env
+.env.*
+!.env.example
+*.pem
+*.p8
+*.key
+*service-account*.json
+*credentials*.json
+.aws/
+.codex/
+.claude/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Downloaded image/video payloads remain local; commit source manifests instead.
+data/images/
+data/raw_images/
+data/downloads/
+data/cache/
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.mp4
+*.h264
+data/nutrition5k/videos/
+*.tar
+*.tar.gz
+*.zip
+
+# Local API responses and progress checkpoints are reviewed before publication.
+evaluation/raw/
+evaluation/raw_responses/
+evaluation/tmp/
+*.log
