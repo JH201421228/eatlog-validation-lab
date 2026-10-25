@@ -53,7 +53,7 @@ EatLog의 중간평가 우려를 재현 가능한 실험으로 확인하기 위�
 
 개발 데이터에서 선별한 `flash35_minimal`을 사전 동결한 잔여 155개 그룹에서 기준 모델과 비교했습니다. 후보의 열량 MAE는 31.8% 낮았고 paired bootstrap 95% 구간도 개선 방향이었지만, 유효 열량 예측 수가 **153→151**로, 전체 155개 중 오차 ±15% 이내 수가 **30→29**로 감소했습니다. 사전 기준에서 두 coverage/accuracy gate를 실패해 최종 판정은 **기각**입니다. 정확도 AI 후보는 병합하거나 배포하지 않으며 추가 호출·재시도·재튜닝도 하지 않습니다.
 
-확인 세트의 누적 비용은 과거 요청을 포함해 usage 추정 **US$7.3393675**, charged/reserved **US$12.3393675**입니다(승인 한도 US$30). 상세 지표와 판정은 [최종 판정](experiments/accuracy_followup/final_decision.json), [확인 요약](experiments/accuracy_followup/results/confirm/summary.json), 실행·실패 분모·비용은 [후속 실험 기록](experiments/accuracy_followup/README.md)에 있습니다. frozen service prototype과 mock 기반 258개 테스트 통과 기록은 [service_candidate](experiments/accuracy_followup/service_candidate/)에 보관했습니다.
+확인 세트의 누적 비용은 과거 요청을 포함해 usage 추정 **US$7.3393675**, charged/reserved **US$12.3393675**입니다(승인 한도 US$30). 상세 지표와 판정은 [최종 판정](experiments/accuracy_followup/final_decision.json), [확인 요약](experiments/accuracy_followup/results/confirm/summary.json), 완료 상태와 비용 요약은 [completion manifest](experiments/accuracy_followup/completion_manifest.json), 실행·실패 분모·gold 접근 기록은 [후속 실험 기록](experiments/accuracy_followup/README.md)에 있습니다. frozen service prototype과 mock 기반 258개 테스트 통과 기록은 [service_candidate](experiments/accuracy_followup/service_candidate/)에 보관했습니다.
 
 ## 서비스 반영과 실험 보관 위치
 

@@ -1,0 +1,53 @@
+{
+  "recorded_at_utc": "2026-10-25T09:04:18Z",
+  "scope": "Post-decision illustrative report preparation by photo_case_evidence agent; not statistical scoring or experiment selection",
+  "authorization": "Parent agent explicitly authorized gold access after final prediction freeze, confirmation scoring, and the rejection decision.",
+  "label_path": "data/nutrition5k_followup/gold_labels.jsonl",
+  "known_figure_script_execution_count": 3,
+  "known_figure_script_full_label_file_read_count": 3,
+  "figure_script": "experiments/accuracy_followup/results/confirm/case_evidence/build_case_evidence.py",
+  "actual_executed_script": "../report/final_report_work/final_confirmation_cases/build_case_evidence.py",
+  "execution_timestamp_availability": "Exact invocation timestamps were not logged in the tool responses and are unknown. Ordering below is observed from the agent transcript; recorded_at_utc is the audit-record creation time only.",
+  "executions_in_observed_order": [
+    {
+      "execution_order": 1,
+      "purpose": "Initial generation of two case illustration figures and source case facts",
+      "executed_at_utc": null,
+      "gold_full_file_read_count": 1
+    },
+    {
+      "execution_order": 2,
+      "purpose": "Regenerate figures and evidence after adding generation-script and figure SHA-256 records",
+      "executed_at_utc": null,
+      "gold_full_file_read_count": 1
+    },
+    {
+      "execution_order": 3,
+      "purpose": "Replace unsupported subtitle minus glyph with ASCII hyphen and refresh figures and evidence hashes",
+      "executed_at_utc": null,
+      "gold_full_file_read_count": 1
+    }
+  ],
+  "additional_known_label_access": [
+    {
+      "order": "Before figure-script execution 1, after parent authorization",
+      "method": "PowerShell Get-Content -TotalCount 1",
+      "purpose": "Inspect one gold-label row to understand field names",
+      "executed_at_utc": null,
+      "label_file_open_count": 1,
+      "scope": "First JSONL line only"
+    }
+  ],
+  "known_label_file_open_count_in_this_agent_task": 4,
+  "count_limit": "Counts cover the visible photo_case_evidence agent transcript only; no assertion is made about other agents or processes.",
+  "statistical_confirmation_score_invocation_count": 1,
+  "semantic_gold_openings_interpretation": "The frozen final-decision semantic_gold_openings=1 records the statistical scoring invocation. It does not count these later report-only label rereads.",
+  "predictions_changed": false,
+  "request_or_model_configuration_changed": false,
+  "acceptance_criteria_changed": false,
+  "confirmation_decision_changed": false,
+  "frozen_protocol_or_final_decision_modified": false,
+  "new_api_calls": 0,
+  "new_statistical_score_invocations_by_this_agent": 0,
+  "result": "Candidate remains rejected. Labels were reread after the final decision solely to annotate deterministic illustrative cases and explain the two extra normalization invalids."
+}

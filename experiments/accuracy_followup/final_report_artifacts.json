@@ -1,0 +1,30 @@
+{
+  "verified_at_utc": "2026-10-25T09:13:08.611654+00:00",
+  "files": [
+    {
+      "relative_to_workspace": "report/Eat로그_EBD_최종보고서_20261025.docx",
+      "sha256": "52216b221a4e324b9c4bd07f2cf0a10819bdd2fa57ec59d74c8f7e4f470763de",
+      "bytes": 4909625
+    },
+    {
+      "relative_to_workspace": "report/Eat로그_EBD_최종보고서_20261025.pdf",
+      "sha256": "30b2d9fc40ec8f516fbb98af81bfac6357f51c6fca8dca68c64bbb1852db69cc",
+      "bytes": 1078055
+    }
+  ],
+  "qa_summary_sha256": "35e0c03ab2f78dac2f66ad492f1708b1e227365692b9ebb276fae6965446a75c",
+  "qa_summary_path": "report/final_report_work/qa_summary.json",
+  "all_38_rendered_page_hashes_verified": true,
+  "visual_review_completed": true,
+  "page_count": 38,
+  "summary_pages": 1,
+  "toc_pages": 1,
+  "body_pages": 36,
+  "required_headings": 25,
+  "source_references": 22,
+  "original_8_source_hashes_unchanged": true,
+  "source_manifest_sha256": "fa3c0f090da85ab4c20c305170ac642882f22cd7d5fd095d38f92123c5b8eb7d",
+  "experiment_results_commit": "8801602c300aa384bfb6cc04df1325d003df3f91",
+  "report_uploaded_to_personal_repository": false,
+  "report_location": "Shared local workspace report folder; only verification metadata archived here."
+}

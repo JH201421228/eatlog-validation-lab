@@ -26,6 +26,12 @@
   },
   "fe_changed_by_this_work": false,
   "websites_modified": false,
-  "meta_status": "On hold as requested; access-limitation screenshots retained under report/Meta_????_??_20261025, no advertising-performance inference.",
-  "report_status": "Final report render and verification in progress; final local artifact hashes will be recorded separately."
+  "meta_status": "On hold as requested; no advertising-performance inference.",
+  "report_status": "Completed; final DOCX/PDF promoted after all-page visual review and structural verification.",
+  "completed_at_utc": "2026-10-25T09:13:08.611654+00:00",
+  "final_report_artifacts": "final_report_artifacts.json",
+  "report_artifacts_sha256": "450f5bdcc4148d3451f80519a482e256d599cdaa528962b00eebfc16712a6287",
+  "post_scoring_label_access_audit": "results/confirm/case_evidence/post_scoring_label_access.json",
+  "post_scoring_label_access_audit_sha256": "13cf0249b4d24eb5689b55d0ab3429209759aea9c0ec21fb9765de39ab0e8daf",
+  "meta_evidence_directory": "report/Meta_조회제한_증빙_20261025"
 }
