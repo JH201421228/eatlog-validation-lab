@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1551397752",
+  "request_id": "followup_confirm_flash35_minimal_dish_1551397752",
+  "started_at": "2026-10-25T08:48:59.783380+00:00",
+  "arm": "flash35_minimal",
+  "phase": "confirm",
+  "image_sha256": "514856b8f703ef47b338da18ff53cb7faf7c31b41f403bf325aa895e25ab1a9c",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3901,
+  "request_sha256": "74c79792b7503c1e0c0d971fb028e2f1f65e3e869fe47aaec4e63d61faf2ef9a",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"닭가슴살\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 100.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [144, 175, 622, 595],\n      \"nutrition_per_100g\": {\n        \"calories\": 109,\n        \"carbs\": 0.0,\n        \"protein\": 23.0,\n        \"fat\": 1.2\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 227,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4128,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2601.09,
+  "completed_at": "2026-10-25T08:49:02.885606+00:00"
+}

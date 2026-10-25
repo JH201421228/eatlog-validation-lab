@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1551235211",
+  "request_id": "followup_confirm_flash35_minimal_dish_1551235211",
+  "started_at": "2026-10-25T08:45:22.518378+00:00",
+  "arm": "flash35_minimal",
+  "phase": "confirm",
+  "image_sha256": "dbb92ee1f7c9f31fae290d957f3b952009f413318b9d4b25b682f4e50e8d1de1",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3901,
+  "request_sha256": "545d694637b54808288d02f87253919cc7a091cb1ad85f4831c68dc3894703c7",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"슬라이스 치즈\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 38,\n      \"count\": 2,\n      \"count_unit\": \"장\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [133, 194, 781, 706],\n      \"nutrition_per_100g\": {\n        \"calories\": 350,\n        \"carbs\": 3.0,\n        \"protein\": 22.0,\n        \"fat\": 28.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 228,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4129,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3638.46,
+  "completed_at": "2026-10-25T08:45:27.326179+00:00"
+}

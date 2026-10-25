@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1551226101",
+  "request_id": "followup_confirm_flash35_minimal_dish_1551226101",
+  "started_at": "2026-10-25T08:45:41.785512+00:00",
+  "arm": "flash35_minimal",
+  "phase": "confirm",
+  "image_sha256": "06146e87f5d83e0c3ef7c95740d206f71f8eaaf475ee75b8821d2c6b456c7764",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3901,
+  "request_sha256": "0b0f882d2eb414ad21ac497c3d015aebbf87c83192736c357580b7a0f0bdc4e5",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"볶음면\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 250,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [0, 147, 879, 767],\n      \"nutrition_per_100g\": {\n        \"calories\": 180,\n        \"carbs\": 26.0,\n        \"protein\": 4.5,\n        \"fat\": 6.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 221,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4122,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2974.64,
+  "completed_at": "2026-10-25T08:45:45.555260+00:00"
+}

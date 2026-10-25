@@ -1,13 +1,13 @@
 # 실제 정확도 후속 실험
 
-이 폴더는 기존 Nutrition5k 평가에서 발견한 오차 원인을 탐색하고, 고정한 후보를 남은 155개 추정 그룹에서 한 번 확인하기 위한 실험 기록이다. **실험은 진행 중이다.** 최종 확인이나 배포 성공을 아직 주장하지 않는다. 최종 결정은 `final_decision.json`에 기록하며, 파일이 생성되기 전에는 미완료다.
+이 폴더는 Nutrition5k 정확도 후속 실험의 완료 기록이다. 모든 성능 실험과 사전 동결한 155개 확인을 마쳤다. `flash35_minimal` 후보의 열량 MAE는 기준보다 31.8% 낮았지만 유효 예측 수가 153개에서 151개로, 전체 155개 중 ±15% 이내 예측 수가 30개에서 29개로 줄어 사전 기준을 통과하지 못했다. 최종 결정은 **기각**이며 정확도 후보는 배포하지 않는다. 결과와 판정 근거는 [`final_decision.json`](final_decision.json) 및 [`results/confirm/summary.json`](results/confirm/summary.json)에 있다. 확인 세트에 대한 추가 호출·재시도·재개·재튜닝은 하지 않는다.
 
 ## 데이터 구분과 해석
 
 - 이전 본평가 1,000개는 이미 결과를 확인했다. 전부 탐색·개발 자료이며 독립 확인 세트나 새 성공 판정으로 다시 세지 않는다. `dev100_manifest.jsonl`은 그 중 고정된 100개이고, `dev1000_manifest.jsonl`은 전체 1,000개다. `neutral_full`은 이전 응답을 재사용하지 않고 1,000개에 새 중립 요청을 한 별도 개발 실험이지만, 정답은 여전히 같은 과거 평가에서 왔으므로 탐색 결과다.
 - 개발 단계는 기준선과 `neutral_portion`, `volume_consistency`, `baseline_thinking1024`를 비교한다. 추가 모델 비교 `model_comparison/flash35_minimal`도 개발 자료 전용이다.
 - 질량 보정은 과거 1,000개에서 그룹 분리 교차검증으로 세 가지 사전 기록된 계열(`log_mass`, `linear_mass`, `weighted_log_mass`)을 비교한다. MFDS 실험은 같은 과거 예측을 공개 원재료 부분 DB로 재생한다. 둘 다 탐색이며 운영 성능 또는 배포 승인으로 해석하지 않는다.
-- 새 155개는 이전 선정과 추정 그룹 교집합이 없는 확인 세트다. 모두 측면 촬영이며, 원본이 없는 2개도 분모에 남긴다. 코드·모델·프롬프트·DB/정책·입력 manifest의 해시를 동결한 뒤, 채점 담당이 `data/nutrition5k_followup/gold_labels.jsonl`을 한 번만 열어 채점한다. 가설 탐색이나 요청 입력에 새 정답·재료·중량을 사용하지 않는다.
+- 새 155개는 이전 선정과 추정 그룹 교집합이 없는 확인 세트다. 모두 측면 촬영이며, 원본이 없는 2개도 분모에 남겼다. 코드·모델·프롬프트·DB/정책·입력 manifest의 해시를 동결한 뒤 scorer가 gold를 한 번 열어 채점했다. 가설 탐색이나 요청 입력에 새 정답·재료·중량을 사용하지 않았다.
 - 새 155개 확인 기준은 유효 paired 100개 이상, 기준 대비 열량 MAE 10% 이상 감소(전체 유효 예측과 같은 paired 표본 모두), 후보−기준 paired 오차 bootstrap 95% 구간 상한 <0, 전체 155개 기준 ±15% 이내 건수와 유효 영양 예측 건수 비악화다. 기준을 못 채우거나 실패하면 불충분/불채택으로 남기고 이 확인 세트에 맞춰 재튜닝하지 않는다.
 
 ## 예산과 실패 기록
@@ -15,9 +15,9 @@
 - `cost_ledger.json`은 최초 평가 비용/예약액을 포함한 누적 원장을 상속한다. 과거 비용을 후속 실험 비용과 중복 합산하지 않는다. 전체 승인 상한은 과거분을 포함해 **US$30**이며, 호출 전후 비용은 같은 원장으로 확인한다.
 - 자동 생성 재시도는 금지한다. API 오류, JSON 오류, 음식 후보 없음, 원본 누락, 미시도 상태를 각각 보존한다. 실패 표본을 분모에서 빼거나 표본을 임의 교체·재요청해 결과를 좋게 보이지 않는다. 유료 실행은 이 문서의 재현 예시를 그대로 실행하기 전에 누적 예약액과 잔여 상한을 확인한다.
 
-## 재현 순서
+## 실험 실행 기록과 재현 자료
 
-명령은 저장소 루트에서 PowerShell로 실행한다. `run_model.py`와 `run_model_compare.py`는 Google SDK가 설치된 `../AI/ai-server/venv/Scripts/python.exe`를 사용한다. 질량 보정과 collector의 기본 도구는 시스템 `python`을 사용하며, 보정에는 NumPy가 필요하다. MFDS grounding은 `../BE/venv/Scripts/python.exe`를 사용한다. 수집·평가 단계는 파일을 쓰고, 모델 실행은 유료 API를 호출할 수 있다. 동결 파일을 확인하고 현재 작업 상태와 예산을 검토한 뒤 필요한 단계만 수행한다. 이미 동결된 입력은 다시 만들거나 덮어쓰지 않는다.
+아래 명령은 완료된 탐색·개발 단계의 실행 기록이다. 후속 성능 실험은 모두 끝났으므로 재현 목적으로도 유료 모델 명령을 다시 실행하지 않는다. 확인 세트는 단 한 번 실행했고 재시도·재개·재튜닝하지 않는다. 명령을 참고할 때 `run_model.py`와 `run_model_compare.py`는 Google SDK가 설치된 `../AI/ai-server/venv/Scripts/python.exe`를, MFDS grounding은 `../BE/venv/Scripts/python.exe`를 사용한다.
 
 ### 1. 이전 결과를 탐색용으로 고정하고 새 데이터 준비
 
@@ -98,31 +98,17 @@ MFDS 공개 원재료 부분 DB 재생은 BE 코드와 고정 예측 입력을 �
 
 해석, 공개 자료 출처, 적용 한계 및 확인된 부정 결과는 [`grounding/README.md`](grounding/README.md)에 보존한다. 여기의 MFDS 공개 부분 DB 결과를 현재 운영 DB 또는 서비스 정확도로 표현하지 않는다.
 
-### 4. 후보 동결 후 새 155개 확인
+### 4. 동결된 최종 확인 실행 기록
 
-채점 전에 단일 최종 정책의 코드·모델·프롬프트·설정·DB snapshot과 `selection_manifest.jsonl` 및 다운로드 무결성 기록을 동결하고 hash를 대조한다. 아래 요청 명령은 그 검토가 끝난 뒤에만 사용한다. 기준선과 단일 후보 모두 같은 새 입력, 같은 설정 범위로 실행하며 manifest에 포함된 원본 누락도 분모에 남긴다.
-
-```powershell
-& ..\AI\ai-server\venv\Scripts\python.exe experiments/accuracy_followup/run_model.py `
-  --arm-dir experiments/accuracy_followup/baseline `
-  --arm baseline_v1 --phase confirm `
-  --manifest data/nutrition5k_followup/selection_manifest.jsonl `
-  --freeze experiments/accuracy_followup/confirmation_input_freeze.json `
-  --download-manifest data/nutrition5k_followup/manifest.jsonl
-```
-
-최종 후보에도 동결된 모델 설정에 맞는 runner(`run_model.py` 또는 `run_model_compare.py`)로 한 번 실행한다. 확인 요청에서 두 runner는 `confirmation_input_freeze.json`을 사용한다. 원본 `data/nutrition5k_followup/freeze.json`은 `selection_manifest_sha256` 키를 사용하므로 `run_model.py`의 `manifest_sha256` 필드 참조와 맞지 않는다. 이는 라우팅 호환 alias이며 선택 목록 자체를 바꾸지 않는다. scorer에는 원본 freeze 파일을 전달한다. 두 arm의 모든 응답과 입력·코드·정책 hash를 검토하고 비용 원장을 확인하기 전에는 아래 정답 채점 명령을 실행하지 않는다. 이 명령은 gold를 실제로 읽는다.
+후보 `flash35_minimal`과 실행 파일·입력·예산 freeze를 확인한 뒤 `run_confirmation.py`를 한 번 실행했다. 이 wrapper가 baseline과 후보 collector를 각각 concurrency 2로 동시에 실행해 최대 합산 concurrency 4를 사용하고, 두 arm은 같은 US$30 상한의 잠금 공유 ledger를 사용한다. 기존 arm별 runner를 단독 실행하거나 이 확인을 재실행·재개하지 않는다.
 
 ```powershell
-python experiments/accuracy_followup/evaluate_followup.py `
-  --phase confirm --manifest data/nutrition5k_followup/selection_manifest.jsonl `
-  --freeze data/nutrition5k_followup/freeze.json `
-  --arms baseline CANDIDATE_ARM --gold data/nutrition5k_followup/gold_labels.jsonl
+& ..\AI\ai-server\venv\Scripts\python.exe experiments/accuracy_followup/run_confirmation.py
 ```
 
-`CANDIDATE_ARM`은 실제 동결 arm 이름으로 바꾼다. 최종 scorer만 이 정답 파일을 연다.
+실제 출력은 `evaluation/tmp/followup-confirmation.log`에 저장했다. 확인 실행 시 `candidate_freeze.json`의 `prior_ledger_sha256`를 검사하고, 기존 ledger가 없거나 hash가 달라졌으면 API 수집을 거부한다. 동결된 wrapper SHA-256은 `82f30bb3d723b56f0fd798114cda33975b84cc618999e4172ea86a9dbd01e9c1`이다. 각 arm은 155행을 보존했고, 153개 원본에 응답을 받았으며, 원본이 없는 같은 2개 항목은 `not_attempted`로 남겼다. 완료 시 누적 원장에는 attempted 3826, settled 3816, unknown reserved 10, usage estimate US$7.3393675, charged/reserved US$12.3393675가 기록됐다. 정답 파일은 수집 wrapper가 열지 않는다.
 
-모든 실패를 포함해 결과와 판정 근거를 `final_decision.json`에 기록한다. 판정·해시·실패 분모가 확정되기 전에는 결과를 미완료로 표시하며, 이후 동일 확인 세트에 다시 맞추지 않는다.
+Wrapper/예산 안전성에 대한 6개 오프라인 테스트가 통과했다. 테스트는 synthetic 입력·임시 ledger·대체 collector만 사용하며 API나 확인 정답을 읽지 않는다. 사전 기준 중 paired 유효 표본 100개 이상, 열량 MAE 10% 이상 감소, paired bootstrap 95% 구간 상한 음수는 통과했다. 다만 유효 열량 예측은 기준 153개에서 후보 151개로 줄었고, ±15% 이내 건수는 전체 155개 기준 30개에서 29개로 감소했다. 이 두 필수 기준 실패로 최종 판정은 **기각**이다. 판정은 [`final_decision.json`](final_decision.json), 지표는 [`results/confirm/summary.json`](results/confirm/summary.json)에 있다. 정확도 AI 후보는 배포하지 않으며 현재 AI robustness 버전 `a860b2fb3a2c53a4484ddc6673d86d938f039171`을 유지한다. frozen service prototype과 258개 mocked contract/regression 테스트 기록은 [`service_candidate/`](service_candidate/)에 보관했다. 별도의 BE retention-linkage 변경은 commit `c81ec8c4abfad226adf06698c2b42e05b1dd8f4d`로 배포됐고 GitHub Actions run `40176912543` 및 health 결과는 [`retention_linkage/deployment.json`](retention_linkage/deployment.json)에 기록돼 있다. 이 BE 변경은 과거 backfill이나 retention 개선 효과를 주장하지 않는다. 추가 수집, 재시도, 재개, 확인 세트에 맞춘 튜닝은 하지 않는다.
 
 ## 보관, 출처, 라이선스
 

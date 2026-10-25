@@ -1,0 +1,6 @@
+{
+  "gold_opened_at_utc": "2026-10-25T08:53:42.759499+00:00",
+  "purpose": "Score exactly one frozen final candidate against concurrent baseline",
+  "prediction_freeze_exists": true,
+  "semantic_gold_openings": 1
+}

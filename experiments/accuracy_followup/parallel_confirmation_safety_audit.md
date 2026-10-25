@@ -1,48 +1,21 @@
 # Parallel confirmation safety audit
 
-2026-10-25. Offline review of `run_confirmation.py`, both unchanged collectors,
-and `scripts/evaluate/budget.py` plus `common.py`.
+Updated 2026-10-25 after the frozen final confirmation run. The wrapper SHA-256 is `82f30bb3d723b56f0fd798114cda33975b84cc618999e4172ea86a9dbd01e9c1`, matching `candidate_freeze.json`.
 
-`test_parallel_confirmation.py` ran using `AI/ai-server/.venv/Scripts/python.exe`:
-4 tests passed in 0.255 seconds. Tests invoke the real wrapper with both collector
-functions replaced, real temporary ledgers, synthetic freeze inputs, and a real
-temporary Windows OS lock. They never invoke an SDK or API, access credentials,
-open gold labels, or read/write the production cost ledger.
+## Offline evidence
 
-Verified:
+Six tests in `test_parallel_confirmation.py` passed using synthetic inputs, temporary ledgers, substituted collectors, and a temporary Windows process lock. They did not call an SDK/API, access credentials, open confirmation gold, or read/write the production cost ledger. The cases cover shared-ledger accounting, reservations retained through failure and budget stop, frozen-code mismatch, exclusion of a second lock owner, rejection when the inherited ledger is missing, and rejection when its hash has changed.
 
-- Both arms obtain the exact same Ledger object; two requests per arm reach four
-  simulated simultaneous requests. Settled entries from both arms and inherited
-  charges survive every ledger rewrite.
-- With synthetic inherited charged/reserved usage of USD 11.726646, an arm failure
-  after reservation and another arm repeatedly reserving stop at USD 29.726646.
-  The next USD 0.50 reservation is rejected. The failed request retains its full
-  reservation, prior costs survive, and injected constructors are restored.
-- A frozen code hash mismatch rejects collection before either collector runs.
-- A second owner cannot obtain the same real Windows process lock.
+The missing-ledger guard is present in `run_confirmation.py`: the wrapper rejects a missing inherited cost ledger before constructing collectors. It also compares the current ledger bytes to the frozen `prior_ledger_sha256` and rejects changed ledgers, so automatic rerun/resume cannot silently start from another budget state. This closes the earlier audit finding that the `Ledger` constructor could otherwise create a zero-cost ledger.
 
-Review findings reported to coordinator:
+The frozen wrapper injects the same durable, locked `Ledger` object into both unchanged collectors. The single process lock prevents a second owner. The six offline tests verified that costs from both arms survive ledger writes and that a rejected reservation does not erase prior charges. The frozen code/input digests are checked before collection.
 
-- The wrapper initially lacked the existing-ledger guard in collector `main()`.
-  `Ledger` creates a zero-cost ledger if its file is absent, so the wrapper must
-  reject a missing cost ledger before API collection. Coordinator owns this fix.
-- Freeze checking verifies every listed digest but does not enforce the list's
-  completeness. The coordinator must include both collectors, wrapper, budget and
-  common helpers, prompts/config/schema, and frozen selection/input/download
-  manifests. Image hashes are checked by collectors against the download manifest.
-- `joint_confirmation_complete` means both collector coroutines returned without
-  uncaught exceptions; it does not prove all selected requests succeeded. Budget
-  stops and per-request handled errors can return normally. Inspect response
-  completeness before scoring.
-- Wrapper output records exception class names only. Collector result files and
-  reservations remain durable, but uncaught exception messages/tracebacks are not
-  retained by this wrapper. This limits diagnosis, not the budget guard.
+## Confirmation-run record
 
-Within one asyncio event loop, ledger writes and summary writes are synchronous;
-they do not interleave halfway through `atomic_json`. Ledger reserve/settle also
-hold an RLock. Shared-object injection prevents stale per-arm ledger snapshots
-from overwriting other arms' charges. Every paid generation follows a durable
-reservation. Unknown usage and failed result persistence keep the reservation.
+The wrapper's final JSON record includes `all_collectors_returned_without_unhandled_error`. In the actual run it was `true`, with `errors: []` and `maximum_combined_concurrency: 4`. This key reports that both collector coroutines returned without an uncaught exception; it does not mean every selected item received a model response. The two source-missing inputs remain in each arm's 155-row denominator as `not_attempted`. Inspect each response file's status distribution for request-level completeness.
 
-Scope: these are focused wrapper/budget tests with substituted collectors, not an
-end-to-end SDK integration test. No external pricing or model limits were checked.
+The run used one shared US$30 ledger, made no automatic retry or resume, and did not read confirmation gold. The final ledger summary is recorded in `README.md` and `evaluation/tmp/followup-confirmation.log`. Scoring and the final decision are complete; see `final_decision.json` and `results/confirm/summary.json`. This audit records collection safety and is not itself a model-performance conclusion.
+
+## Scope
+
+These are focused wrapper and budget tests with substituted collectors, not an end-to-end SDK integration test. They verify local locking, freeze/ledger guards, concurrent shared accounting, and failure reservation behavior. They do not validate provider billing invoices or prove that a normally returning collector produced a successful response for every item.

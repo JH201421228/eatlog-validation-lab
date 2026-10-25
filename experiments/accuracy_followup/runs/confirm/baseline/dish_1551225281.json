@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551225281",
+  "request_id": "followup_confirm_baseline_dish_1551225281",
+  "started_at": "2026-10-25T08:43:51.445900+00:00",
+  "arm": "baseline",
+  "phase": "confirm",
+  "image_sha256": "4261503fa17073210fd8ca2e933ee46c0c485111bc79750c706beca3b1d3888b",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3059,
+  "request_sha256": "797588b4be032382ce51f49a0536f353f5be12a74cd10dad4cd0cc92b9615c24",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"식빵\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 35,\n      \"count\": 0.5,\n      \"count_unit\": \"장\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [100, 150, 700, 850],\n      \"nutrition_per_100g\": {\n        \"calories\": 265,\n        \"carbs\": 49.0,\n        \"protein\": 9.0,\n        \"fat\": 3.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1794
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 165
+      }
+    ],
+    "cached_content_token_count": 1959,
+    "candidates_token_count": 225,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3284,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3572.09,
+  "completed_at": "2026-10-25T08:43:55.734934+00:00"
+}

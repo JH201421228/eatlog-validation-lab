@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551565570",
+  "request_id": "followup_confirm_baseline_dish_1551565570",
+  "started_at": "2026-10-25T08:48:16.166987+00:00",
+  "arm": "baseline",
+  "phase": "confirm",
+  "image_sha256": "8ad8dbf4f6ff9391545ccdc8c8c3211fee4df6a67284ab968b442f4b0365377c",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3059,
+  "request_sha256": "4b09b32f88eaaa713b0964c3ffd3d0645a8853e51c9988be2b3472df5da6b2eb",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"슬라이스 햄\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 50,\n      \"count\": 2,\n      \"count_unit\": \"장\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [10, 0, 800, 800],\n      \"nutrition_per_100g\": {\n        \"calories\": 110,\n        \"carbs\": 2.0,\n        \"protein\": 15.0,\n        \"fat\": 4.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1794
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 165
+      }
+    ],
+    "cached_content_token_count": 1959,
+    "candidates_token_count": 223,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3282,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3086.18,
+  "completed_at": "2026-10-25T08:48:19.671548+00:00"
+}

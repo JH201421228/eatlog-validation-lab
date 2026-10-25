@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1550713065",
+  "request_id": "followup_confirm_baseline_dish_1550713065",
+  "started_at": "2026-10-25T08:45:46.018204+00:00",
+  "arm": "baseline",
+  "phase": "confirm",
+  "image_sha256": "8ce607960b90871441614fd37eb4156a3f7cc9bf3820d1303b8da69e0b7eaeca",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3059,
+  "request_sha256": "5cc2de459dd64ef4e20a5087dbce3427aba59938c8a2403170f5f06c568929e9",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"견과류 믹스\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 30, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [30, 220, 690, 680], \"nutrition_per_100g\": {\"calories\": 607, \"carbs\": 18.3, \"protein\": 15.3, \"fat\": 54.0}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1794
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 165
+      }
+    ],
+    "cached_content_token_count": 1959,
+    "candidates_token_count": 174,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3233,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3189.64,
+  "completed_at": "2026-10-25T08:45:50.453667+00:00"
+}

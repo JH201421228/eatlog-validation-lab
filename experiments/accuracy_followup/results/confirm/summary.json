@@ -1,0 +1,1437 @@
+{
+  "generated_at": "2026-10-25T08:53:42.757594+00:00",
+  "phase": "confirm",
+  "selected_count": 155,
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "source_index_sha256": "d054b20dddad17a7432bb43972d7f31650ce362775bab5aaf83679e465070ff2",
+  "worker_sha256": "6da01a20e0bbe33f7bc029869fe1a8d40db84a57dbf20d96068ced0cf8103c59",
+  "scorer_sha256": "9637fd3464d06352d2354b8686a2932121c9cb0e0bbfba31ee407e6fa7f04a06",
+  "transport": {
+    "baseline": {
+      "request_freeze": {
+        "arm": "baseline",
+        "phase": "confirm",
+        "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+        "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+        "model": "gemini-2.5-flash",
+        "prompt_sha256": "ec03e8be7d47b2d48734f60354360246c78ea55c06d227de31907a7f8c71a7c7",
+        "schema_sha256": "4e36ed481d5493f10d5e2ebc442559c542c1e1522142fdd7391f9ec53e25cf5d",
+        "code_sha256": "3c3da6ef4c26e8815a24793363d449fe0a78b59714d3175d68ae629030dee51c",
+        "selected_count": 155,
+        "frozen_at": "2026-10-25T08:43:28.227683+00:00"
+      },
+      "response_archive_sha256": "325d44410d96b6ee46b216e2efea9576b3aa85af22a1dc605995bb99125d1547",
+      "collection_status_counts": {
+        "response_received": 153,
+        "not_attempted": 2
+      },
+      "model_versions": {
+        "gemini-2.5-flash": 153,
+        "unknown": 2
+      },
+      "latency_ms": {
+        "count": 153,
+        "p50": 4007.77,
+        "p95": 5823.25
+      },
+      "raw_token_totals": {
+        "prompt_token_count": 468027,
+        "candidates_token_count": 53432,
+        "thoughts_token_count": 0,
+        "total_token_count": 521459
+      },
+      "usage_present_count": 153,
+      "usage_estimated_usd_known_only": 0.2739881,
+      "missing_or_invalid_usage_count": 0,
+      "cost_authority": "experiments/accuracy_followup/cost_ledger.json; missing usage is never zero billed cost"
+    },
+    "flash35_minimal": {
+      "request_freeze": {
+        "arm": "flash35_minimal",
+        "phase": "confirm",
+        "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+        "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+        "model": "gemini-3.5-flash-lite",
+        "prompt_sha256": "ec03e8be7d47b2d48734f60354360246c78ea55c06d227de31907a7f8c71a7c7",
+        "schema_sha256": "4e36ed481d5493f10d5e2ebc442559c542c1e1522142fdd7391f9ec53e25cf5d",
+        "code_sha256": "662bdf2e9d579e4b88d38059d889e7cf0faa5541af2d95866eb0a8ff1d6c3c76",
+        "selected_count": 155,
+        "frozen_at": "2026-10-25T08:43:28.856333+00:00"
+      },
+      "response_archive_sha256": "bf0f90a853a8c206bcfe363db4bb3f280c6e66841cdd8ee5b123268913621e52",
+      "collection_status_counts": {
+        "response_received": 153,
+        "not_attempted": 2
+      },
+      "model_versions": {
+        "gemini-3.5-flash-lite": 153,
+        "unknown": 2
+      },
+      "latency_ms": {
+        "count": 153,
+        "p50": 3350.18,
+        "p95": 4451.46
+      },
+      "raw_token_totals": {
+        "prompt_token_count": 596853,
+        "candidates_token_count": 63871,
+        "thoughts_token_count": 0,
+        "total_token_count": 660724
+      },
+      "usage_present_count": 153,
+      "usage_estimated_usd_known_only": 0.3387334,
+      "missing_or_invalid_usage_count": 0,
+      "cost_authority": "experiments/accuracy_followup/cost_ledger.json; missing usage is never zero billed cost"
+    }
+  },
+  "protocol_sha256": "a8808bfff795cb40aa1a2800bccc7775e6e6d6966f130f952d58a6ea066e59d2",
+  "scope": "Pinned improved AI/BE, no DB/grounding/habits, no live services; all selected rows remain in denominator",
+  "exploratory": false,
+  "labels_scored": true,
+  "cost_summary_reference": "C:\\Users\\741u7\\Desktop\\soma_project\\eatlog-validation-lab\\experiments\\accuracy_followup\\cost_summary.json",
+  "cumulative_cost_snapshot": {
+    "attempted_generations": 3826,
+    "settled_requests": 3816,
+    "unknown_reserved_requests": 10,
+    "usage_estimated_usd": 7.3393675,
+    "charged_or_reserved_usd": 12.3393675,
+    "hard_cap_usd": 30,
+    "billing_invoice_verified": false
+  },
+  "gold_sha256": "501c3d0d03c96052b949a6d57c33db7432abbfdf7a6e6660c4ba66d4f97c973e",
+  "versions": {
+    "baseline": {
+      "status_counts": {
+        "success": 153,
+        "failed": 2
+      },
+      "selected_food_groups": 285,
+      "selected_packaged_foods": 0,
+      "selected_foods_with_printed_kcal": 0,
+      "selected_foods_with_grounded_label": 0,
+      "nutrition_source_counts": {
+        "ai": 285
+      },
+      "nutrients": {
+        "calories": {
+          "selected_count": 155,
+          "valid_prediction_count": 153,
+          "missing_prediction_count": 2,
+          "coverage_percent": 98.70967741935483,
+          "mae": 87.37618106535948,
+          "mean_error_bias": 49.21231663398693,
+          "mape_percent": 83.24949710107558,
+          "median_ape_percent": 41.83819282001128,
+          "p90_ape_percent": 187.56217016584569,
+          "mape_nonzero_truth_count": 153,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 66.63316538591691,
+          "within_15_percent_count": 30,
+          "within_15_percent_of_all_selected": 19.35483870967742,
+          "within_15_percent_of_valid_predictions": 19.607843137254903
+        },
+        "carbs": {
+          "selected_count": 155,
+          "valid_prediction_count": 153,
+          "missing_prediction_count": 2,
+          "coverage_percent": 98.70967741935483,
+          "mae": 9.147671790849673,
+          "mean_error_bias": 6.895805150326797,
+          "mape_percent": 85.63124692209318,
+          "median_ape_percent": 50.89951081860645,
+          "p90_ape_percent": 230.54456452618513,
+          "mape_nonzero_truth_count": 144,
+          "mape_zero_truth_excluded_count": 9,
+          "wape_percent_mae_over_mean_truth": 80.01602696808668,
+          "within_15_percent_count": 30,
+          "within_15_percent_of_all_selected": 19.35483870967742,
+          "within_15_percent_of_valid_predictions": 19.607843137254903
+        },
+        "protein": {
+          "selected_count": 155,
+          "valid_prediction_count": 153,
+          "missing_prediction_count": 2,
+          "coverage_percent": 98.70967741935483,
+          "mae": 4.680817281045752,
+          "mean_error_bias": 1.6176657124183007,
+          "mape_percent": 68.76298335301269,
+          "median_ape_percent": 48.66979655712049,
+          "p90_ape_percent": 134.6562567772718,
+          "mape_nonzero_truth_count": 153,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 55.72847517630392,
+          "within_15_percent_count": 18,
+          "within_15_percent_of_all_selected": 11.612903225806452,
+          "within_15_percent_of_valid_predictions": 11.76470588235294
+        },
+        "fat": {
+          "selected_count": 155,
+          "valid_prediction_count": 153,
+          "missing_prediction_count": 2,
+          "coverage_percent": 98.70967741935483,
+          "mae": 4.371307607843137,
+          "mean_error_bias": 1.2423003790849674,
+          "mape_percent": 343.5156492647543,
+          "median_ape_percent": 58.11965811965813,
+          "p90_ape_percent": 241.25916567216876,
+          "mape_nonzero_truth_count": 153,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 67.44565862125953,
+          "within_15_percent_count": 17,
+          "within_15_percent_of_all_selected": 10.967741935483872,
+          "within_15_percent_of_valid_predictions": 11.11111111111111
+        },
+        "mass_g": {
+          "selected_count": 155,
+          "valid_prediction_count": 153,
+          "missing_prediction_count": 2,
+          "coverage_percent": 98.70967741935483,
+          "mae": 61.77124183006536,
+          "mean_error_bias": 37.73202614379085,
+          "mape_percent": 58.50523351125803,
+          "median_ape_percent": 40.845070422535215,
+          "p90_ape_percent": 140.4761904761905,
+          "mape_nonzero_truth_count": 153,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 50.765429446205076,
+          "within_15_percent_count": 32,
+          "within_15_percent_of_all_selected": 20.64516129032258,
+          "within_15_percent_of_valid_predictions": 20.915032679738562
+        }
+      }
+    },
+    "flash35_minimal": {
+      "status_counts": {
+        "success": 151,
+        "incomplete_nutrition": 2,
+        "failed": 2
+      },
+      "selected_food_groups": 286,
+      "selected_packaged_foods": 0,
+      "selected_foods_with_printed_kcal": 0,
+      "selected_foods_with_grounded_label": 0,
+      "nutrition_source_counts": {
+        "ai": 286
+      },
+      "nutrients": {
+        "calories": {
+          "selected_count": 155,
+          "valid_prediction_count": 151,
+          "missing_prediction_count": 4,
+          "coverage_percent": 97.41935483870968,
+          "mae": 59.58706135099338,
+          "mean_error_bias": 20.018440013245034,
+          "mape_percent": 53.83391087567945,
+          "median_ape_percent": 31.080283144090764,
+          "p90_ape_percent": 123.04814314336896,
+          "mape_nonzero_truth_count": 151,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 45.11632659152949,
+          "within_15_percent_count": 29,
+          "within_15_percent_of_all_selected": 18.70967741935484,
+          "within_15_percent_of_valid_predictions": 19.205298013245034
+        },
+        "carbs": {
+          "selected_count": 155,
+          "valid_prediction_count": 151,
+          "missing_prediction_count": 4,
+          "coverage_percent": 97.41935483870968,
+          "mae": 5.743389298013246,
+          "mean_error_bias": 3.6076701192052982,
+          "mape_percent": 52.151108738223925,
+          "median_ape_percent": 39.04425501516475,
+          "p90_ape_percent": 124.75653510627956,
+          "mape_nonzero_truth_count": 142,
+          "mape_zero_truth_excluded_count": 9,
+          "wape_percent_mae_over_mean_truth": 50.429185238650234,
+          "within_15_percent_count": 36,
+          "within_15_percent_of_all_selected": 23.225806451612904,
+          "within_15_percent_of_valid_predictions": 23.841059602649008
+        },
+        "protein": {
+          "selected_count": 155,
+          "valid_prediction_count": 151,
+          "missing_prediction_count": 4,
+          "coverage_percent": 97.41935483870968,
+          "mae": 3.67044,
+          "mean_error_bias": -0.09819301986754958,
+          "mape_percent": 55.17374313404267,
+          "median_ape_percent": 42.27642276422765,
+          "p90_ape_percent": 100.0,
+          "mape_nonzero_truth_count": 151,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 43.17736982480425,
+          "within_15_percent_count": 29,
+          "within_15_percent_of_all_selected": 18.70967741935484,
+          "within_15_percent_of_valid_predictions": 19.205298013245034
+        },
+        "fat": {
+          "selected_count": 155,
+          "valid_prediction_count": 151,
+          "missing_prediction_count": 4,
+          "coverage_percent": 97.41935483870968,
+          "mae": 3.021954834437086,
+          "mean_error_bias": 0.32848978807947027,
+          "mape_percent": 183.52049774728624,
+          "median_ape_percent": 47.08994708994709,
+          "p90_ape_percent": 332.86219081272094,
+          "mape_nonzero_truth_count": 151,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 46.0460223593459,
+          "within_15_percent_count": 26,
+          "within_15_percent_of_all_selected": 16.7741935483871,
+          "within_15_percent_of_valid_predictions": 17.218543046357617
+        },
+        "mass_g": {
+          "selected_count": 155,
+          "valid_prediction_count": 151,
+          "missing_prediction_count": 4,
+          "coverage_percent": 97.41935483870968,
+          "mae": 44.11258278145695,
+          "mean_error_bias": 11.0,
+          "mape_percent": 34.9921768968749,
+          "median_ape_percent": 27.710843373493976,
+          "p90_ape_percent": 67.78523489932886,
+          "mape_nonzero_truth_count": 151,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 36.18732004128864,
+          "within_15_percent_count": 37,
+          "within_15_percent_of_all_selected": 23.870967741935484,
+          "within_15_percent_of_valid_predictions": 24.503311258278146
+        }
+      }
+    }
+  },
+  "paired_vs_baseline": {
+    "flash35_minimal": {
+      "calories": {
+        "valid_pair_count": 151,
+        "transition_counts": {
+          "same_error": 11,
+          "improved": 92,
+          "worsened": 48,
+          "valid_to_missing": 2,
+          "both_missing": 2
+        },
+        "mean_absolute_error_delta_after_minus_before": -28.71661882119205,
+        "paired_baseline_mae": 88.30368017218544,
+        "paired_relative_mae_reduction": 0.3252029673644047,
+        "bootstrap_95_percent_ci": [
+          -40.23010067582781,
+          -18.047772378145705
+        ],
+        "bootstrap_repetitions": 2000,
+        "positive_delta_means_worse": true
+      },
+      "carbs": {
+        "valid_pair_count": 151,
+        "transition_counts": {
+          "same_error": 17,
+          "improved": 85,
+          "worsened": 49,
+          "valid_to_missing": 2,
+          "both_missing": 2
+        },
+        "mean_absolute_error_delta_after_minus_before": -3.462529801324503,
+        "paired_baseline_mae": 9.205919099337748,
+        "paired_relative_mae_reduction": 0.3761199467387878,
+        "bootstrap_95_percent_ci": [
+          -5.207059920529801,
+          -1.876925840728477
+        ],
+        "bootstrap_repetitions": 2000,
+        "positive_delta_means_worse": true
+      },
+      "protein": {
+        "valid_pair_count": 151,
+        "transition_counts": {
+          "same_error": 20,
+          "worsened": 49,
+          "improved": 82,
+          "valid_to_missing": 2,
+          "both_missing": 2
+        },
+        "mean_absolute_error_delta_after_minus_before": -1.0651298278145696,
+        "paired_baseline_mae": 4.73556982781457,
+        "paired_relative_mae_reduction": 0.22492115342877736,
+        "bootstrap_95_percent_ci": [
+          -1.6100177109271527,
+          -0.5758822331125829
+        ],
+        "bootstrap_repetitions": 2000,
+        "positive_delta_means_worse": true
+      },
+      "fat": {
+        "valid_pair_count": 151,
+        "transition_counts": {
+          "worsened": 47,
+          "same_error": 29,
+          "improved": 75,
+          "valid_to_missing": 2,
+          "both_missing": 2
+        },
+        "mean_absolute_error_delta_after_minus_before": -1.4044296953642383,
+        "paired_baseline_mae": 4.426384529801324,
+        "paired_relative_mae_reduction": 0.31728596688983896,
+        "bootstrap_95_percent_ci": [
+          -2.1716051745033114,
+          -0.7219162738410608
+        ],
+        "bootstrap_repetitions": 2000,
+        "positive_delta_means_worse": true
+      },
+      "mass_g": {
+        "valid_pair_count": 151,
+        "transition_counts": {
+          "same_error": 31,
+          "improved": 80,
+          "worsened": 40,
+          "valid_to_missing": 2,
+          "both_missing": 2
+        },
+        "mean_absolute_error_delta_after_minus_before": -18.264900662251655,
+        "paired_baseline_mae": 62.37748344370861,
+        "paired_relative_mae_reduction": 0.29281240046714085,
+        "bootstrap_95_percent_ci": [
+          -25.590066225165565,
+          -11.36407284768212
+        ],
+        "bootstrap_repetitions": 2000,
+        "positive_delta_means_worse": true
+      }
+    }
+  },
+  "strata": {
+    "camera_view": {
+      "side_camera_A_frame_0": {
+        "baseline": {
+          "status_counts": {
+            "success": 150,
+            "failed": 2
+          },
+          "selected_food_groups": 279,
+          "selected_packaged_foods": 0,
+          "selected_foods_with_printed_kcal": 0,
+          "selected_foods_with_grounded_label": 0,
+          "nutrition_source_counts": {
+            "ai": 279
+          },
+          "nutrients": {
+            "calories": {
+              "selected_count": 152,
+              "valid_prediction_count": 150,
+              "missing_prediction_count": 2,
+              "coverage_percent": 98.68421052631578,
+              "mae": 86.13276275333334,
+              "mean_error_bias": 52.321904726666666,
+              "mape_percent": 84.2402178666867,
+              "median_ape_percent": 44.42956875608452,
+              "p90_ape_percent": 188.75461568967967,
+              "mape_nonzero_truth_count": 150,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 68.65278333739337,
+              "within_15_percent_count": 30,
+              "within_15_percent_of_all_selected": 19.736842105263158,
+              "within_15_percent_of_valid_predictions": 20.0
+            },
+            "carbs": {
+              "selected_count": 152,
+              "valid_prediction_count": 150,
+              "missing_prediction_count": 2,
+              "coverage_percent": 98.68421052631578,
+              "mae": 9.212286026666668,
+              "mean_error_bias": 7.152060453333333,
+              "mape_percent": 86.12817914134102,
+              "median_ape_percent": 50.52566481137909,
+              "p90_ape_percent": 239.93138031142786,
+              "mape_nonzero_truth_count": 141,
+              "mape_zero_truth_excluded_count": 9,
+              "wape_percent_mae_over_mean_truth": 82.11125734439456,
+              "within_15_percent_count": 30,
+              "within_15_percent_of_all_selected": 19.736842105263158,
+              "within_15_percent_of_valid_predictions": 20.0
+            },
+            "protein": {
+              "selected_count": 152,
+              "valid_prediction_count": 150,
+              "missing_prediction_count": 2,
+              "coverage_percent": 98.68421052631578,
+              "mae": 4.636232,
+              "mean_error_bias": 1.7290206533333337,
+              "mape_percent": 69.56650361342521,
+              "median_ape_percent": 50.8958857662691,
+              "p90_ape_percent": 137.68787975695545,
+              "mape_nonzero_truth_count": 150,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 57.28236683890488,
+              "within_15_percent_count": 18,
+              "within_15_percent_of_all_selected": 11.842105263157894,
+              "within_15_percent_of_valid_predictions": 12.0
+            },
+            "fat": {
+              "selected_count": 152,
+              "valid_prediction_count": 150,
+              "missing_prediction_count": 2,
+              "coverage_percent": 98.68421052631578,
+              "mae": 4.2409012399999995,
+              "mean_error_bias": 1.411112226666667,
+              "mape_percent": 349.5744470221132,
+              "median_ape_percent": 60.1793909052983,
+              "p90_ape_percent": 243.76166155323304,
+              "mape_nonzero_truth_count": 150,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 69.49007416670328,
+              "within_15_percent_count": 17,
+              "within_15_percent_of_all_selected": 11.18421052631579,
+              "within_15_percent_of_valid_predictions": 11.333333333333332
+            },
+            "mass_g": {
+              "selected_count": 152,
+              "valid_prediction_count": 150,
+              "missing_prediction_count": 2,
+              "coverage_percent": 98.68421052631578,
+              "mae": 61.0,
+              "mean_error_bias": 40.333333333333336,
+              "mape_percent": 59.00901482235958,
+              "median_ape_percent": 41.51846785225718,
+              "p90_ape_percent": 141.35452961672473,
+              "mape_nonzero_truth_count": 150,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 51.63656884875847,
+              "within_15_percent_count": 32,
+              "within_15_percent_of_all_selected": 21.052631578947366,
+              "within_15_percent_of_valid_predictions": 21.333333333333336
+            }
+          }
+        },
+        "flash35_minimal": {
+          "status_counts": {
+            "success": 148,
+            "incomplete_nutrition": 2,
+            "failed": 2
+          },
+          "selected_food_groups": 280,
+          "selected_packaged_foods": 0,
+          "selected_foods_with_printed_kcal": 0,
+          "selected_foods_with_grounded_label": 0,
+          "nutrition_source_counts": {
+            "ai": 280
+          },
+          "nutrients": {
+            "calories": {
+              "selected_count": 152,
+              "valid_prediction_count": 148,
+              "missing_prediction_count": 4,
+              "coverage_percent": 97.36842105263158,
+              "mae": 56.838141891891894,
+              "mean_error_bias": 24.3809845,
+              "mape_percent": 54.03962762777501,
+              "median_ape_percent": 30.61992898829779,
+              "p90_ape_percent": 123.45837552503362,
+              "mape_nonzero_truth_count": 148,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 44.98536629210268,
+              "within_15_percent_count": 29,
+              "within_15_percent_of_all_selected": 19.078947368421055,
+              "within_15_percent_of_valid_predictions": 19.594594594594593
+            },
+            "carbs": {
+              "selected_count": 152,
+              "valid_prediction_count": 148,
+              "missing_prediction_count": 4,
+              "coverage_percent": 97.36842105263158,
+              "mae": 5.674330432432432,
+              "mean_error_bias": 3.8662774864864864,
+              "mape_percent": 52.381325950171025,
+              "median_ape_percent": 38.94993894993895,
+              "p90_ape_percent": 125.52097698174111,
+              "mape_nonzero_truth_count": 139,
+              "mape_zero_truth_excluded_count": 9,
+              "wape_percent_mae_over_mean_truth": 50.78956816438108,
+              "within_15_percent_count": 36,
+              "within_15_percent_of_all_selected": 23.684210526315788,
+              "within_15_percent_of_valid_predictions": 24.324324324324326
+            },
+            "protein": {
+              "selected_count": 152,
+              "valid_prediction_count": 148,
+              "missing_prediction_count": 4,
+              "coverage_percent": 97.36842105263158,
+              "mae": 3.54990672972973,
+              "mean_error_bias": 0.09475066216216228,
+              "mape_percent": 55.53477562299996,
+              "median_ape_percent": 42.260756798474205,
+              "p90_ape_percent": 100.0,
+              "mape_nonzero_truth_count": 148,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 43.328072234712586,
+              "within_15_percent_count": 29,
+              "within_15_percent_of_all_selected": 19.078947368421055,
+              "within_15_percent_of_valid_predictions": 19.594594594594593
+            },
+            "fat": {
+              "selected_count": 152,
+              "valid_prediction_count": 148,
+              "missing_prediction_count": 4,
+              "coverage_percent": 97.36842105263158,
+              "mae": 2.823110162162162,
+              "mean_error_bias": 0.5952488783783784,
+              "mape_percent": 186.2624442182194,
+              "median_ape_percent": 47.98667012582921,
+              "p90_ape_percent": 340.4081137215767,
+              "mape_nonzero_truth_count": 148,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 45.673246391016534,
+              "within_15_percent_count": 26,
+              "within_15_percent_of_all_selected": 17.105263157894736,
+              "within_15_percent_of_valid_predictions": 17.56756756756757
+            },
+            "mass_g": {
+              "selected_count": 152,
+              "valid_prediction_count": 148,
+              "missing_prediction_count": 4,
+              "coverage_percent": 97.36842105263158,
+              "mae": 42.054054054054056,
+              "mean_error_bias": 14.175675675675675,
+              "mape_percent": 34.85093315185943,
+              "median_ape_percent": 27.68520892078954,
+              "p90_ape_percent": 68.54856552843133,
+              "mape_nonzero_truth_count": 148,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 35.545402627070246,
+              "within_15_percent_count": 37,
+              "within_15_percent_of_all_selected": 24.342105263157894,
+              "within_15_percent_of_valid_predictions": 25.0
+            }
+          }
+        }
+      },
+      "side_camera_B_frame_0": {
+        "baseline": {
+          "status_counts": {
+            "success": 3
+          },
+          "selected_food_groups": 6,
+          "selected_packaged_foods": 0,
+          "selected_foods_with_printed_kcal": 0,
+          "selected_foods_with_grounded_label": 0,
+          "nutrition_source_counts": {
+            "ai": 6
+          },
+          "nutrients": {
+            "calories": {
+              "selected_count": 3,
+              "valid_prediction_count": 3,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 149.54709666666665,
+              "mean_error_bias": -106.26708799999999,
+              "mape_percent": 33.71345882051853,
+              "median_ape_percent": 31.5789556889115,
+              "p90_ape_percent": 39.70915085905534,
+              "mape_nonzero_truth_count": 3,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 36.073075021012436,
+              "within_15_percent_count": 0,
+              "within_15_percent_of_all_selected": 0.0,
+              "within_15_percent_of_valid_predictions": 0.0
+            },
+            "carbs": {
+              "selected_count": 3,
+              "valid_prediction_count": 3,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 5.916959999999999,
+              "mean_error_bias": -5.916959999999999,
+              "mape_percent": 62.275432617444615,
+              "median_ape_percent": 62.302947224126115,
+              "p90_ape_percent": 92.46058944482522,
+              "mape_nonzero_truth_count": 3,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 26.79342523450254,
+              "within_15_percent_count": 0,
+              "within_15_percent_of_all_selected": 0.0,
+              "within_15_percent_of_valid_predictions": 0.0
+            },
+            "protein": {
+              "selected_count": 3,
+              "valid_prediction_count": 3,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 6.910081333333335,
+              "mean_error_bias": -3.950081333333335,
+              "mape_percent": 28.586970332385764,
+              "median_ape_percent": 31.578947368421044,
+              "p90_ape_percent": 35.8591262020766,
+              "mape_nonzero_truth_count": 3,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 29.176879392560572,
+              "within_15_percent_count": 0,
+              "within_15_percent_of_all_selected": 0.0,
+              "within_15_percent_of_valid_predictions": 0.0
+            },
+            "fat": {
+              "selected_count": 3,
+              "valid_prediction_count": 3,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 10.891626,
+              "mean_error_bias": -7.1982919999999995,
+              "mape_percent": 40.5757613968124,
+              "median_ape_percent": 34.711787889209766,
+              "p90_ape_percent": 53.144481223057966,
+              "mape_nonzero_truth_count": 3,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 42.88330097157715,
+              "within_15_percent_count": 0,
+              "within_15_percent_of_all_selected": 0.0,
+              "within_15_percent_of_valid_predictions": 0.0
+            },
+            "mass_g": {
+              "selected_count": 3,
+              "valid_prediction_count": 3,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 100.33333333333333,
+              "mean_error_bias": -92.33333333333333,
+              "mape_percent": 33.31616795618045,
+              "median_ape_percent": 33.23442136498516,
+              "p90_ape_percent": 34.75499238110514,
+              "mape_nonzero_truth_count": 3,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 33.55629877369008,
+              "within_15_percent_count": 0,
+              "within_15_percent_of_all_selected": 0.0,
+              "within_15_percent_of_valid_predictions": 0.0
+            }
+          }
+        },
+        "flash35_minimal": {
+          "status_counts": {
+            "success": 3
+          },
+          "selected_food_groups": 6,
+          "selected_packaged_foods": 0,
+          "selected_foods_with_printed_kcal": 0,
+          "selected_foods_with_grounded_label": 0,
+          "nutrition_source_counts": {
+            "ai": 6
+          },
+          "nutrients": {
+            "calories": {
+              "selected_count": 3,
+              "valid_prediction_count": 3,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 195.20042133333334,
+              "mean_error_bias": -195.20042133333334,
+              "mape_percent": 43.68521777229869,
+              "median_ape_percent": 44.377405622833066,
+              "p90_ape_percent": 50.752375821046,
+              "mape_nonzero_truth_count": 3,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 47.08536374053247,
+              "within_15_percent_count": 0,
+              "within_15_percent_of_all_selected": 0.0,
+              "within_15_percent_of_valid_predictions": 0.0
+            },
+            "carbs": {
+              "selected_count": 3,
+              "valid_prediction_count": 3,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 9.150293333333332,
+              "mean_error_bias": -9.150293333333332,
+              "mape_percent": 41.484377918008285,
+              "median_ape_percent": 40.76516125251747,
+              "p90_ape_percent": 55.253786191559016,
+              "mape_nonzero_truth_count": 3,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 41.43474018760204,
+              "within_15_percent_count": 0,
+              "within_15_percent_of_all_selected": 0.0,
+              "within_15_percent_of_valid_predictions": 0.0
+            },
+            "protein": {
+              "selected_count": 3,
+              "valid_prediction_count": 3,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 9.616748000000001,
+              "mean_error_bias": -9.616748000000001,
+              "mape_percent": 37.36280701214957,
+              "median_ape_percent": 44.559371121224665,
+              "p90_ape_percent": 45.524018850592014,
+              "mape_nonzero_truth_count": 3,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 40.605411573252304,
+              "within_15_percent_count": 0,
+              "within_15_percent_of_all_selected": 0.0,
+              "within_15_percent_of_valid_predictions": 0.0
+            },
+            "fat": {
+              "selected_count": 3,
+              "valid_prediction_count": 3,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 12.831625333333333,
+              "mean_error_bias": -12.831625333333333,
+              "mape_percent": 48.251138514583374,
+              "median_ape_percent": 44.15487506161113,
+              "p90_ape_percent": 57.43011116496974,
+              "mape_nonzero_truth_count": 3,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 50.521607253485136,
+              "within_15_percent_count": 0,
+              "within_15_percent_of_all_selected": 0.0,
+              "within_15_percent_of_valid_predictions": 0.0
+            },
+            "mass_g": {
+              "selected_count": 3,
+              "valid_prediction_count": 3,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 145.66666666666666,
+              "mean_error_bias": -145.66666666666666,
+              "mape_percent": 41.960201650971605,
+              "median_ape_percent": 48.07121661721068,
+              "p90_ape_percent": 55.01964872884754,
+              "mape_nonzero_truth_count": 3,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 48.717948717948715,
+              "within_15_percent_count": 0,
+              "within_15_percent_of_all_selected": 0.0,
+              "within_15_percent_of_valid_predictions": 0.0
+            }
+          }
+        }
+      }
+    },
+    "original_split": {
+      "test": {
+        "baseline": {
+          "status_counts": {
+            "success": 19
+          },
+          "selected_food_groups": 34,
+          "selected_packaged_foods": 0,
+          "selected_foods_with_printed_kcal": 0,
+          "selected_foods_with_grounded_label": 0,
+          "nutrition_source_counts": {
+            "ai": 34
+          },
+          "nutrients": {
+            "calories": {
+              "selected_count": 19,
+              "valid_prediction_count": 19,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 79.18068036842105,
+              "mean_error_bias": 42.75268152631579,
+              "mape_percent": 81.68853362037332,
+              "median_ape_percent": 50.19762450072136,
+              "p90_ape_percent": 150.91688012103234,
+              "mape_nonzero_truth_count": 19,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 56.89560044396219,
+              "within_15_percent_count": 3,
+              "within_15_percent_of_all_selected": 15.789473684210526,
+              "within_15_percent_of_valid_predictions": 15.789473684210526
+            },
+            "carbs": {
+              "selected_count": 19,
+              "valid_prediction_count": 19,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 10.632984105263159,
+              "mean_error_bias": 8.310458,
+              "mape_percent": 95.80536451285539,
+              "median_ape_percent": 66.37426900584795,
+              "p90_ape_percent": 248.40385676423278,
+              "mape_nonzero_truth_count": 19,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 68.92726145484352,
+              "within_15_percent_count": 5,
+              "within_15_percent_of_all_selected": 26.31578947368421,
+              "within_15_percent_of_valid_predictions": 26.31578947368421
+            },
+            "protein": {
+              "selected_count": 19,
+              "valid_prediction_count": 19,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 2.6535640000000003,
+              "mean_error_bias": 0.7262254736842105,
+              "mape_percent": 74.01625653177427,
+              "median_ape_percent": 55.00000000000001,
+              "p90_ape_percent": 126.82352941176467,
+              "mape_nonzero_truth_count": 19,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 38.4276345897793,
+              "within_15_percent_count": 2,
+              "within_15_percent_of_all_selected": 10.526315789473683,
+              "within_15_percent_of_valid_predictions": 10.526315789473683
+            },
+            "fat": {
+              "selected_count": 19,
+              "valid_prediction_count": 19,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 3.5341547894736847,
+              "mean_error_bias": 0.6152075263157895,
+              "mape_percent": 138.8328455435195,
+              "median_ape_percent": 44.40969954792816,
+              "p90_ape_percent": 313.8111979849922,
+              "mape_nonzero_truth_count": 19,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 58.13204618151837,
+              "within_15_percent_count": 2,
+              "within_15_percent_of_all_selected": 10.526315789473683,
+              "within_15_percent_of_valid_predictions": 10.526315789473683
+            },
+            "mass_g": {
+              "selected_count": 19,
+              "valid_prediction_count": 19,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 63.8421052631579,
+              "mean_error_bias": 34.05263157894737,
+              "mape_percent": 60.219357651616534,
+              "median_ape_percent": 35.13513513513514,
+              "p90_ape_percent": 119.29824561403504,
+              "mape_nonzero_truth_count": 19,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 42.59129213483146,
+              "within_15_percent_count": 4,
+              "within_15_percent_of_all_selected": 21.052631578947366,
+              "within_15_percent_of_valid_predictions": 21.052631578947366
+            }
+          }
+        },
+        "flash35_minimal": {
+          "status_counts": {
+            "success": 19
+          },
+          "selected_food_groups": 34,
+          "selected_packaged_foods": 0,
+          "selected_foods_with_printed_kcal": 0,
+          "selected_foods_with_grounded_label": 0,
+          "nutrition_source_counts": {
+            "ai": 34
+          },
+          "nutrients": {
+            "calories": {
+              "selected_count": 19,
+              "valid_prediction_count": 19,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 52.21489889473684,
+              "mean_error_bias": 4.326365736842103,
+              "mape_percent": 52.22952081149234,
+              "median_ape_percent": 30.52090044218236,
+              "p90_ape_percent": 130.25974025974023,
+              "mape_nonzero_truth_count": 19,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 37.519228313194034,
+              "within_15_percent_count": 6,
+              "within_15_percent_of_all_selected": 31.57894736842105,
+              "within_15_percent_of_valid_predictions": 31.57894736842105
+            },
+            "carbs": {
+              "selected_count": 19,
+              "valid_prediction_count": 19,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 6.867931473684211,
+              "mean_error_bias": 4.915721157894736,
+              "mape_percent": 62.55576096717872,
+              "median_ape_percent": 48.83040935672515,
+              "p90_ape_percent": 128.23529411764704,
+              "mape_nonzero_truth_count": 19,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 44.520682402436854,
+              "within_15_percent_count": 5,
+              "within_15_percent_of_all_selected": 26.31578947368421,
+              "within_15_percent_of_valid_predictions": 26.31578947368421
+            },
+            "protein": {
+              "selected_count": 19,
+              "valid_prediction_count": 19,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 2.630827157894737,
+              "mean_error_bias": -1.3316692631578948,
+              "mape_percent": 47.57257642751146,
+              "median_ape_percent": 43.602143230420765,
+              "p90_ape_percent": 89.7326203208556,
+              "mape_nonzero_truth_count": 19,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 38.09837060362838,
+              "within_15_percent_count": 3,
+              "within_15_percent_of_all_selected": 15.789473684210526,
+              "within_15_percent_of_valid_predictions": 15.789473684210526
+            },
+            "fat": {
+              "selected_count": 19,
+              "valid_prediction_count": 19,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 2.3886871052631578,
+              "mean_error_bias": -0.9900556315789473,
+              "mape_percent": 246.91684469392183,
+              "median_ape_percent": 43.228202477617714,
+              "p90_ape_percent": 530.5882352941175,
+              "mape_nonzero_truth_count": 19,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 39.29065855574328,
+              "within_15_percent_count": 4,
+              "within_15_percent_of_all_selected": 21.052631578947366,
+              "within_15_percent_of_valid_predictions": 21.052631578947366
+            },
+            "mass_g": {
+              "selected_count": 19,
+              "valid_prediction_count": 19,
+              "missing_prediction_count": 0,
+              "coverage_percent": 100.0,
+              "mae": 48.473684210526315,
+              "mean_error_bias": -5.421052631578948,
+              "mape_percent": 35.0290303064625,
+              "median_ape_percent": 37.93103448275862,
+              "p90_ape_percent": 61.609907120743024,
+              "mape_nonzero_truth_count": 19,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 32.33848314606742,
+              "within_15_percent_count": 6,
+              "within_15_percent_of_all_selected": 31.57894736842105,
+              "within_15_percent_of_valid_predictions": 31.57894736842105
+            }
+          }
+        }
+      },
+      "train": {
+        "baseline": {
+          "status_counts": {
+            "success": 134,
+            "failed": 2
+          },
+          "selected_food_groups": 251,
+          "selected_packaged_foods": 0,
+          "selected_foods_with_printed_kcal": 0,
+          "selected_foods_with_grounded_label": 0,
+          "nutrition_source_counts": {
+            "ai": 251
+          },
+          "nutrients": {
+            "calories": {
+              "selected_count": 136,
+              "valid_prediction_count": 134,
+              "missing_prediction_count": 2,
+              "coverage_percent": 98.52941176470588,
+              "mae": 88.53822967164179,
+              "mean_error_bias": 50.12823504477612,
+              "mape_percent": 83.4708277438617,
+              "median_ape_percent": 41.789946235801295,
+              "p90_ape_percent": 189.9958072910592,
+              "mape_nonzero_truth_count": 134,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 68.11134892330067,
+              "within_15_percent_count": 27,
+              "within_15_percent_of_all_selected": 19.852941176470587,
+              "within_15_percent_of_valid_predictions": 20.149253731343283
+            },
+            "carbs": {
+              "selected_count": 136,
+              "valid_prediction_count": 134,
+              "missing_prediction_count": 2,
+              "coverage_percent": 98.52941176470588,
+              "mae": 8.93706780597015,
+              "mean_error_bias": 6.69522004477612,
+              "mape_percent": 84.08478104829733,
+              "median_ape_percent": 49.99999999999999,
+              "p90_ape_percent": 208.42011317606213,
+              "mape_nonzero_truth_count": 125,
+              "mape_zero_truth_excluded_count": 9,
+              "wape_percent_mae_over_mean_truth": 82.24819807452144,
+              "within_15_percent_count": 25,
+              "within_15_percent_of_all_selected": 18.38235294117647,
+              "within_15_percent_of_valid_predictions": 18.65671641791045
+            },
+            "protein": {
+              "selected_count": 136,
+              "valid_prediction_count": 134,
+              "missing_prediction_count": 2,
+              "coverage_percent": 98.52941176470588,
+              "mae": 4.968263641791045,
+              "mean_error_bias": 1.7440639552238808,
+              "mape_percent": 68.01811626050171,
+              "median_ape_percent": 48.46007335961126,
+              "p90_ape_percent": 134.05985686402084,
+              "mape_nonzero_truth_count": 134,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 57.69563781009168,
+              "within_15_percent_count": 16,
+              "within_15_percent_of_all_selected": 11.76470588235294,
+              "within_15_percent_of_valid_predictions": 11.940298507462686
+            },
+            "fat": {
+              "selected_count": 136,
+              "valid_prediction_count": 134,
+              "missing_prediction_count": 2,
+              "coverage_percent": 98.52941176470588,
+              "mae": 4.490008380597015,
+              "mean_error_bias": 1.3312165298507463,
+              "mape_percent": 372.53783785209356,
+              "median_ape_percent": 58.847063102382265,
+              "p90_ape_percent": 233.02895426662946,
+              "mape_nonzero_truth_count": 134,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 68.67360561443743,
+              "within_15_percent_count": 15,
+              "within_15_percent_of_all_selected": 11.029411764705882,
+              "within_15_percent_of_valid_predictions": 11.194029850746269
+            },
+            "mass_g": {
+              "selected_count": 136,
+              "valid_prediction_count": 134,
+              "missing_prediction_count": 2,
+              "coverage_percent": 98.52941176470588,
+              "mae": 61.47761194029851,
+              "mean_error_bias": 38.25373134328358,
+              "mape_percent": 58.26218605852063,
+              "median_ape_percent": 41.01077050538525,
+              "p90_ape_percent": 140.17857142857144,
+              "mape_nonzero_truth_count": 134,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 52.24174012302619,
+              "within_15_percent_count": 28,
+              "within_15_percent_of_all_selected": 20.588235294117645,
+              "within_15_percent_of_valid_predictions": 20.8955223880597
+            }
+          }
+        },
+        "flash35_minimal": {
+          "status_counts": {
+            "success": 132,
+            "incomplete_nutrition": 2,
+            "failed": 2
+          },
+          "selected_food_groups": 252,
+          "selected_packaged_foods": 0,
+          "selected_foods_with_printed_kcal": 0,
+          "selected_foods_with_grounded_label": 0,
+          "nutrition_source_counts": {
+            "ai": 252
+          },
+          "nutrients": {
+            "calories": {
+              "selected_count": 136,
+              "valid_prediction_count": 132,
+              "missing_prediction_count": 4,
+              "coverage_percent": 97.05882352941177,
+              "mae": 60.648205946969696,
+              "mean_error_bias": 22.277147674242425,
+              "mape_percent": 54.06484580916093,
+              "median_ape_percent": 31.178120334443445,
+              "p90_ape_percent": 119.46216252461198,
+              "mape_nonzero_truth_count": 132,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 46.27756255253338,
+              "within_15_percent_count": 23,
+              "within_15_percent_of_all_selected": 16.911764705882355,
+              "within_15_percent_of_valid_predictions": 17.424242424242426
+            },
+            "carbs": {
+              "selected_count": 136,
+              "valid_prediction_count": 132,
+              "missing_prediction_count": 4,
+              "coverage_percent": 97.05882352941177,
+              "mae": 5.581523378787878,
+              "mean_error_bias": 3.4193900454545454,
+              "mape_percent": 50.543886036190266,
+              "median_ape_percent": 36.38676844783715,
+              "p90_ape_percent": 122.64032020078048,
+              "mape_nonzero_truth_count": 123,
+              "mape_zero_truth_excluded_count": 9,
+              "wape_percent_mae_over_mean_truth": 51.643078881467964,
+              "within_15_percent_count": 31,
+              "within_15_percent_of_all_selected": 22.794117647058822,
+              "within_15_percent_of_valid_predictions": 23.484848484848484
+            },
+            "protein": {
+              "selected_count": 136,
+              "valid_prediction_count": 132,
+              "missing_prediction_count": 4,
+              "coverage_percent": 97.05882352941177,
+              "mae": 3.8200812424242425,
+              "mean_error_bias": 0.07935280303030315,
+              "mape_percent": 56.26785046301307,
+              "median_ape_percent": 40.56698986080483,
+              "p90_ape_percent": 104.78544554021514,
+              "mape_nonzero_truth_count": 132,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 43.75560542776291,
+              "within_15_percent_count": 26,
+              "within_15_percent_of_all_selected": 19.11764705882353,
+              "within_15_percent_of_valid_predictions": 19.696969696969695
+            },
+            "fat": {
+              "selected_count": 136,
+              "valid_prediction_count": 132,
+              "missing_prediction_count": 4,
+              "coverage_percent": 97.05882352941177,
+              "mae": 3.1131070075757576,
+              "mean_error_bias": 0.5182804166666667,
+              "mape_percent": 174.39526598981595,
+              "median_ape_percent": 49.240315683272215,
+              "p90_ape_percent": 294.7487040793333,
+              "mape_nonzero_truth_count": 132,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 46.93731969070905,
+              "within_15_percent_count": 22,
+              "within_15_percent_of_all_selected": 16.176470588235293,
+              "within_15_percent_of_valid_predictions": 16.666666666666664
+            },
+            "mass_g": {
+              "selected_count": 136,
+              "valid_prediction_count": 132,
+              "missing_prediction_count": 4,
+              "coverage_percent": 97.05882352941177,
+              "mae": 43.484848484848484,
+              "mean_error_bias": 13.363636363636363,
+              "mape_percent": 34.98687223943426,
+              "median_ape_percent": 27.659574468085108,
+              "p90_ape_percent": 67.75995816264273,
+              "mape_nonzero_truth_count": 132,
+              "mape_zero_truth_excluded_count": 0,
+              "wape_percent_mae_over_mean_truth": 36.891831094543356,
+              "within_15_percent_count": 31,
+              "within_15_percent_of_all_selected": 22.794117647058822,
+              "within_15_percent_of_valid_predictions": 23.484848484848484
+            }
+          }
+        }
+      }
+    }
+  },
+  "paired_camera_vs_baseline": {
+    "side_camera_A_frame_0": {
+      "flash35_minimal": {
+        "calories": {
+          "valid_pair_count": 148,
+          "transition_counts": {
+            "same_error": 11,
+            "improved": 92,
+            "worsened": 45,
+            "valid_to_missing": 2,
+            "both_missing": 2
+          },
+          "mean_absolute_error_delta_after_minus_before": -30.224117675675675,
+          "paired_baseline_mae": 87.06225956756757,
+          "paired_relative_mae_reduction": 0.34715521772346425,
+          "bootstrap_95_percent_ci": [
+            -40.61333308209459,
+            -19.674345892905407
+          ],
+          "bootstrap_repetitions": 2000,
+          "positive_delta_means_worse": true
+        },
+        "carbs": {
+          "valid_pair_count": 148,
+          "transition_counts": {
+            "same_error": 17,
+            "improved": 83,
+            "worsened": 48,
+            "valid_to_missing": 2,
+            "both_missing": 2
+          },
+          "mean_absolute_error_delta_after_minus_before": -3.598256756756757,
+          "paired_baseline_mae": 9.27258718918919,
+          "paired_relative_mae_reduction": 0.3880531596350936,
+          "bootstrap_95_percent_ci": [
+            -5.184314514527027,
+            -1.9780631503378383
+          ],
+          "bootstrap_repetitions": 2000,
+          "positive_delta_means_worse": true
+        },
+        "protein": {
+          "valid_pair_count": 148,
+          "transition_counts": {
+            "same_error": 20,
+            "worsened": 47,
+            "improved": 81,
+            "valid_to_missing": 2,
+            "both_missing": 2
+          },
+          "mean_absolute_error_delta_after_minus_before": -1.1415851621621622,
+          "paired_baseline_mae": 4.691491891891892,
+          "paired_relative_mae_reduction": 0.24333094641709085,
+          "bootstrap_95_percent_ci": [
+            -1.6743001263513515,
+            -0.6182542493243247
+          ],
+          "bootstrap_repetitions": 2000,
+          "positive_delta_means_worse": true
+        },
+        "fat": {
+          "valid_pair_count": 148,
+          "transition_counts": {
+            "worsened": 44,
+            "same_error": 29,
+            "improved": 75,
+            "valid_to_missing": 2,
+            "both_missing": 2
+          },
+          "mean_absolute_error_delta_after_minus_before": -1.472222175675676,
+          "paired_baseline_mae": 4.295332337837838,
+          "paired_relative_mae_reduction": 0.3427493054976872,
+          "bootstrap_95_percent_ci": [
+            -2.2182248118243244,
+            -0.7441757087837855
+          ],
+          "bootstrap_repetitions": 2000,
+          "positive_delta_means_worse": true
+        },
+        "mass_g": {
+          "valid_pair_count": 148,
+          "transition_counts": {
+            "same_error": 31,
+            "improved": 79,
+            "worsened": 38,
+            "valid_to_missing": 2,
+            "both_missing": 2
+          },
+          "mean_absolute_error_delta_after_minus_before": -19.554054054054053,
+          "paired_baseline_mae": 61.608108108108105,
+          "paired_relative_mae_reduction": 0.3173941653871463,
+          "bootstrap_95_percent_ci": [
+            -26.6285472972973,
+            -12.235810810810815
+          ],
+          "bootstrap_repetitions": 2000,
+          "positive_delta_means_worse": true
+        }
+      }
+    },
+    "side_camera_B_frame_0": {
+      "flash35_minimal": {
+        "calories": {
+          "valid_pair_count": 3,
+          "transition_counts": {
+            "worsened": 3
+          },
+          "mean_absolute_error_delta_after_minus_before": 45.653324666666684,
+          "paired_baseline_mae": 149.54709666666665,
+          "paired_relative_mae_reduction": -0.30527723830323344,
+          "bootstrap_95_percent_ci": [
+            5.659973999999977,
+            72.30000000000007
+          ],
+          "bootstrap_repetitions": 2000,
+          "positive_delta_means_worse": true
+        },
+        "carbs": {
+          "valid_pair_count": 3,
+          "transition_counts": {
+            "improved": 2,
+            "worsened": 1
+          },
+          "mean_absolute_error_delta_after_minus_before": 3.2333333333333343,
+          "paired_baseline_mae": 5.916959999999999,
+          "paired_relative_mae_reduction": -0.5464517815454786,
+          "bootstrap_95_percent_ci": [
+            -0.4000000000000001,
+            10.200000000000003
+          ],
+          "bootstrap_repetitions": 2000,
+          "positive_delta_means_worse": true
+        },
+        "protein": {
+          "valid_pair_count": 3,
+          "transition_counts": {
+            "worsened": 2,
+            "improved": 1
+          },
+          "mean_absolute_error_delta_after_minus_before": 2.7066666666666666,
+          "paired_baseline_mae": 6.910081333333335,
+          "paired_relative_mae_reduction": -0.3916982356792326,
+          "bootstrap_95_percent_ci": [
+            -1.379999999999999,
+            6.599999999999999
+          ],
+          "bootstrap_repetitions": 2000,
+          "positive_delta_means_worse": true
+        },
+        "fat": {
+          "valid_pair_count": 3,
+          "transition_counts": {
+            "worsened": 3
+          },
+          "mean_absolute_error_delta_after_minus_before": 1.9399993333333334,
+          "paired_baseline_mae": 10.891626,
+          "paired_relative_mae_reduction": -0.17811843092421034,
+          "bootstrap_95_percent_ci": [
+            0.819998,
+            4.0
+          ],
+          "bootstrap_repetitions": 2000,
+          "positive_delta_means_worse": true
+        },
+        "mass_g": {
+          "valid_pair_count": 3,
+          "transition_counts": {
+            "worsened": 2,
+            "improved": 1
+          },
+          "mean_absolute_error_delta_after_minus_before": 45.333333333333336,
+          "paired_baseline_mae": 100.33333333333333,
+          "paired_relative_mae_reduction": -0.45182724252491696,
+          "bootstrap_95_percent_ci": [
+            -4.0,
+            100.0
+          ],
+          "bootstrap_repetitions": 2000,
+          "positive_delta_means_worse": true
+        }
+      }
+    }
+  },
+  "confirmation_acceptance": {
+    "flash35_minimal": {
+      "accepted": false,
+      "checks": {
+        "within_15_percent_all_selected_not_decreased": false,
+        "valid_prediction_count_not_decreased": false,
+        "minimum_paired_valid_100": true,
+        "calorie_mae_reduction_at_least_10_percent": true,
+        "paired_calorie_mae_reduction_at_least_10_percent": true,
+        "paired_bootstrap_95_ci_upper_negative": true
+      },
+      "overall_relative_mae_reduction": 0.31803998956625457,
+      "paired_relative_mae_reduction": 0.3252029673644047,
+      "criteria": {
+        "selection": "All 155 remaining eligible inferred groups, disjoint from all prior pilot/main groups",
+        "source_policy": "First existing camera A, B, C, D; frame 0. Keep unavailable sources in denominator.",
+        "labels": "Kept in a separate gold file; opened for scoring only after candidate policy, prompts, code and source manifest are frozen.",
+        "minimum_paired_valid": 100,
+        "calorie_mae_relative_reduction_minimum": 0.1,
+        "paired_bootstrap_95_ci_delta_upper_must_be_negative": true,
+        "within_15_percent_all_selected_must_not_decrease": true,
+        "valid_prediction_count_must_not_decrease": true,
+        "repetitions": 2000,
+        "threshold_origin": "Predeclared follow-up acceptance rule, not a numeric threshold prescribed by reviewers.",
+        "one_final_policy_comparison": true,
+        "no_retuning_on_confirmation_outcomes": true,
+        "limitations": [
+          "New groups have side-camera images only",
+          "Inferred grouping does not prove physical independence",
+          "Public pretraining exposure unknown",
+          "Not representative Korean or packaged-food user traffic"
+        ],
+        "calorie_mae_metric_scope": "Require at least 10% reduction both on exactly the same valid image pairs and on each arm overall valid predictions. Clarified during scorer audit before confirmation labels opened; paired CI, all-selected within15 and coverage gates also remain required.",
+        "execution": "Baseline and frozen Flash3.5 candidate run concurrently under one OS lock and one inherited Ledger object; 2 requests per arm, maximum4 combined. Six offline safety tests passed. No automatic resume/retry; prior ledger hash is checked before any collector starts."
+      },
+      "single_frozen_comparison_required": true
+    }
+  }
+}

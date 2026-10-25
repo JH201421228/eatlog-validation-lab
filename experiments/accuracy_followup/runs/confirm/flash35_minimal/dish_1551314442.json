@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551314442",
+  "request_id": "followup_confirm_flash35_minimal_dish_1551314442",
+  "started_at": "2026-10-25T08:48:33.194678+00:00",
+  "arm": "flash35_minimal",
+  "phase": "confirm",
+  "image_sha256": "8a03e275d9d5485a6521c10329536f2e830ba4277aec65384fd547becf5cc2a7",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3901,
+  "request_sha256": "eb341f27f18a99791ee0797cf4619a14d75cc7b8b6b57a9c2fb15e9bc085ffd9",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"목이버섯\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.2,\n      \"estimated_serving_g\": 20,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [190, 305, 729, 663],\n      \"nutrition_per_100g\": {\n        \"calories\": 25,\n        \"carbs\": 6.0,\n        \"protein\": 1.5,\n        \"fat\": 0.2\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1180
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 463
+      }
+    ],
+    "cached_content_token_count": 1643,
+    "candidates_token_count": 221,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4122,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3271.52,
+  "completed_at": "2026-10-25T08:48:37.194654+00:00"
+}

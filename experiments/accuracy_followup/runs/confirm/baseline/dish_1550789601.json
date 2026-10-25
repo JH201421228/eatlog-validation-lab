@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1550789601",
+  "request_id": "followup_confirm_baseline_dish_1550789601",
+  "started_at": "2026-10-25T08:47:19.750308+00:00",
+  "arm": "baseline",
+  "phase": "confirm",
+  "image_sha256": "8ab082b0f9df293702a18795c0323a80c7dc5e26b63fee9d0649af698d1b6dce",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3059,
+  "request_sha256": "19ff0bb6d836f83c90f0068ee561e5b92e5708d6da0d104d586e00be56de5c54",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"연어 스테이크\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 100, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [180, 340, 560, 640], \"nutrition_per_100g\": {\"calories\": 208, \"carbs\": 0, \"protein\": 20, \"fat\": 13}, \"package\": null}, {\"food_index\": 0, \"food_name\": \"닭가슴살 스테이크\", \"confidence\": 0.1, \"estimated_serving\": 0.5, \"estimated_serving_g\": 100, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [180, 340, 560, 640], \"nutrition_per_100g\": {\"calories\": 165, \"carbs\": 0, \"protein\": 31, \"fat\": 3.6}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1794
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 165
+      }
+    ],
+    "cached_content_token_count": 1959,
+    "candidates_token_count": 333,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3392,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3886.28,
+  "completed_at": "2026-10-25T08:47:24.210958+00:00"
+}

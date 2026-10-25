@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1551391438",
+  "request_id": "followup_confirm_baseline_dish_1551391438",
+  "started_at": "2026-10-25T08:43:29.390778+00:00",
+  "arm": "baseline",
+  "phase": "confirm",
+  "image_sha256": "752c06d0b48dd0bb66a82c87166719249b0dca1e83d70b51752123d5165e63a4",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3059,
+  "request_sha256": "e9484b179d305a0313f785b9681d7013207eb7a330c151b0bdec7d489f1ca7d8",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"새우\", \"confidence\": 0.9, \"estimated_serving\": 0.3, \"estimated_serving_g\": 30, \"count\": 3, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 180, 580, 590], \"nutrition_per_100g\": {\"calories\": 99, \"carbs\": 0.2, \"protein\": 20.6, \"fat\": 0.3}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 169,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3228,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3547.46,
+  "completed_at": "2026-10-25T08:43:33.934915+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1551122567",
+  "request_id": "followup_confirm_flash35_minimal_dish_1551122567",
+  "started_at": "2026-10-25T08:46:21.279711+00:00",
+  "arm": "flash35_minimal",
+  "phase": "confirm",
+  "image_sha256": "0f8fe01d94b0034538e81806f95e8c2913db39eb6716516ca069ba289ddd1748",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3901,
+  "request_sha256": "da61150b0217b391b26d7394531185758ca70a17abb53e72d76efe0c58034df4",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"감자채볶음\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 50.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [0, 199, 626, 670],\n      \"nutrition_per_100g\": {\n        \"calories\": 140.0,\n        \"carbs\": 20.0,\n        \"protein\": 2.0,\n        \"fat\": 6.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 227,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4128,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2533.33,
+  "completed_at": "2026-10-25T08:46:24.643736+00:00"
+}

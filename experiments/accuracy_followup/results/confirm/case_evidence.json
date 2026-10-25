@@ -1,0 +1,1806 @@
+{
+  "scope": "Post-freeze, post-scoring illustrative confirmation cases. Candidate remains rejected.",
+  "selection_rule": {
+    "population": "151 images where both normalized arms have status=success; all 155 selected remain the overall evaluation denominator",
+    "delta_definition": "abs(candidate normalized calorie prediction - truth) - abs(baseline normalized calorie prediction - truth); negative is improvement",
+    "best": "minimum (delta, sample_id)",
+    "worst": "minimum (-delta, sample_id)",
+    "median": "minimum (abs(delta - population median delta), sample_id)",
+    "population_median_delta_kcal": -5.0,
+    "pair_count": 151,
+    "invalids": "all cases with baseline success and candidate non-success; excludes 2 shared not_attempted rows"
+  },
+  "prediction_mapping": "Captions use BE normalized totals, not raw_model_prediction. Highest-confidence candidate per group is resolved; sum nutrition_per_unit nutrient * estimated_serving; mass is resolved grams sum. Missing selected nutrition invalidates whole total.",
+  "source_sha256": {
+    "eatlog-validation-lab/experiments/accuracy_followup/results/confirm/summary.json": "f316bbf5e4a118bda77ded2fe2fd429ac494e14953935e821d5c6eb11389dc73",
+    "eatlog-validation-lab/experiments/accuracy_followup/results/confirm/cases.csv": "99667b99f401a0b22e755e521ea153d41a6e5c3f91e56c2291e813937c4e561c",
+    "eatlog-validation-lab/experiments/accuracy_followup/results/confirm/baseline/normalized.jsonl": "b213f4eed7ea66034b82ddb52c70d835ffff2d4f68a7c3d20fe7e639c798852a",
+    "eatlog-validation-lab/experiments/accuracy_followup/results/confirm/flash35_minimal/normalized.jsonl": "c210514263eb75789290e33441f3ed6a2ffcfe8639986fe7ac31d65f2ffe9ce3",
+    "eatlog-validation-lab/experiments/accuracy_followup/results/confirm/flash35_minimal/ai.jsonl": "28c9f55889d530b3979c31d224f87c5633695e879b75f40829096e0571f365aa",
+    "eatlog-validation-lab/experiments/accuracy_followup/results/confirm/flash35_minimal/raw.jsonl": "bf0f90a853a8c206bcfe363db4bb3f280c6e66841cdd8ee5b123268913621e52",
+    "eatlog-validation-lab/data/nutrition5k_followup/manifest.jsonl": "f322b46dcf5993381cc9013e0d2ce8d03dfa8d63ae3cdfe06db8359498d352e8",
+    "eatlog-validation-lab/data/nutrition5k_followup/selection_manifest.jsonl": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+    "eatlog-validation-lab/data/nutrition5k_followup/gold_labels.jsonl": "501c3d0d03c96052b949a6d57c33db7432abbfdf7a6e6660c4ba66d4f97c973e",
+    "eatlog-validation-lab/scripts/evaluate/replay_worker.py": "6da01a20e0bbe33f7bc029869fe1a8d40db84a57dbf20d96068ced0cf8103c59",
+    "eatlog-validation-lab/evaluation/tmp/code/improved_ai/ai-server/app/services/vision.py": "fc8439097e364af11ec71bf32efcf8fd4ca5233a0e4be6acba4429bfb92033dc"
+  },
+  "cases": [
+    {
+      "sample_id": "dish_1551564857",
+      "image_path": "eatlog-validation-lab/data/nutrition5k_followup/images/dish_1551564857.png",
+      "image_sha256": "7a23490b503ada4175ed25e9e849dd612f6fcfcff67292fde3c8a103e8ed6b14",
+      "source_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/side_angles/dish_1551564857/camera_A.h264",
+      "camera_view": "side_camera_A_frame_0",
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "truth": {
+        "calories_kcal": 115.349998,
+        "carbs_g": 17.073999,
+        "fat_g": 4.987,
+        "mass_g": 112.0,
+        "protein_g": 2.98
+      },
+      "gold_ingredients": [
+        {
+          "calories_kcal": 54.5,
+          "carbs_g": 11.25,
+          "fat_g": 0.725,
+          "ingredient_id": "ingr_0000000060",
+          "mass_g": 25.0,
+          "name": "tortilla",
+          "protein_g": 1.5
+        },
+        {
+          "calories_kcal": 43.7,
+          "carbs_g": 2.394,
+          "fat_g": 4.066,
+          "ingredient_id": "ingr_0000000012",
+          "mass_g": 38.0,
+          "name": "olives",
+          "protein_g": 0.304
+        },
+        {
+          "calories_kcal": 17.15,
+          "carbs_g": 3.43,
+          "fat_g": 0.196,
+          "ingredient_id": "ingr_0000000027",
+          "mass_g": 49.0,
+          "name": "broccoli",
+          "protein_g": 1.176
+        }
+      ],
+      "baseline_normalized": {
+        "sample_id": "dish_1551564857",
+        "ai_status": "success",
+        "raw_model_prediction": {
+          "status": "success",
+          "totals": {
+            "calories": 516.3,
+            "carbs": 90.12,
+            "protein": 14.36,
+            "fat": 11.78,
+            "mass_g": 270.0
+          },
+          "food_groups": 3
+        },
+        "status": "success",
+        "food_groups": 3,
+        "selected": [
+          {
+            "food_name": "난",
+            "confidence": 0.85,
+            "grams": 150.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(150g)",
+              "calories": 435.0,
+              "carbs": 82.5,
+              "protein": 12.0,
+              "fat": 6.0
+            }
+          },
+          {
+            "food_name": "올리브",
+            "confidence": 0.9,
+            "grams": 50.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(50g)",
+              "calories": 57.5,
+              "carbs": 3.0,
+              "protein": 0.4,
+              "fat": 5.5
+            }
+          },
+          {
+            "food_name": "브로콜리",
+            "confidence": 0.92,
+            "grams": 70.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(70g)",
+              "calories": 23.8,
+              "carbs": 4.6,
+              "protein": 2.0,
+              "fat": 0.3
+            }
+          }
+        ],
+        "normalized_candidate_count": 3,
+        "totals": {
+          "calories": 516.3,
+          "carbs": 90.1,
+          "protein": 14.4,
+          "fat": 11.8,
+          "mass_g": 270.0
+        }
+      },
+      "candidate_normalized": {
+        "sample_id": "dish_1551564857",
+        "ai_status": "success",
+        "raw_model_prediction": {
+          "status": "success",
+          "totals": {
+            "calories": 253.2,
+            "carbs": 38.0,
+            "protein": 7.36,
+            "fat": 8.8,
+            "mass_g": 180.0
+          },
+          "food_groups": 3
+        },
+        "status": "success",
+        "food_groups": 3,
+        "selected": [
+          {
+            "food_name": "토티아",
+            "confidence": 0.9,
+            "grams": 60.0,
+            "count": 2.0,
+            "count_unit": "장",
+            "estimated_serving": 2.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "1장(30g)",
+              "calories": 90.0,
+              "carbs": 15.0,
+              "protein": 2.4,
+              "fat": 2.1
+            }
+          },
+          {
+            "food_name": "올리브",
+            "confidence": 0.95,
+            "grams": 40.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(40g)",
+              "calories": 46.0,
+              "carbs": 2.4,
+              "protein": 0.3,
+              "fat": 4.3
+            }
+          },
+          {
+            "food_name": "브로콜리",
+            "confidence": 0.95,
+            "grams": 80.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(80g)",
+              "calories": 27.2,
+              "carbs": 5.6,
+              "protein": 2.2,
+              "fat": 0.3
+            }
+          }
+        ],
+        "normalized_candidate_count": 3,
+        "totals": {
+          "calories": 253.2,
+          "carbs": 38.0,
+          "protein": 7.3,
+          "fat": 8.8,
+          "mass_g": 180.0
+        }
+      },
+      "baseline_csv": {
+        "sample_id": "dish_1551564857",
+        "arm": "baseline",
+        "status": "success",
+        "truth_calories": "115.349998",
+        "prediction_calories": "516.3",
+        "absolute_error_calories": "400.9500019999999",
+        "truth_carbs": "17.073999",
+        "prediction_carbs": "90.1",
+        "absolute_error_carbs": "73.026001",
+        "truth_protein": "2.98",
+        "prediction_protein": "14.4",
+        "absolute_error_protein": "11.42",
+        "truth_fat": "4.987",
+        "prediction_fat": "11.8",
+        "absolute_error_fat": "6.813000000000001",
+        "truth_mass_g": "112.0",
+        "prediction_mass_g": "270.0",
+        "absolute_error_mass_g": "158.0"
+      },
+      "candidate_csv": {
+        "sample_id": "dish_1551564857",
+        "arm": "flash35_minimal",
+        "status": "success",
+        "truth_calories": "115.349998",
+        "prediction_calories": "253.2",
+        "absolute_error_calories": "137.850002",
+        "truth_carbs": "17.073999",
+        "prediction_carbs": "38.0",
+        "absolute_error_carbs": "20.926001",
+        "truth_protein": "2.98",
+        "prediction_protein": "7.3",
+        "absolute_error_protein": "4.32",
+        "truth_fat": "4.987",
+        "prediction_fat": "8.8",
+        "absolute_error_fat": "3.8130000000000006",
+        "truth_mass_g": "112.0",
+        "prediction_mass_g": "180.0",
+        "absolute_error_mass_g": "68.0"
+      },
+      "selection_role": "best_improved",
+      "absolute_calorie_error_delta_kcal": -263.0999999999999
+    },
+    {
+      "sample_id": "dish_1551491326",
+      "image_path": "eatlog-validation-lab/data/nutrition5k_followup/images/dish_1551491326.png",
+      "image_sha256": "15d5184f74f796822245832527c884aae95043c146d0c2916444307aeb656230",
+      "source_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/side_angles/dish_1551491326/camera_A.h264",
+      "camera_view": "side_camera_A_frame_0",
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "truth": {
+        "calories_kcal": 475.442017,
+        "carbs_g": 5.58,
+        "fat_g": 35.541,
+        "mass_g": 192.0,
+        "protein_g": 31.621
+      },
+      "gold_ingredients": [
+        {
+          "calories_kcal": 334.262,
+          "carbs_g": 4.074,
+          "fat_g": 26.481,
+          "ingredient_id": "ingr_0000000039",
+          "mass_g": 97.0,
+          "name": "sausage",
+          "protein_g": 18.721
+        },
+        {
+          "calories_kcal": 97.68,
+          "carbs_g": 1.056,
+          "fat_g": 7.26,
+          "ingredient_id": "ingr_0000000008",
+          "mass_g": 66.0,
+          "name": "scrambled eggs",
+          "protein_g": 6.6
+        },
+        {
+          "calories_kcal": 43.5,
+          "carbs_g": 0.45,
+          "fat_g": 1.8,
+          "ingredient_id": "ingr_0000000048",
+          "mass_g": 30.0,
+          "name": "ham",
+          "protein_g": 6.3
+        }
+      ],
+      "baseline_normalized": {
+        "sample_id": "dish_1551491326",
+        "ai_status": "success",
+        "raw_model_prediction": {
+          "status": "success",
+          "totals": {
+            "calories": 471.5,
+            "carbs": 3.85,
+            "protein": 30.1,
+            "fat": 35.6,
+            "mass_g": 250.0
+          },
+          "food_groups": 3
+        },
+        "status": "success",
+        "food_groups": 3,
+        "selected": [
+          {
+            "food_name": "스크램블 에그",
+            "confidence": 0.9,
+            "grams": 100.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(100g)",
+              "calories": 149.0,
+              "carbs": 1.1,
+              "protein": 10.6,
+              "fat": 11.1
+            }
+          },
+          {
+            "food_name": "햄",
+            "confidence": 0.85,
+            "grams": 50.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(50g)",
+              "calories": 72.5,
+              "carbs": 0.8,
+              "protein": 7.5,
+              "fat": 4.5
+            }
+          },
+          {
+            "food_name": "소시지",
+            "confidence": 0.8,
+            "grams": 100.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(100g)",
+              "calories": 250.0,
+              "carbs": 2.0,
+              "protein": 12.0,
+              "fat": 20.0
+            }
+          }
+        ],
+        "normalized_candidate_count": 3,
+        "totals": {
+          "calories": 471.5,
+          "carbs": 3.9000000000000004,
+          "protein": 30.1,
+          "fat": 35.6,
+          "mass_g": 250.0
+        }
+      },
+      "candidate_normalized": {
+        "sample_id": "dish_1551491326",
+        "ai_status": "success",
+        "raw_model_prediction": {
+          "status": "success",
+          "totals": {
+            "calories": 600.5,
+            "carbs": 6.1,
+            "protein": 34.4,
+            "fat": 47.7,
+            "mass_g": 270.0
+          },
+          "food_groups": 3
+        },
+        "status": "success",
+        "food_groups": 3,
+        "selected": [
+          {
+            "food_name": "햄",
+            "confidence": 0.9,
+            "grams": 50.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(50g)",
+              "calories": 72.5,
+              "carbs": 1.0,
+              "protein": 9.0,
+              "fat": 3.5
+            }
+          },
+          {
+            "food_name": "소시지",
+            "confidence": 0.9,
+            "grams": 120.0,
+            "count": 5.0,
+            "count_unit": "개",
+            "estimated_serving": 5.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "1개(24g)",
+              "calories": 72.0,
+              "carbs": 0.7,
+              "protein": 2.9,
+              "fat": 6.2
+            }
+          },
+          {
+            "food_name": "스크램블 에그",
+            "confidence": 0.9,
+            "grams": 100.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(100g)",
+              "calories": 168.0,
+              "carbs": 1.5,
+              "protein": 11.0,
+              "fat": 13.0
+            }
+          }
+        ],
+        "normalized_candidate_count": 3,
+        "totals": {
+          "calories": 600.5,
+          "carbs": 6.0,
+          "protein": 34.5,
+          "fat": 47.5,
+          "mass_g": 270.0
+        }
+      },
+      "baseline_csv": {
+        "sample_id": "dish_1551491326",
+        "arm": "baseline",
+        "status": "success",
+        "truth_calories": "475.442017",
+        "prediction_calories": "471.5",
+        "absolute_error_calories": "3.942017000000021",
+        "truth_carbs": "5.58",
+        "prediction_carbs": "3.9000000000000004",
+        "absolute_error_carbs": "1.6799999999999997",
+        "truth_protein": "31.621",
+        "prediction_protein": "30.1",
+        "absolute_error_protein": "1.5209999999999972",
+        "truth_fat": "35.541",
+        "prediction_fat": "35.6",
+        "absolute_error_fat": "0.059000000000004604",
+        "truth_mass_g": "192.0",
+        "prediction_mass_g": "250.0",
+        "absolute_error_mass_g": "58.0"
+      },
+      "candidate_csv": {
+        "sample_id": "dish_1551491326",
+        "arm": "flash35_minimal",
+        "status": "success",
+        "truth_calories": "475.442017",
+        "prediction_calories": "600.5",
+        "absolute_error_calories": "125.05798299999998",
+        "truth_carbs": "5.58",
+        "prediction_carbs": "6.0",
+        "absolute_error_carbs": "0.41999999999999993",
+        "truth_protein": "31.621",
+        "prediction_protein": "34.5",
+        "absolute_error_protein": "2.8790000000000013",
+        "truth_fat": "35.541",
+        "prediction_fat": "47.5",
+        "absolute_error_fat": "11.959000000000003",
+        "truth_mass_g": "192.0",
+        "prediction_mass_g": "270.0",
+        "absolute_error_mass_g": "78.0"
+      },
+      "selection_role": "worst_worsened",
+      "absolute_calorie_error_delta_kcal": 121.11596599999996
+    },
+    {
+      "sample_id": "dish_1550704903",
+      "image_path": "eatlog-validation-lab/data/nutrition5k_followup/images/dish_1550704903.png",
+      "image_sha256": "80fe9472e4bc3094ec12bbe9ea7a707e8c89f5f0e16655464f081c360c5bca05",
+      "source_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/side_angles/dish_1550704903/camera_A.h264",
+      "camera_view": "side_camera_A_frame_0",
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "truth": {
+        "calories_kcal": 30.4,
+        "carbs_g": 6.84,
+        "fat_g": 0.152,
+        "mass_g": 76.0,
+        "protein_g": 1.52
+      },
+      "gold_ingredients": [
+        {
+          "calories_kcal": 30.4,
+          "carbs_g": 6.84,
+          "fat_g": 0.152,
+          "ingredient_id": "ingr_0000000033",
+          "mass_g": 76.0,
+          "name": "bell peppers",
+          "protein_g": 1.52
+        }
+      ],
+      "baseline_normalized": {
+        "sample_id": "dish_1550704903",
+        "ai_status": "success",
+        "raw_model_prediction": {
+          "status": "success",
+          "totals": {
+            "calories": 10.0,
+            "carbs": 2.3,
+            "protein": 0.45,
+            "fat": 0.1,
+            "mass_g": 50.0
+          },
+          "food_groups": 1
+        },
+        "status": "success",
+        "food_groups": 1,
+        "selected": [
+          {
+            "food_name": "파프리카",
+            "confidence": 0.95,
+            "grams": 50.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(50g)",
+              "calories": 10.0,
+              "carbs": 2.3,
+              "protein": 0.5,
+              "fat": 0.1
+            }
+          }
+        ],
+        "normalized_candidate_count": 1,
+        "totals": {
+          "calories": 10.0,
+          "carbs": 2.3,
+          "protein": 0.5,
+          "fat": 0.1,
+          "mass_g": 50.0
+        }
+      },
+      "candidate_normalized": {
+        "sample_id": "dish_1550704903",
+        "ai_status": "success",
+        "raw_model_prediction": {
+          "status": "success",
+          "totals": {
+            "calories": 15.0,
+            "carbs": 3.45,
+            "protein": 0.675,
+            "fat": 0.15,
+            "mass_g": 75.0
+          },
+          "food_groups": 1
+        },
+        "status": "success",
+        "food_groups": 1,
+        "selected": [
+          {
+            "food_name": "파프리카",
+            "confidence": 0.95,
+            "grams": 75.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(75g)",
+              "calories": 15.0,
+              "carbs": 3.5,
+              "protein": 0.7,
+              "fat": 0.1
+            }
+          }
+        ],
+        "normalized_candidate_count": 1,
+        "totals": {
+          "calories": 15.0,
+          "carbs": 3.5,
+          "protein": 0.7,
+          "fat": 0.1,
+          "mass_g": 75.0
+        }
+      },
+      "baseline_csv": {
+        "sample_id": "dish_1550704903",
+        "arm": "baseline",
+        "status": "success",
+        "truth_calories": "30.4",
+        "prediction_calories": "10.0",
+        "absolute_error_calories": "20.4",
+        "truth_carbs": "6.84",
+        "prediction_carbs": "2.3",
+        "absolute_error_carbs": "4.54",
+        "truth_protein": "1.52",
+        "prediction_protein": "0.5",
+        "absolute_error_protein": "1.02",
+        "truth_fat": "0.152",
+        "prediction_fat": "0.1",
+        "absolute_error_fat": "0.05199999999999999",
+        "truth_mass_g": "76.0",
+        "prediction_mass_g": "50.0",
+        "absolute_error_mass_g": "26.0"
+      },
+      "candidate_csv": {
+        "sample_id": "dish_1550704903",
+        "arm": "flash35_minimal",
+        "status": "success",
+        "truth_calories": "30.4",
+        "prediction_calories": "15.0",
+        "absolute_error_calories": "15.399999999999999",
+        "truth_carbs": "6.84",
+        "prediction_carbs": "3.5",
+        "absolute_error_carbs": "3.34",
+        "truth_protein": "1.52",
+        "prediction_protein": "0.7",
+        "absolute_error_protein": "0.8200000000000001",
+        "truth_fat": "0.152",
+        "prediction_fat": "0.1",
+        "absolute_error_fat": "0.05199999999999999",
+        "truth_mass_g": "76.0",
+        "prediction_mass_g": "75.0",
+        "absolute_error_mass_g": "1.0"
+      },
+      "selection_role": "median_delta",
+      "absolute_calorie_error_delta_kcal": -5.0
+    }
+  ],
+  "additional_candidate_invalids": [
+    {
+      "sample_id": "dish_1550779219",
+      "image_path": "eatlog-validation-lab/data/nutrition5k_followup/images/dish_1550779219.png",
+      "image_sha256": "425ce1fa18c21068834c9b5da26bdd13ac7ce1ba14e8ef6c132765d7b2370267",
+      "source_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/side_angles/dish_1550779219/camera_A.h264",
+      "camera_view": "side_camera_A_frame_0",
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "truth": {
+        "calories_kcal": 43.32,
+        "carbs_g": 10.64,
+        "fat_g": 0.228,
+        "mass_g": 76.0,
+        "protein_g": 0.532
+      },
+      "gold_ingredients": [
+        {
+          "calories_kcal": 43.32,
+          "carbs_g": 10.64,
+          "fat_g": 0.228,
+          "ingredient_id": "ingr_0000000013",
+          "mass_g": 76.0,
+          "name": "berries",
+          "protein_g": 0.532
+        }
+      ],
+      "baseline_normalized": {
+        "sample_id": "dish_1550779219",
+        "ai_status": "success",
+        "raw_model_prediction": {
+          "status": "success",
+          "totals": {
+            "calories": 21.900000000000002,
+            "carbs": 5.1049999999999995,
+            "protein": 0.53,
+            "fat": 0.24,
+            "mass_g": 50.0
+          },
+          "food_groups": 4
+        },
+        "status": "success",
+        "food_groups": 4,
+        "selected": [
+          {
+            "food_name": "딸기",
+            "confidence": 0.95,
+            "grams": 15.0,
+            "count": 1.0,
+            "count_unit": "개",
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "1개(15g)",
+              "calories": 4.8,
+              "carbs": 1.2,
+              "protein": 0.1,
+              "fat": 0.0
+            }
+          },
+          {
+            "food_name": "블랙베리",
+            "confidence": 0.9,
+            "grams": 15.0,
+            "count": 5.0,
+            "count_unit": "개",
+            "estimated_serving": 5.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "1개(3g)",
+              "calories": 1.3,
+              "carbs": 0.3,
+              "protein": 0.0,
+              "fat": 0.0
+            }
+          },
+          {
+            "food_name": "라즈베리",
+            "confidence": 0.88,
+            "grams": 15.0,
+            "count": 5.0,
+            "count_unit": "개",
+            "estimated_serving": 5.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "1개(3g)",
+              "calories": 1.6,
+              "carbs": 0.4,
+              "protein": 0.0,
+              "fat": 0.0
+            }
+          },
+          {
+            "food_name": "블루베리",
+            "confidence": 0.85,
+            "grams": 5.0,
+            "count": 1.0,
+            "count_unit": "개",
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "1개(5g)",
+              "calories": 2.9,
+              "carbs": 0.7,
+              "protein": 0.0,
+              "fat": 0.0
+            }
+          }
+        ],
+        "normalized_candidate_count": 4,
+        "totals": {
+          "calories": 22.2,
+          "carbs": 5.4,
+          "protein": 0.1,
+          "fat": 0.0,
+          "mass_g": 50.0
+        }
+      },
+      "candidate_normalized": {
+        "sample_id": "dish_1550779219",
+        "ai_status": "success",
+        "raw_model_prediction": {
+          "status": "success",
+          "totals": {
+            "calories": 40.410000000000004,
+            "carbs": 9.370000000000001,
+            "protein": 1.021,
+            "fat": 0.454,
+            "mass_g": 98.0
+          },
+          "food_groups": 4
+        },
+        "status": "incomplete_nutrition",
+        "food_groups": 4,
+        "selected": [
+          {
+            "food_name": "블랙베리",
+            "confidence": 0.95,
+            "grams": 30.0,
+            "count": 4.0,
+            "count_unit": "개",
+            "estimated_serving": 4.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "1개(7.5g)",
+              "calories": 3.2,
+              "carbs": 0.7,
+              "protein": 0.1,
+              "fat": 0.0
+            }
+          },
+          {
+            "food_name": "딸기",
+            "confidence": 0.98,
+            "grams": 40.0,
+            "count": 1.0,
+            "count_unit": "개",
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "1개(40g)",
+              "calories": 12.8,
+              "carbs": 3.1,
+              "protein": 0.3,
+              "fat": 0.1
+            }
+          },
+          {
+            "food_name": "라즈베리",
+            "confidence": 0.95,
+            "grams": 25.0,
+            "count": 6.0,
+            "count_unit": "개",
+            "estimated_serving": 6.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "1개(4.16667g)",
+              "calories": 2.2,
+              "carbs": 0.5,
+              "protein": 0.0,
+              "fat": 0.0
+            }
+          },
+          {
+            "food_name": "블루베리",
+            "confidence": 0.95,
+            "grams": null,
+            "count": 1.0,
+            "count_unit": "개",
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": null
+          }
+        ],
+        "normalized_candidate_count": 4,
+        "totals": null
+      },
+      "baseline_csv": {
+        "sample_id": "dish_1550779219",
+        "arm": "baseline",
+        "status": "success",
+        "truth_calories": "43.32",
+        "prediction_calories": "22.2",
+        "absolute_error_calories": "21.12",
+        "truth_carbs": "10.64",
+        "prediction_carbs": "5.4",
+        "absolute_error_carbs": "5.24",
+        "truth_protein": "0.532",
+        "prediction_protein": "0.1",
+        "absolute_error_protein": "0.43200000000000005",
+        "truth_fat": "0.228",
+        "prediction_fat": "0.0",
+        "absolute_error_fat": "0.228",
+        "truth_mass_g": "76.0",
+        "prediction_mass_g": "50.0",
+        "absolute_error_mass_g": "26.0"
+      },
+      "candidate_csv": {
+        "sample_id": "dish_1550779219",
+        "arm": "flash35_minimal",
+        "status": "incomplete_nutrition",
+        "truth_calories": "43.32",
+        "prediction_calories": "",
+        "absolute_error_calories": "",
+        "truth_carbs": "10.64",
+        "prediction_carbs": "",
+        "absolute_error_carbs": "",
+        "truth_protein": "0.532",
+        "prediction_protein": "",
+        "absolute_error_protein": "",
+        "truth_fat": "0.228",
+        "prediction_fat": "",
+        "absolute_error_fat": "",
+        "truth_mass_g": "76.0",
+        "prediction_mass_g": "",
+        "absolute_error_mass_g": ""
+      },
+      "candidate_ai_normalized": {
+        "sample_id": "dish_1550779219",
+        "collection_status": "response_received",
+        "status": "success",
+        "candidates": [
+          {
+            "image_index": 0,
+            "is_in_image": true,
+            "food_name": "블랙베리",
+            "confidence": 0.95,
+            "estimated_serving": 1.0,
+            "estimated_serving_g": 30.0,
+            "count": 4,
+            "count_unit": "개",
+            "has_soup": false,
+            "has_sauce": false,
+            "bbox": {
+              "x": 0.381,
+              "y": 0.0,
+              "width": 0.21,
+              "height": 0.298
+            },
+            "nutrition_per_100g": {
+              "calories": 43.0,
+              "carbs": 9.6,
+              "protein": 1.4,
+              "fat": 0.5
+            },
+            "package": null,
+            "nutrition": {
+              "base_serving": "보이는 양(30g)",
+              "calories": 12.9,
+              "carbs": 2.9,
+              "protein": 0.4,
+              "fat": 0.1
+            },
+            "food_index": 0
+          },
+          {
+            "image_index": 0,
+            "is_in_image": true,
+            "food_name": "딸기",
+            "confidence": 0.98,
+            "estimated_serving": 1.0,
+            "estimated_serving_g": 40.0,
+            "count": 1,
+            "count_unit": "개",
+            "has_soup": false,
+            "has_sauce": false,
+            "bbox": {
+              "x": 0.248,
+              "y": 0.253,
+              "width": 0.229,
+              "height": 0.35
+            },
+            "nutrition_per_100g": {
+              "calories": 32.0,
+              "carbs": 7.7,
+              "protein": 0.7,
+              "fat": 0.3
+            },
+            "package": null,
+            "nutrition": {
+              "base_serving": "보이는 양(40g)",
+              "calories": 12.8,
+              "carbs": 3.1,
+              "protein": 0.3,
+              "fat": 0.1
+            },
+            "food_index": 1
+          },
+          {
+            "image_index": 0,
+            "is_in_image": true,
+            "food_name": "라즈베리",
+            "confidence": 0.95,
+            "estimated_serving": 1.0,
+            "estimated_serving_g": 25.0,
+            "count": 6,
+            "count_unit": "개",
+            "has_soup": false,
+            "has_sauce": false,
+            "bbox": {
+              "x": 0.417,
+              "y": 0.223,
+              "width": 0.2,
+              "height": 0.427
+            },
+            "nutrition_per_100g": {
+              "calories": 52.0,
+              "carbs": 11.9,
+              "protein": 1.2,
+              "fat": 0.7
+            },
+            "package": null,
+            "nutrition": {
+              "base_serving": "보이는 양(25g)",
+              "calories": 13.0,
+              "carbs": 3.0,
+              "protein": 0.3,
+              "fat": 0.2
+            },
+            "food_index": 2
+          },
+          {
+            "image_index": 0,
+            "is_in_image": true,
+            "food_name": "블루베리",
+            "confidence": 0.95,
+            "estimated_serving": 1.0,
+            "estimated_serving_g": null,
+            "count": 1,
+            "count_unit": "개",
+            "has_soup": false,
+            "has_sauce": false,
+            "bbox": {
+              "x": 0.584,
+              "y": 0.435,
+              "width": 0.062,
+              "height": 0.107
+            },
+            "nutrition_per_100g": {
+              "calories": 57.0,
+              "carbs": 14.5,
+              "protein": 0.7,
+              "fat": 0.3
+            },
+            "package": null,
+            "nutrition": null,
+            "food_index": 3
+          }
+        ],
+        "raw_model_prediction": {
+          "status": "success",
+          "totals": {
+            "calories": 40.410000000000004,
+            "carbs": 9.370000000000001,
+            "protein": 1.021,
+            "fat": 0.454,
+            "mass_g": 98.0
+          },
+          "food_groups": 4
+        }
+      },
+      "candidate_raw_candidates": [
+        {
+          "food_index": 0,
+          "food_name": "블랙베리",
+          "confidence": 0.95,
+          "estimated_serving": 1.0,
+          "estimated_serving_g": 30,
+          "count": 4,
+          "count_unit": "개",
+          "has_soup": false,
+          "has_sauce": false,
+          "image_index": 0,
+          "is_in_image": true,
+          "box_2d": [
+            0,
+            381,
+            298,
+            591
+          ],
+          "nutrition_per_100g": {
+            "calories": 43,
+            "carbs": 9.6,
+            "protein": 1.4,
+            "fat": 0.5
+          },
+          "package": null
+        },
+        {
+          "food_index": 1,
+          "food_name": "딸기",
+          "confidence": 0.98,
+          "estimated_serving": 1.0,
+          "estimated_serving_g": 40,
+          "count": 1,
+          "count_unit": "개",
+          "has_soup": false,
+          "has_sauce": false,
+          "image_index": 0,
+          "is_in_image": true,
+          "box_2d": [
+            253,
+            248,
+            603,
+            477
+          ],
+          "nutrition_per_100g": {
+            "calories": 32,
+            "carbs": 7.7,
+            "protein": 0.7,
+            "fat": 0.3
+          },
+          "package": null
+        },
+        {
+          "food_index": 2,
+          "food_name": "라즈베리",
+          "confidence": 0.95,
+          "estimated_serving": 1.0,
+          "estimated_serving_g": 25,
+          "count": 6,
+          "count_unit": "개",
+          "has_soup": false,
+          "has_sauce": false,
+          "image_index": 0,
+          "is_in_image": true,
+          "box_2d": [
+            223,
+            417,
+            650,
+            617
+          ],
+          "nutrition_per_100g": {
+            "calories": 52,
+            "carbs": 11.9,
+            "protein": 1.2,
+            "fat": 0.7
+          },
+          "package": null
+        },
+        {
+          "food_index": 3,
+          "food_name": "블루베리",
+          "confidence": 0.95,
+          "estimated_serving": 1.0,
+          "estimated_serving_g": 3,
+          "count": 1,
+          "count_unit": "개",
+          "has_soup": false,
+          "has_sauce": false,
+          "image_index": 0,
+          "is_in_image": true,
+          "box_2d": [
+            435,
+            584,
+            542,
+            646
+          ],
+          "nutrition_per_100g": {
+            "calories": 57,
+            "carbs": 14.5,
+            "protein": 0.7,
+            "fat": 0.3
+          },
+          "package": null
+        }
+      ],
+      "visual_inspection_ko": "원본 사진을 직접 확인했으며 베리류와 블루베리로 보이는 작은 열매 1개가 보인다. 사진만으로 실제 질량·정확한 영양값은 검증하지 않았다.",
+      "failure_explanation_ko": "모델 원문은 블루베리 질량을 5 g 미만으로 추정했다. 고정 AI 정규화의 5–3000 g 허용 범위에서 질량이 null이 되고 영양량도 null이 되었다. BE는 선택 음식 중 영양량이 없는 항목 때문에 전체 합계를 incomplete_nutrition으로 처리했다. 이는 음식 미검출이나 원문 JSON 오류로 단정할 사례가 아니다."
+    },
+    {
+      "sample_id": "dish_1568132484",
+      "image_path": "eatlog-validation-lab/data/nutrition5k_followup/images/dish_1568132484.png",
+      "image_sha256": "b94bc7ce26dcaa83b9834bdc5f4d0992c60a870c0e4bd3068f6a9dd8e3b0cb27",
+      "source_url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/imagery/side_angles/dish_1568132484/camera_A.h264",
+      "camera_view": "side_camera_A_frame_0",
+      "image_dimensions": [
+        1920,
+        1080
+      ],
+      "truth": {
+        "calories_kcal": 76.379997,
+        "carbs_g": 18.76,
+        "fat_g": 0.402,
+        "mass_g": 134.0,
+        "protein_g": 0.938
+      },
+      "gold_ingredients": [
+        {
+          "calories_kcal": 76.38,
+          "carbs_g": 18.76,
+          "fat_g": 0.402,
+          "ingredient_id": "ingr_0000000013",
+          "mass_g": 134.0,
+          "name": "berries",
+          "protein_g": 0.938
+        }
+      ],
+      "baseline_normalized": {
+        "sample_id": "dish_1568132484",
+        "ai_status": "success",
+        "raw_model_prediction": {
+          "status": "success",
+          "totals": {
+            "calories": 62.800000000000004,
+            "carbs": 14.51,
+            "protein": 1.5799999999999998,
+            "fat": 0.72,
+            "mass_g": 140.0
+          },
+          "food_groups": 4
+        },
+        "status": "success",
+        "food_groups": 4,
+        "selected": [
+          {
+            "food_name": "라즈베리",
+            "confidence": 0.95,
+            "grams": 50.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(50g)",
+              "calories": 26.0,
+              "carbs": 6.0,
+              "protein": 0.6,
+              "fat": 0.3
+            }
+          },
+          {
+            "food_name": "블랙베리",
+            "confidence": 0.95,
+            "grams": 50.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(50g)",
+              "calories": 21.5,
+              "carbs": 4.8,
+              "protein": 0.7,
+              "fat": 0.2
+            }
+          },
+          {
+            "food_name": "딸기",
+            "confidence": 0.9,
+            "grams": 30.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(30g)",
+              "calories": 9.6,
+              "carbs": 2.3,
+              "protein": 0.2,
+              "fat": 0.1
+            }
+          },
+          {
+            "food_name": "블루베리",
+            "confidence": 0.85,
+            "grams": 10.0,
+            "count": null,
+            "count_unit": null,
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "보이는 양(10g)",
+              "calories": 5.7,
+              "carbs": 1.4,
+              "protein": 0.1,
+              "fat": 0.0
+            }
+          }
+        ],
+        "normalized_candidate_count": 4,
+        "totals": {
+          "calories": 62.800000000000004,
+          "carbs": 14.500000000000002,
+          "protein": 1.5999999999999999,
+          "fat": 0.6,
+          "mass_g": 140.0
+        }
+      },
+      "candidate_normalized": {
+        "sample_id": "dish_1568132484",
+        "ai_status": "success",
+        "raw_model_prediction": {
+          "status": "success",
+          "totals": {
+            "calories": 38.64,
+            "carbs": 8.875,
+            "protein": 0.994,
+            "fat": 0.461,
+            "mass_g": 87.0
+          },
+          "food_groups": 4
+        },
+        "status": "incomplete_nutrition",
+        "food_groups": 4,
+        "selected": [
+          {
+            "food_name": "블랙베리",
+            "confidence": 0.95,
+            "grams": 30.0,
+            "count": 6.0,
+            "count_unit": "개",
+            "estimated_serving": 6.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "1개(5g)",
+              "calories": 2.1,
+              "carbs": 0.5,
+              "protein": 0.1,
+              "fat": 0.0
+            }
+          },
+          {
+            "food_name": "산딸기",
+            "confidence": 0.92,
+            "grams": 35.0,
+            "count": 10.0,
+            "count_unit": "개",
+            "estimated_serving": 10.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "1개(3.5g)",
+              "calories": 1.8,
+              "carbs": 0.4,
+              "protein": 0.0,
+              "fat": 0.0
+            }
+          },
+          {
+            "food_name": "딸기",
+            "confidence": 0.9,
+            "grams": 20.0,
+            "count": 2.0,
+            "count_unit": "개",
+            "estimated_serving": 2.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": {
+              "base_serving": "1개(10g)",
+              "calories": 3.2,
+              "carbs": 0.8,
+              "protein": 0.1,
+              "fat": 0.0
+            }
+          },
+          {
+            "food_name": "블루베리",
+            "confidence": 0.95,
+            "grams": null,
+            "count": 1.0,
+            "count_unit": "개",
+            "estimated_serving": 1.0,
+            "source": "ai",
+            "matched_nutrition_id": null,
+            "package_present": false,
+            "printed_kcal": null,
+            "package_size_g": null,
+            "grounded_label_present": false,
+            "nutrition_per_unit": null
+          }
+        ],
+        "normalized_candidate_count": 4,
+        "totals": null
+      },
+      "baseline_csv": {
+        "sample_id": "dish_1568132484",
+        "arm": "baseline",
+        "status": "success",
+        "truth_calories": "76.379997",
+        "prediction_calories": "62.800000000000004",
+        "absolute_error_calories": "13.579996999999999",
+        "truth_carbs": "18.76",
+        "prediction_carbs": "14.500000000000002",
+        "absolute_error_carbs": "4.26",
+        "truth_protein": "0.938",
+        "prediction_protein": "1.5999999999999999",
+        "absolute_error_protein": "0.6619999999999999",
+        "truth_fat": "0.402",
+        "prediction_fat": "0.6",
+        "absolute_error_fat": "0.19799999999999995",
+        "truth_mass_g": "134.0",
+        "prediction_mass_g": "140.0",
+        "absolute_error_mass_g": "6.0"
+      },
+      "candidate_csv": {
+        "sample_id": "dish_1568132484",
+        "arm": "flash35_minimal",
+        "status": "incomplete_nutrition",
+        "truth_calories": "76.379997",
+        "prediction_calories": "",
+        "absolute_error_calories": "",
+        "truth_carbs": "18.76",
+        "prediction_carbs": "",
+        "absolute_error_carbs": "",
+        "truth_protein": "0.938",
+        "prediction_protein": "",
+        "absolute_error_protein": "",
+        "truth_fat": "0.402",
+        "prediction_fat": "",
+        "absolute_error_fat": "",
+        "truth_mass_g": "134.0",
+        "prediction_mass_g": "",
+        "absolute_error_mass_g": ""
+      },
+      "candidate_ai_normalized": {
+        "sample_id": "dish_1568132484",
+        "collection_status": "response_received",
+        "status": "success",
+        "candidates": [
+          {
+            "image_index": 0,
+            "is_in_image": true,
+            "food_name": "블랙베리",
+            "confidence": 0.95,
+            "estimated_serving": 1.0,
+            "estimated_serving_g": 30.0,
+            "count": 6,
+            "count_unit": "개",
+            "has_soup": false,
+            "has_sauce": false,
+            "bbox": {
+              "x": 0.477,
+              "y": 0.075,
+              "width": 0.423,
+              "height": 0.655
+            },
+            "nutrition_per_100g": {
+              "calories": 43.0,
+              "carbs": 9.6,
+              "protein": 1.4,
+              "fat": 0.5
+            },
+            "package": null,
+            "nutrition": {
+              "base_serving": "보이는 양(30g)",
+              "calories": 12.9,
+              "carbs": 2.9,
+              "protein": 0.4,
+              "fat": 0.1
+            },
+            "food_index": 0
+          },
+          {
+            "image_index": 0,
+            "is_in_image": true,
+            "food_name": "산딸기",
+            "confidence": 0.92,
+            "estimated_serving": 1.0,
+            "estimated_serving_g": 35.0,
+            "count": 10,
+            "count_unit": "개",
+            "has_soup": false,
+            "has_sauce": false,
+            "bbox": {
+              "x": 0.474,
+              "y": 0.17,
+              "width": 0.276,
+              "height": 0.73
+            },
+            "nutrition_per_100g": {
+              "calories": 52.0,
+              "carbs": 11.9,
+              "protein": 1.2,
+              "fat": 0.7
+            },
+            "package": null,
+            "nutrition": {
+              "base_serving": "보이는 양(35g)",
+              "calories": 18.2,
+              "carbs": 4.2,
+              "protein": 0.4,
+              "fat": 0.2
+            },
+            "food_index": 1
+          },
+          {
+            "image_index": 0,
+            "is_in_image": true,
+            "food_name": "딸기",
+            "confidence": 0.9,
+            "estimated_serving": 1.0,
+            "estimated_serving_g": 20.0,
+            "count": 2,
+            "count_unit": "개",
+            "has_soup": false,
+            "has_sauce": false,
+            "bbox": {
+              "x": 0.733,
+              "y": 0.135,
+              "width": 0.113,
+              "height": 0.175
+            },
+            "nutrition_per_100g": {
+              "calories": 32.0,
+              "carbs": 7.7,
+              "protein": 0.7,
+              "fat": 0.3
+            },
+            "package": null,
+            "nutrition": {
+              "base_serving": "보이는 양(20g)",
+              "calories": 6.4,
+              "carbs": 1.5,
+              "protein": 0.1,
+              "fat": 0.1
+            },
+            "food_index": 2
+          },
+          {
+            "image_index": 0,
+            "is_in_image": true,
+            "food_name": "블루베리",
+            "confidence": 0.95,
+            "estimated_serving": 1.0,
+            "estimated_serving_g": null,
+            "count": 1,
+            "count_unit": "개",
+            "has_soup": false,
+            "has_sauce": false,
+            "bbox": {
+              "x": 0.558,
+              "y": 0.468,
+              "width": 0.06,
+              "height": 0.1
+            },
+            "nutrition_per_100g": {
+              "calories": 57.0,
+              "carbs": 14.5,
+              "protein": 0.7,
+              "fat": 0.3
+            },
+            "package": null,
+            "nutrition": null,
+            "food_index": 3
+          }
+        ],
+        "raw_model_prediction": {
+          "status": "success",
+          "totals": {
+            "calories": 38.64,
+            "carbs": 8.875,
+            "protein": 0.994,
+            "fat": 0.461,
+            "mass_g": 87.0
+          },
+          "food_groups": 4
+        }
+      },
+      "candidate_raw_candidates": [
+        {
+          "food_index": 0,
+          "food_name": "블랙베리",
+          "confidence": 0.95,
+          "estimated_serving": 1.0,
+          "estimated_serving_g": 30.0,
+          "count": 6,
+          "count_unit": "개",
+          "has_soup": false,
+          "has_sauce": false,
+          "image_index": 0,
+          "is_in_image": true,
+          "box_2d": [
+            75,
+            477,
+            730,
+            900
+          ],
+          "nutrition_per_100g": {
+            "calories": 43,
+            "carbs": 9.6,
+            "protein": 1.4,
+            "fat": 0.5
+          },
+          "package": null
+        },
+        {
+          "food_index": 1,
+          "food_name": "산딸기",
+          "confidence": 0.92,
+          "estimated_serving": 1.0,
+          "estimated_serving_g": 35.0,
+          "count": 10,
+          "count_unit": "개",
+          "has_soup": false,
+          "has_sauce": false,
+          "image_index": 0,
+          "is_in_image": true,
+          "box_2d": [
+            170,
+            474,
+            900,
+            750
+          ],
+          "nutrition_per_100g": {
+            "calories": 52,
+            "carbs": 11.9,
+            "protein": 1.2,
+            "fat": 0.7
+          },
+          "package": null
+        },
+        {
+          "food_index": 2,
+          "food_name": "딸기",
+          "confidence": 0.9,
+          "estimated_serving": 1.0,
+          "estimated_serving_g": 20.0,
+          "count": 2,
+          "count_unit": "개",
+          "has_soup": false,
+          "has_sauce": false,
+          "image_index": 0,
+          "is_in_image": true,
+          "box_2d": [
+            135,
+            733,
+            310,
+            846
+          ],
+          "nutrition_per_100g": {
+            "calories": 32,
+            "carbs": 7.7,
+            "protein": 0.7,
+            "fat": 0.3
+          },
+          "package": null
+        },
+        {
+          "food_index": 3,
+          "food_name": "블루베리",
+          "confidence": 0.95,
+          "estimated_serving": 1.0,
+          "estimated_serving_g": 2.0,
+          "count": 1,
+          "count_unit": "개",
+          "has_soup": false,
+          "has_sauce": false,
+          "image_index": 0,
+          "is_in_image": true,
+          "box_2d": [
+            468,
+            558,
+            568,
+            618
+          ],
+          "nutrition_per_100g": {
+            "calories": 57,
+            "carbs": 14.5,
+            "protein": 0.7,
+            "fat": 0.3
+          },
+          "package": null
+        }
+      ],
+      "visual_inspection_ko": "원본 사진을 직접 확인했으며 베리류와 블루베리로 보이는 작은 열매 1개가 보인다. 사진만으로 실제 질량·정확한 영양값은 검증하지 않았다.",
+      "failure_explanation_ko": "모델 원문은 블루베리 질량을 5 g 미만으로 추정했다. 고정 AI 정규화의 5–3000 g 허용 범위에서 질량이 null이 되고 영양량도 null이 되었다. BE는 선택 음식 중 영양량이 없는 항목 때문에 전체 합계를 incomplete_nutrition으로 처리했다. 이는 음식 미검출이나 원문 JSON 오류로 단정할 사례가 아니다."
+    }
+  ],
+  "attribution": "사진: Nutrition5k, Google Research, CC BY 4.0. https://github.com/google-research-datasets/Nutrition5k ; https://creativecommons.org/licenses/by/4.0/",
+  "disclaimer_ko": "예시는 사전에 명시한 수치 규칙으로 고른 개별 사례이며 전체 성능을 대표하지 않습니다. 후보는 확인 평가의 채택 조건을 충족하지 못했습니다.",
+  "photo_processing": "Original image content preserved; uniform aspect-fit resizing only, no crop/retouch/overlay on photos.",
+  "generation_script_sha256": "ab24883a76e5b0ce727c8aceeb6ef3003b7ee432f51b657b07dc2b6817f342aa",
+  "figure_sha256": {
+    "confirmation_paired_cases.png": "98ad85108658971842124a9d272b295f62a8df6f09fa7e67c563091fa39d5b7a",
+    "confirmation_invalid_cases.png": "6328c3772f94ea1105a616d0e38b73cc0e4f90ea094d48ade4365e704c735ea9"
+  }
+}

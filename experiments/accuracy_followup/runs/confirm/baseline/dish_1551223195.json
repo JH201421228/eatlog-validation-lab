@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551223195",
+  "request_id": "followup_confirm_baseline_dish_1551223195",
+  "started_at": "2026-10-25T08:48:38.596710+00:00",
+  "arm": "baseline",
+  "phase": "confirm",
+  "image_sha256": "a42abeb9c20c1056e03ff0fe1f7f6ad49823febfda855f9d948997bddcbbe5e5",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3059,
+  "request_sha256": "6540694d0766ba2c613ee3f44468c12fe7d9a28bfa8e9c309928b512c780126e",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"통곡물 식빵\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 40,\n      \"count\": 1,\n      \"count_unit\": \"장\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [100, 100, 900, 900],\n      \"nutrition_per_100g\": {\n        \"calories\": 250,\n        \"carbs\": 45,\n        \"protein\": 10,\n        \"fat\": 3\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1794
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 165
+      }
+    ],
+    "cached_content_token_count": 1959,
+    "candidates_token_count": 221,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3280,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3744.26,
+  "completed_at": "2026-10-25T08:48:42.760598+00:00"
+}

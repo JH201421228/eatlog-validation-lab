@@ -1,0 +1,31 @@
+{
+  "recorded_at_utc": "2026-10-25T08:58:25.620059+00:00",
+  "performance_experiments_complete": true,
+  "additional_paid_runs_planned": false,
+  "confirmation_accepted": false,
+  "new_photo_model_deployed": false,
+  "production_ai_commit": "a860b2fb3a2c53a4484ddc6673d86d938f039171",
+  "production_ai_scope": "Previously validated output/label validation and experiment relocation remain deployed; frozen photo model candidate is rejected.",
+  "production_be_commit": "c81ec8c4abfad226adf06698c2b42e05b1dd8f4d",
+  "production_be_new_scope": "Persist missing analysis link only when every meal candidate resolves to the same user-owned parent call; no historical backfill or retention-effect claim.",
+  "be_deployment_evidence": "retention_linkage/deployment.json",
+  "candidate_branch": "codex/vision-model-validation-20261025",
+  "candidate_source_location": "../AI_accuracy_candidate",
+  "candidate_archive": "service_candidate/candidate.patch",
+  "candidate_tests_passed": 258,
+  "candidate_merge_push_deploy": false,
+  "final_decision_sha256": "1b8fd50ece509952407db1b7e90b5362e47f54152dc366cf7787c1107ad5b886",
+  "cost": {
+    "attempted_generations": 3826,
+    "settled_requests": 3816,
+    "unknown_reserved_requests": 10,
+    "usage_estimated_usd": 7.3393675,
+    "charged_or_reserved_usd": 12.3393675,
+    "hard_cap_usd": 30,
+    "billing_invoice_verified": false
+  },
+  "fe_changed_by_this_work": false,
+  "websites_modified": false,
+  "meta_status": "On hold as requested; access-limitation screenshots retained under report/Meta_????_??_20261025, no advertising-performance inference.",
+  "report_status": "Final report render and verification in progress; final local artifact hashes will be recorded separately."
+}

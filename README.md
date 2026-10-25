@@ -49,19 +49,25 @@ EatLog의 중간평가 우려를 재현 가능한 실험으로 확인하기 위�
 
 유료 요청은 본평가 999개와 예비 23개(정답 품질 제외 3개 포함)로 총 1,022회입니다. usage 확인분 추정 비용은 **US$1.9125488**, timeout 3건의 보수적 미확인 예약액 US$1.50을 포함한 장부는 **US$3.4125488**입니다. 승인 한도 US$30 이내이며 청구서 확정액은 아닙니다. 자동 재시도는 하지 않았습니다.
 
+### 후속 정확도 확인 — 완료, 정확도 후보 기각
+
+개발 데이터에서 선별한 `flash35_minimal`을 사전 동결한 잔여 155개 그룹에서 기준 모델과 비교했습니다. 후보의 열량 MAE는 31.8% 낮았고 paired bootstrap 95% 구간도 개선 방향이었지만, 유효 열량 예측 수가 **153→151**로, 전체 155개 중 오차 ±15% 이내 수가 **30→29**로 감소했습니다. 사전 기준에서 두 coverage/accuracy gate를 실패해 최종 판정은 **기각**입니다. 정확도 AI 후보는 병합하거나 배포하지 않으며 추가 호출·재시도·재튜닝도 하지 않습니다.
+
+확인 세트의 누적 비용은 과거 요청을 포함해 usage 추정 **US$7.3393675**, charged/reserved **US$12.3393675**입니다(승인 한도 US$30). 상세 지표와 판정은 [최종 판정](experiments/accuracy_followup/final_decision.json), [확인 요약](experiments/accuracy_followup/results/confirm/summary.json), 실행·실패 분모·비용은 [후속 실험 기록](experiments/accuracy_followup/README.md)에 있습니다. frozen service prototype과 mock 기반 258개 테스트 통과 기록은 [service_candidate](experiments/accuracy_followup/service_candidate/)에 보관했습니다.
+
 ## 서비스 반영과 실험 보관 위치
 
-서비스 개선은 BE·AI에 병합 후 AWS 배포를 확인했습니다. 실험 자료는 사용자 요청에 따라 이 개인 저장소로 이관했으며 팀 저장소에는 서비스 코드와 필수 회귀 테스트를 유지합니다. 이미 푸시한 Git 이력은 다시 쓰지 않았습니다. PR·배포·상태 확인 근거는 [배포 및 이관 기록](experiments/contracts/deployment_and_relocation.json)에 있습니다.
+기존 BE·AI robustness 개선의 AWS 배포를 확인했습니다. 별도로 BE의 모호하지 않은 AI-call retention linkage fallback도 commit `c81ec8c4abfad226adf06698c2b42e05b1dd8f4d`로 배포됐습니다(GitHub Actions run `40176912543`, health `ok`). 이 변경은 향후 명확한 candidate-parent 관계만 보존하며 과거 backfill이나 retention 개선 효과를 주장하지 않습니다. 정확도 후속 AI 후보는 기각되어 배포하지 않았고, 기존 AI robustness 버전 `a860b2fb3a2c53a4484ddc6673d86d938f039171`을 유지합니다. 실험 자료는 사용자 요청에 따라 이 개인 저장소로 이관했으며 팀 저장소에는 서비스 코드와 필수 회귀 테스트를 유지합니다. 이미 푸시한 Git 이력은 다시 쓰지 않았습니다. PR·기존 배포 근거는 [배포 및 이관 기록](experiments/contracts/deployment_and_relocation.json), BE retention-linkage의 배포·health 확인은 [deployment.json](experiments/accuracy_followup/retention_linkage/deployment.json)에 있습니다.
 
-| 서비스 | 평가 대상 개선 버전 | 실험 이관 정리 후 운영 버전 |
+| 서비스 | 평가 대상 개선 버전 | 현재 관련 배포 버전 |
 | --- | --- | --- |
-| BE | `7249699d09fd0f0d34080990c77c63328da01567` | `5b77e1d59e320fd2c4f84650d103bd4b1c2c8ab0` |
+| BE | `7249699d09fd0f0d34080990c77c63328da01567` | `c81ec8c4abfad226adf06698c2b42e05b1dd8f4d` |
 | AI | `8f41c67c8e6db4f5690bbda4e560c211fa5b65ed` | `a860b2fb3a2c53a4484ddc6673d86d938f039171` |
 
 이관 정리에서는 서비스 `app/` 코드를 변경하지 않았습니다. 추가 RAG·자동 모델 선택·개인 반복 식사 매칭은 이번 결과로 검증됐다고 주장하지 않습니다. 실제 사진 오차와 사용자 보정·리텐션 효과도 구분합니다.
 
 ## 현재 상태
 
-2026-10-25: 합성 계약 검증 및 서비스 배포, 개인 저장소 이관, 공개 촬영 이미지 기반 실제 모델 호출·전후 비교를 완료했습니다. 사진 정확도 개선이 관측되지 않았다는 결과도 그대로 보존합니다. 한국 음식·실제 포장 라벨·사용자 보정률·리텐션 효과는 추가 검증이 필요합니다.
+2026-10-25: 합성 계약 검증, 공개 사진 모델의 개발·최종 확인 실험, BE retention-linkage 배포, frozen AI prototype 보관을 완료했습니다. 후속 정확도 후보는 MAE가 개선됐지만 유효 예측 수와 ±15% 이내 건수가 감소해 사전 기준으로 기각됐으며 배포하지 않았습니다. AI robustness 버전 `a860b2fb3a2c53a4484ddc6673d86d938f039171`은 유지합니다. 한국 음식·실제 포장 라벨·사용자 보정률·retention 효과는 별도 검증이 필요합니다.
 
 이 저장소에는 서비스 비밀정보, 사용자별 운영 기록, 원문 메신저 대화, 개인 사진을 저장하지 않습니다.

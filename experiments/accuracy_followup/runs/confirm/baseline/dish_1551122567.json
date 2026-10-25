@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551122567",
+  "request_id": "followup_confirm_baseline_dish_1551122567",
+  "started_at": "2026-10-25T08:46:54.390297+00:00",
+  "arm": "baseline",
+  "phase": "confirm",
+  "image_sha256": "0f8fe01d94b0034538e81806f95e8c2913db39eb6716516ca069ba289ddd1748",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3059,
+  "request_sha256": "77e1ca33438a791a44efb20844b2ad3a52ab993c3734923661eba482d559bb30",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"해시브라운\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 150,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [0, 200, 500, 800],\n      \"nutrition_per_100g\": {\n        \"calories\": 150,\n        \"carbs\": 20.0,\n        \"protein\": 2.0,\n        \"fat\": 7.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1794
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 165
+      }
+    ],
+    "cached_content_token_count": 1959,
+    "candidates_token_count": 223,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3282,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3695.83,
+  "completed_at": "2026-10-25T08:46:58.816261+00:00"
+}

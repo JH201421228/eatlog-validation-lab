@@ -1,0 +1,443 @@
+{
+  "decided_at_utc": "2026-10-25T08:54:21.303538+00:00",
+  "candidate_policy": "flash35_minimal",
+  "baseline": "baseline",
+  "accepted": false,
+  "deployment_pending": false,
+  "deployment_status": "rejected_by_predeclared_confirmation_criteria",
+  "decision": "Do not merge or deploy the frozen Flash3.5 candidate; retain the current production policy. No confirmation tuning, retries, or retesting.",
+  "checks": {
+    "within_15_percent_all_selected_not_decreased": false,
+    "valid_prediction_count_not_decreased": false,
+    "minimum_paired_valid_100": true,
+    "calorie_mae_reduction_at_least_10_percent": true,
+    "paired_calorie_mae_reduction_at_least_10_percent": true,
+    "paired_bootstrap_95_ci_upper_negative": true
+  },
+  "failed_checks": [
+    "within_15_percent_all_selected_not_decreased",
+    "valid_prediction_count_not_decreased"
+  ],
+  "criteria": {
+    "selection": "All 155 remaining eligible inferred groups, disjoint from all prior pilot/main groups",
+    "source_policy": "First existing camera A, B, C, D; frame 0. Keep unavailable sources in denominator.",
+    "labels": "Kept in a separate gold file; opened for scoring only after candidate policy, prompts, code and source manifest are frozen.",
+    "minimum_paired_valid": 100,
+    "calorie_mae_relative_reduction_minimum": 0.1,
+    "paired_bootstrap_95_ci_delta_upper_must_be_negative": true,
+    "within_15_percent_all_selected_must_not_decrease": true,
+    "valid_prediction_count_must_not_decrease": true,
+    "repetitions": 2000,
+    "threshold_origin": "Predeclared follow-up acceptance rule, not a numeric threshold prescribed by reviewers.",
+    "one_final_policy_comparison": true,
+    "no_retuning_on_confirmation_outcomes": true,
+    "limitations": [
+      "New groups have side-camera images only",
+      "Inferred grouping does not prove physical independence",
+      "Public pretraining exposure unknown",
+      "Not representative Korean or packaged-food user traffic"
+    ],
+    "calorie_mae_metric_scope": "Require at least 10% reduction both on exactly the same valid image pairs and on each arm overall valid predictions. Clarified during scorer audit before confirmation labels opened; paired CI, all-selected within15 and coverage gates also remain required.",
+    "execution": "Baseline and frozen Flash3.5 candidate run concurrently under one OS lock and one inherited Ledger object; 2 requests per arm, maximum4 combined. Six offline safety tests passed. No automatic resume/retry; prior ledger hash is checked before any collector starts."
+  },
+  "overall_relative_calorie_mae_reduction": 0.31803998956625457,
+  "paired_calories": {
+    "valid_pair_count": 151,
+    "transition_counts": {
+      "same_error": 11,
+      "improved": 92,
+      "worsened": 48,
+      "valid_to_missing": 2,
+      "both_missing": 2
+    },
+    "mean_absolute_error_delta_after_minus_before": -28.71661882119205,
+    "paired_baseline_mae": 88.30368017218544,
+    "paired_relative_mae_reduction": 0.3252029673644047,
+    "bootstrap_95_percent_ci": [
+      -40.23010067582781,
+      -18.047772378145705
+    ],
+    "bootstrap_repetitions": 2000,
+    "positive_delta_means_worse": true
+  },
+  "versions": {
+    "baseline": {
+      "status_counts": {
+        "success": 153,
+        "failed": 2
+      },
+      "selected_food_groups": 285,
+      "selected_packaged_foods": 0,
+      "selected_foods_with_printed_kcal": 0,
+      "selected_foods_with_grounded_label": 0,
+      "nutrition_source_counts": {
+        "ai": 285
+      },
+      "nutrients": {
+        "calories": {
+          "selected_count": 155,
+          "valid_prediction_count": 153,
+          "missing_prediction_count": 2,
+          "coverage_percent": 98.70967741935483,
+          "mae": 87.37618106535948,
+          "mean_error_bias": 49.21231663398693,
+          "mape_percent": 83.24949710107558,
+          "median_ape_percent": 41.83819282001128,
+          "p90_ape_percent": 187.56217016584569,
+          "mape_nonzero_truth_count": 153,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 66.63316538591691,
+          "within_15_percent_count": 30,
+          "within_15_percent_of_all_selected": 19.35483870967742,
+          "within_15_percent_of_valid_predictions": 19.607843137254903
+        },
+        "carbs": {
+          "selected_count": 155,
+          "valid_prediction_count": 153,
+          "missing_prediction_count": 2,
+          "coverage_percent": 98.70967741935483,
+          "mae": 9.147671790849673,
+          "mean_error_bias": 6.895805150326797,
+          "mape_percent": 85.63124692209318,
+          "median_ape_percent": 50.89951081860645,
+          "p90_ape_percent": 230.54456452618513,
+          "mape_nonzero_truth_count": 144,
+          "mape_zero_truth_excluded_count": 9,
+          "wape_percent_mae_over_mean_truth": 80.01602696808668,
+          "within_15_percent_count": 30,
+          "within_15_percent_of_all_selected": 19.35483870967742,
+          "within_15_percent_of_valid_predictions": 19.607843137254903
+        },
+        "protein": {
+          "selected_count": 155,
+          "valid_prediction_count": 153,
+          "missing_prediction_count": 2,
+          "coverage_percent": 98.70967741935483,
+          "mae": 4.680817281045752,
+          "mean_error_bias": 1.6176657124183007,
+          "mape_percent": 68.76298335301269,
+          "median_ape_percent": 48.66979655712049,
+          "p90_ape_percent": 134.6562567772718,
+          "mape_nonzero_truth_count": 153,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 55.72847517630392,
+          "within_15_percent_count": 18,
+          "within_15_percent_of_all_selected": 11.612903225806452,
+          "within_15_percent_of_valid_predictions": 11.76470588235294
+        },
+        "fat": {
+          "selected_count": 155,
+          "valid_prediction_count": 153,
+          "missing_prediction_count": 2,
+          "coverage_percent": 98.70967741935483,
+          "mae": 4.371307607843137,
+          "mean_error_bias": 1.2423003790849674,
+          "mape_percent": 343.5156492647543,
+          "median_ape_percent": 58.11965811965813,
+          "p90_ape_percent": 241.25916567216876,
+          "mape_nonzero_truth_count": 153,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 67.44565862125953,
+          "within_15_percent_count": 17,
+          "within_15_percent_of_all_selected": 10.967741935483872,
+          "within_15_percent_of_valid_predictions": 11.11111111111111
+        },
+        "mass_g": {
+          "selected_count": 155,
+          "valid_prediction_count": 153,
+          "missing_prediction_count": 2,
+          "coverage_percent": 98.70967741935483,
+          "mae": 61.77124183006536,
+          "mean_error_bias": 37.73202614379085,
+          "mape_percent": 58.50523351125803,
+          "median_ape_percent": 40.845070422535215,
+          "p90_ape_percent": 140.4761904761905,
+          "mape_nonzero_truth_count": 153,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 50.765429446205076,
+          "within_15_percent_count": 32,
+          "within_15_percent_of_all_selected": 20.64516129032258,
+          "within_15_percent_of_valid_predictions": 20.915032679738562
+        }
+      }
+    },
+    "flash35_minimal": {
+      "status_counts": {
+        "success": 151,
+        "incomplete_nutrition": 2,
+        "failed": 2
+      },
+      "selected_food_groups": 286,
+      "selected_packaged_foods": 0,
+      "selected_foods_with_printed_kcal": 0,
+      "selected_foods_with_grounded_label": 0,
+      "nutrition_source_counts": {
+        "ai": 286
+      },
+      "nutrients": {
+        "calories": {
+          "selected_count": 155,
+          "valid_prediction_count": 151,
+          "missing_prediction_count": 4,
+          "coverage_percent": 97.41935483870968,
+          "mae": 59.58706135099338,
+          "mean_error_bias": 20.018440013245034,
+          "mape_percent": 53.83391087567945,
+          "median_ape_percent": 31.080283144090764,
+          "p90_ape_percent": 123.04814314336896,
+          "mape_nonzero_truth_count": 151,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 45.11632659152949,
+          "within_15_percent_count": 29,
+          "within_15_percent_of_all_selected": 18.70967741935484,
+          "within_15_percent_of_valid_predictions": 19.205298013245034
+        },
+        "carbs": {
+          "selected_count": 155,
+          "valid_prediction_count": 151,
+          "missing_prediction_count": 4,
+          "coverage_percent": 97.41935483870968,
+          "mae": 5.743389298013246,
+          "mean_error_bias": 3.6076701192052982,
+          "mape_percent": 52.151108738223925,
+          "median_ape_percent": 39.04425501516475,
+          "p90_ape_percent": 124.75653510627956,
+          "mape_nonzero_truth_count": 142,
+          "mape_zero_truth_excluded_count": 9,
+          "wape_percent_mae_over_mean_truth": 50.429185238650234,
+          "within_15_percent_count": 36,
+          "within_15_percent_of_all_selected": 23.225806451612904,
+          "within_15_percent_of_valid_predictions": 23.841059602649008
+        },
+        "protein": {
+          "selected_count": 155,
+          "valid_prediction_count": 151,
+          "missing_prediction_count": 4,
+          "coverage_percent": 97.41935483870968,
+          "mae": 3.67044,
+          "mean_error_bias": -0.09819301986754958,
+          "mape_percent": 55.17374313404267,
+          "median_ape_percent": 42.27642276422765,
+          "p90_ape_percent": 100.0,
+          "mape_nonzero_truth_count": 151,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 43.17736982480425,
+          "within_15_percent_count": 29,
+          "within_15_percent_of_all_selected": 18.70967741935484,
+          "within_15_percent_of_valid_predictions": 19.205298013245034
+        },
+        "fat": {
+          "selected_count": 155,
+          "valid_prediction_count": 151,
+          "missing_prediction_count": 4,
+          "coverage_percent": 97.41935483870968,
+          "mae": 3.021954834437086,
+          "mean_error_bias": 0.32848978807947027,
+          "mape_percent": 183.52049774728624,
+          "median_ape_percent": 47.08994708994709,
+          "p90_ape_percent": 332.86219081272094,
+          "mape_nonzero_truth_count": 151,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 46.0460223593459,
+          "within_15_percent_count": 26,
+          "within_15_percent_of_all_selected": 16.7741935483871,
+          "within_15_percent_of_valid_predictions": 17.218543046357617
+        },
+        "mass_g": {
+          "selected_count": 155,
+          "valid_prediction_count": 151,
+          "missing_prediction_count": 4,
+          "coverage_percent": 97.41935483870968,
+          "mae": 44.11258278145695,
+          "mean_error_bias": 11.0,
+          "mape_percent": 34.9921768968749,
+          "median_ape_percent": 27.710843373493976,
+          "p90_ape_percent": 67.78523489932886,
+          "mape_nonzero_truth_count": 151,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": 36.18732004128864,
+          "within_15_percent_count": 37,
+          "within_15_percent_of_all_selected": 23.870967741935484,
+          "within_15_percent_of_valid_predictions": 24.503311258278146
+        }
+      }
+    }
+  },
+  "transport": {
+    "baseline": {
+      "request_freeze": {
+        "arm": "baseline",
+        "phase": "confirm",
+        "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+        "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+        "model": "gemini-2.5-flash",
+        "prompt_sha256": "ec03e8be7d47b2d48734f60354360246c78ea55c06d227de31907a7f8c71a7c7",
+        "schema_sha256": "4e36ed481d5493f10d5e2ebc442559c542c1e1522142fdd7391f9ec53e25cf5d",
+        "code_sha256": "3c3da6ef4c26e8815a24793363d449fe0a78b59714d3175d68ae629030dee51c",
+        "selected_count": 155,
+        "frozen_at": "2026-10-25T08:43:28.227683+00:00"
+      },
+      "response_archive_sha256": "325d44410d96b6ee46b216e2efea9576b3aa85af22a1dc605995bb99125d1547",
+      "collection_status_counts": {
+        "response_received": 153,
+        "not_attempted": 2
+      },
+      "model_versions": {
+        "gemini-2.5-flash": 153,
+        "unknown": 2
+      },
+      "latency_ms": {
+        "count": 153,
+        "p50": 4007.77,
+        "p95": 5823.25
+      },
+      "raw_token_totals": {
+        "prompt_token_count": 468027,
+        "candidates_token_count": 53432,
+        "thoughts_token_count": 0,
+        "total_token_count": 521459
+      },
+      "usage_present_count": 153,
+      "usage_estimated_usd_known_only": 0.2739881,
+      "missing_or_invalid_usage_count": 0,
+      "cost_authority": "experiments/accuracy_followup/cost_ledger.json; missing usage is never zero billed cost"
+    },
+    "flash35_minimal": {
+      "request_freeze": {
+        "arm": "flash35_minimal",
+        "phase": "confirm",
+        "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+        "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+        "model": "gemini-3.5-flash-lite",
+        "prompt_sha256": "ec03e8be7d47b2d48734f60354360246c78ea55c06d227de31907a7f8c71a7c7",
+        "schema_sha256": "4e36ed481d5493f10d5e2ebc442559c542c1e1522142fdd7391f9ec53e25cf5d",
+        "code_sha256": "662bdf2e9d579e4b88d38059d889e7cf0faa5541af2d95866eb0a8ff1d6c3c76",
+        "selected_count": 155,
+        "frozen_at": "2026-10-25T08:43:28.856333+00:00"
+      },
+      "response_archive_sha256": "bf0f90a853a8c206bcfe363db4bb3f280c6e66841cdd8ee5b123268913621e52",
+      "collection_status_counts": {
+        "response_received": 153,
+        "not_attempted": 2
+      },
+      "model_versions": {
+        "gemini-3.5-flash-lite": 153,
+        "unknown": 2
+      },
+      "latency_ms": {
+        "count": 153,
+        "p50": 3350.18,
+        "p95": 4451.46
+      },
+      "raw_token_totals": {
+        "prompt_token_count": 596853,
+        "candidates_token_count": 63871,
+        "thoughts_token_count": 0,
+        "total_token_count": 660724
+      },
+      "usage_present_count": 153,
+      "usage_estimated_usd_known_only": 0.3387334,
+      "missing_or_invalid_usage_count": 0,
+      "cost_authority": "experiments/accuracy_followup/cost_ledger.json; missing usage is never zero billed cost"
+    }
+  },
+  "failures": {
+    "baseline": [
+      {
+        "sample_id": "dish_1564415140",
+        "status": "failed",
+        "reason": "not_attempted",
+        "selected_without_nutrition": []
+      },
+      {
+        "sample_id": "dish_1564415335",
+        "status": "failed",
+        "reason": "not_attempted",
+        "selected_without_nutrition": []
+      }
+    ],
+    "flash35_minimal": [
+      {
+        "sample_id": "dish_1550779219",
+        "status": "incomplete_nutrition",
+        "reason": null,
+        "selected_without_nutrition": [
+          "블루베리"
+        ]
+      },
+      {
+        "sample_id": "dish_1564415140",
+        "status": "failed",
+        "reason": "not_attempted",
+        "selected_without_nutrition": []
+      },
+      {
+        "sample_id": "dish_1564415335",
+        "status": "failed",
+        "reason": "not_attempted",
+        "selected_without_nutrition": []
+      },
+      {
+        "sample_id": "dish_1568132484",
+        "status": "incomplete_nutrition",
+        "reason": null,
+        "selected_without_nutrition": [
+          "블루베리"
+        ]
+      }
+    ]
+  },
+  "selected_count": 155,
+  "source_available_count": 153,
+  "available_by_camera": {
+    "side_camera_A_frame_0": 150,
+    "side_camera_B_frame_0": 3
+  },
+  "cumulative_cost_snapshot": {
+    "attempted_generations": 3826,
+    "settled_requests": 3816,
+    "unknown_reserved_requests": 10,
+    "usage_estimated_usd": 7.3393675,
+    "charged_or_reserved_usd": 12.3393675,
+    "hard_cap_usd": 30,
+    "billing_invoice_verified": false
+  },
+  "confirmation_usage_estimated_usd": 0.6127215,
+  "gold_opened_at_utc": "2026-10-25T08:53:42.759499+00:00",
+  "semantic_gold_openings": 1,
+  "gold_opening_after_prediction_freeze": true,
+  "scoring_method": "One invocation of unchanged evaluate_followup.py main with prescribed CLI arguments, pinned AI/BE snapshots; join_gold audit wrapper records timestamp immediately before its sole label access. No API calls.",
+  "preconfirmation_git_head": "dda63c36a8389f2cab3b9d00bc82fe82858648d8",
+  "prediction_freeze_sha256": "32281a3ecbc627689913d10cafab308171b4f5e455815272ca540e7f7cf4154c",
+  "frozen_files_unchanged_after_scoring": true,
+  "raw_config_gold_ledger_hashes_unchanged_after_scoring": true,
+  "files_sha256": {
+    "experiments/accuracy_followup/confirmation_predictions_freeze.json": "32281a3ecbc627689913d10cafab308171b4f5e455815272ca540e7f7cf4154c",
+    "experiments/accuracy_followup/candidate_freeze.json": "726a4410ab804679c0f2829e2ae1271ed59479b796f3fc45d4026a707c14d27e",
+    "experiments/accuracy_followup/protocol.json": "a8808bfff795cb40aa1a2800bccc7775e6e6d6966f130f952d58a6ea066e59d2",
+    "experiments/accuracy_followup/cost_ledger.json": "c4bec8e8a6a2eb65cee710a25f36f00d41f878f81d3308e78d3c86efae25be16",
+    "experiments/accuracy_followup/cost_summary.json": "d8df01a276958c29a4a8eb73e323872163d7ad2b34ccc2dc3ea408e1de541e05",
+    "experiments/accuracy_followup/results/confirm/baseline/ai.jsonl": "a4be63964fc8e23220915536845078e9368702fbd6e7082331e0c868d07af9fc",
+    "experiments/accuracy_followup/results/confirm/baseline/normalized.jsonl": "b213f4eed7ea66034b82ddb52c70d835ffff2d4f68a7c3d20fe7e639c798852a",
+    "experiments/accuracy_followup/results/confirm/baseline/raw.jsonl": "325d44410d96b6ee46b216e2efea9576b3aa85af22a1dc605995bb99125d1547",
+    "experiments/accuracy_followup/results/confirm/cases.csv": "99667b99f401a0b22e755e521ea153d41a6e5c3f91e56c2291e813937c4e561c",
+    "experiments/accuracy_followup/results/confirm/flash35_minimal/ai.jsonl": "28c9f55889d530b3979c31d224f87c5633695e879b75f40829096e0571f365aa",
+    "experiments/accuracy_followup/results/confirm/flash35_minimal/normalized.jsonl": "c210514263eb75789290e33441f3ed6a2ffcfe8639986fe7ac31d65f2ffe9ce3",
+    "experiments/accuracy_followup/results/confirm/flash35_minimal/raw.jsonl": "bf0f90a853a8c206bcfe363db4bb3f280c6e66841cdd8ee5b123268913621e52",
+    "experiments/accuracy_followup/results/confirm/gold_access.json": "489ccc6dc001f3182d6e1fee8ae6363ff61c90d4298d2d7e9fa65b76c94f7fc9",
+    "experiments/accuracy_followup/results/confirm/metrics.csv": "1f77ba4a55aa838f54a1890609eeaa8576fcdd1aa8131062dfa97b4845c02e78",
+    "experiments/accuracy_followup/results/confirm/report_snapshot.json": "f33314a6ceb097040112ef8bebf98463df56b62ccc29235c9a85328998cdf4ed",
+    "experiments/accuracy_followup/results/confirm/summary.json": "f316bbf5e4a118bda77ded2fe2fd429ac494e14953935e821d5c6eb11389dc73"
+  },
+  "gold_sha256": "501c3d0d03c96052b949a6d57c33db7432abbfdf7a6e6660c4ba66d4f97c973e",
+  "limitations": [
+    "Only 153 source-available side-view images:150 camera A and3 camera B;2 missing images remain in the155 denominator.",
+    "Inferred grouping does not prove physical independence.",
+    "Nutrition5k is public; model pretraining exposure is unknown.",
+    "No representative Korean or packaged-food user-traffic confirmation.",
+    "No real retention, user-behavior, or business-outcome evidence.",
+    "Camera B has only3 cases, too few for reliable generalization.",
+    "Latency is model-request latency under concurrent experiment collection, not end-to-end production latency.",
+    "Costs are usage estimates and reserved exposure; billing invoice unverified,10 historical unknown requests retain US$5 reserve."
+  ]
+}

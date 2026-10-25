@@ -1,0 +1,165 @@
+{
+  "phase": "confirm",
+  "selected_count": 155,
+  "scorer_sha256": "9637fd3464d06352d2354b8686a2932121c9cb0e0bbfba31ee407e6fa7f04a06",
+  "protocol_sha256": "a8808bfff795cb40aa1a2800bccc7775e6e6d6966f130f952d58a6ea066e59d2",
+  "exploratory": false,
+  "versions": {
+    "baseline": {
+      "calories": {
+        "mae": 87.37618106535948,
+        "valid_prediction_count": 153,
+        "within_15_percent_count": 30
+      },
+      "mass_g": {
+        "mae": 61.77124183006536,
+        "valid_prediction_count": 153,
+        "within_15_percent_count": 32
+      }
+    },
+    "flash35_minimal": {
+      "calories": {
+        "mae": 59.58706135099338,
+        "valid_prediction_count": 151,
+        "within_15_percent_count": 29
+      },
+      "mass_g": {
+        "mae": 44.11258278145695,
+        "valid_prediction_count": 151,
+        "within_15_percent_count": 37
+      }
+    }
+  },
+  "paired_calories": {
+    "flash35_minimal": {
+      "valid_pair_count": 151,
+      "transition_counts": {
+        "same_error": 11,
+        "improved": 92,
+        "worsened": 48,
+        "valid_to_missing": 2,
+        "both_missing": 2
+      },
+      "mean_absolute_error_delta_after_minus_before": -28.71661882119205,
+      "paired_baseline_mae": 88.30368017218544,
+      "paired_relative_mae_reduction": 0.3252029673644047,
+      "bootstrap_95_percent_ci": [
+        -40.23010067582781,
+        -18.047772378145705
+      ],
+      "bootstrap_repetitions": 2000,
+      "positive_delta_means_worse": true
+    }
+  },
+  "camera_metrics": {
+    "side_camera_A_frame_0": {
+      "baseline": {
+        "calories": {
+          "selected_count": 152,
+          "valid_prediction_count": 150,
+          "mae": 86.13276275333334,
+          "within_15_percent_count": 30
+        },
+        "mass_g": {
+          "selected_count": 152,
+          "valid_prediction_count": 150,
+          "mae": 61.0,
+          "within_15_percent_count": 32
+        }
+      },
+      "flash35_minimal": {
+        "calories": {
+          "selected_count": 152,
+          "valid_prediction_count": 148,
+          "mae": 56.838141891891894,
+          "within_15_percent_count": 29
+        },
+        "mass_g": {
+          "selected_count": 152,
+          "valid_prediction_count": 148,
+          "mae": 42.054054054054056,
+          "within_15_percent_count": 37
+        }
+      }
+    },
+    "side_camera_B_frame_0": {
+      "baseline": {
+        "calories": {
+          "selected_count": 3,
+          "valid_prediction_count": 3,
+          "mae": 149.54709666666665,
+          "within_15_percent_count": 0
+        },
+        "mass_g": {
+          "selected_count": 3,
+          "valid_prediction_count": 3,
+          "mae": 100.33333333333333,
+          "within_15_percent_count": 0
+        }
+      },
+      "flash35_minimal": {
+        "calories": {
+          "selected_count": 3,
+          "valid_prediction_count": 3,
+          "mae": 195.20042133333334,
+          "within_15_percent_count": 0
+        },
+        "mass_g": {
+          "selected_count": 3,
+          "valid_prediction_count": 3,
+          "mae": 145.66666666666666,
+          "within_15_percent_count": 0
+        }
+      }
+    }
+  },
+  "historical_baseline_comparison": false,
+  "acceptance_or_screen": {
+    "flash35_minimal": {
+      "accepted": false,
+      "checks": {
+        "within_15_percent_all_selected_not_decreased": false,
+        "valid_prediction_count_not_decreased": false,
+        "minimum_paired_valid_100": true,
+        "calorie_mae_reduction_at_least_10_percent": true,
+        "paired_calorie_mae_reduction_at_least_10_percent": true,
+        "paired_bootstrap_95_ci_upper_negative": true
+      },
+      "overall_relative_mae_reduction": 0.31803998956625457,
+      "paired_relative_mae_reduction": 0.3252029673644047,
+      "criteria": {
+        "selection": "All 155 remaining eligible inferred groups, disjoint from all prior pilot/main groups",
+        "source_policy": "First existing camera A, B, C, D; frame 0. Keep unavailable sources in denominator.",
+        "labels": "Kept in a separate gold file; opened for scoring only after candidate policy, prompts, code and source manifest are frozen.",
+        "minimum_paired_valid": 100,
+        "calorie_mae_relative_reduction_minimum": 0.1,
+        "paired_bootstrap_95_ci_delta_upper_must_be_negative": true,
+        "within_15_percent_all_selected_must_not_decrease": true,
+        "valid_prediction_count_must_not_decrease": true,
+        "repetitions": 2000,
+        "threshold_origin": "Predeclared follow-up acceptance rule, not a numeric threshold prescribed by reviewers.",
+        "one_final_policy_comparison": true,
+        "no_retuning_on_confirmation_outcomes": true,
+        "limitations": [
+          "New groups have side-camera images only",
+          "Inferred grouping does not prove physical independence",
+          "Public pretraining exposure unknown",
+          "Not representative Korean or packaged-food user traffic"
+        ],
+        "calorie_mae_metric_scope": "Require at least 10% reduction both on exactly the same valid image pairs and on each arm overall valid predictions. Clarified during scorer audit before confirmation labels opened; paired CI, all-selected within15 and coverage gates also remain required.",
+        "execution": "Baseline and frozen Flash3.5 candidate run concurrently under one OS lock and one inherited Ledger object; 2 requests per arm, maximum4 combined. Six offline safety tests passed. No automatic resume/retry; prior ledger hash is checked before any collector starts."
+      },
+      "single_frozen_comparison_required": true
+    }
+  },
+  "development_screen_scope": null,
+  "cumulative_cost_snapshot": {
+    "attempted_generations": 3826,
+    "settled_requests": 3816,
+    "unknown_reserved_requests": 10,
+    "usage_estimated_usd": 7.3393675,
+    "charged_or_reserved_usd": 12.3393675,
+    "hard_cap_usd": 30,
+    "billing_invoice_verified": false
+  }
+}

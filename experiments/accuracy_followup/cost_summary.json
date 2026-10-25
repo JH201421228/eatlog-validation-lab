@@ -1,9 +1,9 @@
 {
-  "attempted_generations": 3520,
-  "settled_requests": 3510,
+  "attempted_generations": 3826,
+  "settled_requests": 3816,
   "unknown_reserved_requests": 10,
-  "usage_estimated_usd": 6.726646,
-  "charged_or_reserved_usd": 11.726646,
+  "usage_estimated_usd": 7.3393675,
+  "charged_or_reserved_usd": 12.3393675,
   "hard_cap_usd": 30,
   "billing_invoice_verified": false
 }

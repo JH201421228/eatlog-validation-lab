@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1550710507",
+  "request_id": "followup_confirm_baseline_dish_1550710507",
+  "started_at": "2026-10-25T08:49:26.369101+00:00",
+  "arm": "baseline",
+  "phase": "confirm",
+  "image_sha256": "99b685ff5b45b6af4750e1774ecf7c13131bc1afd90529fc33e57affd74d9612",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3059,
+  "request_sha256": "9ffbf682d01719450fff5cce6e6fa4ed7e2d217a6b6606e021582b2a29756648",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"방울토마토\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 60,\n      \"count\": 6,\n      \"count_unit\": \"개\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [0, 280, 500, 710],\n      \"nutrition_per_100g\": {\n        \"calories\": 18,\n        \"carbs\": 3.9,\n        \"protein\": 0.9,\n        \"fat\": 0.2\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1794
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 165
+      }
+    ],
+    "cached_content_token_count": 1959,
+    "candidates_token_count": 223,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3282,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3835.33,
+  "completed_at": "2026-10-25T08:49:30.815171+00:00"
+}

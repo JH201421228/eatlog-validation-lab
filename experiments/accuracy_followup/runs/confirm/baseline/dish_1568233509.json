@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1568233509",
+  "request_id": "followup_confirm_baseline_dish_1568233509",
+  "started_at": "2026-10-25T08:46:33.318036+00:00",
+  "arm": "baseline",
+  "phase": "confirm",
+  "image_sha256": "4b18f712c1cc6f04dd637f08e013f5b449549d5f338261db2179ee89e118b948",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3059,
+  "request_sha256": "2d56f0e61507be469e5eae6ae5d7f5ab7cf143d62de350ac7fe26b56a91f07a5",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"브로콜리 닭가슴살 샐러드\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 250, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 0, 1000, 1000], \"nutrition_per_100g\": {\"calories\": 80, \"carbs\": 5.0, \"protein\": 10.0, \"fat\": 2.0}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1794
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 165
+      }
+    ],
+    "cached_content_token_count": 1959,
+    "candidates_token_count": 178,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3237,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4007.77,
+  "completed_at": "2026-10-25T08:46:38.657079+00:00"
+}

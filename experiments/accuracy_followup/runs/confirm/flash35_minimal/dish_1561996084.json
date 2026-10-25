@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1561996084",
+  "request_id": "followup_confirm_flash35_minimal_dish_1561996084",
+  "started_at": "2026-10-25T08:45:16.714586+00:00",
+  "arm": "flash35_minimal",
+  "phase": "confirm",
+  "image_sha256": "0841a2304e48270943c25f1af95c1b74dfe5f0a295dc9f556fa7e46ebe766f3c",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3901,
+  "request_sha256": "afd8e32e0918b53ea512f09d62407baa2efb2aaa5fe203edf4f68a7276ba0176",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"베이컨\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 30,\n      \"count\": 2,\n      \"count_unit\": \"장\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [240, 368, 810, 781],\n      \"nutrition_per_100g\": {\n        \"calories\": 450,\n        \"carbs\": 1.4,\n        \"protein\": 37.0,\n        \"fat\": 32.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 226,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4127,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4002.26,
+  "completed_at": "2026-10-25T08:45:22.213774+00:00"
+}

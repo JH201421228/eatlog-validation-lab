@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551142128",
+  "request_id": "followup_confirm_baseline_dish_1551142128",
+  "started_at": "2026-10-25T08:47:47.294375+00:00",
+  "arm": "baseline",
+  "phase": "confirm",
+  "image_sha256": "56eb1ffc358d92a86a1daea46e958f21849134a5610ac042c7b6b40bf10cfe3e",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3059,
+  "request_sha256": "87dbdb2ce1d2faa153d18dd0f249e0c108277ca5fca11944e18ac870ee05a6f9",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"파인애플\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 100,\n      \"count\": 10,\n      \"count_unit\": \"조각\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [140, 270, 640, 640],\n      \"nutrition_per_100g\": {\n        \"calories\": 50,\n        \"carbs\": 13.1,\n        \"protein\": 0.5,\n        \"fat\": 0.1\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1794
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 165
+      }
+    ],
+    "cached_content_token_count": 1959,
+    "candidates_token_count": 227,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3286,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3481.12,
+  "completed_at": "2026-10-25T08:47:51.289566+00:00"
+}

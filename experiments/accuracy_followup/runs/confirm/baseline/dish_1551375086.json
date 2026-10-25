@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551375086",
+  "request_id": "followup_confirm_baseline_dish_1551375086",
+  "started_at": "2026-10-25T08:45:58.214181+00:00",
+  "arm": "baseline",
+  "phase": "confirm",
+  "image_sha256": "770e7de209a2e920d11c89a6fc6bc4bb67f544cedd6ea3dadc2c3edcbbb3b049",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3059,
+  "request_sha256": "0686af1ebc8d4fac85d159f5787773ec8756dd521b6dbb9f4a354c06cd429f8d",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"귤\", \"confidence\": 0.98, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": 1, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [480, 430, 720, 530], \"nutrition_per_100g\": {\"calories\": 39, \"carbs\": 9.6, \"protein\": 0.8, \"fat\": 0.1}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"귤 조각\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": 4, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 250, 560, 650], \"nutrition_per_100g\": {\"calories\": 39, \"carbs\": 9.6, \"protein\": 0.8, \"fat\": 0.1}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1794
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 165
+      }
+    ],
+    "cached_content_token_count": 1959,
+    "candidates_token_count": 336,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3395,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4002.17,
+  "completed_at": "2026-10-25T08:46:02.788005+00:00"
+}

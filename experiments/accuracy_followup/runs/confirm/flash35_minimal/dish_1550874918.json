@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1550874918",
+  "request_id": "followup_confirm_flash35_minimal_dish_1550874918",
+  "started_at": "2026-10-25T08:48:52.766366+00:00",
+  "arm": "flash35_minimal",
+  "phase": "confirm",
+  "image_sha256": "42c2b49a2d7b0400347f369d58fd77b67097050434c95968e03bf1ca4de7ff9c",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3901,
+  "request_sha256": "50f28b87a0646e29673c11d8ee7a38b68699938a12ec3669b52b00acab99cc02",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"후라이드 치킨\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 0.3,\n      \"estimated_serving_g\": 80.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [28, 214, 452, 516],\n      \"nutrition_per_100g\": {\n        \"calories\": 250.0,\n        \"carbs\": 10.0,\n        \"protein\": 18.0,\n        \"fat\": 15.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 230,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4131,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2315.52,
+  "completed_at": "2026-10-25T08:48:55.436385+00:00"
+}

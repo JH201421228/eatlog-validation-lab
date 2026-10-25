@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1566230222",
+  "request_id": "followup_confirm_flash35_minimal_dish_1566230222",
+  "started_at": "2026-10-25T08:45:38.148754+00:00",
+  "arm": "flash35_minimal",
+  "phase": "confirm",
+  "image_sha256": "2ff58830be8b232e75ef20dde2ab6a007d499448cdd8f705a045a3dd398628aa",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3901,
+  "request_sha256": "b92bf90b829a015b8b92ebfdfffc4073ab808052558c59f5ab73f6e5210ac16d",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"스크램블 에그\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 150,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [0, 100, 1000, 727],\n      \"nutrition_per_100g\": {\n        \"calories\": 150,\n        \"carbs\": 1.5,\n        \"protein\": 11.0,\n        \"fat\": 11.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 226,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4127,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2604.92,
+  "completed_at": "2026-10-25T08:45:41.546485+00:00"
+}

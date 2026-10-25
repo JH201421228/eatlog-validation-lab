@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1550769827",
+  "request_id": "followup_confirm_baseline_dish_1550769827",
+  "started_at": "2026-10-25T08:49:35.017953+00:00",
+  "arm": "baseline",
+  "phase": "confirm",
+  "image_sha256": "8cd5f6814688677ea3afe36741b9011ab68d92a52e8a00ba9a56449fa5b9fbb0",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "counted_input_tokens": 3059,
+  "request_sha256": "9814591be28e54d6993a2a6327886366ce6149b262028fe773152bdf099bd7a5",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"멜론\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 150, \"count\": 12, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [20, 290, 980, 700], \"nutrition_per_100g\": {\"calories\": 34, \"carbs\": 8.2, \"protein\": 0.8, \"fat\": 0.2}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1794
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 165
+      }
+    ],
+    "cached_content_token_count": 1959,
+    "candidates_token_count": 170,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3229,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3037.72,
+  "completed_at": "2026-10-25T08:49:38.583897+00:00"
+}
