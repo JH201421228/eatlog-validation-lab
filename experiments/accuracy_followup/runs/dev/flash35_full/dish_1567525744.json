@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1567525744",
+  "request_id": "followup_dev_flash35_full_dish_1567525744",
+  "started_at": "2026-10-25T08:27:51.323232+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "5d7580b9c74f1a92adcbe45c06aacf333d5625accbb73e1ba727fa9bd4078bbe",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "8a44546d61cc17ac05c39a399e48d45a2bed980629c671a9432e0a936d54b231",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"스크램블 에그\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 90,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [90, 413, 564, 715],\n      \"nutrition_per_100g\": {\n        \"calories\": 168,\n        \"carbs\": 1.5,\n        \"protein\": 11.0,\n        \"fat\": 13.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"베이컨\",\n      \"confidence\": 0.92,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 25,\n      \"count\": 1,\n      \"count_unit\": \"줄\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [243, 584, 915, 786],\n      \"nutrition_per_100g\": {\n        \"calories\": 541,\n        \"carbs\": 1.4,\n        \"protein\": 37.0,\n        \"fat\": 42.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"해시브라운\",\n      \"confidence\": 0.88,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 80,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [314, 253, 881, 545],\n      \"nutrition_per_100g\": {\n        \"calories\": 213,\n        \"carbs\": 24.0,\n        \"protein\": 2.2,\n        \"fat\": 12.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 3,\n      \"food_name\": \"시금치 샐러드\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 60,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [390, 439, 1000, 866],\n      \"nutrition_per_100g\": {\n        \"calories\": 30,\n        \"carbs\": 3.6,\n        \"protein\": 2.8,\n        \"fat\": 0.5\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 866,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4731,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3543.67,
+  "completed_at": "2026-10-25T08:27:55.226958+00:00"
+}

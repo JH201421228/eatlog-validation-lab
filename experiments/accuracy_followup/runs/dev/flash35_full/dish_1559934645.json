@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1559934645",
+  "request_id": "followup_dev_flash35_full_dish_1559934645",
+  "started_at": "2026-10-25T08:24:10.605187+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "2f0a879544e301061486bf380764e4cfad9d6551623d274ce5bf17ac4a35088a",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "49a2633e71fce8ffc824f645c250e68cf8e818c96ce27272f09a923bb770cfe1",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"시저 샐러드\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.3,\n      \"estimated_serving_g\": 60,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [187, 388, 698, 786],\n      \"nutrition_per_100g\": {\n        \"calories\": 150,\n        \"carbs\": 5.0,\n        \"protein\": 3.0,\n        \"fat\": 13.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1188
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 451
+      }
+    ],
+    "cached_content_token_count": 1639,
+    "candidates_token_count": 226,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4091,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2110.88,
+  "completed_at": "2026-10-25T08:24:13.076739+00:00"
+}

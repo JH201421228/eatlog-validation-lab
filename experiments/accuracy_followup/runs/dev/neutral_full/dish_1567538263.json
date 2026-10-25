@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1567538263",
+  "request_id": "followup_dev_neutral_full_dish_1567538263",
+  "started_at": "2026-10-25T07:57:35.640338+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "eac952fae457c6608709740e5fecd034db1e6faaf6a2f835a75b74acced03f7c",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "2623923e60500aaa591cb40ebe16ca4e2021e74cb03aafc53860a23ae6f01a05",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"루꼴라 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [300, 198, 870, 820], \"nutrition_per_100g\": {\"calories\": 25, \"carbs\": 3.7, \"protein\": 2.6, \"fat\": 0.7}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 171,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1676,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2716.58,
+  "completed_at": "2026-10-25T07:57:38.811928+00:00"
+}

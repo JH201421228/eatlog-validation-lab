@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561662948",
+  "request_id": "followup_dev_neutral_portion_dish_1561662948",
+  "started_at": "2026-10-25T07:40:41.932544+00:00",
+  "arm": "neutral_portion",
+  "phase": "dev",
+  "image_sha256": "6db50001627afb4e484ff90c6f77382111dc4f33e126be542ea3344e1ec3d1b7",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 1505,
+  "request_sha256": "8058657de82afb56d9ddd955816c2835ee43d58e3345f4d155f855e6b5bacd5f",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"두부 스테이크\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [140, 390, 560, 620], \"nutrition_per_100g\": {\"calories\": 180.0, \"carbs\": 5.0, \"protein\": 15.0, \"fat\": 10.0}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"샐러드 채소\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 50.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [240, 590, 550, 850], \"nutrition_per_100g\": {\"calories\": 20.0, \"carbs\": 4.0, \"protein\": 1.0, \"fat\": 0.5}, \"package\": null}, {\"food_index\": 2, \"food_name\": \"구운 아스파라거스\", \"confidence\": 0.8, \"estimated_serving\": 0.5, \"estimated_serving_g\": 30.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [400, 490, 700, 680], \"nutrition_per_100g\": {\"calories\": 25.0, \"carbs\": 5.0, \"protein\": 2.0, \"fat\": 0.5}, \"package\": null}, {\"food_index\": 3, \"food_name\": \"구운 옥수수\", \"confidence\": 0.8, \"estimated_serving\": 0.2, \"estimated_serving_g\": 20.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [600, 570, 840, 680], \"nutrition_per_100g\": {\"calories\": 90.0, \"carbs\": 20.0, \"protein\": 3.0, \"fat\": 1.0}, \"package\": null}, {\"food_index\": 4, \"food_name\": \"퀴노아\", \"confidence\": 0.7, \"estimated_serving\": 0.3, \"estimated_serving_g\": 20.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [200, 300, 600, 450], \"nutrition_per_100g\": {\"calories\": 120.0, \"carbs\": 21.0, \"protein\": 4.0, \"fat\": 2.0}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 861,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2366,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5943.78,
+  "completed_at": "2026-10-25T07:40:48.454097+00:00"
+}

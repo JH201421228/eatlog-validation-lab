@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1562775110",
+  "request_id": "followup_dev_volume_consistency_dish_1562775110",
+  "started_at": "2026-10-25T07:41:32.789811+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "8245c5c78ed5c985b57091e4379e759274170831091dd5e28a6682b3175637e1",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "a0de5cf3e7e86a145cfb90ce989a24d4616473a9a1bc2181a3716feb74ee0d7c",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"과일 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [270, 438, 770, 825], \"nutrition_per_100g\": {\"calories\": 40.0, \"carbs\": 10.0, \"protein\": 0.5, \"fat\": 0.2}, \"package\": null}, {\"food_index\": 0, \"food_name\": \"수박 멜론 샐러드\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [270, 438, 770, 825], \"nutrition_per_100g\": {\"calories\": 40.0, \"carbs\": 10.0, \"protein\": 0.5, \"fat\": 0.2}, \"package\": null}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"작은 흰색 그릇에 깍둑썰기한 수박과 멜론이 가득 담겨 있습니다. 그릇의 윗부분까지 채워져 있으며, 일부 조각은 그릇 밖으로 튀어나와 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 200.0, \"bulk_density_g_per_ml\": 0.75, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 494,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2664,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3922.24,
+  "completed_at": "2026-10-25T07:41:37.236130+00:00"
+}

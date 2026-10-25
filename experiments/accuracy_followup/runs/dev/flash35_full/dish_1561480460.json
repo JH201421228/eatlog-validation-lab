@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1561480460",
+  "request_id": "followup_dev_flash35_full_dish_1561480460",
+  "started_at": "2026-10-25T08:21:32.232319+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "d3922ce5d9fdad15aed9268e704c4c5a6ad7a997854d84326e89fd52b26db2cc",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "f06ea1272ee4efbc89578543bb9acf0a0c0df34c98ebf874bd06cee9b3255972",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"스크램블 에그\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 80,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [207, 608, 649, 868],\n      \"nutrition_per_100g\": {\n        \"calories\": 150,\n        \"carbs\": 1.5,\n        \"protein\": 10.0,\n        \"fat\": 11.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"블랙베리\",\n      \"confidence\": 0.92,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 40,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [212, 391, 665, 668],\n      \"nutrition_per_100g\": {\n        \"calories\": 43,\n        \"carbs\": 9.6,\n        \"protein\": 1.4,\n        \"fat\": 0.5\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"라즈베리\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 50,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [133, 391, 592, 751],\n      \"nutrition_per_100g\": {\n        \"calories\": 52,\n        \"carbs\": 11.9,\n        \"protein\": 1.2,\n        \"fat\": 0.7\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 3,\n      \"food_name\": \"파인애플\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 60,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [538, 514, 799, 850],\n      \"nutrition_per_100g\": {\n        \"calories\": 50,\n        \"carbs\": 13.1,\n        \"protein\": 0.5,\n        \"fat\": 0.1\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 4,\n      \"food_name\": \"햄\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 30,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [243, 474, 820, 751],\n      \"nutrition_per_100g\": {\n        \"calories\": 250,\n        \"carbs\": 2.0,\n        \"protein\": 14.0,\n        \"fat\": 21.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1066,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4931,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4160.93,
+  "completed_at": "2026-10-25T08:21:36.831681+00:00"
+}

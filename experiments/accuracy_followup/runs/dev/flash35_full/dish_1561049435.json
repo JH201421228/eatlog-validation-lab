@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561049435",
+  "request_id": "followup_dev_flash35_full_dish_1561049435",
+  "started_at": "2026-10-25T08:27:43.850582+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "7708728d141c433f2f40ccdc6ab41fb4cb4b29a863f609977dcc300f5c2f208a",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "cb8280f02a439d484253b76c0cda7974cd0d66d1a5b2a8bfffef003a50dfa948",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"베이컨\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 30,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [223, 425, 831, 589],\n      \"nutrition_per_100g\": {\n        \"calories\": 541,\n        \"carbs\": 1.4,\n        \"protein\": 37.0,\n        \"fat\": 42.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"스크램블 에그\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 100,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [228, 513, 706, 856],\n      \"nutrition_per_100g\": {\n        \"calories\": 160,\n        \"carbs\": 1.5,\n        \"protein\": 11.0,\n        \"fat\": 12.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"멜론\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 60,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [580, 517, 903, 701],\n      \"nutrition_per_100g\": {\n        \"calories\": 34,\n        \"carbs\": 8.2,\n        \"protein\": 0.8,\n        \"fat\": 0.2\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 3,\n      \"food_name\": \"산딸기\",\n      \"confidence\": 0.90,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 50,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [502, 670, 844, 893],\n      \"nutrition_per_100g\": {\n        \"calories\": 52,\n        \"carbs\": 11.9,\n        \"protein\": 1.2,\n        \"fat\": 0.7\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1188
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 451
+      }
+    ],
+    "cached_content_token_count": 1639,
+    "candidates_token_count": 857,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4722,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3527.07,
+  "completed_at": "2026-10-25T08:27:47.853514+00:00"
+}

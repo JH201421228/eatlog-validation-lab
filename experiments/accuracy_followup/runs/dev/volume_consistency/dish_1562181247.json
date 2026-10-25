@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1562181247",
+  "request_id": "followup_dev_volume_consistency_dish_1562181247",
+  "started_at": "2026-10-25T07:42:41.237461+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "248d49da6328bc00a7a65568bd97f4823c02596b6f6832e72ace7bcee36e01fd",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "cc3af083261c3488b9856f4f869ebaa3db52490e2d19640c83682d8e7dd01dda",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"프라이드 치킨\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 100, \"count\": 1, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [160, 275, 780, 585], \"nutrition_per_100g\": {\"calories\": 290, \"carbs\": 15, \"protein\": 20, \"fat\": 17}}, {\"food_index\": 1, \"food_name\": \"베이컨\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 20, \"count\": 2, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [300, 570, 780, 780], \"nutrition_per_100g\": {\"calories\": 540, \"carbs\": 0, \"protein\": 18, \"fat\": 50}}, {\"food_index\": 2, \"food_name\": \"코울슬로\", \"confidence\": 0.8, \"estimated_serving\": 0.3, \"estimated_serving_g\": 50, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [430, 300, 780, 490], \"nutrition_per_100g\": {\"calories\": 150, \"carbs\": 15, \"protein\": 1, \"fat\": 10}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"프라이드 치킨 한 조각이 접시 중앙 왼쪽에 놓여 있으며, 튀김옷이 두껍고 불규칙한 모양입니다. 코울슬로가 치킨 위에 얹혀 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"베이컨 두 조각이 접시 중앙 오른쪽에 놓여 있으며, 바싹 구워져 구불구불한 형태입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"high\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"코울슬로가 프라이드 치킨 위에 소량 얹혀 있으며, 잘게 썬 양배추와 당근, 마요네즈 소스로 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 812,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2982,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5549.85,
+  "completed_at": "2026-10-25T07:42:47.172458+00:00"
+}

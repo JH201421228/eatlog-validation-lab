@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551124407",
+  "request_id": "followup_dev_volume_consistency_dish_1551124407",
+  "started_at": "2026-10-25T07:42:24.311378+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "df5f54b48a97f846538eaefff650905bfb3e2ba8caed1b1d4e031e5bf61caf1d",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "88f22dc07cc105febd00ff93cb7f1d4278ee17f8351c97067ce08e2a9299fe41",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"스크램블 에그\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [290, 0, 900, 400], \"nutrition_per_100g\": {\"calories\": 149.0, \"carbs\": 1.1, \"protein\": 11.0, \"fat\": 11.0}}, {\"food_index\": 1, \"food_name\": \"방울양배추 구이\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 80.0, \"count\": 5.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 0, 800, 900], \"nutrition_per_100g\": {\"calories\": 43.0, \"carbs\": 9.0, \"protein\": 3.4, \"fat\": 0.3}}, {\"food_index\": 2, \"food_name\": \"샐러드 채소\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 30.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 0, 800, 900], \"nutrition_per_100g\": {\"calories\": 15.0, \"carbs\": 3.0, \"protein\": 1.0, \"fat\": 0.2}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 왼쪽에 노란색 스크램블 에그가 덩어리째 놓여 있습니다. 약 100g으로 추정됩니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시에 구운 방울양배추 5개가 흩어져 있습니다. 개당 약 16g으로 추정됩니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"접시 중앙에 다양한 잎채소가 섞인 샐러드가 놓여 있습니다. 약 30g으로 추정됩니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1237
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 167
+      }
+    ],
+    "cached_content_token_count": 1404,
+    "candidates_token_count": 822,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2992,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6272.71,
+  "completed_at": "2026-10-25T07:42:31.270748+00:00"
+}

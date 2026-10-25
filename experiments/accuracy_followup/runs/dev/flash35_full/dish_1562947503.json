@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1562947503",
+  "request_id": "followup_dev_flash35_full_dish_1562947503",
+  "started_at": "2026-10-25T08:25:21.464919+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "be0e75942b1d1497f5e2a346cc6f4aacfd4c0709bd6ab81f982f23eaaad7dc36",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "6e8ece994b0bafafffa8a7d4b2f158858cd2e6c170a92611f0cf0d33477d5187",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"소시지\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 60,\n      \"count\": 3,\n      \"count_unit\": \"개\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [160, 323, 521, 482],\n      \"nutrition_per_100g\": {\n        \"calories\": 300,\n        \"carbs\": 3.0,\n        \"protein\": 12.0,\n        \"fat\": 27.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"구운 감자\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 80,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [163, 467, 442, 759],\n      \"nutrition_per_100g\": {\n        \"calories\": 93,\n        \"carbs\": 20.1,\n        \"protein\": 2.5,\n        \"fat\": 0.5\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"파인애플\",\n      \"confidence\": 0.98,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 90,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [484, 298, 800, 638],\n      \"nutrition_per_100g\": {\n        \"calories\": 50,\n        \"carbs\": 13.1,\n        \"protein\": 0.5,\n        \"fat\": 0.1\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 3,\n      \"food_name\": \"딸기\",\n      \"confidence\": 0.98,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 75,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [365, 485, 716, 843],\n      \"nutrition_per_100g\": {\n        \"calories\": 32,\n        \"carbs\": 7.7,\n        \"protein\": 0.7,\n        \"fat\": 0.3\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 4,\n      \"food_name\": \"블루베리\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 15,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [394, 584, 584, 840],\n      \"nutrition_per_100g\": {\n        \"calories\": 57,\n        \"carbs\": 14.5,\n        \"protein\": 0.7,\n        \"fat\": 0.3\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 5,\n      \"food_name\": \"모차렐라 치즈\",\n      \"confidence\": 0.92,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 70,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [0, 595, 497, 915],\n      \"nutrition_per_100g\": {\n        \"calories\": 280,\n        \"carbs\": 2.2,\n        \"protein\": 28.0,\n        \"fat\": 17.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1199,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5064,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3755.51,
+  "completed_at": "2026-10-25T08:25:25.895494+00:00"
+}

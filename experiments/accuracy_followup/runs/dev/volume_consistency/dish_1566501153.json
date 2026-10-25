@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1566501153",
+  "request_id": "followup_dev_volume_consistency_dish_1566501153",
+  "started_at": "2026-10-25T07:43:26.986179+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "d2158774d2d72a00bfb7f63c121ac8885c733c0d0c94fb72350aec1849981929",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "2fd019c4f17808e710b906b7cc5aa6616ef1576b51c1f74e058e2c9e893ba609",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"닭가슴살 아보카도 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 250.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [10, 180, 960, 970], \"nutrition_per_100g\": {\"calories\": 150.0, \"carbs\": 8.0, \"protein\": 15.0, \"fat\": 7.0}, \"package\": null}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"흰색 그릇에 시금치, 닭가슴살, 아보카도, 치즈, 당근 채, 올리브가 섞여 있으며, 드레싱이 뿌려져 있습니다. 그릇의 80% 정도가 채워져 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 300.0, \"bulk_density_g_per_ml\": 0.83, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 329,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2499,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3269.16,
+  "completed_at": "2026-10-25T07:43:30.691194+00:00"
+}

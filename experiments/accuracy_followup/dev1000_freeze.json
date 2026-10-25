@@ -1,0 +1,9 @@
+{
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "count": 1000,
+  "source_manifest_sha256": "c7ab766b7ed73c4e9b7fc04fabf95d8a6298bd31d631f34faf130596eb80da22",
+  "selection_rule": "All original selection_v3 blind_test rows in original order",
+  "purpose": "Exploratory full development; all previous main1000 outcomes observed",
+  "collection": "1000 fresh neutral requests; dev100 responses intentionally not reused; approximately 100 duplicate requests",
+  "new_arm": "neutral_full"
+}

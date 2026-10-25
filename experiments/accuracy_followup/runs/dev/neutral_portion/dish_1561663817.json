@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561663817",
+  "request_id": "followup_dev_neutral_portion_dish_1561663817",
+  "started_at": "2026-10-25T07:40:16.513119+00:00",
+  "arm": "neutral_portion",
+  "phase": "dev",
+  "image_sha256": "0a013f238368d209ed0344663c8af17d4ff71fa47836ec57402862ed7cdf5f90",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 1505,
+  "request_sha256": "19f869f933763628ef4b01e4e06740666bd8ba6789b6bc28ba08dc0a060547a0",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"샐러드\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [260, 290, 790, 620], \"nutrition_per_100g\": {\"calories\": 40, \"carbs\": 5, \"protein\": 2, \"fat\": 2}}, {\"food_index\": 1, \"food_name\": \"옥수수\", \"confidence\": 0.8, \"estimated_serving\": 0.1, \"estimated_serving_g\": 20, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [440, 670, 620, 760], \"nutrition_per_100g\": {\"calories\": 86, \"carbs\": 19, \"protein\": 3, \"fat\": 1}}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 287,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1792,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3498.65,
+  "completed_at": "2026-10-25T07:40:20.556021+00:00"
+}

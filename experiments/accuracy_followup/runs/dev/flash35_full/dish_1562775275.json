@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1562775275",
+  "request_id": "followup_dev_flash35_full_dish_1562775275",
+  "started_at": "2026-10-25T08:18:21.468010+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "004c1cd40a5b0fff9ae80255fbe0828c0197be8c1e741e7ffa876a189b313a8a",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "588b34e7e4d4844faa56cdece04ff7139953facc273211be490411ba38963195",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"오트밀\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 250,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [225, 461, 770, 862],\n      \"nutrition_per_100g\": {\n        \"calories\": 68,\n        \"carbs\": 12.0,\n        \"protein\": 2.4,\n        \"fat\": 1.4\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"멜론\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 120,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [267, 508, 755, 808],\n      \"nutrition_per_100g\": {\n        \"calories\": 34,\n        \"carbs\": 8.2,\n        \"protein\": 0.8,\n        \"fat\": 0.2\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 431,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4296,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3349.75,
+  "completed_at": "2026-10-25T08:18:25.338794+00:00"
+}

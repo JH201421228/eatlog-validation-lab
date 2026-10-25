@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1562789301",
+  "request_id": "followup_dev_flash35_full_dish_1562789301",
+  "started_at": "2026-10-25T08:16:10.791803+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "92b1b6869d1ad93b26e63bc8ea1518ec1c458717f2800d352dc030435a0faf6d",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "cb1193fd4b87342724c4d5793525cc94188f0144ab8c2c561850c714c0bee79b",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"옥수수\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 120,\n      \"count\": 4,\n      \"count_unit\": \"개\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [52, 473, 521, 807],\n      \"nutrition_per_100g\": {\n        \"calories\": 106,\n        \"carbs\": 23.7,\n        \"protein\": 3.4,\n        \"fat\": 1.2\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"시저 샐러드\",\n      \"confidence\": 0.90,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 100,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [410, 389, 936, 735],\n      \"nutrition_per_100g\": {\n        \"calories\": 150,\n        \"carbs\": 5.0,\n        \"protein\": 3.0,\n        \"fat\": 13.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"돼지고기 구이\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 150,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [435, 729, 888, 951],\n      \"nutrition_per_100g\": {\n        \"calories\": 242,\n        \"carbs\": 0.0,\n        \"protein\": 25.0,\n        \"fat\": 15.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 3,\n      \"food_name\": \"피자 토스트\",\n      \"confidence\": 0.80,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 80,\n      \"count\": 1,\n      \"count_unit\": \"조각\",\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [7, 732, 421, 952],\n      \"nutrition_per_100g\": {\n        \"calories\": 260,\n        \"carbs\": 30.0,\n        \"protein\": 12.0,\n        \"fat\": 10.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 870,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4735,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3395.95,
+  "completed_at": "2026-10-25T08:16:14.778052+00:00"
+}

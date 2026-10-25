@@ -1,0 +1,44 @@
+{
+  "frozen_at_utc": "2026-10-25T07:30:20.944088+00:00",
+  "selected": 155,
+  "source_available": 153,
+  "by_camera": {
+    "side_camera_A_frame_0": 152,
+    "side_camera_B_frame_0": 3
+  },
+  "by_official_split": {
+    "test": 19,
+    "train": 136
+  },
+  "selection_manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "gold_sha256": "501c3d0d03c96052b949a6d57c33db7432abbfdf7a6e6660c4ba66d4f97c973e",
+  "source_availability_sha256": "1f91ec17d4fc243a814802eadf9bdcb26476488ed0165d5d88fd4b8f549d3065",
+  "candidate_sha256": "197aee0e796982d4ffbd28a74a14eaafb1c966085e7f2b78a9f3f76ebc8b5f79",
+  "label_policy": "gold_labels.jsonl is scorer-only; manifest intentionally omits truth and ingredients",
+  "model_calls_made": 0,
+  "no_replacement": true,
+  "fixed_denominator": 155,
+  "download_verified_at_utc": "2026-10-25T07:33:59.391494+00:00",
+  "download_manifest_sha256": "f322b46dcf5993381cc9013e0d2ce8d03dfa8d63ae3cdfe06db8359498d352e8",
+  "integrity_audit_sha256": "f84c49f8220cf2c2b7cee8576d1e78375f8ce354d8b15d59285bfc9353985564",
+  "download_status_counts": {
+    "ok": 153,
+    "source_unavailable": 2
+  },
+  "available_by_camera": {
+    "side_camera_A_frame_0": 150,
+    "side_camera_B_frame_0": 3
+  },
+  "confirmation_acceptance": {
+    "minimum_paired_valid": 100,
+    "calorie_mae_relative_reduction_min": 0.1,
+    "paired_delta_bootstrap95_upper_lt": 0,
+    "all_selected_within15_rate_must_not_decrease": true,
+    "valid_prediction_count_must_not_decrease": true,
+    "confirmation_set_openings": 1,
+    "accepted_by": "parent coordinator before follow-up candidate evaluation"
+  },
+  "manifest_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018",
+  "derived_input_freeze_source_sha256": "7e934ccdbbf2145774dec0abfe03c04b1c0f8744f5de6e1dac2e375868839fe7",
+  "note": "Routing compatibility alias only; original source freeze and selection bytes unchanged. This is not the final candidate freeze."
+}

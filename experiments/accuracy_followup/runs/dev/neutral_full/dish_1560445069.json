@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1560445069",
+  "request_id": "followup_dev_neutral_full_dish_1560445069",
+  "started_at": "2026-10-25T07:58:50.959697+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "0ae8c5fd595ede2d8f6cb3fab7f31a48331ca7dd47f8ed85c62da17668f11b4e",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "4822d75bcc3ca825ef75ddf54454c9f1cbaee0b362de7b752cd3d001fad4ad4d",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"오렌지 주스\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 200.0, \"count\": 1.0, \"count_unit\": \"잔\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [248, 420, 667, 720], \"nutrition_per_100g\": {\"calories\": 45.0, \"carbs\": 11.0, \"protein\": 0.7, \"fat\": 0.2}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 180,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1685,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2926.42,
+  "completed_at": "2026-10-25T07:58:54.338705+00:00"
+}

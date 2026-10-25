@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1560356355",
+  "request_id": "followup_dev_neutral_full_dish_1560356355",
+  "started_at": "2026-10-25T08:01:44.277281+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "ff8a8a6c5b16d53ad59ec56bf51ea7b576da9d02edba2bef8d9614abb8d997e3",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "c5568bfc9f8469a8d1791dc641fb726e7bb81df697f0c398d7075bc5a360db29",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"베이컨\", \"confidence\": 0.95, \"estimated_serving\": 1.5, \"estimated_serving_g\": 45, \"count\": 3, \"count_unit\": \"장\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [600, 298, 800, 500], \"nutrition_per_100g\": {\"calories\": 541, \"carbs\": 0, \"protein\": 37, \"fat\": 43}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"구운 고구마\", \"confidence\": 0.9, \"estimated_serving\": 1.5, \"estimated_serving_g\": 150, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [400, 320, 750, 620], \"nutrition_per_100g\": {\"calories\": 100, \"carbs\": 23, \"protein\": 2, \"fat\": 0.2}, \"package\": null}, {\"food_index\": 2, \"food_name\": \"시금치 샐러드\", \"confidence\": 0.85, \"estimated_serving\": 1, \"estimated_serving_g\": 80, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [150, 500, 650, 850], \"nutrition_per_100g\": {\"calories\": 30, \"carbs\": 4, \"protein\": 3, \"fat\": 1}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 493,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1998,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4481.88,
+  "completed_at": "2026-10-25T08:01:49.307775+00:00"
+}

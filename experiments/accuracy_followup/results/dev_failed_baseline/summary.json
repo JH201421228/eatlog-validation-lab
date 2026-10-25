@@ -1,0 +1,159 @@
+{
+  "generated_at": "2026-10-25T07:37:57.958909+00:00",
+  "phase": "dev",
+  "selected_count": 100,
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "source_index_sha256": "d054b20dddad17a7432bb43972d7f31650ce362775bab5aaf83679e465070ff2",
+  "worker_sha256": "6da01a20e0bbe33f7bc029869fe1a8d40db84a57dbf20d96068ced0cf8103c59",
+  "scorer_sha256": "fedd95bf6e22e059097c7ea70269d535164d77c51c23afce4e38c41464577095",
+  "transport": {
+    "baseline": {
+      "request_freeze": {
+        "arm": "baseline",
+        "phase": "dev",
+        "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+        "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+        "model": "gemini-2.5-flash",
+        "prompt_sha256": "ec03e8be7d47b2d48734f60354360246c78ea55c06d227de31907a7f8c71a7c7",
+        "schema_sha256": "4e36ed481d5493f10d5e2ebc442559c542c1e1522142fdd7391f9ec53e25cf5d",
+        "code_sha256": "3c3da6ef4c26e8815a24793363d449fe0a78b59714d3175d68ae629030dee51c",
+        "selected_count": 100,
+        "frozen_at": "2026-10-25T07:35:45.920114+00:00"
+      },
+      "response_archive_sha256": "14f8c771b5883c290dc58fc9e241d4ab285cab4daa60733fe0e12a62f186a757",
+      "collection_status_counts": {
+        "count_tokens_failed": 4,
+        "not_attempted": 96
+      },
+      "latency_ms": {
+        "count": 0,
+        "p50": null,
+        "p95": null
+      },
+      "raw_token_totals": {
+        "prompt_token_count": 0,
+        "candidates_token_count": 0,
+        "thoughts_token_count": 0,
+        "total_token_count": 0
+      },
+      "usage_present_count": 0,
+      "usage_estimated_usd_known_only": 0.0,
+      "missing_or_invalid_usage_count": 4,
+      "cost_authority": "experiments/accuracy_followup/cost_ledger.json; missing usage is never zero billed cost"
+    }
+  },
+  "scope": "Pinned improved AI/BE, no DB/grounding/habits, no live services; all selected rows remain in denominator",
+  "exploratory": true,
+  "labels_scored": true,
+  "cost_summary_reference": "C:\\Users\\741u7\\Desktop\\soma_project\\eatlog-validation-lab\\experiments\\accuracy_followup\\cost_summary.json",
+  "cumulative_cost_snapshot": {
+    "attempted_generations": 1054,
+    "settled_requests": 1049,
+    "unknown_reserved_requests": 5,
+    "usage_estimated_usd": 1.9754298,
+    "charged_or_reserved_usd": 4.4754298,
+    "hard_cap_usd": 30,
+    "billing_invoice_verified": false
+  },
+  "versions": {
+    "baseline": {
+      "status_counts": {
+        "failed": 100
+      },
+      "selected_food_groups": 0,
+      "selected_packaged_foods": 0,
+      "selected_foods_with_printed_kcal": 0,
+      "selected_foods_with_grounded_label": 0,
+      "nutrition_source_counts": {},
+      "nutrients": {
+        "calories": {
+          "selected_count": 100,
+          "valid_prediction_count": 0,
+          "missing_prediction_count": 100,
+          "coverage_percent": 0.0,
+          "mae": null,
+          "mean_error_bias": null,
+          "mape_percent": null,
+          "median_ape_percent": null,
+          "p90_ape_percent": null,
+          "mape_nonzero_truth_count": 0,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": null,
+          "within_15_percent_count": 0,
+          "within_15_percent_of_all_selected": 0.0,
+          "within_15_percent_of_valid_predictions": null
+        },
+        "carbs": {
+          "selected_count": 100,
+          "valid_prediction_count": 0,
+          "missing_prediction_count": 100,
+          "coverage_percent": 0.0,
+          "mae": null,
+          "mean_error_bias": null,
+          "mape_percent": null,
+          "median_ape_percent": null,
+          "p90_ape_percent": null,
+          "mape_nonzero_truth_count": 0,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": null,
+          "within_15_percent_count": 0,
+          "within_15_percent_of_all_selected": 0.0,
+          "within_15_percent_of_valid_predictions": null
+        },
+        "protein": {
+          "selected_count": 100,
+          "valid_prediction_count": 0,
+          "missing_prediction_count": 100,
+          "coverage_percent": 0.0,
+          "mae": null,
+          "mean_error_bias": null,
+          "mape_percent": null,
+          "median_ape_percent": null,
+          "p90_ape_percent": null,
+          "mape_nonzero_truth_count": 0,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": null,
+          "within_15_percent_count": 0,
+          "within_15_percent_of_all_selected": 0.0,
+          "within_15_percent_of_valid_predictions": null
+        },
+        "fat": {
+          "selected_count": 100,
+          "valid_prediction_count": 0,
+          "missing_prediction_count": 100,
+          "coverage_percent": 0.0,
+          "mae": null,
+          "mean_error_bias": null,
+          "mape_percent": null,
+          "median_ape_percent": null,
+          "p90_ape_percent": null,
+          "mape_nonzero_truth_count": 0,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": null,
+          "within_15_percent_count": 0,
+          "within_15_percent_of_all_selected": 0.0,
+          "within_15_percent_of_valid_predictions": null
+        },
+        "mass_g": {
+          "selected_count": 100,
+          "valid_prediction_count": 0,
+          "missing_prediction_count": 100,
+          "coverage_percent": 0.0,
+          "mae": null,
+          "mean_error_bias": null,
+          "mape_percent": null,
+          "median_ape_percent": null,
+          "p90_ape_percent": null,
+          "mape_nonzero_truth_count": 0,
+          "mape_zero_truth_excluded_count": 0,
+          "wape_percent_mae_over_mean_truth": null,
+          "within_15_percent_count": 0,
+          "within_15_percent_of_all_selected": 0.0,
+          "within_15_percent_of_valid_predictions": null
+        }
+      }
+    }
+  },
+  "paired_vs_baseline": {},
+  "dev_advancement_screen": {}
+}

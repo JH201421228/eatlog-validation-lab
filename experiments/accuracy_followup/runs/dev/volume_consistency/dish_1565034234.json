@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565034234",
+  "request_id": "followup_dev_volume_consistency_dish_1565034234",
+  "started_at": "2026-10-25T07:43:23.204912+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "a0798cc739a8dc5ae5593c771524aef5a88a79da277a75b794e01bd25c9371c2",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "96a68e111519c0215019d012e9182a8a4613ac6fded07232b13a947cea8d1083",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"콜리플라워\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 100, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [10, 300, 770, 800], \"nutrition_per_100g\": {\"calories\": 25, \"carbs\": 5, \"protein\": 2, \"fat\": 0.3}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"흰색 접시에 삶은 콜리플라워 조각들이 흩어져 있으며, 접시의 약 1/4 정도를 덮고 있습니다. 조각들은 중간 크기이며, 일부는 겹쳐져 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 150, \"bulk_density_g_per_ml\": 0.67, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 298,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2468,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3165.05,
+  "completed_at": "2026-10-25T07:43:26.871648+00:00"
+}

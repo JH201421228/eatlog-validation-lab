@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1559846688",
+  "request_id": "followup_dev_flash35_full_dish_1559846688",
+  "started_at": "2026-10-25T08:16:32.766529+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "9ffb20cf0129297fff6795e1bce0bec03bef731395059ceb71343643076562fd",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "70bbdd5cfbffc78c9e2eee323fdbb3ca3d4f32de640f0b490386951a9f78f832",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"채소샐러드\",\n      \"confidence\": 0.92,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 120.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [188, 368, 680, 866],\n      \"nutrition_per_100g\": {\n        \"calories\": 65.0,\n        \"carbs\": 5.2,\n        \"protein\": 2.1,\n        \"fat\": 4.3\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 228,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4093,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2742.54,
+  "completed_at": "2026-10-25T08:16:36.274449+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1558109907",
+  "request_id": "followup_dev_volume_consistency_dish_1558109907",
+  "started_at": "2026-10-25T07:42:47.620704+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "4243dd19a7036cc77aa96e63465d54e024bb64aae2c234e08584e9a8b5dce54a",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "58b55e0d13b5f557aef76f7128c4e55edb420cbad6532148d0cfe2dfb0e951a9",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"포도\", \"confidence\": 1, \"estimated_serving\": 0.3, \"estimated_serving_g\": 40, \"count\": 13, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [238, 384, 573, 735], \"nutrition_per_100g\": {\"calories\": 69, \"carbs\": 18.1, \"protein\": 0.7, \"fat\": 0.2}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"흰색 접시에 붉은색과 노란색 포도 13알이 흩어져 있습니다. 포도알은 비교적 균일한 크기입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 282,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2452,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3057.71,
+  "completed_at": "2026-10-25T07:42:50.991159+00:00"
+}

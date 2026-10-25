@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1566850142",
+  "request_id": "followup_dev_volume_consistency_dish_1566850142",
+  "started_at": "2026-10-25T07:42:31.362609+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "f4fdaaed422c4a44a1fbbd9e11c1c8c8f6288835343db68d0dddc968fd4c5d48",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "3e64c3cc432acf240f675eda6b3724eea1b1d9188e42bacee602446642b6a313",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"풀드포크\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 200, 600, 500], \"nutrition_per_100g\": {\"calories\": 250.0, \"carbs\": 5.0, \"protein\": 20.0, \"fat\": 17.0}}, {\"food_index\": 1, \"food_name\": \"샐러드\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 500, 600, 800], \"nutrition_per_100g\": {\"calories\": 80.0, \"carbs\": 8.0, \"protein\": 3.0, \"fat\": 4.0}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 왼쪽 절반을 차지하며, 잘게 찢긴 고기와 채소 혼합물이 쌓여 있습니다. 높이는 중간 정도입니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 200.0, \"bulk_density_g_per_ml\": 0.75, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시의 오른쪽 절반을 차지하며, 다양한 잎채소와 브로콜리 조각이 쌓여 있습니다. 비교적 부피가 크고 가볍게 보입니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 300.0, \"bulk_density_g_per_ml\": 0.4, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 578,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2748,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4366.61,
+  "completed_at": "2026-10-25T07:42:36.141617+00:00"
+}

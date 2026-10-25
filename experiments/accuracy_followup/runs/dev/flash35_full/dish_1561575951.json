@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1561575951",
+  "request_id": "followup_dev_flash35_full_dish_1561575951",
+  "started_at": "2026-10-25T08:20:37.516772+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "0c9f089e3e0aae03fd52e2978191909d814f97dc0e0234d0dc76a0c2b7d1a32b",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "68e54bc8a45e984fe112a8e07b530eafe850f821414b789ba9f0e05d20869a7e",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"연어구이\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 120,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [215, 451, 461, 689],\n      \"nutrition_per_100g\": {\n        \"calories\": 206,\n        \"carbs\": 1.2,\n        \"protein\": 22.1,\n        \"fat\": 12.3\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"볶음밥\",\n      \"confidence\": 0.75,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 100,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [134, 606, 672, 851],\n      \"nutrition_per_100g\": {\n        \"calories\": 175,\n        \"carbs\": 25.0,\n        \"protein\": 4.5,\n        \"fat\": 6.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 438,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4303,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3694.5,
+  "completed_at": "2026-10-25T08:20:42.772591+00:00"
+}

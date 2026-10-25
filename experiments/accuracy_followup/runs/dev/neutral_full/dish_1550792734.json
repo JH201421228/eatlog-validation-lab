@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1550792734",
+  "request_id": "followup_dev_neutral_full_dish_1550792734",
+  "started_at": "2026-10-25T08:09:43.080433+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "fa1d49c7635abdb306afe0c8b8edc38a8df10b5f6d2c84a14b4060269ef15551",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "59b02dcb410e926dd030fcb874099b469827ae8a5e0876e8134d8f2228f55635",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"방울토마토\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": 8, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [113, 343, 627, 692], \"nutrition_per_100g\": {\"calories\": 18, \"carbs\": 3.9, \"protein\": 0.9, \"fat\": 0.2}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 527
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 109
+      }
+    ],
+    "cached_content_token_count": 636,
+    "candidates_token_count": 172,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1677,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3086.86,
+  "completed_at": "2026-10-25T08:09:46.560372+00:00"
+}

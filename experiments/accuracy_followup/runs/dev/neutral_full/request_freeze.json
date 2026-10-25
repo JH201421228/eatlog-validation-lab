@@ -1,0 +1,12 @@
+{
+  "arm": "neutral_full",
+  "phase": "dev",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "model": "gemini-2.5-flash",
+  "prompt_sha256": "07b993ce9be98b68f371b75e52f52cff7a25feba119ac6b0c47156ddfa97771e",
+  "schema_sha256": "4e36ed481d5493f10d5e2ebc442559c542c1e1522142fdd7391f9ec53e25cf5d",
+  "code_sha256": "3c3da6ef4c26e8815a24793363d449fe0a78b59714d3175d68ae629030dee51c",
+  "selected_count": 1000,
+  "frozen_at": "2026-10-25T07:52:38.555695+00:00"
+}

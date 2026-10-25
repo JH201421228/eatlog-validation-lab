@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1550862217",
+  "request_id": "followup_dev_volume_consistency_dish_1550862217",
+  "started_at": "2026-10-25T07:43:39.758404+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "ef804605458f20182a1bde1d591d43dcea33ef8ba0f8c6317d189765b5fff885",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "35aa35bcaab37b8e52200b19cd4184655053a494f0e56e9e5db893a5b8e13a68",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"바나나\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": 1.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 250, 1000, 750], \"nutrition_per_100g\": {\"calories\": 89.0, \"carbs\": 22.84, \"protein\": 1.09, \"fat\": 0.33}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"중간 크기의 바나나 한 개가 접시 위에 놓여 있습니다. 껍질을 포함한 전체 바나나의 모습입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1237
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 167
+      }
+    ],
+    "cached_content_token_count": 1404,
+    "candidates_token_count": 288,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2458,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3787.31,
+  "completed_at": "2026-10-25T07:43:43.827931+00:00"
+}

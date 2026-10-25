@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1564428515",
+  "request_id": "followup_dev_volume_consistency_dish_1564428515",
+  "started_at": "2026-10-25T07:42:00.105553+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "97111d9e18efb39d3d19f9309cc34f4ec0516b0e5cf051886fe489f5be90930f",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "b10dfa9994bfff8595f7de57510521701b4d3ea00f8ec2c1a141c7805b71a7bc",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 80.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 290, 680, 570], \"nutrition_per_100g\": {\"calories\": 20, \"carbs\": 4, \"protein\": 1, \"fat\": 0.5}}, {\"food_index\": 1, \"food_name\": \"구운 닭고기\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [390, 300, 990, 800], \"nutrition_per_100g\": {\"calories\": 165, \"carbs\": 0, \"protein\": 31, \"fat\": 3.6}}, {\"food_index\": 2, \"food_name\": \"콜리플라워\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 75.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 570, 320, 980], \"nutrition_per_100g\": {\"calories\": 25, \"carbs\": 5, \"protein\": 2, \"fat\": 0.3}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 왼쪽 상단에 잎채소와 당근 채가 섞인 샐러드가 쌓여 있습니다. 드레싱이 뿌려져 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 200.0, \"bulk_density_g_per_ml\": 0.4, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시의 하단에 구운 닭고기 조각들이 놓여 있습니다. 일부는 찢어져 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 150.0, \"bulk_density_g_per_ml\": 1.0, \"scale_uncertainty\": \"high\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"접시의 오른쪽 상단에 삶거나 찐 콜리플라워 덩어리들이 놓여 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 100.0, \"bulk_density_g_per_ml\": 0.75, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 822,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2992,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5313.68,
+  "completed_at": "2026-10-25T07:42:05.926772+00:00"
+}

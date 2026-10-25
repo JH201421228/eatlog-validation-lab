@@ -1,0 +1,386 @@
+{
+  "purpose": "Exploratory causes only. The old 1,000-case set is no longer a confirmatory holdout.",
+  "not_deployable_ground_truth_oracle": true,
+  "valid_cases": {
+    "n": 994,
+    "calorie_mae": 107.41733431086519,
+    "calorie_mape_percent": 63.73625679937798,
+    "mass_mae_g": 67.3430583501006,
+    "mass_mape_percent": 46.50261491680232,
+    "median_mass_ratio": 1.1586207778260758,
+    "median_density_ratio": 1.0,
+    "within_15_percent_count": 190,
+    "within_15_percent_rate": 19.114688128772634
+  },
+  "symmetric_decomposition": {
+    "identity": "predC-trueC=(predM-trueM)*(predDensity+trueDensity)/2+(predDensity-trueDensity)*(predM+trueM)/2",
+    "mass_dominant_cases": 615,
+    "density_dominant_cases": 379,
+    "mean_abs_mass_component": 88.18768583624824,
+    "mean_abs_density_component": 67.65217192552787,
+    "warning": "Absolute components do not add to MAE because their signs can cancel."
+  },
+  "oracle_mass_only_mae_kcal": 64.36125593058712,
+  "oracle_density_only_mae_kcal": 86.43733094006669,
+  "error_sign_quadrants": {
+    "mass_high/density_low": 324,
+    "mass_low/density_low": 185,
+    "mass_high/density_high": 303,
+    "mass_low/density_high": 182
+  },
+  "by_truth_mass_for_diagnosis_only": {
+    "100-199g": {
+      "n": 264,
+      "calorie_mae": 96.86570877651515,
+      "calorie_mape_percent": 60.007247748093256,
+      "mass_mae_g": 57.625,
+      "mass_mape_percent": 39.76203771667689,
+      "median_mass_ratio": 1.2087912087912087,
+      "median_density_ratio": 1.000000054171184,
+      "within_15_percent_count": 37,
+      "within_15_percent_rate": 14.015151515151514
+    },
+    "200-399g": {
+      "n": 321,
+      "calorie_mae": 145.8071189657321,
+      "calorie_mape_percent": 46.97955618869694,
+      "mass_mae_g": 87.70404984423676,
+      "mass_mape_percent": 31.20548484556736,
+      "median_mass_ratio": 1.055045871559633,
+      "median_density_ratio": 1.006756709951182,
+      "within_15_percent_count": 86,
+      "within_15_percent_rate": 26.791277258566975
+    },
+    "<100g": {
+      "n": 332,
+      "calorie_mae": 60.94606404518072,
+      "calorie_mape_percent": 90.30264670058946,
+      "mass_mae_g": 35.394578313253014,
+      "mass_mape_percent": 70.76888700482263,
+      "median_mass_ratio": 1.3513513513513513,
+      "median_density_ratio": 0.9999999383981013,
+      "within_15_percent_count": 46,
+      "within_15_percent_rate": 13.855421686746988
+    },
+    "400-799g": {
+      "n": 73,
+      "calorie_mae": 176.2920340136986,
+      "calorie_mape_percent": 30.47517158562542,
+      "mass_mae_g": 145.05479452054794,
+      "mass_mape_percent": 28.377713506206327,
+      "median_mass_ratio": 0.7801418439716312,
+      "median_density_ratio": 1.1538971452712263,
+      "within_15_percent_count": 21,
+      "within_15_percent_rate": 28.767123287671232
+    },
+    ">=800g": {
+      "n": 4,
+      "calorie_mae": 323.1965635,
+      "calorie_mape_percent": 56.58052154175412,
+      "mass_mae_g": 308.25,
+      "mass_mape_percent": 35.65426577937659,
+      "median_mass_ratio": 0.6089897949025632,
+      "median_density_ratio": 1.2656228383661388,
+      "within_15_percent_count": 0,
+      "within_15_percent_rate": 0.0
+    }
+  },
+  "by_predicted_food_count": {
+    "1": {
+      "n": 483,
+      "calorie_mae": 74.5231773726708,
+      "calorie_mape_percent": 74.04033950444389,
+      "mass_mae_g": 50.59834368530021,
+      "mass_mape_percent": 54.13582504200364,
+      "median_mass_ratio": 1.1111111111111112,
+      "median_density_ratio": 1.0,
+      "within_15_percent_count": 78,
+      "within_15_percent_rate": 16.149068322981368
+    },
+    "3": {
+      "n": 206,
+      "calorie_mae": 138.86468937864078,
+      "calorie_mape_percent": 56.89618100566198,
+      "mass_mae_g": 76.68446601941747,
+      "mass_mape_percent": 41.28390971924783,
+      "median_mass_ratio": 1.2254383783111553,
+      "median_density_ratio": 1.0028187874857495,
+      "within_15_percent_count": 40,
+      "within_15_percent_rate": 19.41747572815534
+    },
+    "2": {
+      "n": 180,
+      "calorie_mae": 115.72113403888889,
+      "calorie_mape_percent": 53.58334223264025,
+      "mass_mae_g": 64.41111111111111,
+      "mass_mape_percent": 36.35285371829971,
+      "median_mass_ratio": 1.1351921274601686,
+      "median_density_ratio": 1.0588199471239208,
+      "within_15_percent_count": 38,
+      "within_15_percent_rate": 21.11111111111111
+    },
+    "5": {
+      "n": 49,
+      "calorie_mae": 188.3293294489796,
+      "calorie_mape_percent": 56.19315228491535,
+      "mass_mae_g": 121.46938775510205,
+      "mass_mape_percent": 37.52484122958946,
+      "median_mass_ratio": 1.1552346570397112,
+      "median_density_ratio": 1.0794708155470059,
+      "within_15_percent_count": 10,
+      "within_15_percent_rate": 20.408163265306122
+    },
+    "4": {
+      "n": 76,
+      "calorie_mae": 159.3956362105263,
+      "calorie_mape_percent": 45.7009990385901,
+      "mass_mae_g": 120.48684210526316,
+      "mass_mape_percent": 41.964203161906084,
+      "median_mass_ratio": 1.2432982142130742,
+      "median_density_ratio": 0.9910855073962886,
+      "within_15_percent_count": 24,
+      "within_15_percent_rate": 31.57894736842105
+    }
+  },
+  "by_camera_view": {
+    "overhead_rgb": {
+      "n": 833,
+      "calorie_mae": 110.06829832533013,
+      "calorie_mape_percent": 58.889766729579236,
+      "mass_mae_g": 70.07923169267707,
+      "mass_mape_percent": 42.6929908668025,
+      "median_mass_ratio": 1.1235955056179776,
+      "median_density_ratio": 1.0,
+      "within_15_percent_count": 172,
+      "within_15_percent_rate": 20.64825930372149
+    },
+    "side_camera_A_frame_0": {
+      "n": 156,
+      "calorie_mae": 95.2703064423077,
+      "calorie_mape_percent": 89.78331974869712,
+      "mass_mae_g": 53.15384615384615,
+      "mass_mape_percent": 66.31154006367872,
+      "median_mass_ratio": 1.4021540916343742,
+      "median_density_ratio": 0.9999999645945152,
+      "within_15_percent_count": 18,
+      "within_15_percent_rate": 11.538461538461538
+    },
+    "side_camera_B_frame_0": {
+      "n": 5,
+      "calorie_mae": 44.753999,
+      "calorie_mape_percent": 58.493138409091706,
+      "mass_mae_g": 54.2,
+      "mass_mape_percent": 63.147517064228,
+      "median_mass_ratio": 1.8518518518518519,
+      "median_density_ratio": 0.9635958574111011,
+      "within_15_percent_count": 0,
+      "within_15_percent_rate": 0.0
+    }
+  },
+  "food_group_grams_mode_counts": [
+    [
+      100.0,
+      468
+    ],
+    [
+      50.0,
+      401
+    ],
+    [
+      150.0,
+      400
+    ],
+    [
+      30.0,
+      115
+    ],
+    [
+      80.0,
+      90
+    ],
+    [
+      120.0,
+      88
+    ],
+    [
+      200.0,
+      84
+    ],
+    [
+      70.0,
+      56
+    ],
+    [
+      60.0,
+      52
+    ],
+    [
+      20.0,
+      51
+    ],
+    [
+      250.0,
+      48
+    ],
+    [
+      75.0,
+      33
+    ],
+    [
+      180.0,
+      29
+    ],
+    [
+      300.0,
+      25
+    ],
+    [
+      10.0,
+      18
+    ],
+    [
+      40.0,
+      14
+    ],
+    [
+      25.0,
+      10
+    ],
+    [
+      240.0,
+      7
+    ],
+    [
+      350.0,
+      5
+    ],
+    [
+      15.0,
+      4
+    ]
+  ],
+  "selected_food_group_count": 2010,
+  "food_groups_at_multiple_of_50g": 1432,
+  "predicted_food_name_counts_not_truth_classification": [
+    [
+      "샐러드",
+      124
+    ],
+    [
+      "스크램블 에그",
+      87
+    ],
+    [
+      "피자",
+      71
+    ],
+    [
+      "베이컨",
+      67
+    ],
+    [
+      "브로콜리",
+      62
+    ],
+    [
+      "딸기",
+      45
+    ],
+    [
+      "방울토마토",
+      42
+    ],
+    [
+      "멜론",
+      40
+    ],
+    [
+      "구운 감자",
+      37
+    ],
+    [
+      "소시지",
+      36
+    ],
+    [
+      "파인애플",
+      34
+    ],
+    [
+      "사과",
+      32
+    ],
+    [
+      "닭가슴살",
+      32
+    ],
+    [
+      "볶음밥",
+      31
+    ],
+    [
+      "시저 샐러드",
+      31
+    ],
+    [
+      "콜리플라워",
+      30
+    ],
+    [
+      "블랙베리",
+      29
+    ],
+    [
+      "라즈베리",
+      29
+    ],
+    [
+      "아몬드",
+      28
+    ],
+    [
+      "포도",
+      26
+    ],
+    [
+      "블루베리",
+      25
+    ],
+    [
+      "스테이크",
+      25
+    ],
+    [
+      "옥수수",
+      24
+    ],
+    [
+      "수박",
+      23
+    ],
+    [
+      "방울양배추",
+      21
+    ],
+    [
+      "구운 채소",
+      20
+    ],
+    [
+      "올리브",
+      20
+    ],
+    [
+      "당근",
+      19
+    ],
+    [
+      "감자튀김",
+      18
+    ],
+    [
+      "페퍼로니 피자",
+      18
+    ]
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1558632233",
+  "request_id": "followup_dev_volume_consistency_dish_1558632233",
+  "started_at": "2026-10-25T07:43:30.791092+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "884b40baef4334b519667a8d25b760d9bdcbdf88d98bf7c7e0c66d9e60236c1d",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "364ec96a2bb824781d00732d72d1a51cd905643ef850e783e78d9864e9b787e9",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"샐러드 채소\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 30, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [190, 229, 440, 490], \"nutrition_per_100g\": {\"calories\": 15, \"carbs\": 3, \"protein\": 1, \"fat\": 0.2}}, {\"food_index\": 1, \"food_name\": \"멜론 조각\", \"confidence\": 0.9, \"estimated_serving\": 1, \"estimated_serving_g\": 150, \"count\": 10, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [160, 490, 460, 830], \"nutrition_per_100g\": {\"calories\": 34, \"carbs\": 8.2, \"protein\": 0.8, \"fat\": 0.2}}, {\"food_index\": 2, \"food_name\": \"옥수수\", \"confidence\": 0.8, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80, \"count\": 0.5, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [460, 570, 630, 780], \"nutrition_per_100g\": {\"calories\": 86, \"carbs\": 18.7, \"protein\": 3.2, \"fat\": 1.2}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시 중앙 왼쪽에 잎채소가 쌓여 있으며, 대략 잎채소 한 줌 정도의 양으로 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 150, \"bulk_density_g_per_ml\": 0.2, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시 오른쪽에 멜론 조각 10개가 놓여 있으며, 각 조각은 한 입 크기입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": 150, \"bulk_density_g_per_ml\": 1.0, \"scale_uncertainty\": \"high\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"접시 아래쪽에 옥수수 반 개가 놓여 있으며, 지름은 약 5cm로 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": 80, \"bulk_density_g_per_ml\": 1.0, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 804,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2974,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5362.16,
+  "completed_at": "2026-10-25T07:43:36.512962+00:00"
+}

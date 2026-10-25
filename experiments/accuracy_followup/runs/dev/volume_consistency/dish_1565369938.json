@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565369938",
+  "request_id": "followup_dev_volume_consistency_dish_1565369938",
+  "started_at": "2026-10-25T07:43:11.437853+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "5ebd5fdc8c613db6f32734100cea7836e11abccf3773c6363893d341c36b80d8",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "099bb4b3db8a5121420a3c7a2de3c3142138e0927b5be95420830112ccfd8ef8",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"베이컨\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 20, \"count\": 3, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [470, 330, 790, 830], \"nutrition_per_100g\": {\"calories\": 541, \"carbs\": 0, \"protein\": 17, \"fat\": 50}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시에 튀긴 베이컨 3조각이 놓여 있습니다. 조각들은 얇고 바삭해 보이며, 서로 겹쳐져 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 281,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2451,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3356.68,
+  "completed_at": "2026-10-25T07:43:15.291206+00:00"
+}

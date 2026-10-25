@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1558544870",
+  "request_id": "followup_dev_neutral_portion_dish_1558544870",
+  "started_at": "2026-10-25T07:40:26.557498+00:00",
+  "arm": "neutral_portion",
+  "phase": "dev",
+  "image_sha256": "51faf330d182c480594eeed6937db40c8ce36cfb95503eac443a614de5f27a73",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 1505,
+  "request_sha256": "6a7ac6619367e5be49154ab06a8dd836437e33f46cef1282e921a08744f11d9a",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"스크램블 에그\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [238, 488, 675, 766], \"nutrition_per_100g\": {\"calories\": 150.0, \"carbs\": 1.5, \"protein\": 10.0, \"fat\": 11.0}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"블랙베리\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 40.0, \"count\": 15.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [462, 325, 688, 499], \"nutrition_per_100g\": {\"calories\": 43.0, \"carbs\": 9.6, \"protein\": 1.4, \"fat\": 0.5}, \"package\": null}, {\"food_index\": 2, \"food_name\": \"라즈베리\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 30.0, \"count\": 12.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [290, 325, 520, 499], \"nutrition_per_100g\": {\"calories\": 52.0, \"carbs\": 11.9, \"protein\": 1.2, \"fat\": 0.7}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 527,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2032,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4399.21,
+  "completed_at": "2026-10-25T07:40:31.197734+00:00"
+}

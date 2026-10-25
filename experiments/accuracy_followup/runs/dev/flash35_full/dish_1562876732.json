@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1562876732",
+  "request_id": "followup_dev_flash35_full_dish_1562876732",
+  "started_at": "2026-10-25T08:20:32.265952+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "9e727b81e3140499113cb4b0b8a7c8766aebda219476e86a80c681ed672837e2",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "7540e436a0af4aafc69cc1d532f6628f2e956be2f50756bbacae65c77937a4cb",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"현미밥\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 100,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [30, 241, 370, 508],\n      \"nutrition_per_100g\": {\n        \"calories\": 160,\n        \"carbs\": 33.5,\n        \"protein\": 3.0,\n        \"fat\": 1.2\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"치킨\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 70,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [326, 126, 579, 447],\n      \"nutrition_per_100g\": {\n        \"calories\": 220,\n        \"carbs\": 5.0,\n        \"protein\": 20.0,\n        \"fat\": 13.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"마늘종무침\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 50,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [66, 467, 429, 749],\n      \"nutrition_per_100g\": {\n        \"calories\": 120,\n        \"carbs\": 10.0,\n        \"protein\": 3.0,\n        \"fat\": 7.5\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 3,\n      \"food_name\": \"피자\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.3,\n      \"estimated_serving_g\": 80,\n      \"count\": 1,\n      \"count_unit\": \"조각\",\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [549, 224, 946, 462],\n      \"nutrition_per_100g\": {\n        \"calories\": 266,\n        \"carbs\": 30.0,\n        \"protein\": 11.0,\n        \"fat\": 10.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 4,\n      \"food_name\": \"시저 샐러드\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 120,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [332, 424, 907, 839],\n      \"nutrition_per_100g\": {\n        \"calories\": 150,\n        \"carbs\": 5.0,\n        \"protein\": 3.0,\n        \"fat\": 13.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1073,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4938,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4309.89,
+  "completed_at": "2026-10-25T08:20:37.530703+00:00"
+}

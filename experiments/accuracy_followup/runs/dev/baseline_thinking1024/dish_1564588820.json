@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1564588820",
+  "request_id": "followup_dev_baseline_thinking1024_dish_1564588820",
+  "started_at": "2026-10-25T07:47:24.572679+00:00",
+  "arm": "baseline_thinking1024",
+  "phase": "dev",
+  "image_sha256": "1bba4028f1464535bf92fb94f8b83ef0cef3bd09db309ba2a26570f4875a8344",
+  "request_config_sha256": "9b72cfd9a6fe5e3c3e8707cde73f58392990d3580f4601eab4e591e209bf4159",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3059,
+  "request_sha256": "6c13c0f726fe9d2fb2ed5c3ee2d207755e77bdce21eb48782558fc59070b6880",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"모차렐라 치즈\", \"confidence\": 0.85, \"estimated_serving\": 0.4, \"estimated_serving_g\": 60, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [150, 350, 850, 900], \"nutrition_per_100g\": {\"calories\": 300, \"carbs\": 2.2, \"protein\": 22.0, \"fat\": 22.0}, \"package\": null}, {\"food_index\": 0, \"food_name\": \"리코타 치즈\", \"confidence\": 0.3, \"estimated_serving\": 0.4, \"estimated_serving_g\": 60, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [150, 350, 850, 900], \"nutrition_per_100g\": {\"calories\": 174, \"carbs\": 3.0, \"protein\": 11.3, \"fat\": 12.9}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1945
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 179
+      }
+    ],
+    "cached_content_token_count": 2124,
+    "candidates_token_count": 343,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": 956,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4358,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 7019.4,
+  "completed_at": "2026-10-25T07:47:31.903467+00:00"
+}

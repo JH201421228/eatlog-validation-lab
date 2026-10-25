@@ -1,0 +1,27 @@
+{
+  "created_at_utc": "2026-10-25T07:36:07.211828+00:00",
+  "truth_read_by_prediction_script": false,
+  "input_path": "evaluation/tmp/replay_blind_test_no_db/improved_ai.jsonl",
+  "input_sha256": "9fa14b501d0995aafb4c7af822811ccc2e639bf6c29db75e9019e85f0e69ce20",
+  "reference_sha256": "b747598384fe6e51e66794e1f00bce3f0565ec697e09c9368e3405e44e843749",
+  "baseline_comparison_sha256": "7baf4783e64068b0c03e5afa1b784130435a42e4ae5528905467cf2932944a73",
+  "baseline_totals_mismatches": [],
+  "selection_or_mass_mismatches": [],
+  "rows": 1000,
+  "code_sha256": {
+    "grounding.py": "a134ad43986fe0d31e14ebf75dab66b72fe64875f18b6f5486f24c6c55e003bf",
+    "run_experiment.py": "30afdea2a3bd25928fd43df063d0690184a706d2f1b144829dd5dcd02eb6c848",
+    "PROTOCOL.md": "6755fd4a79bf3e56b9828d5923e1d892bd54dd1fd4cf9346bc5061216ee20876"
+  },
+  "prediction_sha256": {
+    "no_db": "4a07e758d7fa70d16d542d91257eb9ac64dce4454f6d57e8da01efd648f8bb6d",
+    "current_exact": "e0f8582df95728c777f0a56e88dfdb77d5bebf89758dc6af18c54a91ec23c5d0",
+    "quality_exact": "b3d9c6c3931f8e5ef3cefc9969e3b60c4c9dc3d467fd4d9343453787c32f4314",
+    "state_aware": "621ba81d25bad0c5b8920d18f391808c31402d1bcff94f7def213dc1f228663a"
+  },
+  "app_sha256": {
+    "app/services/analyze.py": "ea849c95a614a8a4ef504d0182bd0f4865496731754efa3af2a5f5e7d63f6566",
+    "app/services/matching.py": "1c3c38071d8164ef661539243800eab1ce4a096da2134a62dca1bbb316115a57",
+    "app/ai_client/base.py": "c73e7849f1c59a00b02d625824843ece9c992ec0d888c4675c5fbbcf291f9f5d"
+  }
+}

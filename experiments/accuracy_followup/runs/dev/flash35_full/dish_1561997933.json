@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1561997933",
+  "request_id": "followup_dev_flash35_full_dish_1561997933",
+  "started_at": "2026-10-25T08:30:45.297818+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "613691de07bd1477d8c65c9aad57c05101dc1b4f063530edac134b6fdabc9487",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3901,
+  "request_sha256": "b089469f9af6d13e39322d3e96e33796e10af5f5eca3f3c26b7e9e130f0b7757",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"구운 감자\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 120.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [310, 411, 792, 876],\n      \"nutrition_per_100g\": {\n        \"calories\": 145.0,\n        \"carbs\": 20.0,\n        \"protein\": 2.5,\n        \"fat\": 6.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 229,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4130,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3385.71,
+  "completed_at": "2026-10-25T08:30:49.528609+00:00"
+}

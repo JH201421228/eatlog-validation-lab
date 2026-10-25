@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565107171",
+  "request_id": "followup_dev_baseline_v1_dish_1565107171",
+  "started_at": "2026-10-25T07:38:51.457563+00:00",
+  "arm": "baseline_v1",
+  "phase": "dev",
+  "image_sha256": "d4e6013383e512d570056fcd3ea823526ffb6ea1f5bc32049c7f8013e8b61060",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3059,
+  "request_sha256": "81a1f2e251fcced58952bfeb4d6fa115897e705226882854524dc6a9580a5b18",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"포도\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 75,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [140, 290, 400, 490],\n      \"nutrition_per_100g\": {\n        \"calories\": 60,\n        \"carbs\": 15.2,\n        \"protein\": 0.7,\n        \"fat\": 0.2\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"수박\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 100,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [180, 470, 580, 630],\n      \"nutrition_per_100g\": {\n        \"calories\": 30,\n        \"carbs\": 7.6,\n        \"protein\": 0.6,\n        \"fat\": 0.2\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"스크램블 에그\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 100,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [80, 570, 330, 790],\n      \"nutrition_per_100g\": {\n        \"calories\": 150,\n        \"carbs\": 1.5,\n        \"protein\": 10.0,\n        \"fat\": 11.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 3,\n      \"food_name\": \"삶은 달걀 흰자\",\n      \"confidence\": 0.8,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 100,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [320, 600, 800, 880],\n      \"nutrition_per_100g\": {\n        \"calories\": 52,\n        \"carbs\": 1.1,\n        \"protein\": 11.0,\n        \"fat\": 0.2\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 4,\n      \"food_name\": \"프렌치 토스트\",\n      \"confidence\": 0.75,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 150,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [460, 300, 980, 560],\n      \"nutrition_per_100g\": {\n        \"calories\": 220,\n        \"carbs\": 25.0,\n        \"protein\": 8.0,\n        \"fat\": 10.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1952
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 179
+      }
+    ],
+    "cached_content_token_count": 2131,
+    "candidates_token_count": 1071,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4130,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5918.48,
+  "completed_at": "2026-10-25T07:38:57.688005+00:00"
+}

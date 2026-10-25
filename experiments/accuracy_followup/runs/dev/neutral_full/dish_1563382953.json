@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1563382953",
+  "request_id": "followup_dev_neutral_full_dish_1563382953",
+  "started_at": "2026-10-25T08:08:15.436022+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "b82db26f5a1d7a70b1e110da83cd6a680f6bee09450afcd3b78d8ac3547014bb",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "e66fbf1f91122cfe0a7e79f56f347672cd2f884e3de7caad90ad0233c8fd613d",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"스크램블 에그\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [70, 289, 850, 690], \"nutrition_per_100g\": {\"calories\": 150.0, \"carbs\": 1.5, \"protein\": 10.0, \"fat\": 11.0}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"구운 감자\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [80, 640, 760, 900], \"nutrition_per_100g\": {\"calories\": 90.0, \"carbs\": 20.0, \"protein\": 2.0, \"fat\": 0.5}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 527
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 109
+      }
+    ],
+    "cached_content_token_count": 636,
+    "candidates_token_count": 346,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1851,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4141.21,
+  "completed_at": "2026-10-25T08:08:20.350621+00:00"
+}

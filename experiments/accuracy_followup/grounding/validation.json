@@ -1,0 +1,22 @@
+{
+  "recorded_at_utc": "2026-10-25T07:41:39.948937+00:00",
+  "checks": {
+    "archived_candidates_same_sha256": true,
+    "reference_same_sha256": true,
+    "prediction_hashes_match": true,
+    "code_hashes_match": true,
+    "production_app_hashes_match": true,
+    "no_db_totals_match_original": true,
+    "food_selection_mass_unchanged": true
+  },
+  "unit_tests": {
+    "command": "../BE/venv/Scripts/python -m unittest discover -s experiments/accuracy_followup/grounding -p test_grounding.py -v",
+    "passed": 9,
+    "failed": 0
+  },
+  "paid_api_calls": 0,
+  "production_db_opened": false,
+  "production_app_modified": false,
+  "artifact_input_archive_added_after_scoring": true,
+  "archive_identical_to_original_frozen_input": true
+}

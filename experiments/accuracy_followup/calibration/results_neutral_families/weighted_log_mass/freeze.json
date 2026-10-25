@@ -1,0 +1,8 @@
+{
+  "frozen_at": "2026-10-25T08:12:48.267359+00:00",
+  "model_sha256": "387b2e9dd79ebab97f48a91a1a11359d1099232b12f6b0d06a44a143ee74f825",
+  "manifest_sha256": "c7ab766b7ed73c4e9b7fc04fabf95d8a6298bd31d631f34faf130596eb80da22",
+  "predictions_sha256": "3e2bea3dd7bca0c1e24ac7aac9d4894f384eee2bcb2d83a5a3decd420e46480b",
+  "calibrator_sha256": "db2eb61a41a0c6a15edbb208b7585abe390578f24e4b42390ae08bbdb2a7340a",
+  "trainer_sha256": "4f411a2f1c49256a38dcbc4f4422eb628b2abc2cf5693f0c5804d586f06dac59"
+}

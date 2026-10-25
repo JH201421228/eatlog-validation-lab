@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1560543682",
+  "request_id": "followup_dev_neutral_full_dish_1560543682",
+  "started_at": "2026-10-25T08:06:49.733452+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "ca1048648b5fba62f858234b0cac83e2571b518293f1f0e48eed10a74f93f909",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "1115ba1ec7337a9a2b7a9da3133821df8001471c12dc467f2b78a4ec75de5b07",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"구운 감자\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 100, \"count\": 8, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [300, 450, 690, 790], \"nutrition_per_100g\": {\"calories\": 93, \"carbs\": 20.1, \"protein\": 2.1, \"fat\": 0.1}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 173,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1678,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2599.83,
+  "completed_at": "2026-10-25T08:06:52.608534+00:00"
+}

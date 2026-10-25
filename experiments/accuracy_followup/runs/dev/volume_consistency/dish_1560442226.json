@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1560442226",
+  "request_id": "followup_dev_volume_consistency_dish_1560442226",
+  "started_at": "2026-10-25T07:44:06.432422+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "a38a1369aa2211e8317380bf83156fb72be0db7edec17988c06c83672faf69c8",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "1a08292b864fa19f4a93a6be13b432956e5923a8c254ea026808f5b9f6f51364",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"딸기\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": 5, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [248, 420, 850, 880], \"nutrition_per_100g\": {\"calories\": 32, \"carbs\": 7.7, \"protein\": 0.7, \"fat\": 0.3}}, {\"food_index\": 1, \"food_name\": \"블루베리\", \"confidence\": 0.9, \"estimated_serving\": 0.3, \"estimated_serving_g\": 30, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [440, 489, 710, 865], \"nutrition_per_100g\": {\"calories\": 57, \"carbs\": 14.5, \"protein\": 0.7, \"fat\": 0.3}}, {\"food_index\": 2, \"food_name\": \"블랙베리\", \"confidence\": 0.85, \"estimated_serving\": 0.3, \"estimated_serving_g\": 30, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [250, 750, 710, 880], \"nutrition_per_100g\": {\"calories\": 43, \"carbs\": 9.6, \"protein\": 1.4, \"fat\": 0.5}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시 위에 5개의 딸기가 잘려 있거나 통째로 놓여 있습니다. 딸기 조각들의 크기는 다양하며, 일부는 반으로 잘려 있습니다. 전체적으로 약 50g으로 추정됩니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시 위에 여러 개의 블루베리가 흩어져 있습니다. 딸기, 블랙베리와 함께 놓여 있으며, 약 30g으로 추정됩니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"접시 위에 여러 개의 블랙베리가 흩어져 있습니다. 딸기, 블루베리와 함께 놓여 있으며, 약 30g으로 추정됩니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 831,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3001,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5682.04,
+  "completed_at": "2026-10-25T07:44:12.670389+00:00"
+}

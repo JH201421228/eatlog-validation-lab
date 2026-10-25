@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565898723",
+  "request_id": "followup_dev_neutral_full_dish_1565898723",
+  "started_at": "2026-10-25T07:55:15.186946+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "347bca0b36232c115b2e460670d1b1138c72bc60130512ed7c6775b35516aa7c",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "cb3216d8e3f7d095130a8dd1658c6fa4b4cfe585e37d5024834568285b446655",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"참치 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 400, 450, 890], \"nutrition_per_100g\": {\"calories\": 180.0, \"carbs\": 5.0, \"protein\": 15.0, \"fat\": 12.0}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"삶은 달걀\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 25.0, \"count\": 0.5, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [40, 270, 250, 400], \"nutrition_per_100g\": {\"calories\": 155.0, \"carbs\": 1.1, \"protein\": 13.0, \"fat\": 11.0}, \"package\": null}, {\"food_index\": 2, \"food_name\": \"방울토마토\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50.0, \"count\": 8.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [400, 320, 610, 500], \"nutrition_per_100g\": {\"calories\": 18.0, \"carbs\": 3.9, \"protein\": 0.9, \"fat\": 0.2}, \"package\": null}, {\"food_index\": 3, \"food_name\": \"올리브\", \"confidence\": 0.8, \"estimated_serving\": 0.5, \"estimated_serving_g\": 30.0, \"count\": 8.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [550, 370, 770, 500], \"nutrition_per_100g\": {\"calories\": 115.0, \"carbs\": 6.0, \"protein\": 0.8, \"fat\": 11.0}, \"package\": null}, {\"food_index\": 4, \"food_name\": \"당근 채\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 40.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [450, 400, 820, 690], \"nutrition_per_100g\": {\"calories\": 41.0, \"carbs\": 9.6, \"protein\": 0.9, \"fat\": 0.2}, \"package\": null}, {\"food_index\": 5, \"food_name\": \"그린빈\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 40.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [250, 600, 870, 970], \"nutrition_per_100g\": {\"calories\": 31.0, \"carbs\": 7.0, \"protein\": 1.8, \"fat\": 0.1}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 1038,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2543,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 8055.77,
+  "completed_at": "2026-10-25T07:55:23.814253+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1563217804",
+  "request_id": "followup_dev_flash35_minimal_dish_1563217804",
+  "started_at": "2026-10-25T08:12:42.977402+00:00",
+  "arm": "flash35_minimal",
+  "phase": "dev",
+  "image_sha256": "15d1dbac3a164e9e69724f1b9be2ea8fd92d15aa640a1c6d467b125dc9e31704",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3865,
+  "request_sha256": "13e68a3136a59fbb82c30523eae7e0a682ac28f8d11d04e096a871f8551629f6",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"샐러드\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 150.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [140, 271, 984, 690],\n      \"nutrition_per_100g\": {\n        \"calories\": 35.0,\n        \"carbs\": 7.0,\n        \"protein\": 2.0,\n        \"fat\": 0.5\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"돼지고기 덮밥\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 250.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [172, 604, 875, 936],\n      \"nutrition_per_100g\": {\n        \"calories\": 210.0,\n        \"carbs\": 22.0,\n        \"protein\": 11.0,\n        \"fat\": 9.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1188
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 451
+      }
+    ],
+    "cached_content_token_count": 1639,
+    "candidates_token_count": 445,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4310,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2971.8,
+  "completed_at": "2026-10-25T08:12:46.360491+00:00"
+}

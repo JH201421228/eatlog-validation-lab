@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551314337",
+  "request_id": "followup_dev_baseline_thinking1024_dish_1551314337",
+  "started_at": "2026-10-25T07:45:58.581082+00:00",
+  "arm": "baseline_thinking1024",
+  "phase": "dev",
+  "image_sha256": "7ff1ad027ffb93328bceed962d2e22f58de61a4158532c8fe8e09ef57f5864ed",
+  "request_config_sha256": "9b72cfd9a6fe5e3c3e8707cde73f58392990d3580f4601eab4e591e209bf4159",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3059,
+  "request_sha256": "db3b9e181f7f012c88bb3fd92238e8b5a7d1ed7051b669b096693ee6a25d272b",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"파인애플\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80, \"count\": 5, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [350, 350, 650, 650], \"nutrition_per_100g\": {\"calories\": 50, \"carbs\": 13.1, \"protein\": 0.5, \"fat\": 0.1}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1789
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 164
+      }
+    ],
+    "cached_content_token_count": 1953,
+    "candidates_token_count": 172,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": 773,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4004,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6619.5,
+  "completed_at": "2026-10-25T07:46:05.815603+00:00"
+}

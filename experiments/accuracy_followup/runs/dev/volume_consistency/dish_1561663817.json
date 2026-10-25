@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561663817",
+  "request_id": "followup_dev_volume_consistency_dish_1561663817",
+  "started_at": "2026-10-25T07:43:01.059408+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "0a013f238368d209ed0344663c8af17d4ff71fa47836ec57402862ed7cdf5f90",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "3d45b75dd1e443bfb53cd3aa47ff0deace5a786544c67c4fcad5c54389ae2395",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"샐러드\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [260,290,690,620], \"nutrition_per_100g\": {\"calories\": 25, \"carbs\": 5, \"protein\": 1, \"fat\": 0.5}}, {\"food_index\": 1, \"food_name\": \"옥수수\", \"confidence\": 0.8, \"estimated_serving\": 0.2, \"estimated_serving_g\": 30, \"count\": 1, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [430,600,690,750], \"nutrition_per_100g\": {\"calories\": 86, \"carbs\": 19, \"protein\": 3, \"fat\": 1.2}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시 중앙에 다양한 잎채소와 채소 조각이 섞여 있으며, 드레싱이 약간 뿌려져 있습니다. 양이 많지 않고 접시의 일부만 차지합니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 100, \"bulk_density_g_per_ml\": 0.5, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"옥수수 한 조각이 접시 오른쪽에 놓여 있습니다. 지름은 약 5cm로 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 529,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2699,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4619.69,
+  "completed_at": "2026-10-25T07:43:06.002827+00:00"
+}

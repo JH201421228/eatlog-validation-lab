@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1550776957",
+  "request_id": "followup_dev_volume_consistency_dish_1550776957",
+  "started_at": "2026-10-25T07:41:40.005687+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "f7c36dd616db49faa781b3ca179d3b74624bacc46ea3a96db6aa6fd0cfdf34b8",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "e6eca021babdcb6b41a5417280720e859b07443ae0b04617881666f9034498c4",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"베이컨\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 30.0, \"count\": 3.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [10, 130, 190, 360], \"nutrition_per_100g\": {\"calories\": 541.0, \"carbs\": 0.0, \"protein\": 37.0, \"fat\": 43.0}}, {\"food_index\": 1, \"food_name\": \"바나나 슬라이스\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": 15.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 440, 570, 830], \"nutrition_per_100g\": {\"calories\": 89.0, \"carbs\": 23.0, \"protein\": 1.1, \"fat\": 0.3}}, {\"food_index\": 2, \"food_name\": \"나초\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 50.0, \"count\": 10.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [200, 180, 690, 500], \"nutrition_per_100g\": {\"calories\": 490.0, \"carbs\": 60.0, \"protein\": 7.0, \"fat\": 25.0}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시에 얇게 구워진 베이컨 3조각이 놓여 있습니다. 조각당 약 10g으로 추정됩니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시에 얇게 썰린 바나나 조각들이 흩어져 있습니다. 총 15조각으로, 바나나 1개 분량으로 추정됩니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"접시에 삼각형 모양의 나초 조각들이 쌓여 있습니다. 약 10조각으로 보이며, 한 조각당 약 5g으로 추정됩니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1237
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 167
+      }
+    ],
+    "cached_content_token_count": 1404,
+    "candidates_token_count": 860,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3030,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6293.74,
+  "completed_at": "2026-10-25T07:41:46.993848+00:00"
+}

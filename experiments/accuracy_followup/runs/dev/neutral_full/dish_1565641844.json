@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565641844",
+  "request_id": "followup_dev_neutral_full_dish_1565641844",
+  "started_at": "2026-10-25T08:00:42.198920+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "514e03d26d35a1b7640eadd71a9c63e5f3c2ef57b38e0d8abad20bfb770b342d",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "cad776ffa9fc7c0b813157666187e922678fe77c95227030e64467f712ed147f",
+  "status": "response_received",
+  "raw_text": "{\"candidates\":[{\"food_index\":0,\"food_name\":\"치즈 피자\",\"confidence\":0.95,\"estimated_serving\":0.5,\"estimated_serving_g\":100,\"count\":1,\"count_unit\":\"조각\",\"has_soup\":false,\"has_sauce\":true,\"image_index\":0,\"is_in_image\":true,\"box_2d\":[70,590,568,999],\"nutrition_per_100g\":{\"calories\":260,\"carbs\":28,\"protein\":11,\"fat\":12},\"package\":null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 136,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1641,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2664.8,
+  "completed_at": "2026-10-25T08:00:45.264883+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561665378",
+  "request_id": "followup_dev_volume_consistency_dish_1561665378",
+  "started_at": "2026-10-25T07:44:09.203897+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "0f5686d4572a3baa60cd3a41afa8e591a417487445b92754a07612d51f02ff87",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "04ed0f085bdd3cc5e145a6c6d386abd7d8660fd49e76946624ac1935a772f979",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"삶은 옥수수\", \"confidence\": 0.95, \"estimated_serving\": 0.2, \"estimated_serving_g\": 60, \"count\": 2, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [390, 320, 585, 460], \"nutrition_per_100g\": {\"calories\": 96, \"carbs\": 21, \"protein\": 3.4, \"fat\": 1.5}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"삶은 옥수수 두 조각이 접시에 놓여 있습니다. 각 조각은 지름 약 4cm, 두께 약 2cm로 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 287,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2457,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3283.44,
+  "completed_at": "2026-10-25T07:44:12.800754+00:00"
+}

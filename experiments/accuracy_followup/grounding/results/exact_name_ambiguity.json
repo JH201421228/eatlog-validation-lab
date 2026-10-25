@@ -1,0 +1,73 @@
+{
+  "all_reference_ambiguous_names": 274,
+  "selected_ambiguous_food_groups": 58,
+  "selected_names": {
+    "옥수수": 24,
+    "으깬 감자": 16,
+    "양파": 3,
+    "고구마": 14,
+    "메밀": 1
+  },
+  "selected_reference_rows": {
+    "으깬감자": [
+      {
+        "name": "으깬감자",
+        "external_id": "R102-005000000-0000",
+        "calories": 83.0
+      },
+      {
+        "name": "으깬감자",
+        "external_id": "R-gen:02005",
+        "calories": 83.0
+      }
+    ],
+    "옥수수": [
+      {
+        "name": "옥수수",
+        "external_id": "R-gen:01030",
+        "calories": 135.6
+      },
+      {
+        "name": "옥수수",
+        "external_id": "R-gen:06210",
+        "calories": 40.0
+      }
+    ],
+    "고구마": [
+      {
+        "name": "고구마",
+        "external_id": "R-gen:02006",
+        "calories": 136.5
+      },
+      {
+        "name": "고구마",
+        "external_id": "R-gen:06208",
+        "calories": 29.33
+      }
+    ],
+    "양파": [
+      {
+        "name": "양파",
+        "external_id": "R-gen:06132",
+        "calories": 41.4
+      },
+      {
+        "name": "양파",
+        "external_id": "R-gen:18056",
+        "calories": 354.0
+      }
+    ],
+    "메밀": [
+      {
+        "name": "메밀",
+        "external_id": "R-gen:06211",
+        "calories": 24.0
+      },
+      {
+        "name": "메밀",
+        "external_id": "R-gen:01004",
+        "calories": 363.0
+      }
+    ]
+  }
+}

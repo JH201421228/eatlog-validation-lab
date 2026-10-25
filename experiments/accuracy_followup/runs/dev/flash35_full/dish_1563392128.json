@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1563392128",
+  "request_id": "followup_dev_flash35_full_dish_1563392128",
+  "started_at": "2026-10-25T08:15:41.716570+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "0cc8e0526f5634e4a1d9affb19e662cac7f64643b5befff7b3dbd33cb9f9005b",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "2448340d4bff8fb20d2ac483dd500753a1c5ef2e69b17c7547adf15f35a248ef",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"치킨강정\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 150,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [188, 477, 750, 822],\n      \"nutrition_per_100g\": {\n        \"calories\": 250,\n        \"carbs\": 18.0,\n        \"protein\": 15.0,\n        \"fat\": 12.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1188
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 451
+      }
+    ],
+    "cached_content_token_count": 1639,
+    "candidates_token_count": 227,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4092,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3173.76,
+  "completed_at": "2026-10-25T08:15:45.483028+00:00"
+}

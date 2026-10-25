@@ -1,0 +1,176 @@
+{
+  "overhead_rgb": {
+    "raw": {
+      "mass_g": {
+        "selected_count": 836,
+        "valid_prediction_count": 833,
+        "mae": 70.07923169267707,
+        "within_15_percent_count": 215
+      },
+      "calories": {
+        "selected_count": 836,
+        "valid_prediction_count": 833,
+        "mae": 110.06829832533013,
+        "within_15_percent_count": 172
+      }
+    },
+    "log_mass": {
+      "mass_g": {
+        "selected_count": 836,
+        "valid_prediction_count": 833,
+        "mae": 60.730372148859544,
+        "within_15_percent_count": 271
+      },
+      "calories": {
+        "selected_count": 836,
+        "valid_prediction_count": 833,
+        "mae": 96.66293283913565,
+        "within_15_percent_count": 208
+      }
+    },
+    "linear_mass": {
+      "mass_g": {
+        "selected_count": 836,
+        "valid_prediction_count": 833,
+        "mae": 63.61080432172869,
+        "within_15_percent_count": 251
+      },
+      "calories": {
+        "selected_count": 836,
+        "valid_prediction_count": 833,
+        "mae": 102.27639609483793,
+        "within_15_percent_count": 196
+      }
+    },
+    "weighted_log_mass": {
+      "mass_g": {
+        "selected_count": 836,
+        "valid_prediction_count": 833,
+        "mae": 62.353661464585834,
+        "within_15_percent_count": 246
+      },
+      "calories": {
+        "selected_count": 836,
+        "valid_prediction_count": 833,
+        "mae": 101.9238125942377,
+        "within_15_percent_count": 195
+      }
+    }
+  },
+  "side_camera_A_frame_0": {
+    "raw": {
+      "mass_g": {
+        "selected_count": 158,
+        "valid_prediction_count": 156,
+        "mae": 53.15384615384615,
+        "within_15_percent_count": 34
+      },
+      "calories": {
+        "selected_count": 158,
+        "valid_prediction_count": 156,
+        "mae": 95.2703064423077,
+        "within_15_percent_count": 18
+      }
+    },
+    "log_mass": {
+      "mass_g": {
+        "selected_count": 158,
+        "valid_prediction_count": 156,
+        "mae": 45.10448717948718,
+        "within_15_percent_count": 36
+      },
+      "calories": {
+        "selected_count": 158,
+        "valid_prediction_count": 156,
+        "mae": 78.40773362179486,
+        "within_15_percent_count": 24
+      }
+    },
+    "linear_mass": {
+      "mass_g": {
+        "selected_count": 158,
+        "valid_prediction_count": 156,
+        "mae": 64.24294871794872,
+        "within_15_percent_count": 21
+      },
+      "calories": {
+        "selected_count": 158,
+        "valid_prediction_count": 156,
+        "mae": 98.73901545512821,
+        "within_15_percent_count": 24
+      }
+    },
+    "weighted_log_mass": {
+      "mass_g": {
+        "selected_count": 158,
+        "valid_prediction_count": 156,
+        "mae": 59.17435897435898,
+        "within_15_percent_count": 22
+      },
+      "calories": {
+        "selected_count": 158,
+        "valid_prediction_count": 156,
+        "mae": 97.45754123717948,
+        "within_15_percent_count": 21
+      }
+    }
+  },
+  "side_camera_B_frame_0": {
+    "raw": {
+      "mass_g": {
+        "selected_count": 6,
+        "valid_prediction_count": 5,
+        "mae": 54.2,
+        "within_15_percent_count": 0
+      },
+      "calories": {
+        "selected_count": 6,
+        "valid_prediction_count": 5,
+        "mae": 44.753999,
+        "within_15_percent_count": 0
+      }
+    },
+    "log_mass": {
+      "mass_g": {
+        "selected_count": 6,
+        "valid_prediction_count": 5,
+        "mae": 25.219999999999995,
+        "within_15_percent_count": 2
+      },
+      "calories": {
+        "selected_count": 6,
+        "valid_prediction_count": 5,
+        "mae": 25.194000600000003,
+        "within_15_percent_count": 2
+      }
+    },
+    "linear_mass": {
+      "mass_g": {
+        "selected_count": 6,
+        "valid_prediction_count": 5,
+        "mae": 44.0,
+        "within_15_percent_count": 1
+      },
+      "calories": {
+        "selected_count": 6,
+        "valid_prediction_count": 5,
+        "mae": 38.83400060000001,
+        "within_15_percent_count": 2
+      }
+    },
+    "weighted_log_mass": {
+      "mass_g": {
+        "selected_count": 6,
+        "valid_prediction_count": 5,
+        "mae": 39.239999999999995,
+        "within_15_percent_count": 1
+      },
+      "calories": {
+        "selected_count": 6,
+        "valid_prediction_count": 5,
+        "mae": 35.173999,
+        "within_15_percent_count": 2
+      }
+    }
+  }
+}

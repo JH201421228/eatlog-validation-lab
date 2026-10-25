@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1556572657",
+  "request_id": "followup_dev_volume_consistency_dish_1556572657",
+  "started_at": "2026-10-25T07:43:58.048164+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "e5707ef717c93d9556e8f3ce9e3181e9cce863369bf86c4731e1a32d5b337e51",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "fa330fc39359764aaba096005979616f0cec0079c04278d5eb55171c98bdf57b",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"블랙 올리브\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 30, \"count\": 10, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [145, 447, 650, 771], \"nutrition_per_100g\": {\"calories\": 115, \"carbs\": 6.3, \"protein\": 0.8, \"fat\": 10.7}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"흰색 사각 접시에 검은색 올리브 10개가 흩어져 있습니다. 올리브는 타원형이며 크기가 일정합니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 286,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2456,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3533.31,
+  "completed_at": "2026-10-25T07:44:01.944655+00:00"
+}

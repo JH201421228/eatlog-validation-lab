@@ -1,0 +1,25 @@
+{
+  "verified_at_utc": "2026-10-25T07:33:59.391494+00:00",
+  "selected": 155,
+  "status_counts": {
+    "ok": 153,
+    "source_unavailable": 2
+  },
+  "file_duplicate_count": 0,
+  "pixel_duplicate_count": 0,
+  "previous_file_hash_overlap": 0,
+  "previous_pixel_hash_overlap": 0,
+  "original_inputs_unchanged": {
+    "data/nutrition5k/groups.jsonl": true,
+    "data/nutrition5k/selection_manifest_v3.jsonl": true,
+    "data/nutrition5k/label_quality_exclusions.jsonl": true,
+    "data/nutrition5k/archive/v1_before_quality_audit/pilot_manifest.jsonl": true,
+    "scripts/data/collect_nutrition5k.py": true,
+    "data/nutrition5k/source/metadata/dish_metadata_cafe1.csv": true,
+    "data/nutrition5k/source/metadata/dish_metadata_cafe2.csv": true
+  },
+  "semantic_food_label_alignment_reviewed": false,
+  "model_calls": 0,
+  "manifest_sha256": "f322b46dcf5993381cc9013e0d2ce8d03dfa8d63ae3cdfe06db8359498d352e8",
+  "selection_sha256": "750dbf9756ba6485ef129c56d7bb3b58d54e18ed9e72c4f1daef097051099018"
+}

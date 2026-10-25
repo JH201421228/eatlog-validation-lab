@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1567628193",
+  "request_id": "followup_dev_volume_consistency_dish_1567628193",
+  "started_at": "2026-10-25T07:43:57.422649+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "7397ba29d5dbce975b8347c9bab1d667b207aeee0df11c53edf566bfc7fd3c68",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "09aa10394e7e1e4d4490492b4f7461daf6203096b005adb6687f6915f2941d32",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"메밀 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 250.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [20, 188, 980, 948], \"nutrition_per_100g\": {\"calories\": 120.0, \"carbs\": 18.0, \"protein\": 5.0, \"fat\": 3.0}}, {\"food_index\": 1, \"food_name\": \"구운 콜리플라워\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 70.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [430, 470, 550, 580], \"nutrition_per_100g\": {\"calories\": 30.0, \"carbs\": 5.0, \"protein\": 2.0, \"fat\": 0.5}}, {\"food_index\": 2, \"food_name\": \"닭가슴살 구이\", \"confidence\": 0.8, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [440, 300, 680, 470], \"nutrition_per_100g\": {\"calories\": 165.0, \"carbs\": 0.0, \"protein\": 31.0, \"fat\": 3.6}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 절반 이상을 차지하며, 메밀과 채소, 소스가 섞여 쌓여 있습니다. 접시의 깊이를 고려할 때 상당한 양입니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 250.0, \"bulk_density_g_per_ml\": 1.0, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"콜리플라워 조각이 2개 보이며, 중간 크기입니다. 메밀 샐러드 위에 놓여 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"닭가슴살 조각이 여러 개 보이며, 메밀 샐러드와 섞여 있습니다. 조각의 두께와 면적을 고려하여 추정합니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 850,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3020,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6193.34,
+  "completed_at": "2026-10-25T07:44:04.011524+00:00"
+}

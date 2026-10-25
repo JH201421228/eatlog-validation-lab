@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1558375886",
+  "request_id": "followup_dev_volume_consistency_dish_1558375886",
+  "started_at": "2026-10-25T07:42:18.396147+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "5c61a439d7367c37ab9a7c794ed0a2961d25fb90f700e66188826d182b5b54a1",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "aaa7b2ab4455712086d513d5d2deb8654793163d5bdbc7343ec39c5c1cacd23e",
+  "status": "response_received",
+  "raw_text": "{\"candidates\":[{\"food_index\":0,\"food_name\":\"아몬드\",\"confidence\":0.95,\"estimated_serving\":1.5,\"estimated_serving_g\":150,\"count\":null,\"count_unit\":null,\"has_soup\":false,\"has_sauce\":false,\"image_index\":0,\"is_in_image\":true,\"box_2d\":[300,400,900,950],\"nutrition_per_100g\":{\"calories\":575,\"carbs\":21.7,\"protein\":21.2,\"fat\":49.9}},{\"food_index\":1,\"food_name\":\"포도\",\"confidence\":0.9,\"estimated_serving\":0.5,\"estimated_serving_g\":75,\"count\":null,\"count_unit\":null,\"has_soup\":false,\"has_sauce\":false,\"image_index\":0,\"is_in_image\":true,\"box_2d\":[400,300,800,550],\"nutrition_per_100g\":{\"calories\":69,\"carbs\":18.1,\"protein\":0.7,\"fat\":0.2}},{\"food_index\":2,\"food_name\":\"소시지\",\"confidence\":0.85,\"estimated_serving\":1,\"estimated_serving_g\":100,\"count\":null,\"count_unit\":null,\"has_soup\":false,\"has_sauce\":false,\"image_index\":0,\"is_in_image\":true,\"box_2d\":[100,300,500,700],\"nutrition_per_100g\":{\"calories\":290,\"carbs\":2.5,\"protein\":12.5,\"fat\":25.0}}],\"portion_evidence\":[{\"food_index\":0,\"image_index\":0,\"visual_summary\":\"접시의 절반 이상을 아몬드가 채우고 있으며, 꽤 높게 쌓여 있습니다.\",\"scale_basis\":\"food_piece_prior\",\"method\":\"volume_density\",\"estimated_volume_ml\":250,\"bulk_density_g_per_ml\":0.6,\"scale_uncertainty\":\"medium\"},{\"food_index\":1,\"image_index\":0,\"visual_summary\":\"접시 한쪽에 다양한 색깔의 포도 알갱이들이 흩어져 있습니다.\",\"scale_basis\":\"food_piece_prior\",\"method\":\"count_piece_mass\",\"estimated_volume_ml\":null,\"bulk_density_g_per_ml\":null,\"scale_uncertainty\":\"medium\"},{\"food_index\":2,\"image_index\":0,\"visual_summary\":\"접시 상단에 썰린 소시지 조각들이 쌓여 있습니다.\",\"scale_basis\":\"food_piece_prior\",\"method\":\"volume_density\",\"estimated_volume_ml\":120,\"bulk_density_g_per_ml\":0.8,\"scale_uncertainty\":\"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 654,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2824,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5508.87,
+  "completed_at": "2026-10-25T07:42:24.235048+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "sample_id": "dish_1565799565",
+  "request_id": "followup_dev_flash35_full_dish_1565799565",
+  "started_at": "2026-10-25T08:27:42.788933+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "28c96fa6eadd670127553d5549f227447c92d2242ea56e35f0b6c21d074f1b13",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "830d5a3cf2f7fd4af23fdbb78e8a9e5677d766b50cd8b58247008355e2d44d6e",
+  "status": "generation_failed",
+  "error_type": "ReadTimeout",
+  "latency_ms": 90022.07,
+  "completed_at": "2026-10-25T08:29:13.146869+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "frozen_at": "2026-10-25T08:38:16.556570+00:00",
+  "base_commit": "a860b2fb3a2c53a4484ddc6673d86d938f039171",
+  "worktree": "C:\\Users\\741u7\\Desktop\\soma_project\\AI_accuracy_candidate",
+  "branch": "codex/vision-model-validation-20261025",
+  "file_sha256": {
+    "ai-server/app/gemini_client.py": "db94b08978ba62572cf145f7277391ed2597510175b73b184f0e5ecbd27b9e04",
+    "ai-server/app/services/vision.py": "006ad45972e237db28ddcde27c61d8972ad7010db06116c1db0adbeb39cf2703",
+    "ai-server/tests/conftest.py": "2d7276ffee68472457ae73d26bd201b2c274d01ea6daa8cafa4699d0e8e3fe78",
+    "ai-server/tests/test_response_schema.py": "45c2337b0a7844d8f43f3492ea3c0d607d212f851d43b81a29431d83b9b3c3d3",
+    "ai-server/tests/test_photo_model_policy.py": "7bda08188c5d96bdd911e9e5615ba80008c5cc04570ad8cca93657dad1519ce7"
+  },
+  "patch_sha256": "9a6e2e00162975793122f134b8f96d2245c98aa21829824bb75a493d836e13fe",
+  "verification_sha256": "6129d57e586d42c8f2bcf24d078dab2f31d5267f20f67e9aa2bb8a3bfdff6514",
+  "prompt_sha256": "ec03e8be7d47b2d48734f60354360246c78ea55c06d227de31907a7f8c71a7c7",
+  "schema_semantic_sha256": "4e36ed481d5493f10d5e2ebc442559c542c1e1522142fdd7391f9ec53e25cf5d",
+  "sdk_version_tested": "1.75.0",
+  "policy": {
+    "model": "gemini-3.5-flash-lite",
+    "thinking_level": "MINIMAL",
+    "temperature": 0,
+    "seed": 20260722,
+    "max_output_tokens": 4096,
+    "route": "One image, stripped empty user text, normalized standard depth, max_foods5; only baseline 2.5Flash/temp0/seed20260722/thinking0 settings"
+  },
+  "confirmation_labels_opened": false,
+  "committed": false,
+  "pushed_merged_deployed": false,
+  "original_ai_tracked_clean": true,
+  "environment_config_or_dependencies_changed": false
+}

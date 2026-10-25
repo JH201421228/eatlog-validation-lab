@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565023128",
+  "request_id": "followup_dev_volume_consistency_dish_1565023128",
+  "started_at": "2026-10-25T07:42:14.388399+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "eb385a3e4af50d77a00ca5be30126cae5fc518b696d7d09ad1d4db3aa04125ee",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "8f3a0e00ba0c75b12937abdf9673e55ea37b65eae2d8c4dbcf99015c95d2fecb",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"샐러드 채소\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 30, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [160, 290, 690, 870], \"nutrition_per_100g\": {\"calories\": 15, \"carbs\": 3, \"protein\": 1, \"fat\": 0.2}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시 중앙에 붉은색과 녹색 잎채소가 섞여 소량 놓여 있습니다. 높이는 낮고 넓게 퍼져 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 150, \"bulk_density_g_per_ml\": 0.2, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 280,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2450,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3207.36,
+  "completed_at": "2026-10-25T07:42:18.149173+00:00"
+}

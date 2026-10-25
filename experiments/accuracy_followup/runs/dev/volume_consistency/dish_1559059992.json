@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1559059992",
+  "request_id": "followup_dev_volume_consistency_dish_1559059992",
+  "started_at": "2026-10-25T07:42:13.383057+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "0f5efe5b443197aafd7595eb3e76c97b55d9d8258fd0cd50bc4d675c647acfb9",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "287d0d7ed8dce93f12e2cebf155d119539bcb5fe4d821c6d59e6dd317a05a0ab",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"구운 감자\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 100.0, \"count\": 9.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [290, 400, 738, 775], \"nutrition_per_100g\": {\"calories\": 93.0, \"carbs\": 20.0, \"protein\": 2.0, \"fat\": 0.1}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시에 9조각의 구운 감자가 놓여 있으며, 조각당 크기는 약 20-30g으로 추정됩니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 290,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2460,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3523.24,
+  "completed_at": "2026-10-25T07:42:17.436398+00:00"
+}

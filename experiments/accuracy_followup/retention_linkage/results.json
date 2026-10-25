@@ -1,0 +1,62 @@
+﻿{
+    "date":  "2026-10-25",
+    "be_branch":  "codex/analysis-link-fallback-20261025",
+    "be_base_commit":  "5b77e1d59e320fd2c4f84650d103bd4b1c2c8ab0",
+    "scope":  "Prospective preservation of one explicit owned candidate-parent relation; no retention or full acceptance conclusion",
+    "baseline":  {
+                     "files":  [
+                                   "tests/test_meal_analytics_fields.py",
+                                   "tests/test_meals.py"
+                               ],
+                     "passed":  33,
+                     "warnings":  115,
+                     "seconds":  7.49
+                 },
+    "before_fix_positive_regression":  {
+                                           "failed_as_expected":  1,
+                                           "observed":  "MealRecord.ai_call_log_id was None",
+                                           "expected":  "seeded owned parent call ID",
+                                           "seconds":  0.51
+                                       },
+    "after_fix":  {
+                      "files":  [
+                                    "tests/test_meal_analytics_fields.py",
+                                    "tests/test_meals.py",
+                                    "tests/test_multi_image_api.py"
+                                ],
+                      "passed":  88,
+                      "failed":  0,
+                      "warnings":  389,
+                      "seconds":  27.95,
+                      "warning_kind":  "Existing python-jose datetime.utcnow deprecation",
+                      "git_diff_check_exit_code":  0
+                  },
+    "safe_environment":  {
+                             "working_directory":  "new empty OS temporary directory",
+                             "database_url":  "sqlite://",
+                             "ai_client_mode":  "mock",
+                             "fixtures":  "SQLite in-memory, mock social verifier/AI, temporary local storage",
+                             "disabled":  [
+                                              "migrations",
+                                              "request log",
+                                              "image retention job",
+                                              "weekly push",
+                                              "lifecycle push"
+                                          ],
+                             "dotenv_loaded":  false,
+                             "production_network_used":  false,
+                             "analytics_sites_accessed":  false
+                         },
+    "non_product_attempts":  [
+                                 "Initial pytest discovery without rootdir/confcutdir failed on inaccessible ancestor directory; fixed command bounds before baseline.",
+                                 "Direct PS1 invocation was blocked by Windows execution policy; ran verified local script with process-only ExecutionPolicy Bypass."
+                             ],
+    "lint_typecheck":  "No checked-in BE lint/typecheck configuration found",
+    "schema_change":  false,
+    "historical_backfill":  false,
+    "commit_push_merge_deploy":  false,
+    "be_file_sha256":  {
+                           "tests/test_meal_analytics_fields.py":  "15bc8a30e9e06703113222defc2c319bdf11a1bd2504b3a42333a28a151a8a5b",
+                           "app/services/meals.py":  "6c244fb097504bc6f2a139fa6b0e4668a275d4ea35d92f25a7b2abfc0e2a1f50"
+                       }
+}

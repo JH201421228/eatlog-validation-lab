@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-25T08:40:02.2201495Z",
+  "implementation_commit": "de0df8142f565de23dc6b2917229ea62c94d8367",
+  "main_commit": "c81ec8c4abfad226adf06698c2b42e05b1dd8f4d",
+  "dev_pr": "https://github.com/team-EBD/BE/pull/102",
+  "main_pr": "https://github.com/team-EBD/BE/pull/103",
+  "run": "https://github.com/team-EBD/BE/actions/runs/40176912543",
+  "pytest_passed": 1294,
+  "pytest_skipped": 5,
+  "alembic": "success",
+  "ssm_status": "Success",
+  "ssm_command_id": "1a70be15-6117-4229-981c-b1cdd67b60f5",
+  "health": {
+    "status": "ok"
+  },
+  "database_health": {
+    "status": "ok",
+    "db": "ok"
+  },
+  "scope": "Prospective unambiguous linkage; no historical backfill or retention increase claim"
+}

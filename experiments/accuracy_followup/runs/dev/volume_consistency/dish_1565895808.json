@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565895808",
+  "request_id": "followup_dev_volume_consistency_dish_1565895808",
+  "started_at": "2026-10-25T07:42:36.595829+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "851965b5708b799010440bce85c6ad8df011b90c2f4e23b7250f85fdbf73cc16",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "7f5faa03db72d2b48409467c601f748d29fbab963b15c9beb7435582c7d8b4cc",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"강낭콩 볶음\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [15, 248, 566, 742], \"nutrition_per_100g\": {\"calories\": 100.0, \"carbs\": 15.0, \"protein\": 5.0, \"fat\": 2.0}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 약 1/4을 덮고 있는 강낭콩 볶음이 쌓여 있습니다. 길이는 약 5cm 정도이며, 접시의 크기를 고려할 때 약 100g으로 추정됩니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 120.0, \"bulk_density_g_per_ml\": 0.83, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 312,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2482,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3710.64,
+  "completed_at": "2026-10-25T07:42:40.801345+00:00"
+}

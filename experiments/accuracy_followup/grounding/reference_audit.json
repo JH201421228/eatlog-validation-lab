@@ -1,0 +1,43 @@
+{
+  "created_at_utc": "2026-10-25T07:35:53.954693+00:00",
+  "source_file": "BE/scripts/data/mfds_material.jsonl",
+  "source_sha256": "5161faa96a5250b2465188f377ddf3021a5dd15a39127ba6ba524ba9b86652c5",
+  "source_bytes": 4325969,
+  "source_rows": 3704,
+  "unique_food_codes": 3701,
+  "variants": 3671,
+  "current_generics": 2805,
+  "importer_exclusions": {
+    "열량 없음·비현실": 30,
+    "중복": 3
+  },
+  "reference_sha256": "b747598384fe6e51e66794e1f00bce3f0565ec697e09c9368e3405e44e843749",
+  "quality_rejection_counts": {
+    "null": 6363,
+    "estimated_macros": 68,
+    "impossible_density": 1,
+    "not_100g_basis": 44
+  },
+  "source_names": {
+    "농촌진흥청(국가표준식품성분표)": 1861,
+    "국립수산과학원(표준수산물성분표)": 1740,
+    "식품의약품안전처": 70
+  },
+  "source_production_methods": {
+    "분석": 3329,
+    "수집": 335,
+    "산출": 7
+  },
+  "public_api_endpoint_without_key": "https://api.data.go.kr/openapi/tn_pubr_public_nutri_material_info_api",
+  "official_dataset_page": "https://www.data.go.kr/data/15100065/standard.do",
+  "production_db_opened": false,
+  "network_requests": 0,
+  "mock_seed_used": false,
+  "code_sha256": {
+    "scripts/import_mfds_material.py": "07e8291f87da6cf704dcee74bf88220f35b4ed7e46987c92b27ab1d65673f2d6",
+    "scripts/import_mfds_api.py": "3ded3e028eef3b88db59fdce60cdc2534863a1cfacfdb61de13f0b2951a34910",
+    "scripts/import_public_nutrition.py": "499614ced6d5c035218920723ddfd6dc64284cf01c8419150f9a2e4ae3bcff55",
+    "app/services/matching.py": "1c3c38071d8164ef661539243800eab1ce4a096da2134a62dca1bbb316115a57",
+    "app/services/analyze.py": "ea849c95a614a8a4ef504d0182bd0f4865496731754efa3af2a5f5e7d63f6566"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "sample_id": "dish_1562775110",
+  "request_id": "followup_dev_baseline_dish_1562775110",
+  "started_at": "2026-10-25T07:35:46.642034+00:00",
+  "arm": "baseline",
+  "phase": "dev",
+  "image_sha256": "8245c5c78ed5c985b57091e4379e759274170831091dd5e28a6682b3175637e1",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "status": "count_tokens_failed",
+  "error_type": "ConnectError"
+}

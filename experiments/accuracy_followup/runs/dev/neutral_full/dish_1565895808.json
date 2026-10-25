@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565895808",
+  "request_id": "followup_dev_neutral_full_dish_1565895808",
+  "started_at": "2026-10-25T07:57:16.876399+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "851965b5708b799010440bce85c6ad8df011b90c2f4e23b7250f85fdbf73cc16",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "a1f64450aeff0ea5b705702d5d9b896b6a67f5f19e877a17c70ff45ee57104ec",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"강낭콩\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [15, 248, 566, 743], \"nutrition_per_100g\": {\"calories\": 31.0, \"carbs\": 7.0, \"protein\": 1.8, \"fat\": 0.2}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 171,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1676,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2945.77,
+  "completed_at": "2026-10-25T07:57:20.323772+00:00"
+}

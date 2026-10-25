@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561997365",
+  "request_id": "followup_dev_neutral_full_dish_1561997365",
+  "started_at": "2026-10-25T08:10:06.017243+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "98d8d028955d189e9aded6328261b712a89de95c6236ac265e415b647c92bd4d",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "c53bd0059f1ab1b24f71089265ed0b22842cac73c3b0193bfc74c61d59d15fb0",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": []}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 527
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 109
+      }
+    ],
+    "cached_content_token_count": 636,
+    "candidates_token_count": 5,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1510,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3064.56,
+  "completed_at": "2026-10-25T08:10:09.433123+00:00"
+}

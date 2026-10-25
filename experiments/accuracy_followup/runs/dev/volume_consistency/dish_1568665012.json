@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1568665012",
+  "request_id": "followup_dev_volume_consistency_dish_1568665012",
+  "started_at": "2026-10-25T07:44:04.084479+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "ddebdb3759fa71d83835b43cfc49ae61ea9171d117f44e7c60216f6753fce13d",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "807244336cb0fa7f8940e0b31aae5842a90fccc76b7a50e297a895d0b3bcf659",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"닭가슴살 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 250.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [60, 188, 960, 890], \"nutrition_per_100g\": {\"calories\": 120.0, \"carbs\": 5.0, \"protein\": 15.0, \"fat\": 4.0}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"방울양배추 구이\", \"confidence\": 0.8, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50.0, \"count\": 6.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [180, 600, 590, 870], \"nutrition_per_100g\": {\"calories\": 45.0, \"carbs\": 9.0, \"protein\": 3.0, \"fat\": 0.5}, \"package\": null}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 절반 정도를 닭가슴살과 채소가 덮고 있으며, 닭가슴살은 큐브 형태로 썰려 있고 채소는 잎채소와 당근 채가 섞여 있습니다. 소스가 뿌려져 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 250.0, \"bulk_density_g_per_ml\": 1.0, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시 한쪽에 6개의 방울양배추가 놓여 있으며, 구워진 상태입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 597,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2767,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4523.9,
+  "completed_at": "2026-10-25T07:44:09.126033+00:00"
+}

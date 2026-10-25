@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1563910639",
+  "request_id": "followup_dev_volume_consistency_dish_1563910639",
+  "started_at": "2026-10-25T07:42:17.558614+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "cf5de2226fa2efe5b0dd18cec58256273c33a0bf697a558e6042f708d52b8a3a",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "4c33bf8e81b59bbdea30bde032f6a9338b611d903b0a3a8c4c804735fc007662",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"닭고기 시금치 볶음밥\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 250.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [200, 280, 790, 820], \"nutrition_per_100g\": {\"calories\": 150.0, \"carbs\": 20.0, \"protein\": 10.0, \"fat\": 4.0}, \"package\": null}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시 중앙에 볶음밥이 불규칙한 형태로 놓여 있으며, 밥알과 닭고기 조각, 시금치가 섞여 있습니다. 접시의 약 절반 정도를 덮고 있으며, 높이는 비교적 평평합니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 250.0, \"bulk_density_g_per_ml\": 1.0, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 327,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2497,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 12529.65,
+  "completed_at": "2026-10-25T07:42:30.609375+00:00"
+}

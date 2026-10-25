@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1563219056",
+  "request_id": "followup_dev_neutral_full_dish_1563219056",
+  "started_at": "2026-10-25T07:56:53.421026+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "2650a6af59c5789c40527e06252c829afc00570ddbc6dbf68a33cd377e48f643",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "96677d51e2a23c5217edd3f87f9bd14563d62f181b238e80eb9ffb1b71e70d86",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"페퍼로니 피자\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": 1.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [428, 229, 862, 464], \"nutrition_per_100g\": {\"calories\": 260.0, \"carbs\": 28.0, \"protein\": 12.0, \"fat\": 11.0}}, {\"food_index\": 1, \"food_name\": \"밥\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 100.0, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [440, 464, 700, 740], \"nutrition_per_100g\": {\"calories\": 130.0, \"carbs\": 28.0, \"protein\": 2.7, \"fat\": 0.3}}, {\"food_index\": 2, \"food_name\": \"고기 볶음\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [440, 464, 700, 740], \"nutrition_per_100g\": {\"calories\": 250.0, \"carbs\": 5.0, \"protein\": 25.0, \"fat\": 15.0}}, {\"food_index\": 3, \"food_name\": \"방울토마토\", \"confidence\": 0.98, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50.0, \"count\": 7.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [190, 280, 530, 490], \"nutrition_per_100g\": {\"calories\": 18.0, \"carbs\": 3.9, \"protein\": 0.9, \"fat\": 0.2}}, {\"food_index\": 4, \"food_name\": \"올리브\", \"confidence\": 0.9, \"estimated_serving\": 0.2, \"estimated_serving_g\": 20.0, \"count\": 5.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [420, 400, 600, 490], \"nutrition_per_100g\": {\"calories\": 115.0, \"carbs\": 6.3, \"protein\": 0.8, \"fat\": 10.7}}, {\"food_index\": 5, \"food_name\": \"샐러리\", \"confidence\": 0.8, \"estimated_serving\": 0.3, \"estimated_serving_g\": 30.0, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [220, 490, 440, 620], \"nutrition_per_100g\": {\"calories\": 16.0, \"carbs\": 3.0, \"protein\": 0.7, \"fat\": 0.2}}, {\"food_index\": 6, \"food_name\": \"애호박\", \"confidence\": 0.8, \"estimated_serving\": 0.2, \"estimated_serving_g\": 20.0, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [220, 490, 440, 620], \"nutrition_per_100g\": {\"calories\": 17.0, \"carbs\": 3.1, \"protein\": 1.2, \"fat\": 0.3}}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 1132,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2637,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6433.31,
+  "completed_at": "2026-10-25T07:57:00.716915+00:00"
+}

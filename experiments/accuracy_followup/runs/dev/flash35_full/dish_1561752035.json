@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561752035",
+  "request_id": "followup_dev_flash35_full_dish_1561752035",
+  "started_at": "2026-10-25T08:23:30.287607+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "a6a15cd80f3d833dc12ebb3da4065c85570012fb2813d863d77f41654cf74bbd",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "838b036ded35b6bd15940e063e41032b20acd56768307215e1afd7605a22f8ae",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"연어 스테이크 샐러드\",\n      \"confidence\": 0.92,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 280,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [170, 252, 895, 846],\n      \"nutrition_per_100g\": {\n        \"calories\": 160,\n        \"carbs\": 12.5,\n        \"protein\": 11.2,\n        \"fat\": 7.4\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1188
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 451
+      }
+    ],
+    "cached_content_token_count": 1639,
+    "candidates_token_count": 230,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4095,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2598.59,
+  "completed_at": "2026-10-25T08:23:33.452614+00:00"
+}

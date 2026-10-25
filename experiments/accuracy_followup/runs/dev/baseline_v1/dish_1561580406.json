@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561580406",
+  "request_id": "followup_dev_baseline_v1_dish_1561580406",
+  "started_at": "2026-10-25T07:37:18.243517+00:00",
+  "arm": "baseline_v1",
+  "phase": "dev",
+  "image_sha256": "759e92cda242649968aa9f30ce4a341c7a90109a56b86d908bfcb5e33fb3e25d",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3059,
+  "request_sha256": "8715ec8b7924da13718b3e8bbfeea003c2acaf4e8f1a3187ab6800c1e168e748",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 300, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [110, 380, 850, 820], \"nutrition_per_100g\": {\"calories\": 150, \"carbs\": 15, \"protein\": 5, \"fat\": 8}, \"package\": null}, {\"food_index\": 0, \"food_name\": \"파스타 샐러드\", \"confidence\": 0.7, \"estimated_serving\": 1.0, \"estimated_serving_g\": 350, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [110, 380, 850, 820], \"nutrition_per_100g\": {\"calories\": 180, \"carbs\": 20, \"protein\": 6, \"fat\": 9}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1952
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 179
+      }
+    ],
+    "cached_content_token_count": 2131,
+    "candidates_token_count": 328,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3387,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5895.49,
+  "completed_at": "2026-10-25T07:37:25.061162+00:00"
+}

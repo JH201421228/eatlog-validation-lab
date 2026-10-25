@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1564588820",
+  "request_id": "followup_dev_volume_consistency_dish_1564588820",
+  "started_at": "2026-10-25T07:43:54.028447+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "1bba4028f1464535bf92fb94f8b83ef0cef3bd09db309ba2a26570f4875a8344",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "b22d659b8daf34384310e15be61457696a08d297854f4417509b886c67f25968",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"모차렐라 치즈\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [60, 445, 900, 850], \"nutrition_per_100g\": {\"calories\": 280, \"carbs\": 2.2, \"protein\": 28, \"fat\": 17}, \"package\": null}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시에 흩뿌려진 모차렐라 치즈 조각들이 보이며, 대략 50g 정도로 추정됩니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 277,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2447,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3514.03,
+  "completed_at": "2026-10-25T07:43:57.946378+00:00"
+}

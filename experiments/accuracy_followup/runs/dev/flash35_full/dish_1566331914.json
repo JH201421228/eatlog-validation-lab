@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1566331914",
+  "request_id": "followup_dev_flash35_full_dish_1566331914",
+  "started_at": "2026-10-25T08:22:12.193585+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "75ffdf1b1cf049433160fb09a9e6befdf73da490de43ef0027eeb55772f842d5",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "b9bb80c92f6b0ad7d2d7480f2ba99f1425d689b2e786710fcfaac412ad728263",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"닭볶음탕\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 150,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [0, 381, 359, 755],\n      \"nutrition_per_100g\": {\n        \"calories\": 140,\n        \"carbs\": 5.0,\n        \"protein\": 15.0,\n        \"fat\": 6.5\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"방울양배추구이\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 80,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [188, 195, 627, 545],\n      \"nutrition_per_100g\": {\n        \"calories\": 55,\n        \"carbs\": 9.0,\n        \"protein\": 4.0,\n        \"fat\": 1.5\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"카레볶음밥\",\n      \"confidence\": 0.8,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 100,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [301, 480, 814, 638],\n      \"nutrition_per_100g\": {\n        \"calories\": 175,\n        \"carbs\": 28.0,\n        \"protein\": 3.5,\n        \"fat\": 5.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 3,\n      \"food_name\": \"그린샐러드\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 70,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [111, 563, 793, 995],\n      \"nutrition_per_100g\": {\n        \"calories\": 25,\n        \"carbs\": 4.5,\n        \"protein\": 2.0,\n        \"fat\": 0.5\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 796,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4661,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3458.94,
+  "completed_at": "2026-10-25T08:22:15.982366+00:00"
+}

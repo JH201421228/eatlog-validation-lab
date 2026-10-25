@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1562602657",
+  "request_id": "followup_dev_volume_consistency_dish_1562602657",
+  "started_at": "2026-10-25T07:43:06.076362+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "32de2539e85b6c9b1080e4921a9d23668134be18975a5421a2a38c729d30bb41",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "9df1cdd42a6e79e9248edb66a95433394fb7bca5040a08afea1af3f8a7f3d2d5",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"해시브라운\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [190, 299, 700, 577], \"nutrition_per_100g\": {\"calories\": 150.0, \"carbs\": 18.0, \"protein\": 2.0, \"fat\": 8.0}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"브로콜리\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 70.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [150, 550, 580, 760], \"nutrition_per_100g\": {\"calories\": 34.0, \"carbs\": 7.0, \"protein\": 2.8, \"fat\": 0.4}, \"package\": null}, {\"food_index\": 2, \"food_name\": \"소시지\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": 4.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [300, 650, 860, 820], \"nutrition_per_100g\": {\"calories\": 290.0, \"carbs\": 2.0, \"protein\": 12.0, \"fat\": 26.0}, \"package\": null}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 왼쪽 절반을 덮고 있는 해시브라운은 약 2cm 높이로 쌓여 있습니다. 감자 조각들이 엉성하게 뭉쳐져 있어 공극이 많아 보입니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 200.0, \"bulk_density_g_per_ml\": 0.6, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시의 오른쪽 상단에 브로콜리 조각들이 모여 있습니다. 대략 10-15개 정도의 작은 조각들이 겹쳐져 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"접시의 오른쪽 하단에 소시지 4조각이 놓여 있습니다. 각 조각은 대략 5cm 길이의 원통형으로 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 885,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3055,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6573.96,
+  "completed_at": "2026-10-25T07:43:13.349932+00:00"
+}

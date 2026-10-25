@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1562009314",
+  "request_id": "followup_dev_volume_consistency_dish_1562009314",
+  "started_at": "2026-10-25T07:43:23.025959+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "120fb5f30da488962ce488ddab34f05bb614fa5def39a4b2d30a7243a96019f5",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "e505f9576b7e1e28a3fa4f98f3b0582b40af769788ad990a18ce30f0f7479ad3",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"방울양배추 구이\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": 40.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [140, 300, 700, 940], \"nutrition_per_100g\": {\"calories\": 43, \"carbs\": 9.0, \"protein\": 3.4, \"fat\": 0.3}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"흰색 사각 접시에 구운 방울양배추 약 40개가 흩뿌려져 있습니다. 접시의 절반 정도를 채우고 있으며, 개당 크기는 엄지손가락 한 마디 정도입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 308,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2478,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3438.32,
+  "completed_at": "2026-10-25T07:43:26.996216+00:00"
+}

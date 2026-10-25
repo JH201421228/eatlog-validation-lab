@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "date": "2026-10-25",
+  "reason": "The previous robustness fixes did not improve ordinary photo accuracy. Follow-up work tests the core accuracy concerns from review.",
+  "prior_main1000_status": "All 1000 previous outcomes have been observed and are exploratory development data.",
+  "development_screen": {
+    "count": 100,
+    "selection": "SHA256(followup-dev-v1|sample_id), lowest 100 IDs from prior main1000",
+    "arms": [
+      "fresh baseline",
+      "neutral_portion",
+      "volume_consistency",
+      "baseline_thinking1024"
+    ],
+    "baseline_repetition": "Fresh baseline on the same 100 images measures changes against concurrent model requests; old responses remain archived.",
+    "selection_rule": "Choose the arm with lowest paired calorie MAE among arms with no worse all-selected within-15-percent count and no lower valid prediction count than fresh baseline; improvement must exceed 5 percent to advance. If none qualifies, retain all negative results and do not promote an arm solely by rank.",
+    "full_development": "An advancing frozen arm is evaluated on all 1000 prior samples before confirmation. Its first 100 frozen responses may be reused with matching input/config hashes. This is exploration, not a holdout success claim."
+  },
+  "grounding_hypothesis": "Compare the same model candidates and mass through real public MFDS ingredient references using existing exact matching, validated density gates, and conservative cooking-state-aware matching. No truth ingredient names, truth mass or Nutrition5k ingredient table may enter retrieval.",
+  "learned_mass_hypothesis": {
+    "added_before_confirmation_labels_opened": true,
+    "reason": "The review also criticized prompt rules alone and lack of learned correction. Fit a small mass estimator from model output features and existing development truth masses.",
+    "training": "Previous main1000 only; five inferred-group-disjoint folds; training-fold standardization only; ridge log mass regression with alpha 10,100,1000 selected by lowest development out-of-fold mass MAE.",
+    "inputs": "Model-predicted mass, kcal density, food names, counts and confidence. No truth ingredients, truth mass, ID, camera or date as features.",
+    "application": "A plate-level learned factor clipped to [0.5,2] scales candidate estimated_serving_g only. Preserve observed count, count unit, food identity, confidence and per100g nutrition. Replay actual pinned BE nutrition arithmetic. Protect package and printed/grounded label estimates.",
+    "evaluation": "Alpha-selected cross-validation is exploratory. Only a single frozen final policy may be tested on new155. This does not remove the external VLM dependency.",
+    "no_confirmation_labels_consulted": true,
+    "development_amendment_after_large_portion_diagnostic": {
+      "reason": "Log-mass ridge improved overall exploratory errors but worsened the truth mass >=400g subgroup. Test loss-scale sensitivity before opening new confirmation labels.",
+      "additional_family": "Ridge with linear mass target, same features, group folds and alpha grid 10/100/1000. Nonpositive or nonfinite predicted mass falls back to original; positive factors remain clipped to [0.5,2].",
+      "within_family_selection": "Lowest out-of-fold mass MAE, as before",
+      "deployment_candidate_filter": "Require lower overall development mass and calorie MAE, nondecreasing all-selected within-15 count and valid coverage. Exclude a family if >=400g truth subgroup has at least30 cases and its calorie MAE worsens by more than10 percent. These are development selection checks, not confirmation claims.",
+      "prompt_interaction": "A fresh neutral_full run on all old1000 may be fitted and cross-validated separately. Its predictions must not be calibrated by a model trained on another prompt without explicitly treating it as a separate hypothesis.",
+      "fresh_full_rerun": "Repeat the 100 screen cases within fresh1000 rather than add response-reuse machinery; all extra calls remain in the cumulative budget.",
+      "final_loss_variant_before_confirmation": "After log and linear target families both worsened the large-portion development subgroup by more than10 percent, test one final weighted_log_mass family: training weight clip(truth_mass / median(training_fold_truth_mass),0.5,4), same features, group folds and alpha grid. Weights use training labels only. All acceptance and large-portion guards stay unchanged; keep negative results. No further loss-family tuning loop is planned."
+    }
+  },
+  "confirmation": {
+    "selection": "All 155 remaining eligible inferred groups, disjoint from all prior pilot/main groups",
+    "source_policy": "First existing camera A, B, C, D; frame 0. Keep unavailable sources in denominator.",
+    "labels": "Kept in a separate gold file; opened for scoring only after candidate policy, prompts, code and source manifest are frozen.",
+    "minimum_paired_valid": 100,
+    "calorie_mae_relative_reduction_minimum": 0.1,
+    "paired_bootstrap_95_ci_delta_upper_must_be_negative": true,
+    "within_15_percent_all_selected_must_not_decrease": true,
+    "valid_prediction_count_must_not_decrease": true,
+    "repetitions": 2000,
+    "threshold_origin": "Predeclared follow-up acceptance rule, not a numeric threshold prescribed by reviewers.",
+    "one_final_policy_comparison": true,
+    "no_retuning_on_confirmation_outcomes": true,
+    "limitations": [
+      "New groups have side-camera images only",
+      "Inferred grouping does not prove physical independence",
+      "Public pretraining exposure unknown",
+      "Not representative Korean or packaged-food user traffic"
+    ],
+    "calorie_mae_metric_scope": "Require at least 10% reduction both on exactly the same valid image pairs and on each arm overall valid predictions. Clarified during scorer audit before confirmation labels opened; paired CI, all-selected within15 and coverage gates also remain required.",
+    "execution": "Baseline and frozen Flash3.5 candidate run concurrently under one OS lock and one inherited Ledger object; 2 requests per arm, maximum4 combined. Six offline safety tests passed. No automatic resume/retry; prior ledger hash is checked before any collector starts."
+  },
+  "production_gate": "Only a confirmed improvement with compatible single-image API behavior and regression tests may be merged/deployed. Multi-image, user-text, packaged-label and existing FE contracts must remain covered. Unconfirmed hypotheses remain in the personal experiment repo.",
+  "reporting": "Report all tested hypotheses, successes, failures, sample coverage, latency, cumulative budget, known limits, review mapping, and exact unresolved phrase required by the user.",
+  "budget": {
+    "total_authorized_usd_including_prior_work": 30,
+    "prior_charged_or_reserved_usd": 3.4125488,
+    "reserve_each_request_usd": 0.5,
+    "no_automatic_generation_retries": true
+  },
+  "sites_and_fe": "Meta is on hold; no Meta or analytics dashboard mutations; FE unchanged.",
+  "external_model_comparison_amendment": {
+    "before_new155_labels_opened": true,
+    "reason": "Review asks for periodic external-model comparison. Initial four arms varied prompt/thinking but used a single model. Add one bounded current low-cost model comparison before final selection.",
+    "arm": "gemini-3.5-flash-lite, minimal thinking; exact original baseline prompt/schema, temperature0, seed20260722, maxoutput4096",
+    "dataset": "Same frozen development100; fresh baseline_v1 reference. Exploratory only.",
+    "screen": "Same >5% paired calorie MAE improvement, no lower valid count or all-selected within15 count. If it passes, evaluate frozen arm on old1000 before any confirmation; no new prompt tuning for this model.",
+    "deployment": "Still requires one frozen final policy comparison on new155 and original confirmation gates. Never choose a per-case oracle model using truth.",
+    "cost": "Same standard input0.30/output2.50 USD per million including thoughts; shared inherited US$30 ledger; no search/grounding/cache/tools/retries.",
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/pricing",
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite",
+      "https://ai.google.dev/gemini-api/docs/thinking"
+    ],
+    "checked_date": "2026-10-25",
+    "availability": "Model listing describes stable model. API count-token failures or unsupported settings stop without automatic generation retries; record failures instead of substituting models."
+  }
+}

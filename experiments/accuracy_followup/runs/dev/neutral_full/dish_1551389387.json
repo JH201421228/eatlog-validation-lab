@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551389387",
+  "request_id": "followup_dev_neutral_full_dish_1551389387",
+  "started_at": "2026-10-25T08:09:39.430119+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "cfcff2e3650067eca649c998fa401bd5ca3da028e965c3ace18f5fcb5445b081",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "d4cd926ecd86ac92f3682dd8cc267112382244349f055ef0cab0f7f2a38a1ce2",
+  "status": "response_received",
+  "raw_text": "{\"candidates\":[{\"food_index\":0,\"food_name\":\"아보카도\",\"confidence\":0.9,\"estimated_serving\":0.1,\"estimated_serving_g\":10,\"count\":null,\"count_unit\":null,\"has_soup\":false,\"has_sauce\":false,\"image_index\":0,\"is_in_image\":true,\"box_2d\":[190,260,800,740],\"nutrition_per_100g\":{\"calories\":160,\"carbs\":8.53,\"protein\":2,\"fat\":14.66},\"package\":null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 527
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 109
+      }
+    ],
+    "cached_content_token_count": 636,
+    "candidates_token_count": 138,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1643,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2974.69,
+  "completed_at": "2026-10-25T08:09:42.907001+00:00"
+}

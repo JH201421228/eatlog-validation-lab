@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561741174",
+  "request_id": "followup_dev_volume_consistency_dish_1561741174",
+  "started_at": "2026-10-25T07:42:13.763618+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "46f6c380c244d20e99923775e8fce071c3911332a55a81a395bf7e931b7f3001",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "09c529417d8e2308c26f5cb95c2823c3f6c189e1d26dc802f376093113686f32",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"스크램블 에그\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [220, 320, 690, 650], \"nutrition_per_100g\": {\"calories\": 149.0, \"carbs\": 1.1, \"protein\": 12.0, \"fat\": 10.0}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"베이컨\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 30.0, \"count\": 2.0, \"count_unit\": \"장\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [440, 590, 790, 770], \"nutrition_per_100g\": {\"calories\": 541.0, \"carbs\": 0.0, \"protein\": 37.0, \"fat\": 42.0}, \"package\": null}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 절반 정도를 덮고 있으며, 중간 높이로 쌓여 있습니다. 공극이 많아 보입니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 150.0, \"bulk_density_g_per_ml\": 0.67, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"두 조각의 베이컨이 접시 한쪽에 놓여 있습니다. 바삭하게 구워져 부피가 줄어든 상태입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 575,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2745,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4177.21,
+  "completed_at": "2026-10-25T07:42:18.277502+00:00"
+}

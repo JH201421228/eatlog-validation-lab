@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1563813806",
+  "request_id": "followup_dev_flash35_full_dish_1563813806",
+  "started_at": "2026-10-25T08:16:25.475084+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "95d610c899bb41f70b0c8d33941816bfc74b873c4e082cf38f647353fccfcad7",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "da5c84992e21dc556182e29eb4bb554fab2a7bafafe01e383005f31a7b2e377c",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"삶은 달걀\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 50.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [390, 355, 830, 785],\n      \"nutrition_per_100g\": {\n        \"calories\": 155,\n        \"carbs\": 1.1,\n        \"protein\": 12.6,\n        \"fat\": 10.6\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 227,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4092,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2546.06,
+  "completed_at": "2026-10-25T08:16:28.505367+00:00"
+}

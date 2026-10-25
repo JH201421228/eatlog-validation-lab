@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565109637",
+  "request_id": "followup_dev_volume_consistency_dish_1565109637",
+  "started_at": "2026-10-25T07:41:40.988695+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "72202d33df8e15f11f3beb39f31e289f630fd2f4822522647e8e11f3fd26333c",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "178408aa3910bb3f3f53654a1a3c18283e457d0bf6d39dd90876e73ce4ae7b07",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"스크램블 에그\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [170, 500, 600, 800], \"nutrition_per_100g\": {\"calories\": 149.0, \"carbs\": 1.1, \"protein\": 11.0, \"fat\": 11.0}}, {\"food_index\": 1, \"food_name\": \"감자 볶음\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [170, 290, 550, 560], \"nutrition_per_100g\": {\"calories\": 150.0, \"carbs\": 25.0, \"protein\": 3.0, \"fat\": 5.0}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 절반을 차지하며, 덩어리진 형태로 쌓여 있습니다. 접시의 크기를 고려할 때 약 100g으로 추정됩니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시의 절반을 차지하며, 깍둑썰기 된 감자들이 쌓여 있습니다. 스크램블 에그와 비슷한 부피로 보이나 밀도가 높아 약 120g으로 추정됩니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 580,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2750,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4385.09,
+  "completed_at": "2026-10-25T07:41:45.800430+00:00"
+}

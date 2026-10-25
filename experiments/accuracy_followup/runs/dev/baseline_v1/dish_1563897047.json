@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1563897047",
+  "request_id": "followup_dev_baseline_v1_dish_1563897047",
+  "started_at": "2026-10-25T07:38:48.270062+00:00",
+  "arm": "baseline_v1",
+  "phase": "dev",
+  "image_sha256": "7f3a908b5d2ad8a4efcc7f7fe72be18a6b9dff2dca008a5675664abb1b4bf2d6",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3059,
+  "request_sha256": "7144dcfcb462a64b59d499164114cbbb4094ff82b7150ef8c043b79162b8ea0d",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"떡볶이\", \"confidence\": 0.7, \"estimated_serving\": 0.5, \"estimated_serving_g\": 200, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [200, 440, 660, 760], \"nutrition_per_100g\": {\"calories\": 150, \"carbs\": 30, \"protein\": 5, \"fat\": 2}, \"package\": null}, {\"food_index\": 0, \"food_name\": \"라볶이\", \"confidence\": 0.2, \"estimated_serving\": 0.5, \"estimated_serving_g\": 200, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [200, 440, 660, 760], \"nutrition_per_100g\": {\"calories\": 180, \"carbs\": 35, \"protein\": 6, \"fat\": 3}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1952
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 179
+      }
+    ],
+    "cached_content_token_count": 2131,
+    "candidates_token_count": 325,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3384,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3487.82,
+  "completed_at": "2026-10-25T07:38:52.277084+00:00"
+}

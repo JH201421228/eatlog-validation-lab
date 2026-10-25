@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1559172356",
+  "request_id": "followup_dev_flash35_full_dish_1559172356",
+  "started_at": "2026-10-25T08:24:22.299181+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "fcc000bdeee37d83b6cce15d29c151a8fec02886f9bd7f8ad8f3e5569e0682b0",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "4afaf1dd0dda18fded91cfb3e7a5b992d46846a4fba02970d4232bae65f2b29f",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": []\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 9,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3874,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2107.7,
+  "completed_at": "2026-10-25T08:24:24.694217+00:00"
+}

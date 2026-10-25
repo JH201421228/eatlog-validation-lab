@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1562170236",
+  "request_id": "followup_dev_flash35_full_dish_1562170236",
+  "started_at": "2026-10-25T08:19:51.218610+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "0e60f73a605e2a3bd69226d89d84bc2ee4a46c4470b01c2946cd5a06c53dc027",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "56fa980313f67ba6eb631a91c1532c94b3886cdc4cc1d3a9a1f4dbf8d65a72a5",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"수박\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.3,\n      \"estimated_serving_g\": 80.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [409, 369, 893, 555],\n      \"nutrition_per_100g\": {\n        \"calories\": 30.0,\n        \"carbs\": 7.5,\n        \"protein\": 0.6,\n        \"fat\": 0.2\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"파인애플\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.3,\n      \"estimated_serving_g\": 60.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [28, 611, 529, 911],\n      \"nutrition_per_100g\": {\n        \"calories\": 50.0,\n        \"carbs\": 13.1,\n        \"protein\": 0.5,\n        \"fat\": 0.1\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"블루베리\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.3,\n      \"estimated_serving_g\": 30.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [321, 543, 866, 786],\n      \"nutrition_per_100g\": {\n        \"calories\": 57.0,\n        \"carbs\": 14.5,\n        \"protein\": 0.7,\n        \"fat\": 0.3\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 3,\n      \"food_name\": \"딸기\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.3,\n      \"estimated_serving_g\": 50.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [361, 523, 747, 674],\n      \"nutrition_per_100g\": {\n        \"calories\": 32.0,\n        \"carbs\": 7.7,\n        \"protein\": 0.7,\n        \"fat\": 0.3\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 4,\n      \"food_name\": \"산딸기\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 0.3,\n      \"estimated_serving_g\": 40.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [431, 576, 814, 827],\n      \"nutrition_per_100g\": {\n        \"calories\": 52.0,\n        \"carbs\": 11.9,\n        \"protein\": 1.2,\n        \"fat\": 0.7\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1188
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 451
+      }
+    ],
+    "cached_content_token_count": 1639,
+    "candidates_token_count": 1078,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4943,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3975.45,
+  "completed_at": "2026-10-25T08:19:55.760287+00:00"
+}

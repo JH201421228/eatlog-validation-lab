@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565811423",
+  "request_id": "followup_dev_volume_consistency_dish_1565811423",
+  "started_at": "2026-10-25T07:41:59.021257+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "90fe532778c0648d8b338abf48afcbf04402f199dbb122bd756c62375183f657",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "f5bda31a0050978892c1be1fe64efd7d2832b804356ff12719a2e1ca9df082a5",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"렌틸콩 볶음\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [80, 500, 530, 825], \"nutrition_per_100g\": {\"calories\": 116.0, \"carbs\": 20.0, \"protein\": 9.0, \"fat\": 0.4}}, {\"food_index\": 1, \"food_name\": \"닭가슴살 구이\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [400, 560, 750, 890], \"nutrition_per_100g\": {\"calories\": 165.0, \"carbs\": 0.0, \"protein\": 31.0, \"fat\": 3.6}}, {\"food_index\": 2, \"food_name\": \"청경채 볶음\", \"confidence\": 0.8, \"estimated_serving\": 1.0, \"estimated_serving_g\": 80.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 280, 740, 580], \"nutrition_per_100g\": {\"calories\": 13.0, \"carbs\": 2.2, \"protein\": 1.5, \"fat\": 0.2}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 약 1/3을 덮고 있으며, 높이는 중간 정도로 쌓여 있습니다. 렌틸콩 알갱이가 촘촘하게 보입니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 150.0, \"bulk_density_g_per_ml\": 1.0, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"여러 조각으로 잘린 닭가슴살이 접시의 약 1/4을 차지하고 있습니다. 조각들의 두께는 일정하지 않습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"high\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"청경채 잎들이 접시의 약 1/3을 덮고 있으며, 잎들이 겹쳐져 쌓여 있습니다. 숨이 죽어 부피가 줄어든 상태입니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 160.0, \"bulk_density_g_per_ml\": 0.5, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 866,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3036,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5409.17,
+  "completed_at": "2026-10-25T07:42:04.742556+00:00"
+}

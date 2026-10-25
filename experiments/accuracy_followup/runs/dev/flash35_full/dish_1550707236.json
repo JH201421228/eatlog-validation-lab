@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1550707236",
+  "request_id": "followup_dev_flash35_full_dish_1550707236",
+  "started_at": "2026-10-25T08:30:20.507996+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "b196a8d7e5f1351b1d538f8c6294a52f1683d3b495c74a8382818d6a0500f24c",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3901,
+  "request_sha256": "30aee22b04780b4a8d8ce648603284ed7e1af27bc2657b127421e3133ec4134e",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"통밀식빵\",\n      \"confidence\": 0.88,\n      \"estimated_serving\": 1.5,\n      \"estimated_serving_g\": 60.0,\n      \"count\": 1.5,\n      \"count_unit\": \"장\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [18, 59, 693, 743],\n      \"nutrition_per_100g\": {\n        \"calories\": 250,\n        \"carbs\": 46.0,\n        \"protein\": 10.0,\n        \"fat\": 3.5\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 229,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4130,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2985.64,
+  "completed_at": "2026-10-25T08:30:24.027607+00:00"
+}

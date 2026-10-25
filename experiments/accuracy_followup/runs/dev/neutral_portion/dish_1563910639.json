@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1563910639",
+  "request_id": "followup_dev_neutral_portion_dish_1563910639",
+  "started_at": "2026-10-25T07:39:51.604656+00:00",
+  "arm": "neutral_portion",
+  "phase": "dev",
+  "image_sha256": "cf5de2226fa2efe5b0dd18cec58256273c33a0bf697a558e6042f708d52b8a3a",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 1505,
+  "request_sha256": "11311b47e1f5e7751491330a86edd5045c17e0e674498a58ebd3eece21611673",
+  "status": "response_received",
+  "raw_text": "{\"candidates\":[{\"food_index\":0,\"food_name\":\"닭고기 시금치 볶음밥\",\"confidence\":0.9,\"estimated_serving\":1.0,\"estimated_serving_g\":250,\"count\":null,\"count_unit\":null,\"has_soup\":false,\"has_sauce\":false,\"image_index\":0,\"is_in_image\":true,\"box_2d\":[180,240,700,820],\"nutrition_per_100g\":{\"calories\":150,\"carbs\":20,\"protein\":10,\"fat\":4},\"package\":null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 140,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1645,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2533.07,
+  "completed_at": "2026-10-25T07:39:54.459199+00:00"
+}

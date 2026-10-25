@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1564428144",
+  "request_id": "followup_dev_neutral_full_dish_1564428144",
+  "started_at": "2026-10-25T07:56:19.941246+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "0acfe6f39f26354fbefc496c9e35d2c712b3e23a0b3d452daad6e8dfa3fdd22d",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "9a56838109ff2fdbe9080e210ee0497313b8fa0869a67e0cc0242b0a35fd0872",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"닭가슴살 구이\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": 1.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [190, 280, 470, 530], \"nutrition_per_100g\": {\"calories\": 165.0, \"carbs\": 0.0, \"protein\": 31.0, \"fat\": 3.6}}, {\"food_index\": 1, \"food_name\": \"루꼴라 샐러드\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 80.0, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [430, 200, 940, 760], \"nutrition_per_100g\": {\"calories\": 25.0, \"carbs\": 3.7, \"protein\": 2.6, \"fat\": 0.7}}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 334,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1839,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3588.34,
+  "completed_at": "2026-10-25T07:56:24.070458+00:00"
+}

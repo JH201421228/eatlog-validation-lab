@@ -1,0 +1,131 @@
+{
+  "files": [
+    {
+      "path": "grounding.py",
+      "bytes": 6661,
+      "sha256": "a134ad43986fe0d31e14ebf75dab66b72fe64875f18b6f5486f24c6c55e003bf"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 2131,
+      "sha256": "b794330e088482132d112a8862be2ba0d03c0f6f1932dad7fc0075e3be97e2db"
+    },
+    {
+      "path": "model_candidates.jsonl",
+      "bytes": 1384669,
+      "sha256": "9fa14b501d0995aafb4c7af822811ccc2e639bf6c29db75e9019e85f0e69ce20"
+    },
+    {
+      "path": "prepare_reference.py",
+      "bytes": 5698,
+      "sha256": "8ae0e798934685ab7f00965c7710b41485b30dbf775f4b091441607b0e39ada5"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 3696,
+      "sha256": "6755fd4a79bf3e56b9828d5923e1d892bd54dd1fd4cf9346bc5061216ee20876"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8161,
+      "sha256": "4626a7a1642993c15f0725d2a9308aba0bd7820a181382d12c1df46dd3769cf8"
+    },
+    {
+      "path": "reference.jsonl",
+      "bytes": 4825457,
+      "sha256": "b747598384fe6e51e66794e1f00bce3f0565ec697e09c9368e3405e44e843749"
+    },
+    {
+      "path": "reference_audit.json",
+      "bytes": 1770,
+      "sha256": "75923eb5ec0f4d751a6c48b85f22bd0221d48b9d179928e36c7714660a529c6c"
+    },
+    {
+      "path": "reference_exclusions.jsonl",
+      "bytes": 4175,
+      "sha256": "e6fe095c946b28fc7780bd48b320df8330c7516c937051273876043439ebb26b"
+    },
+    {
+      "path": "results/coverage.json",
+      "bytes": 1878,
+      "sha256": "354e291b906796d31dc83120d650d80a39bdc2c80cd71175d45752d9ccfd6287"
+    },
+    {
+      "path": "results/current_exact.jsonl",
+      "bytes": 1212424,
+      "sha256": "e0f8582df95728c777f0a56e88dfdb77d5bebf89758dc6af18c54a91ec23c5d0"
+    },
+    {
+      "path": "results/current_exact_scored.jsonl",
+      "bytes": 291997,
+      "sha256": "c725a2fe7ddf8a6bb54017f444a379f74608a7f79a1baba138fdc4164fe2bf2c"
+    },
+    {
+      "path": "results/exact_name_ambiguity.json",
+      "bytes": 1537,
+      "sha256": "030d5b6b91fd42347ae5dfff2f0d0aba7e90bb7ff6360d807219a0464946ce8c"
+    },
+    {
+      "path": "results/no_db.jsonl",
+      "bytes": 1074661,
+      "sha256": "4a07e758d7fa70d16d542d91257eb9ac64dce4454f6d57e8da01efd648f8bb6d"
+    },
+    {
+      "path": "results/no_db_scored.jsonl",
+      "bytes": 283709,
+      "sha256": "aeb0644573d674a0bff0d19f1fef921db25c61dd2825b0e3369b67a11613cb89"
+    },
+    {
+      "path": "results/prediction_freeze.json",
+      "bytes": 1556,
+      "sha256": "30da7606b5ba2ccc4f4d98ae9d4e914eecb7c168d70833ae66889e2f856a54be"
+    },
+    {
+      "path": "results/quality_exact.jsonl",
+      "bytes": 1212424,
+      "sha256": "b3d9c6c3931f8e5ef3cefc9969e3b60c4c9dc3d467fd4d9343453787c32f4314"
+    },
+    {
+      "path": "results/quality_exact_scored.jsonl",
+      "bytes": 291997,
+      "sha256": "cac6e3ac4c4c049e989443eff4f3288a1316c8f4288a14665aea1c7bbe1f11b3"
+    },
+    {
+      "path": "results/score_summary.json",
+      "bytes": 14289,
+      "sha256": "380775c56e53f35770b51a727b0e821f770517723b9854e05f644f6bbf3624ec"
+    },
+    {
+      "path": "results/state_aware.jsonl",
+      "bytes": 1237909,
+      "sha256": "621ba81d25bad0c5b8920d18f391808c31402d1bcff94f7def213dc1f228663a"
+    },
+    {
+      "path": "results/state_aware_scored.jsonl",
+      "bytes": 289921,
+      "sha256": "543fa46f9126fb5c7a6c6ab423e7b2f1a691f40e55599318019687afea368197"
+    },
+    {
+      "path": "run_experiment.py",
+      "bytes": 7271,
+      "sha256": "30afdea2a3bd25928fd43df063d0690184a706d2f1b144829dd5dcd02eb6c848"
+    },
+    {
+      "path": "score_experiment.py",
+      "bytes": 5584,
+      "sha256": "2579adca6b497292d197e115101dfb967ce4d849099a52cfe5fd21b3f6032e42"
+    },
+    {
+      "path": "test_grounding.py",
+      "bytes": 3639,
+      "sha256": "cd353d4753e7b549ae2a231aea26af72721032488ef3b6add0b9e85e90c36fd3"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 761,
+      "sha256": "c9b3f7fe7e08adf69c590fb5149a605ff03794c013c290edee5fabc809edd21b"
+    }
+  ],
+  "file_count_excluding_inventory": 25,
+  "bytes_excluding_inventory": 12173975
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1560370833",
+  "request_id": "followup_dev_neutral_full_dish_1560370833",
+  "started_at": "2026-10-25T07:53:24.053489+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "956b695f37d96b32ac2e7e693469e570219c57ef691dc8bd2d70f0acbe244856",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "01074b376b316f12c4f753e212caa634f16c875d6544722eb92fb45ad53d965d",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"초콜릿 타르트\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 50.0, \"count\": 1.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [250, 430, 540, 680], \"nutrition_per_100g\": {\"calories\": 450.0, \"carbs\": 50.0, \"protein\": 5.0, \"fat\": 25.0}}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 177,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1682,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2735.26,
+  "completed_at": "2026-10-25T07:53:27.128909+00:00"
+}

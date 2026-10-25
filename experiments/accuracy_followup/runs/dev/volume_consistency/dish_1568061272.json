@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1568061272",
+  "request_id": "followup_dev_volume_consistency_dish_1568061272",
+  "started_at": "2026-10-25T07:43:43.489459+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "7701b502eafa439585df9063c27f0cefcfc60694dcf54f1b3aa4e870e915bb9a",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "69da986422a77c0cf02fe9881766176a5e8fd9e2901a2e847c6e2f0027bf8ca9",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"파인애플\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [99, 199, 399, 499], \"nutrition_per_100g\": {\"calories\": 50.0, \"carbs\": 13.1, \"protein\": 0.5, \"fat\": 0.1}}, {\"food_index\": 1, \"food_name\": \"구운 애호박\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 80.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [110, 500, 590, 925], \"nutrition_per_100g\": {\"calories\": 20.0, \"carbs\": 3.5, \"protein\": 1.2, \"fat\": 0.3}}, {\"food_index\": 2, \"food_name\": \"구운 방울양배추\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 60.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [399, 260, 750, 500], \"nutrition_per_100g\": {\"calories\": 43.0, \"carbs\": 8.9, \"protein\": 3.4, \"fat\": 0.3}}, {\"food_index\": 3, \"food_name\": \"메밀쌀\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [399, 499, 630, 700], \"nutrition_per_100g\": {\"calories\": 92.0, \"carbs\": 19.9, \"protein\": 3.4, \"fat\": 0.6}}, {\"food_index\": 4, \"food_name\": \"구운 닭가슴살\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [470, 550, 770, 700], \"nutrition_per_100g\": {\"calories\": 165.0, \"carbs\": 0.0, \"protein\": 31.0, \"fat\": 3.6}}, {\"food_index\": 5, \"food_name\": \"피자\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": 1.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [400, 690, 970, 925], \"nutrition_per_100g\": {\"calories\": 266.0, \"carbs\": 33.0, \"protein\": 11.0, \"fat\": 10.0}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 왼쪽 상단에 깍둑썰기된 파인애플 조각들이 쌓여 있습니다. 약 10개 정도의 조각이 보이며, 높이는 중간 정도입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 120.0, \"bulk_density_g_per_ml\": 0.83, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시의 오른쪽 상단에 구운 애호박과 노란 호박 조각들이 겹쳐져 있습니다. 약 10-12조각이 보이며, 얇게 썰려 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 100.0, \"bulk_density_g_per_ml\": 0.8, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"접시 중앙 하단에 구운 방울양배추가 뭉쳐 있습니다. 약 5-6개의 방울양배추가 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 70.0, \"bulk_density_g_per_ml\": 0.85, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 3, \"image_index\": 0, \"visual_summary\": \"접시 중앙에 메밀쌀이 흩뿌려져 있습니다. 얇게 깔려 있으며, 다른 음식들 사이에 채워져 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 150.0, \"bulk_density_g_per_ml\": 0.8, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 4, \"image_index\": 0, \"visual_summary\": \"접시 중앙 하단에 구운 닭가슴살이 썰려 있습니다. 약 3-4조각이 보이며, 두께가 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 80.0, \"bulk_density_g_per_ml\": 1.25, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 1613,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3783,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 9326.05,
+  "completed_at": "2026-10-25T07:43:53.644376+00:00"
+}

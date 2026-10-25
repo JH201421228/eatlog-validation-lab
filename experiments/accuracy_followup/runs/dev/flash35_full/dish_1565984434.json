@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1565984434",
+  "request_id": "followup_dev_flash35_full_dish_1565984434",
+  "started_at": "2026-10-25T08:23:49.161940+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "6527566e1041e23516f76688b3904c1408615c3f371d56b8bdd044d506c162bf",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "74954723c35e6d43d2eccad72a127028117b32219a49bb59d261acf2e2d31853",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"당근\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 60,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [30, 368, 431, 582],\n      \"nutrition_per_100g\": {\n        \"calories\": 41,\n        \"carbs\": 9.6,\n        \"protein\": 0.9,\n        \"fat\": 0.2\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"콜리플라워\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 120,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [193, 330, 796, 755],\n      \"nutrition_per_100g\": {\n        \"calories\": 25,\n        \"carbs\": 5.0,\n        \"protein\": 1.9,\n        \"fat\": 0.3\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"메밀죽\",\n      \"confidence\": 0.80,\n      \"estimated_serving\": 0.7,\n      \"estimated_serving_g\": 90,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [334, 624, 814, 908],\n      \"nutrition_per_100g\": {\n        \"calories\": 92,\n        \"carbs\": 19.9,\n        \"protein\": 3.4,\n        \"fat\": 0.6\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 3,\n      \"food_name\": \"닭가슴살 패티\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 70,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [33, 680, 365, 887],\n      \"nutrition_per_100g\": {\n        \"calories\": 165,\n        \"carbs\": 3.0,\n        \"protein\": 28.0,\n        \"fat\": 4.5\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 855,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4720,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3493.28,
+  "completed_at": "2026-10-25T08:23:53.020234+00:00"
+}

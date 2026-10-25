@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1563898107",
+  "request_id": "followup_dev_neutral_portion_dish_1563898107",
+  "started_at": "2026-10-25T07:39:38.382353+00:00",
+  "arm": "neutral_portion",
+  "phase": "dev",
+  "image_sha256": "f7522fd5fa4b6d6f05b308dca1c231ba086e154eebc6725ab00e3297582210ad",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 1505,
+  "request_sha256": "4626929acd77ea061ec2f7383434c9c988838c3de4bc0112b286acdb82e07aac",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"스크램블 에그\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [298, 198, 848, 617], \"nutrition_per_100g\": {\"calories\": 149.0, \"carbs\": 1.1, \"protein\": 10.0, \"fat\": 11.0}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"베이컨\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 20.0, \"count\": 1.0, \"count_unit\": \"줄\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [138, 279, 408, 579], \"nutrition_per_100g\": {\"calories\": 541.0, \"carbs\": 0.0, \"protein\": 37.0, \"fat\": 42.0}, \"package\": null}, {\"food_index\": 2, \"food_name\": \"파인애플\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [108, 600, 448, 870], \"nutrition_per_100g\": {\"calories\": 50.0, \"carbs\": 13.0, \"protein\": 0.5, \"fat\": 0.1}, \"package\": null}, {\"food_index\": 3, \"food_name\": \"블루베리\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 30.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [478, 540, 838, 729], \"nutrition_per_100g\": {\"calories\": 57.0, \"carbs\": 14.0, \"protein\": 0.7, \"fat\": 0.3}, \"package\": null}, {\"food_index\": 4, \"food_name\": \"라즈베리\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 30.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [448, 650, 878, 759], \"nutrition_per_100g\": {\"calories\": 52.0, \"carbs\": 12.0, \"protein\": 1.2, \"fat\": 0.7}, \"package\": null}, {\"food_index\": 5, \"food_name\": \"치아씨드 푸딩\", \"confidence\": 0.8, \"estimated_serving\": 1.0, \"estimated_serving_g\": 80.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [448, 650, 878, 870], \"nutrition_per_100g\": {\"calories\": 150.0, \"carbs\": 15.0, \"protein\": 5.0, \"fat\": 9.0}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 1037,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2542,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6298.86,
+  "completed_at": "2026-10-25T07:39:45.004431+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1566501153",
+  "request_id": "followup_dev_flash35_minimal_dish_1566501153",
+  "started_at": "2026-10-25T08:13:14.907342+00:00",
+  "arm": "flash35_minimal",
+  "phase": "dev",
+  "image_sha256": "d2158774d2d72a00bfb7f63c121ac8885c733c0d0c94fb72350aec1849981929",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3865,
+  "request_sha256": "2b11c2145b23b7856dfac0b72458eee706b02e6b1c710c167c33bc0ed3e4c8c3",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"치킨 아보카도 샐러드\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 300,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [0, 269, 940, 970],\n      \"nutrition_per_100g\": {\n        \"calories\": 130,\n        \"carbs\": 5.0,\n        \"protein\": 10.0,\n        \"fat\": 8.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 229,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4094,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3181.81,
+  "completed_at": "2026-10-25T08:13:18.483605+00:00"
+}

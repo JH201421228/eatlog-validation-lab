@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1560961385",
+  "request_id": "followup_dev_neutral_full_dish_1560961385",
+  "started_at": "2026-10-25T07:59:12.139999+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "eb5255a0da2c18ac16285892a8c282511b055a020b1c528c47a43d7ab3884c45",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "5a5da158f3d1f83d0ec26d5f68182d896f314bf8a61d8b4efc0d6b0414e6700f",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"스크램블 에그\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [220, 299, 470, 500], \"nutrition_per_100g\": {\"calories\": 149.0, \"carbs\": 1.1, \"protein\": 10.0, \"fat\": 11.0}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"구운 감자\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [200, 490, 470, 700], \"nutrition_per_100g\": {\"calories\": 93.0, \"carbs\": 21.0, \"protein\": 2.0, \"fat\": 0.1}, \"package\": null}, {\"food_index\": 2, \"food_name\": \"두부\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [400, 490, 600, 620], \"nutrition_per_100g\": {\"calories\": 76.0, \"carbs\": 1.9, \"protein\": 8.0, \"fat\": 4.8}, \"package\": null}, {\"food_index\": 3, \"food_name\": \"브로콜리\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 70.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [470, 300, 790, 590], \"nutrition_per_100g\": {\"calories\": 34.0, \"carbs\": 6.6, \"protein\": 2.8, \"fat\": 0.4}, \"package\": null}, {\"food_index\": 4, \"food_name\": \"딸기\", \"confidence\": 0.98, \"estimated_serving\": 1.0, \"estimated_serving_g\": 80.0, \"count\": 6.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [400, 600, 790, 790], \"nutrition_per_100g\": {\"calories\": 32.0, \"carbs\": 7.7, \"protein\": 0.7, \"fat\": 0.3}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 858,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2363,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5588.61,
+  "completed_at": "2026-10-25T07:59:18.109539+00:00"
+}

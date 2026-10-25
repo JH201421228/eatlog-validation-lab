@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1551381103",
+  "request_id": "followup_dev_flash35_full_dish_1551381103",
+  "started_at": "2026-10-25T08:30:22.556375+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "1ea950f5a7b447d368210e988f3465a0e0718be3fbcb4a53fea869e8b3379650",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3901,
+  "request_sha256": "f4ac24ec95d998a1fa69eddb0f9e39688b7dd36a31b01ed308dd394bc9b2c864",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"토티아\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 40,\n      \"count\": 1,\n      \"count_unit\": \"장\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [0, 0, 1000, 900],\n      \"nutrition_per_100g\": {\n        \"calories\": 298,\n        \"carbs\": 50.0,\n        \"protein\": 8.0,\n        \"fat\": 7.5\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"체다 치즈\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.3,\n      \"estimated_serving_g\": 15,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [45, 170, 930, 642],\n      \"nutrition_per_100g\": {\n        \"calories\": 403,\n        \"carbs\": 1.3,\n        \"protein\": 24.9,\n        \"fat\": 33.1\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"버섯구이\",\n      \"confidence\": 0.75,\n      \"estimated_serving\": 0.2,\n      \"estimated_serving_g\": 20,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [18, 150, 876, 672],\n      \"nutrition_per_100g\": {\n        \"calories\": 35,\n        \"carbs\": 5.4,\n        \"protein\": 2.5,\n        \"fat\": 0.5\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 643,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4544,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4015.37,
+  "completed_at": "2026-10-25T08:30:27.781549+00:00"
+}

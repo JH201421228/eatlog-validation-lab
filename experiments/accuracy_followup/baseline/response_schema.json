@@ -1,0 +1,175 @@
+{
+  "type": "object",
+  "properties": {
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "food_index": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "food_name": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "estimated_serving": {
+            "type": "number",
+            "minimum": 0.1,
+            "maximum": 10
+          },
+          "estimated_serving_g": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "count": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "count_unit": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "개",
+              "조각",
+              "장",
+              "줄",
+              "공기",
+              "잔",
+              "캔",
+              "병",
+              null
+            ]
+          },
+          "has_soup": {
+            "type": "boolean"
+          },
+          "has_sauce": {
+            "type": "boolean"
+          },
+          "image_index": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 2
+          },
+          "is_in_image": {
+            "type": "boolean"
+          },
+          "box_2d": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "nutrition_per_100g": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "calories": {
+                "type": "number",
+                "minimum": 0
+              },
+              "carbs": {
+                "type": "number",
+                "minimum": 0
+              },
+              "protein": {
+                "type": "number",
+                "minimum": 0
+              },
+              "fat": {
+                "type": "number",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "calories",
+              "carbs",
+              "protein",
+              "fat"
+            ]
+          },
+          "package": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "brand": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "product_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "variant": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "size_text": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "label_text": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "printed_kcal": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              }
+            },
+            "required": []
+          }
+        },
+        "required": [
+          "food_index",
+          "food_name",
+          "confidence",
+          "estimated_serving",
+          "has_soup",
+          "has_sauce",
+          "image_index",
+          "is_in_image"
+        ]
+      }
+    }
+  },
+  "required": [
+    "candidates"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "phase": "dev",
+  "selected_count": 1000,
+  "scorer_sha256": "9637fd3464d06352d2354b8686a2932121c9cb0e0bbfba31ee407e6fa7f04a06",
+  "protocol_sha256": "403b107ba756b5f6344284fa86869bd5fbf68719b9e245a6324266e3be700c96",
+  "exploratory": true,
+  "versions": {
+    "flash35_full": {
+      "calories": {
+        "mae": 88.13182188743718,
+        "valid_prediction_count": 995,
+        "within_15_percent_count": 212
+      },
+      "mass_g": {
+        "mae": 54.971859296482414,
+        "valid_prediction_count": 995,
+        "within_15_percent_count": 319
+      }
+    },
+    "historical_baseline": {
+      "calories": {
+        "mae": 107.41733431086519,
+        "valid_prediction_count": 994,
+        "within_15_percent_count": 190
+      },
+      "mass_g": {
+        "mae": 67.3430583501006,
+        "valid_prediction_count": 994,
+        "within_15_percent_count": 249
+      }
+    }
+  },
+  "paired_calories": {
+    "flash35_full": {
+      "valid_pair_count": 992,
+      "transition_counts": {
+        "same_error": 41,
+        "improved": 529,
+        "worsened": 422,
+        "missing_to_valid": 3,
+        "both_missing": 3,
+        "valid_to_missing": 2
+      },
+      "mean_absolute_error_delta_after_minus_before": -19.32141295766129,
+      "paired_baseline_mae": 107.44243147883064,
+      "paired_relative_mae_reduction": 0.17983037699093943,
+      "bootstrap_95_percent_ci": [
+        -25.893088025100806,
+        -13.154517474596776
+      ],
+      "bootstrap_repetitions": 2000,
+      "positive_delta_means_worse": true
+    }
+  },
+  "camera_metrics": {
+    "overhead_rgb": {
+      "flash35_full": {
+        "calories": {
+          "selected_count": 836,
+          "valid_prediction_count": 834,
+          "mae": 91.08511630455637,
+          "within_15_percent_count": 183
+        },
+        "mass_g": {
+          "selected_count": 836,
+          "valid_prediction_count": 834,
+          "mae": 57.87290167865707,
+          "within_15_percent_count": 271
+        }
+      },
+      "historical_baseline": {
+        "calories": {
+          "selected_count": 836,
+          "valid_prediction_count": 833,
+          "mae": 110.06829832533013,
+          "within_15_percent_count": 172
+        },
+        "mass_g": {
+          "selected_count": 836,
+          "valid_prediction_count": 833,
+          "mae": 70.07923169267707,
+          "within_15_percent_count": 215
+        }
+      }
+    },
+    "side_camera_A_frame_0": {
+      "flash35_full": {
+        "calories": {
+          "selected_count": 158,
+          "valid_prediction_count": 156,
+          "mae": 74.21285758333333,
+          "within_15_percent_count": 27
+        },
+        "mass_g": {
+          "selected_count": 158,
+          "valid_prediction_count": 156,
+          "mae": 40.48717948717949,
+          "within_15_percent_count": 46
+        }
+      },
+      "historical_baseline": {
+        "calories": {
+          "selected_count": 158,
+          "valid_prediction_count": 156,
+          "mae": 95.2703064423077,
+          "within_15_percent_count": 18
+        },
+        "mass_g": {
+          "selected_count": 158,
+          "valid_prediction_count": 156,
+          "mae": 53.15384615384615,
+          "within_15_percent_count": 34
+        }
+      }
+    },
+    "side_camera_B_frame_0": {
+      "flash35_full": {
+        "calories": {
+          "selected_count": 6,
+          "valid_prediction_count": 5,
+          "mae": 29.793999399999997,
+          "within_15_percent_count": 2
+        },
+        "mass_g": {
+          "selected_count": 6,
+          "valid_prediction_count": 5,
+          "mae": 23.0,
+          "within_15_percent_count": 2
+        }
+      },
+      "historical_baseline": {
+        "calories": {
+          "selected_count": 6,
+          "valid_prediction_count": 5,
+          "mae": 44.753999,
+          "within_15_percent_count": 0
+        },
+        "mass_g": {
+          "selected_count": 6,
+          "valid_prediction_count": 5,
+          "mae": 54.2,
+          "within_15_percent_count": 0
+        }
+      }
+    }
+  },
+  "historical_baseline_comparison": true,
+  "acceptance_or_screen": {
+    "flash35_full": {
+      "eligible": true,
+      "checks": {
+        "within_15_percent_all_selected_not_decreased": true,
+        "valid_prediction_count_not_decreased": true,
+        "paired_calorie_mae_reduction_gt_5_percent": true
+      },
+      "paired_relative_mae_reduction": 0.17983037699093943
+    }
+  },
+  "development_screen_scope": "Predeclared advancement prescreen applies to development100 only. For full development1000 these repeated checks are descriptive diagnostics, not a newly added selection or confirmation gate.",
+  "cumulative_cost_snapshot": {
+    "attempted_generations": 3520,
+    "settled_requests": 3510,
+    "unknown_reserved_requests": 10,
+    "usage_estimated_usd": 6.726646,
+    "charged_or_reserved_usd": 11.726646,
+    "hard_cap_usd": 30,
+    "billing_invoice_verified": false
+  }
+}

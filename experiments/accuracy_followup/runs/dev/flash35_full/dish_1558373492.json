@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1558373492",
+  "request_id": "followup_dev_flash35_full_dish_1558373492",
+  "started_at": "2026-10-25T08:16:33.785574+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "37274c3c5d20b13cb70c193d45822d0b7b9c5849554b1a79aa00dde336f2757a",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "3dcdafdce32e14348528a90a485cea98ef7ac44c50826399e1aa26aea04f734a",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"아몬드\",\n      \"confidence\": 0.98,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 35.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [90, 468, 429, 836],\n      \"nutrition_per_100g\": {\n        \"calories\": 597,\n        \"carbs\": 21.0,\n        \"protein\": 21.0,\n        \"fat\": 52.5\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"포도\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 60.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [367, 590, 771, 870],\n      \"nutrition_per_100g\": {\n        \"calories\": 60,\n        \"carbs\": 15.6,\n        \"protein\": 0.6,\n        \"fat\": 0.3\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"소시지\",\n      \"confidence\": 0.92,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 70.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [486, 310, 930, 686],\n      \"nutrition_per_100g\": {\n        \"calories\": 301,\n        \"carbs\": 3.0,\n        \"protein\": 12.0,\n        \"fat\": 27.0\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 3,\n      \"food_name\": \"멜론\",\n      \"confidence\": 0.88,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 40.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [247, 308, 549, 538],\n      \"nutrition_per_100g\": {\n        \"calories\": 34,\n        \"carbs\": 8.2,\n        \"protein\": 0.8,\n        \"fat\": 0.2\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 861,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4726,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3370.56,
+  "completed_at": "2026-10-25T08:16:37.895836+00:00"
+}

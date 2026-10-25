@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1562960437",
+  "request_id": "followup_dev_volume_consistency_dish_1562960437",
+  "started_at": "2026-10-25T07:43:17.199369+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "00698592a4057e45c670d1fd4e18e9bb9a127ad72ab87bba4ae2a29561a5eb86",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "c2809fd5bab8bd398b667ee8742ef0754112b6d94c63405a4fd08dcf16d87c56",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"감자 고로케\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 60, \"count\": 3, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [290, 570, 615, 773], \"nutrition_per_100g\": {\"calories\": 200, \"carbs\": 25, \"protein\": 5, \"fat\": 10}}, {\"food_index\": 0, \"food_name\": \"미트볼\", \"confidence\": 0.7, \"estimated_serving\": 0.5, \"estimated_serving_g\": 60, \"count\": 3, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [290, 570, 615, 773], \"nutrition_per_100g\": {\"calories\": 250, \"carbs\": 10, \"protein\": 15, \"fat\": 18}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시에 둥근 모양의 음식이 3개 놓여 있으며, 각 조각은 대략 탁구공 크기입니다. 총 3개의 조각이 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 443,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2613,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5411.64,
+  "completed_at": "2026-10-25T07:43:22.910222+00:00"
+}

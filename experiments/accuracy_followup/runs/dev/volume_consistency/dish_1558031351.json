@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1558031351",
+  "request_id": "followup_dev_volume_consistency_dish_1558031351",
+  "started_at": "2026-10-25T07:42:55.260833+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "20fe77a6d4baf44a8d90f6e57479b2e0dd8862640362fe61ce207344e684ab8f",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "b9b9976a295f7932afeb1006d6c4ad5e84de10f15b5e6b9aee225534191946a8",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"수박\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": 7, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [390, 298, 699, 717], \"nutrition_per_100g\": {\"calories\": 30, \"carbs\": 7.6, \"protein\": 0.6, \"fat\": 0.2}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시에 깍둑썰기 된 수박 조각 7개가 놓여 있으며, 조각당 크기는 약 2x2cm로 추정됩니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": 50, \"bulk_density_g_per_ml\": 1.0, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 287,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2457,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3447.36,
+  "completed_at": "2026-10-25T07:42:59.250227+00:00"
+}

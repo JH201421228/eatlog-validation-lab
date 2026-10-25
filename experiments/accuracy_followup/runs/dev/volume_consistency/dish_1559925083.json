@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1559925083",
+  "request_id": "followup_dev_volume_consistency_dish_1559925083",
+  "started_at": "2026-10-25T07:43:40.344116+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "6bbde481aeb550c4bbe60b0f156460cdec5b7f62c781722dbacc0548a7c9cc48",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "8de014dfd584f25461623ddf9941dde450441f3554d3d4e23704169d0e26ce76",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"베이컨\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 20.0, \"count\": 1.0, \"count_unit\": \"줄\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [490, 590, 680, 910], \"nutrition_per_100g\": {\"calories\": 541.0, \"carbs\": 0.0, \"protein\": 37.0, \"fat\": 43.0}}, {\"food_index\": 1, \"food_name\": \"구운 고구마\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [190, 470, 470, 810], \"nutrition_per_100g\": {\"calories\": 90.0, \"carbs\": 21.0, \"protein\": 2.0, \"fat\": 0.2}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시에 구운 베이컨 한 줄이 놓여 있습니다. 길이는 약 15cm 정도로 보이며, 두께는 얇습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시에 구운 고구마 조각들이 흩어져 있습니다. 총 10개 이상의 조각이 있으며, 조각당 크기는 다양합니다. 전체적으로 약 100g 정도로 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 562,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2732,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4879.53,
+  "completed_at": "2026-10-25T07:43:45.562497+00:00"
+}

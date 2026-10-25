@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1558468589",
+  "request_id": "followup_dev_neutral_full_dish_1558468589",
+  "started_at": "2026-10-25T08:02:51.877566+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "1c4463c96cab3d35f7ece3762ddecb75cec93c7f2ecc69b2ac9ef5e3c1c79dd8",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "109cbe322b78c7fc2778bddce58e19944ae6ea148fdc682d8987b2628c04797e",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"양송이버섯\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": 13.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [260, 446, 725, 716], \"nutrition_per_100g\": {\"calories\": 22.0, \"carbs\": 3.3, \"protein\": 3.1, \"fat\": 0.3}}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 175,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1680,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2841.6,
+  "completed_at": "2026-10-25T08:02:54.979347+00:00"
+}

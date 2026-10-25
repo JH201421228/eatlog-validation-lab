@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1562168471",
+  "request_id": "followup_dev_baseline_thinking1024_dish_1562168471",
+  "started_at": "2026-10-25T07:45:54.086387+00:00",
+  "arm": "baseline_thinking1024",
+  "phase": "dev",
+  "image_sha256": "58f604d44cfb6dee6f0ae52ebe994567345431f967376646cd6e92b7f0f53eda",
+  "request_config_sha256": "9b72cfd9a6fe5e3c3e8707cde73f58392990d3580f4601eab4e591e209bf4159",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3059,
+  "request_sha256": "781ae41d1f0b2026f4805615bcfa47865937b2b6a66fb503af38385f345f32e8",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"파인애플\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 100,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [140, 420, 450, 600],\n      \"nutrition_per_100g\": {\n        \"calories\": 50,\n        \"carbs\": 13.1,\n        \"protein\": 0.5,\n        \"fat\": 0.1\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"구운 감자\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 80,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [220, 600, 480, 850],\n      \"nutrition_per_100g\": {\n        \"calories\": 93,\n        \"carbs\": 21.0,\n        \"protein\": 2.0,\n        \"fat\": 0.1\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 1,\n      \"food_name\": \"구운 고구마\",\n      \"confidence\": 0.7,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 80,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [220, 600, 480, 850],\n      \"nutrition_per_100g\": {\n        \"calories\": 90,\n        \"carbs\": 20.7,\n        \"protein\": 1.6,\n        \"fat\": 0.2\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 2,\n      \"food_name\": \"방울양배추\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 70,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [380, 380, 680, 630],\n      \"nutrition_per_100g\": {\n        \"calories\": 43,\n        \"carbs\": 8.9,\n        \"protein\": 3.4,\n        \"fat\": 0.3\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 3,\n      \"food_name\": \"블루베리\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 60,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [480, 300, 880, 500],\n      \"nutrition_per_100g\": {\n        \"calories\": 57,\n        \"carbs\": 14.5,\n        \"protein\": 0.7,\n        \"fat\": 0.3\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 4,\n      \"food_name\": \"딸기\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.2,\n      \"estimated_serving_g\": 30,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [480, 420, 600, 500],\n      \"nutrition_per_100g\": {\n        \"calories\": 32,\n        \"carbs\": 7.7,\n        \"protein\": 0.7,\n        \"fat\": 0.3\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 5,\n      \"food_name\": \"코티지 치즈\",\n      \"confidence\": 0.8,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 80,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [480, 500, 880, 800],\n      \"nutrition_per_100g\": {\n        \"calories\": 98,\n        \"carbs\": 3.4,\n        \"protein\": 11.1,\n        \"fat\": 4.3\n      },\n      \"package\": null\n    },\n    {\n      \"food_index\": 5,\n      \"food_name\": \"페타 치즈\",\n      \"confidence\": 0.6,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 80,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [480, 500, 880, 800],\n      \"nutrition_per_100g\": {\n        \"calories\": 264,\n        \"carbs\": 4.1,\n        \"protein\": 14.2,\n        \"fat\": 21.3\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1945
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 179
+      }
+    ],
+    "cached_content_token_count": 2124,
+    "candidates_token_count": 1697,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": 699,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 5455,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 11128.41,
+  "completed_at": "2026-10-25T07:46:05.568029+00:00"
+}

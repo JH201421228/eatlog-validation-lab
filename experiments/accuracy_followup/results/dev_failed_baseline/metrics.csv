@@ -1,0 +1,6 @@
+﻿arm,nutrient,selected_count,valid_prediction_count,missing_prediction_count,coverage_percent,mae,mean_error_bias,mape_percent,median_ape_percent,p90_ape_percent,mape_nonzero_truth_count,mape_zero_truth_excluded_count,wape_percent_mae_over_mean_truth,within_15_percent_count,within_15_percent_of_all_selected,within_15_percent_of_valid_predictions
+baseline,calories,100,0,100,0.0,,,,,,0,0,,0,0.0,
+baseline,carbs,100,0,100,0.0,,,,,,0,0,,0,0.0,
+baseline,protein,100,0,100,0.0,,,,,,0,0,,0,0.0,
+baseline,fat,100,0,100,0.0,,,,,,0,0,,0,0.0,
+baseline,mass_g,100,0,100,0.0,,,,,,0,0,,0,0.0,

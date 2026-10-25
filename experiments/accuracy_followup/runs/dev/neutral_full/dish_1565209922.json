@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565209922",
+  "request_id": "followup_dev_neutral_full_dish_1565209922",
+  "started_at": "2026-10-25T07:54:45.941439+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "62ca45705785fdf8b4878bd11b0827664f2ec6112a727f19370eac1b9db3a747",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "ec79304615624aafdbd09f48259b85e5c5ad2435caaecec9eb640a48117b7692",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"계란말이\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 70, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 278, 390, 657], \"nutrition_per_100g\": {\"calories\": 150, \"carbs\": 2, \"protein\": 12, \"fat\": 10}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 164,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1669,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2978.97,
+  "completed_at": "2026-10-25T07:54:49.269997+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1567022296",
+  "request_id": "followup_dev_neutral_full_dish_1567022296",
+  "started_at": "2026-10-25T08:01:55.582766+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "0163b14ebe21b276ac5a89c5d3e159be1eb77f37dbc8826679d9834a279a2a56",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "df8ca97525e6b8edf179eeb5bf2d9929e50c2ede27ea35246a290c2d40fd1751",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"닭가슴살 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 200.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 0, 1000, 1000], \"nutrition_per_100g\": {\"calories\": 120.0, \"carbs\": 5.0, \"protein\": 20.0, \"fat\": 2.0}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 177,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1682,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2984.74,
+  "completed_at": "2026-10-25T08:01:59.241196+00:00"
+}

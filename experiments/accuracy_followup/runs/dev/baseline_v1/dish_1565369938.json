@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565369938",
+  "request_id": "followup_dev_baseline_v1_dish_1565369938",
+  "started_at": "2026-10-25T07:38:20.648751+00:00",
+  "arm": "baseline_v1",
+  "phase": "dev",
+  "image_sha256": "5ebd5fdc8c613db6f32734100cea7836e11abccf3773c6363893d341c36b80d8",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3059,
+  "request_sha256": "df7f938390e6b10ec4640d80170a4c79cbebea86c980ba030391cc8de454850d",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"베이컨\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 30, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [530, 360, 810, 830], \"nutrition_per_100g\": {\"calories\": 541, \"carbs\": 0.5, \"protein\": 37.0, \"fat\": 43.0}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1952
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 179
+      }
+    ],
+    "cached_content_token_count": 2131,
+    "candidates_token_count": 171,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3230,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2773.14,
+  "completed_at": "2026-10-25T07:38:23.752680+00:00"
+}

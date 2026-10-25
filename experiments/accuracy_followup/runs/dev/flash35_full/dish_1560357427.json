@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1560357427",
+  "request_id": "followup_dev_flash35_full_dish_1560357427",
+  "started_at": "2026-10-25T08:21:25.488866+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "b94040e23ce5f0fd07c4942bd858bac4e7b0f4eb5784e545293b74c7a826f063",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "4e51dc95492ae302ed402afb22fe575b828f4c13e192aec816da928b321a79ec",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"자몽주스\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 200.0,\n      \"count\": 1,\n      \"count_unit\": \"잔\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [308, 474, 746, 795],\n      \"nutrition_per_100g\": {\n        \"calories\": 40.0,\n        \"carbs\": 9.6,\n        \"protein\": 0.6,\n        \"fat\": 0.1\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 229,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4094,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2451.72,
+  "completed_at": "2026-10-25T08:21:28.470018+00:00"
+}

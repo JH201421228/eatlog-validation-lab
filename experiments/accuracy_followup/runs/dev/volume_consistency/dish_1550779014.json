@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1550779014",
+  "request_id": "followup_dev_volume_consistency_dish_1550779014",
+  "started_at": "2026-10-25T07:42:30.693468+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "f68f11d4366ffbca6f167a63d593ff8cdd3e4e69efb4e6a2e882e73f7b67e1f9",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "07572028cbcbb1c7a4b4235c6c5bda1c9c901ba08cb428c6b7b2819472926c23",
+  "status": "response_received",
+  "raw_text": "{\"candidates\":[{\"food_index\":0,\"food_name\":\"베이컨\",\"confidence\":0.95,\"estimated_serving\":1.5,\"estimated_serving_g\":45,\"count\":3,\"count_unit\":\"장\",\"has_soup\":false,\"has_sauce\":false,\"image_index\":0,\"is_in_image\":true,\"box_2d\":[0,400,250,999],\"nutrition_per_100g\":{\"calories\":541,\"carbs\":0,\"protein\":17,\"fat\":50}},{\"food_index\":1,\"food_name\":\"오이\",\"confidence\":0.9,\"estimated_serving\":1.5,\"estimated_serving_g\":100,\"has_soup\":false,\"has_sauce\":false,\"image_index\":0,\"is_in_image\":true,\"box_2d\":[250,0,1000,999],\"nutrition_per_100g\":{\"calories\":15,\"carbs\":3.6,\"protein\":0.7,\"fat\":0.1}},{\"food_index\":2,\"food_name\":\"견과류\",\"confidence\":0.9,\"estimated_serving\":1,\"estimated_serving_g\":30,\"has_soup\":false,\"has_sauce\":false,\"image_index\":0,\"is_in_image\":true,\"box_2d\":[0,0,500,500],\"nutrition_per_100g\":{\"calories\":607,\"carbs\":14,\"protein\":15,\"fat\":54}}],\"portion_evidence\":[{\"food_index\":0,\"image_index\":0,\"visual_summary\":\"접시에 베이컨 3장이 놓여있으며, 약간 구워진 상태로 보입니다.\",\"scale_basis\":\"food_piece_prior\",\"method\":\"count_piece_mass\",\"estimated_volume_ml\":null,\"bulk_density_g_per_ml\":null,\"scale_uncertainty\":\"medium\"},{\"food_index\":1,\"image_index\":0,\"visual_summary\":\"접시에 얇게 썰린 오이 조각들이 흩어져 있으며, 약 100g 정도로 보입니다.\",\"scale_basis\":\"food_piece_prior\",\"method\":\"visual_estimate\",\"estimated_volume_ml\":100,\"bulk_density_g_per_ml\":1,\"scale_uncertainty\":\"medium\"},{\"food_index\":2,\"image_index\":0,\"visual_summary\":\"접시에 호두와 캐슈넛 등 다양한 견과류가 한 줌 정도 쌓여 있습니다.\",\"scale_basis\":\"food_piece_prior\",\"method\":\"visual_estimate\",\"estimated_volume_ml\":50,\"bulk_density_g_per_ml\":0.6,\"scale_uncertainty\":\"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1237
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 167
+      }
+    ],
+    "cached_content_token_count": 1404,
+    "candidates_token_count": 621,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2791,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5303.78,
+  "completed_at": "2026-10-25T07:42:36.528093+00:00"
+}

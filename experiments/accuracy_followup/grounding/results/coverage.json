@@ -1,0 +1,76 @@
+{
+  "no_db": {
+    "rows": 1000,
+    "valid_nutrition": 994,
+    "status_counts": {
+      "success": 994,
+      "failed": 6
+    },
+    "food_groups": 2010,
+    "alternative_groups": 144,
+    "matched_food_groups": 0,
+    "db_nutrition_food_groups": 0,
+    "dishes_with_db": 0,
+    "fallback_reason_counts": {
+      "no_db": 2010
+    },
+    "same_name_ambiguity_food_groups": 0
+  },
+  "current_exact": {
+    "rows": 1000,
+    "valid_nutrition": 994,
+    "status_counts": {
+      "success": 994,
+      "failed": 6
+    },
+    "food_groups": 2010,
+    "alternative_groups": 144,
+    "matched_food_groups": 599,
+    "db_nutrition_food_groups": 599,
+    "dishes_with_db": 410,
+    "fallback_reason_counts": {
+      "current_exact": 599,
+      "no_exact_match": 1411
+    },
+    "same_name_ambiguity_food_groups": 58
+  },
+  "quality_exact": {
+    "rows": 1000,
+    "valid_nutrition": 994,
+    "status_counts": {
+      "success": 994,
+      "failed": 6
+    },
+    "food_groups": 2010,
+    "alternative_groups": 144,
+    "matched_food_groups": 599,
+    "db_nutrition_food_groups": 599,
+    "dishes_with_db": 410,
+    "fallback_reason_counts": {
+      "quality_exact": 599,
+      "no_exact_match": 1411
+    },
+    "same_name_ambiguity_food_groups": 58
+  },
+  "state_aware": {
+    "rows": 1000,
+    "valid_nutrition": 994,
+    "status_counts": {
+      "success": 994,
+      "failed": 6
+    },
+    "food_groups": 2010,
+    "alternative_groups": 144,
+    "matched_food_groups": 421,
+    "db_nutrition_food_groups": 421,
+    "dishes_with_db": 295,
+    "fallback_reason_counts": {
+      "fruit_raw_assumption": 332,
+      "unspecified_cooking_state": 990,
+      "sauce_not_in_reference": 458,
+      "explicit_state_match": 89,
+      "no_same_state_reference": 141
+    },
+    "same_name_ambiguity_food_groups": 0
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1558640614",
+  "request_id": "followup_dev_volume_consistency_dish_1558640614",
+  "started_at": "2026-10-25T07:43:27.105688+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "9d80a7cb6c38ec154710d0a9a8069b0463afbd2e03c87b38ab9f91464fe3bda3",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "e3c12fe9911adc4a951f56f67669bf3df2353a13789252e23ead1b4e1e0421dc",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"사과\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 180.0, \"count\": 1.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [280, 490, 608, 705], \"nutrition_per_100g\": {\"calories\": 52.0, \"carbs\": 13.8, \"protein\": 0.3, \"fat\": 0.2}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시 중앙에 중간 크기의 사과 한 개가 놓여 있습니다. 사과는 둥글고 표면이 매끄럽습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": 200.0, \"bulk_density_g_per_ml\": 0.9, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 292,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2462,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3406.89,
+  "completed_at": "2026-10-25T07:43:31.229552+00:00"
+}

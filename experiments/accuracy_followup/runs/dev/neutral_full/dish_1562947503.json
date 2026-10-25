@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1562947503",
+  "request_id": "followup_dev_neutral_full_dish_1562947503",
+  "started_at": "2026-10-25T08:04:07.294068+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "be0e75942b1d1497f5e2a346cc6f4aacfd4c0709bd6ab81f982f23eaaad7dc36",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "614a1906ae1e53eb3d89004cba902182fa099c332f9e3519f139354c3d23b3aa",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"파인애플\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 100, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [290, 465, 440, 555], \"nutrition_per_100g\": {\"calories\": 50, \"carbs\": 13.1, \"protein\": 0.5, \"fat\": 0.1}}, {\"food_index\": 1, \"food_name\": \"딸기\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [400, 699, 500, 805], \"nutrition_per_100g\": {\"calories\": 32, \"carbs\": 7.7, \"protein\": 0.7, \"fat\": 0.3}}, {\"food_index\": 2, \"food_name\": \"블루베리\", \"confidence\": 0.9, \"estimated_serving\": 0.2, \"estimated_serving_g\": 20, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [430, 790, 500, 845], \"nutrition_per_100g\": {\"calories\": 57, \"carbs\": 14.5, \"protein\": 0.7, \"fat\": 0.3}}, {\"food_index\": 3, \"food_name\": \"소시지\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": 3, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [160, 365, 290, 455], \"nutrition_per_100g\": {\"calories\": 250, \"carbs\": 2.0, \"protein\": 12.0, \"fat\": 20.0}}, {\"food_index\": 4, \"food_name\": \"코티지 치즈\", \"confidence\": 0.8, \"estimated_serving\": 0.5, \"estimated_serving_g\": 70, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [10, 555, 250, 705], \"nutrition_per_100g\": {\"calories\": 98, \"carbs\": 3.4, \"protein\": 11.0, \"fat\": 4.3}}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 813,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2318,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5447.29,
+  "completed_at": "2026-10-25T08:04:13.268468+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1558639849",
+  "request_id": "followup_dev_baseline_v1_dish_1558639849",
+  "started_at": "2026-10-25T07:37:18.250397+00:00",
+  "arm": "baseline_v1",
+  "phase": "dev",
+  "image_sha256": "f01820da2f84fb4c1184948f12980b7d519b3567d4d8e33a61667b0b0a491130",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3059,
+  "request_sha256": "3f30aea561164b0f67140eee3c8933f22e15683aa4975769a9cfaa5639ee7246",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"당근\", \"confidence\": 0.9, \"estimated_serving\": 0.3, \"estimated_serving_g\": 50, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [380, 350, 680, 700], \"nutrition_per_100g\": {\"calories\": 37, \"carbs\": 8.2, \"protein\": 0.9, \"fat\": 0.1}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 166,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3225,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2759.91,
+  "completed_at": "2026-10-25T07:37:21.856409+00:00"
+}

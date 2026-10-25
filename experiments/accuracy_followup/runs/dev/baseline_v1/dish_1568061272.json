@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1568061272",
+  "request_id": "followup_dev_baseline_v1_dish_1568061272",
+  "started_at": "2026-10-25T07:38:44.613744+00:00",
+  "arm": "baseline_v1",
+  "phase": "dev",
+  "image_sha256": "7701b502eafa439585df9063c27f0cefcfc60694dcf54f1b3aa4e870e915bb9a",
+  "request_config_sha256": "5c11e07b367ce83bb23ecc00e06f6222bb7bd9c9503323908739707524ae010e",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3059,
+  "request_sha256": "1b7317754e8f8740bc33b534863e1efc10c9d533cac622a09bf7ad0e484f1932",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"파인애플\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 100, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 290, 390, 500], \"nutrition_per_100g\": {\"calories\": 50, \"carbs\": 13.1, \"protein\": 0.5, \"fat\": 0.1}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"애호박\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [120, 530, 590, 930], \"nutrition_per_100g\": {\"calories\": 17, \"carbs\": 3.1, \"protein\": 1.2, \"fat\": 0.3}, \"package\": null}, {\"food_index\": 2, \"food_name\": \"방울양배추\", \"confidence\": 0.8, \"estimated_serving\": 0.5, \"estimated_serving_g\": 70, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [390, 340, 720, 530], \"nutrition_per_100g\": {\"calories\": 43, \"carbs\": 8.9, \"protein\": 3.4, \"fat\": 0.3}, \"package\": null}, {\"food_index\": 3, \"food_name\": \"메밀\", \"confidence\": 0.75, \"estimated_serving\": 0.5, \"estimated_serving_g\": 100, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [370, 440, 740, 630], \"nutrition_per_100g\": {\"calories\": 343, \"carbs\": 71.5, \"protein\": 13.3, \"fat\": 3.4}, \"package\": null}, {\"food_index\": 4, \"food_name\": \"닭가슴살\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [470, 500, 790, 670], \"nutrition_per_100g\": {\"calories\": 165, \"carbs\": 0, \"protein\": 31, \"fat\": 3.6}, \"package\": null}, {\"food_index\": 5, \"food_name\": \"피자\", \"confidence\": 0.8, \"estimated_serving\": 0.5, \"estimated_serving_g\": 100, \"count\": 1, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [450, 650, 960, 930], \"nutrition_per_100g\": {\"calories\": 266, \"carbs\": 33.3, \"protein\": 11.2, \"fat\": 10.4}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1952
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 179
+      }
+    ],
+    "cached_content_token_count": 2131,
+    "candidates_token_count": 1003,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4062,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6437.34,
+  "completed_at": "2026-10-25T07:38:51.390742+00:00"
+}

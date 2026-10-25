@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551384167",
+  "request_id": "followup_dev_volume_consistency_dish_1551384167",
+  "started_at": "2026-10-25T07:41:51.557567+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "f9bd0e7b46466054714f49570e7aeb3046f3039fbe5a7fa75dd803be149be405",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "c6a58330ff2f570e49a6ea8d7b7f550c1dc184e302f48a49fff5ddac63e4918a",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"딸기\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 30, \"count\": 2.5, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [1, 540, 195, 750], \"nutrition_per_100g\": {\"calories\": 32, \"carbs\": 7.7, \"protein\": 0.7, \"fat\": 0.3}}, {\"food_index\": 1, \"food_name\": \"블랙베리\", \"confidence\": 0.85, \"estimated_serving\": 0.3, \"estimated_serving_g\": 15, \"count\": 5, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [240, 299, 500, 570], \"nutrition_per_100g\": {\"calories\": 43, \"carbs\": 9.6, \"protein\": 1.4, \"fat\": 0.5}}, {\"food_index\": 2, \"food_name\": \"아스파라거스\", \"confidence\": 0.8, \"estimated_serving\": 0.5, \"estimated_serving_g\": 20, \"count\": 10, \"count_unit\": \"줄\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [1, 188, 999, 800], \"nutrition_per_100g\": {\"calories\": 20, \"carbs\": 3.9, \"protein\": 2.2, \"fat\": 0.2}}, {\"food_index\": 3, \"food_name\": \"파인애플\", \"confidence\": 0.75, \"estimated_serving\": 0.5, \"estimated_serving_g\": 40, \"count\": 5, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [1, 299, 999, 800], \"nutrition_per_100g\": {\"calories\": 50, \"carbs\": 13.1, \"protein\": 0.5, \"fat\": 0.1}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"딸기 조각들이 접시 위에 흩어져 있으며, 총 2.5개 정도의 딸기가 잘려 있는 것으로 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"블랙베리 5개가 접시 위에 흩어져 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"아스파라거스 줄기들이 접시 위에 흩어져 있으며, 총 10줄기 정도가 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 3, \"image_index\": 0, \"visual_summary\": \"파인애플 조각들이 접시 위에 흩어져 있으며, 총 5조각 정도가 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1237
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 167
+      }
+    ],
+    "cached_content_token_count": 1404,
+    "candidates_token_count": 1057,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3227,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6746.8,
+  "completed_at": "2026-10-25T07:41:58.950674+00:00"
+}

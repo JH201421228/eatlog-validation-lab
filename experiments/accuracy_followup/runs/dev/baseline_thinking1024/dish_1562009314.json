@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1562009314",
+  "request_id": "followup_dev_baseline_thinking1024_dish_1562009314",
+  "started_at": "2026-10-25T07:46:38.149416+00:00",
+  "arm": "baseline_thinking1024",
+  "phase": "dev",
+  "image_sha256": "120fb5f30da488962ce488ddab34f05bb614fa5def39a4b2d30a7243a96019f5",
+  "request_config_sha256": "9b72cfd9a6fe5e3c3e8707cde73f58392990d3580f4601eab4e591e209bf4159",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3059,
+  "request_sha256": "aebd16e53fb4192f07c680e8f688408166e2ddd1737d8edeaea0740d0aca098a",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"방울양배추\", \"confidence\": 0.95, \"estimated_serving\": 2.5, \"estimated_serving_g\": 525, \"count\": 35, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 250, 850, 750], \"nutrition_per_100g\": {\"calories\": 43, \"carbs\": 9.0, \"protein\": 3.4, \"fat\": 0.3}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1945
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 179
+      }
+    ],
+    "cached_content_token_count": 2124,
+    "candidates_token_count": 174,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": 1020,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4253,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6787.49,
+  "completed_at": "2026-10-25T07:46:45.303542+00:00"
+}

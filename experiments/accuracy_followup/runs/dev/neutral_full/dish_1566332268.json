@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1566332268",
+  "request_id": "followup_dev_neutral_full_dish_1566332268",
+  "started_at": "2026-10-25T08:03:00.961198+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "6a29c603d938bdac22d186b29cc268c0cebb1d5ca9cf2af0fd6898c92ac7204f",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "127d5f3683522c023d45995284b837d20051e1da76f39d32cc32840f419fe79b",
+  "status": "response_received",
+  "raw_text": "{\"candidates\":[{\"food_index\":0,\"food_name\":\"닭가슴살 아보카도 샐러드\",\"confidence\":0.9,\"estimated_serving\":1,\"estimated_serving_g\":300,\"count\":null,\"count_unit\":null,\"has_soup\":false,\"has_sauce\":true,\"image_index\":0,\"is_in_image\":true,\"box_2d\":[0,0,1000,1000],\"nutrition_per_100g\":{\"calories\":150,\"carbs\":8,\"protein\":12,\"fat\":8}}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 134,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1639,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2489.23,
+  "completed_at": "2026-10-25T08:03:04.102162+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1551228630",
+  "request_id": "followup_dev_flash35_full_dish_1551228630",
+  "started_at": "2026-10-25T08:29:48.963019+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "bfc72bc269d8e04908a1696b248d8be444b2b379caa304d024a43935b7a42da7",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3901,
+  "request_sha256": "f05a733c1c608052e92926e1f7ef4e2e3096f5f0babae677509c9b5ee4da2ee4",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"또띠아\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.5,\n      \"estimated_serving_g\": 60.0,\n      \"count\": 1.5,\n      \"count_unit\": \"장\",\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [0, 131, 796, 715],\n      \"nutrition_per_100g\": {\n        \"calories\": 300,\n        \"carbs\": 50.0,\n        \"protein\": 8.0,\n        \"fat\": 7.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 227,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4128,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3669.21,
+  "completed_at": "2026-10-25T08:29:53.136580+00:00"
+}

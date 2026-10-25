@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551137431",
+  "request_id": "followup_dev_neutral_full_dish_1551137431",
+  "started_at": "2026-10-25T08:09:32.090456+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "6c0fe9227e1155c84f364c1f2c0f3981699b487496abedfdfb07cc745f304260",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "94a9182b09b08c4d65705130bd2066ff1091faf7d92c2b38723629d241643a75",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"곡물 식빵\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": 2, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [200, 200, 800, 800], \"nutrition_per_100g\": {\"calories\": 250, \"carbs\": 45, \"protein\": 8, \"fat\": 4}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 527
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 109
+      }
+    ],
+    "cached_content_token_count": 636,
+    "candidates_token_count": 167,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1672,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2997.39,
+  "completed_at": "2026-10-25T08:09:35.588779+00:00"
+}

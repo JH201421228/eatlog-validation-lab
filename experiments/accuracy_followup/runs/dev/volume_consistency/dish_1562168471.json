@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1562168471",
+  "request_id": "followup_dev_volume_consistency_dish_1562168471",
+  "started_at": "2026-10-25T07:42:50.172283+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "58f604d44cfb6dee6f0ae52ebe994567345431f967376646cd6e92b7f0f53eda",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "cf67602b703fe2eacf27ae45afa810515f2bb0da799c69244e884c51889ac538",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"파인애플\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [140, 415, 330, 565], \"nutrition_per_100g\": {\"calories\": 50.0, \"carbs\": 13.1, \"protein\": 0.5, \"fat\": 0.1}}, {\"food_index\": 1, \"food_name\": \"블루베리\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [440, 300, 870, 480], \"nutrition_per_100g\": {\"calories\": 57.0, \"carbs\": 14.5, \"protein\": 0.7, \"fat\": 0.3}}, {\"food_index\": 2, \"food_name\": \"딸기\", \"confidence\": 0.85, \"estimated_serving\": 0.2, \"estimated_serving_g\": 20.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [470, 390, 570, 450], \"nutrition_per_100g\": {\"calories\": 32.0, \"carbs\": 7.7, \"protein\": 0.7, \"fat\": 0.3}}, {\"food_index\": 3, \"food_name\": \"방울양배추 볶음\", \"confidence\": 0.8, \"estimated_serving\": 0.5, \"estimated_serving_g\": 70.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [440, 460, 800, 630], \"nutrition_per_100g\": {\"calories\": 70.0, \"carbs\": 10.0, \"protein\": 3.0, \"fat\": 3.0}}, {\"food_index\": 4, \"food_name\": \"감자 구이\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [230, 620, 570, 850], \"nutrition_per_100g\": {\"calories\": 93.0, \"carbs\": 20.0, \"protein\": 2.0, \"fat\": 1.0}}, {\"food_index\": 5, \"food_name\": \"코티지 치즈\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [460, 590, 870, 850], \"nutrition_per_100g\": {\"calories\": 98.0, \"carbs\": 3.4, \"protein\": 11.0, \"fat\": 4.3}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시 왼쪽 상단에 큼직하게 썰린 파인애플 조각들이 쌓여 있습니다. 대략 5-6조각으로 보이며, 높이가 있어 부피가 상당합니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 120.0, \"bulk_density_g_per_ml\": 0.83, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"파인애플 아래쪽에 블루베리가 흩뿌려져 있습니다. 약 30-40개 정도의 알갱이가 보이며, 평평하게 깔려 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": 60.0, \"bulk_density_g_per_ml\": 0.83, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"블루베리 사이에 썰린 딸기 조각이 몇 개 보입니다. 대략 2-3조각으로 보이며, 작은 양입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": 25.0, \"bulk_density_g_per_ml\": 0.8, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 3, \"image_index\": 0, \"visual_summary\": \"접시 중앙에 소스와 함께 볶아진 방울양배추가 쌓여 있습니다. 대략 5-6개의 방울양배추가 보이며, 소스가 넉넉하게 묻어 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 80.0, \"bulk_density_g_per_ml\": 0.88, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 4, \"image_index\": 0, \"visual_summary\": \"접시 오른쪽 상단에 구운 감자 조각들이 놓여 있습니다. 크고 작은 조각들이 섞여 있으며, 일부는 껍질이 붙어 있고 노릇하게 구워졌습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 150.0, \"bulk_density_g_per_ml\": 0.8, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 1627,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3797,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 10244.05,
+  "completed_at": "2026-10-25T07:43:00.983040+00:00"
+}

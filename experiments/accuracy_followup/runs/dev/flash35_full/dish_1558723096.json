@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1558723096",
+  "request_id": "followup_dev_flash35_full_dish_1558723096",
+  "started_at": "2026-10-25T08:19:41.534632+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "a144a53d3c72fcddc8800336fbf7676143d6b2ca01c56cad77bca90462b886da",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "1479349c0d61cfe7d8d2420f8b49bbee85ab2d955ab1a101dfe921a8f112f8f1",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"콜리플라워\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 50.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [310, 360, 755, 683],\n      \"nutrition_per_100g\": {\n        \"calories\": 25.0,\n        \"carbs\": 4.97,\n        \"protein\": 1.92,\n        \"fat\": 0.28\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 230,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4095,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2314.63,
+  "completed_at": "2026-10-25T08:19:44.214068+00:00"
+}

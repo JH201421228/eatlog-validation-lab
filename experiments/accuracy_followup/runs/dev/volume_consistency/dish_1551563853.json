@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551563853",
+  "request_id": "followup_dev_volume_consistency_dish_1551563853",
+  "started_at": "2026-10-25T07:42:03.317427+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "6fd3f07274eed3ef5c3db399767803b7085ea8c784fa5ab427531db92f4ccb76",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "6365f7f731be846507c413a1cd41cb6ab42f9904ac02740d00b6150b359f802a",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"슬라이스 햄\", \"confidence\": 0.9, \"estimated_serving\": 1.5, \"estimated_serving_g\": 75, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 0, 500, 500], \"nutrition_per_100g\": {\"calories\": 150, \"carbs\": 2, \"protein\": 15, \"fat\": 9}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"구운 닭가슴살\", \"confidence\": 0.85, \"estimated_serving\": 1, \"estimated_serving_g\": 100, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [400, 250, 890, 620], \"nutrition_per_100g\": {\"calories\": 165, \"carbs\": 0, \"protein\": 31, \"fat\": 3.6}, \"package\": null}, {\"food_index\": 2, \"food_name\": \"파인애플 조각\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [200, 500, 600, 750], \"nutrition_per_100g\": {\"calories\": 50, \"carbs\": 13, \"protein\": 0.5, \"fat\": 0.1}, \"package\": null}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시에 얇게 썬 햄이 여러 장 겹쳐져 있습니다. 대략 5-6장으로 보이며, 일반적인 슬라이스 햄 한 장의 크기를 고려하여 추정했습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"깍둑썰기 된 닭가슴살 조각들이 접시 한쪽에 모여 있습니다. 조각들의 크기와 쌓인 높이를 고려하여 추정했습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"파인애플 조각들이 접시 다른 한쪽에 놓여 있습니다. 5-6개의 조각으로 보이며, 각 조각의 크기를 고려하여 추정했습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1237
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 167
+      }
+    ],
+    "cached_content_token_count": 1404,
+    "candidates_token_count": 841,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3011,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5968.59,
+  "completed_at": "2026-10-25T07:42:09.918096+00:00"
+}

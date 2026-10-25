@@ -1,0 +1,278 @@
+diff --git a/ai-server/app/gemini_client.py b/ai-server/app/gemini_client.py
+index e053f41..001ed4a 100644
+--- a/ai-server/app/gemini_client.py
++++ b/ai-server/app/gemini_client.py
+@@ -37,7 +37,10 @@ def image_part(data: bytes, mime_type: str):
+     return types.Part.from_bytes(data=data, mime_type=mime_type)
+ 
+ 
+-async def generate_json(model: str, contents: list, *, response_json_schema: dict | None = None):
++async def generate_json(
++    model: str, contents: list, *, response_json_schema: dict | None = None,
++    thinking_level: str | None = None, max_output_tokens: int | None = None,
++):
+     """JSON 강제 + thinking 예산 제한으로 생성 호출. 응답 객체를 반환한다.
+ 
+     (타임아웃은 호출부가 asyncio.wait_for 로 감싼다 — 기존 구조 유지)
+@@ -52,9 +55,9 @@ async def generate_json(model: str, contents: list, *, response_json_schema: dic
+         # 미설정 시 기본 temperature(1.0)로 매 호출 결과가 달라진다.
+         temperature=settings.gemini_temperature,
+         seed=settings.gemini_seed,
+-        thinking_config=types.ThinkingConfig(
+-            thinking_budget=settings.gemini_thinking_budget
+-        ),
++        thinking_config=(types.ThinkingConfig(thinking_level=thinking_level) if thinking_level is not None
++                         else types.ThinkingConfig(thinking_budget=settings.gemini_thinking_budget)),
++        max_output_tokens=max_output_tokens,
+     )
+     return await _get_client().aio.models.generate_content(
+         model=model, contents=contents, config=config
+diff --git a/ai-server/app/services/vision.py b/ai-server/app/services/vision.py
+index 7dd733b..1f52ad8 100644
+--- a/ai-server/app/services/vision.py
++++ b/ai-server/app/services/vision.py
+@@ -540,6 +540,17 @@ async def analyze(
+     # 알 수 없는 값은 standard 로 (422 없이 200-계약 유지)
+     depth = normalize_candidate_depth(candidate_depth)
+     task_type = _TASK_TYPE_BY_DEPTH[depth]
++    urls = image_urls if image_urls is not None else [image_url]
++    cleaned_text = (user_text or "").strip()[:USER_TEXT_MAX_LENGTH]
++    model_name = settings.gemini_model
++    generation_options = {}
++    # Frozen photo-only policy; explicit operator configuration keeps its existing route.
++    if (len(urls) == 1 and not cleaned_text and depth == "standard" and max_foods == 5
++            and settings.gemini_model == "gemini-2.5-flash"
++            and settings.gemini_temperature == 0 and settings.gemini_seed == 20260722
++            and settings.gemini_thinking_budget == 0):
++        model_name = "gemini-3.5-flash-lite"
++        generation_options = {"thinking_level": "MINIMAL", "max_output_tokens": 4096}
+     response = raw_text = raw_candidates = None
+ 
+     def elapsed_ms() -> int:
+@@ -554,11 +565,10 @@ async def analyze(
+             "failed_image_index": failed_image_index,
+             "fallback_action": FALLBACK_ACTION,
+             "ai_call_log": build_ai_call_log(
+-                task_type, "failed", elapsed_ms(), model_name=settings.gemini_model
++                task_type, "failed", elapsed_ms(), model_name=model_name
+             ),
+         }
+ 
+-    urls = image_urls if image_urls is not None else [image_url]
+     # 장별 기존 다운로드 제한을 유지하며 첫 실패에서 전체 요청을 중단한다.
+     parts = []
+     for index, url in enumerate(urls):
+@@ -576,13 +586,13 @@ async def analyze(
+ 
+     # 모든 사진을 한 번의 Gemini 호출에 요청 순서대로 전달한다.
+     contents = [_build_prompt(depth, max_foods), *parts]
+-    cleaned_text = (user_text or "").strip()[:USER_TEXT_MAX_LENGTH]
+     if cleaned_text:
+         contents.append(_user_text_part(cleaned_text))
+     try:
+         response = await asyncio.wait_for(
+             gemini_client.generate_json(
+-                settings.gemini_model, contents, response_json_schema=ANALYZE_RESPONSE_SCHEMA,
++                model_name, contents, response_json_schema=ANALYZE_RESPONSE_SCHEMA,
++                **generation_options,
+             ),
+             timeout=settings.ai_timeout_seconds,
+         )
+@@ -619,6 +629,6 @@ async def analyze(
+         "draft_notice": "AI가 분석한 기록 초안입니다.",
+         "candidates": candidates,
+         "ai_call_log": build_ai_call_log(
+-            task_type, "success", elapsed_ms(), model_name=settings.gemini_model
++            task_type, "success", elapsed_ms(), model_name=model_name
+         ),
+     }
+diff --git a/ai-server/tests/conftest.py b/ai-server/tests/conftest.py
+index 2932850..280df34 100644
+--- a/ai-server/tests/conftest.py
++++ b/ai-server/tests/conftest.py
+@@ -24,7 +24,7 @@ class GeminiStub:
+     last_contents: Optional[list] = None
+     last_response_json_schema: Optional[dict] = None
+ 
+-    async def generate_json(self, model, contents, *, response_json_schema=None):
++    async def generate_json(self, model, contents, *, response_json_schema=None, thinking_level=None, max_output_tokens=None):
+         self.last_contents = contents
+         self.last_response_json_schema = response_json_schema
+         if self.exc is not None:
+diff --git a/ai-server/tests/test_response_schema.py b/ai-server/tests/test_response_schema.py
+index 77726fc..4ee9171 100644
+--- a/ai-server/tests/test_response_schema.py
++++ b/ai-server/tests/test_response_schema.py
+@@ -46,10 +46,19 @@ def test_analyze_passes_schema_to_sdk(client, stub_download, model_call, image_c
+     assert config.response_mime_type == "application/json"
+     assert config.tools is None
+     settings = get_settings()
+-    assert args["model"] == settings.gemini_model
++    selected_route = (image_count == 1 and depth == "standard" and settings.gemini_model == "gemini-2.5-flash"
++                      and settings.gemini_temperature == 0 and settings.gemini_seed == 20260722 and settings.gemini_thinking_budget == 0)
++    assert args["model"] == ("gemini-3.5-flash-lite" if selected_route else settings.gemini_model)
+     assert config.temperature == settings.gemini_temperature
+     assert config.seed == settings.gemini_seed
+-    assert config.thinking_config.thinking_budget == settings.gemini_thinking_budget
++    if selected_route:
++        assert config.thinking_config.thinking_level == types.ThinkingLevel.MINIMAL
++        assert config.thinking_config.thinking_budget is None
++        assert config.max_output_tokens == 4096
++    else:
++        assert config.thinking_config.thinking_budget == settings.gemini_thinking_budget
++        assert config.thinking_config.thinking_level is None
++        assert config.max_output_tokens is None
+     assert len(args["contents"]) == image_count + 1
+ 
+ 
+diff --git a/ai-server/tests/test_photo_model_policy.py b/ai-server/tests/test_photo_model_policy.py
+new file mode 100644
+--- /dev/null
++++ b/ai-server/tests/test_photo_model_policy.py
+@@ -0,0 +1,146 @@
++"""Frozen single-photo model route; every model and lookup call is mocked."""
++import asyncio
++import hashlib
++import json
++from types import SimpleNamespace
++from unittest.mock import AsyncMock
++
++import pytest
++from google.genai import types
++
++from app import gemini_client
++from app.config import get_settings
++from app.schemas.model_response import ANALYZE_RESPONSE_SCHEMA
++from app.services import vision
++
++
++@pytest.fixture(autouse=True)
++def baseline_settings(monkeypatch):
++    for key, value in {'GEMINI_MODEL': 'gemini-2.5-flash', 'GEMINI_TEMPERATURE': '0',
++                       'GEMINI_SEED': '20260722', 'GEMINI_THINKING_BUDGET': '0'}.items():
++        monkeypatch.setenv(key, value)
++    get_settings.cache_clear()
++
++
++@pytest.fixture
++def sdk_call(monkeypatch):
++    call = AsyncMock(return_value=SimpleNamespace(text='{"candidates":[{"food_name":"밥"}]}'))
++    monkeypatch.setattr(gemini_client, '_get_client', lambda: SimpleNamespace(
++        aio=SimpleNamespace(models=SimpleNamespace(generate_content=call))))
++    return call
++
++
++@pytest.mark.parametrize('text', [None, '', ' \t\n'])
++@pytest.mark.parametrize('url_field', ['image_url', 'image_urls'])
++def test_frozen_route_config_and_actual_model_log(client, stub_download, sdk_call, text, url_field):
++    stub_download()
++    payload = {url_field: 'http://img/photo' if url_field == 'image_url' else ['http://img/photo'], 'user_text': text}
++    body = client.post('/internal/analyze', json=payload).json()
++    assert body['status'] == 'success'
++    assert body['ai_call_log']['model_name'] == 'gemini-3.5-flash-lite'
++    args = sdk_call.call_args.kwargs
++    config = args['config']
++    assert args['model'] == body['ai_call_log']['model_name']
++    assert config.thinking_config.thinking_level == types.ThinkingLevel.MINIMAL
++    assert config.thinking_config.thinking_budget is None
++    assert config.max_output_tokens == 4096
++    assert (config.temperature, config.seed) == (0, 20260722)
++    assert config.response_json_schema == ANALYZE_RESPONSE_SCHEMA
++    assert config.response_mime_type == 'application/json'
++    assert config.tools is None
++    assert len(args['contents']) == 2
++
++
++@pytest.mark.parametrize('extra', [
++    {'user_text': '밥도 먹었어'}, {'candidate_depth': 'clarifier'}, {'max_foods': 10},
++    {'image_urls': ['http://img/first', 'http://img/second']},
++])
++def test_other_request_paths_keep_original_model_and_options(client, stub_download, sdk_call, extra):
++    stub_download()
++    body = client.post('/internal/analyze', json={'image_url': 'http://img/photo', **extra}).json()
++    assert body['ai_call_log']['model_name'] == 'gemini-2.5-flash'
++    args = sdk_call.call_args.kwargs
++    assert args['model'] == 'gemini-2.5-flash'
++    assert args['config'].thinking_config.thinking_budget == 0
++    assert args['config'].thinking_config.thinking_level is None
++    assert args['config'].max_output_tokens is None
++
++
++@pytest.mark.parametrize('key,value', [('GEMINI_MODEL', 'operator-model'), ('GEMINI_TEMPERATURE', '.2'),
++                                     ('GEMINI_SEED', '1'), ('GEMINI_THINKING_BUDGET', '512')])
++def test_explicit_operator_settings_keep_existing_route(client, stub_download, sdk_call, monkeypatch, key, value):
++    monkeypatch.setenv(key, value)
++    get_settings.cache_clear()
++    stub_download()
++    body = client.post('/internal/analyze', json={'image_url': 'http://img/photo'}).json()
++    settings = get_settings()
++    args = sdk_call.call_args.kwargs
++    assert args['model'] == settings.gemini_model == body['ai_call_log']['model_name']
++    assert args['config'].thinking_config.thinking_budget == settings.gemini_thinking_budget
++    assert args['config'].thinking_config.thinking_level is None
++    assert args['config'].max_output_tokens is None
++
++
++@pytest.mark.parametrize('text,reason', [('bad', 'invalid_response'), ('{"candidates":[]}', 'not_food')])
++def test_selected_model_logged_on_invalid_response(client, stub_download, sdk_call, text, reason):
++    stub_download()
++    sdk_call.return_value = SimpleNamespace(text=text)
++    body = client.post('/internal/analyze', json={'image_url': 'http://img/photo'}).json()
++    assert body['reason'] == reason
++    assert body['ai_call_log']['model_name'] == 'gemini-3.5-flash-lite'
++    assert body['failed_image_index'] is None
++
++
++@pytest.mark.parametrize('error,reason', [(asyncio.TimeoutError(), 'ai_timeout'), (RuntimeError(), 'provider_error')])
++def test_selected_provider_failures_keep_contract(client, stub_download, sdk_call, error, reason):
++    stub_download()
++    sdk_call.side_effect = error
++    body = client.post('/internal/analyze', json={'image_url': 'http://img/photo'}).json()
++    assert body['reason'] == reason
++    assert body['failed_image_index'] is None
++    assert body['fallback_action'] == 'manual_food_search'
++    assert body['ai_call_log']['model_name'] == 'gemini-3.5-flash-lite'
++
++
++def test_download_failure_keeps_index_and_never_calls_provider(client, stub_download, sdk_call):
++    stub_download(exc=RuntimeError())
++    body = client.post('/internal/analyze', json={'image_url': 'http://img/photo'}).json()
++    assert (body['reason'], body['failed_image_index']) == ('provider_error', 0)
++    sdk_call.assert_not_awaited()
++
++
++def test_selected_route_still_attaches_package_labels_and_preserves_candidates(client, stub_download, sdk_call, monkeypatch):
++    stub_download()
++    sdk_call.return_value = SimpleNamespace(text=json.dumps({'candidates': [{
++        'food_name': '참쌀설병', 'food_index': 0, 'image_index': 0, 'is_in_image': True,
++        'estimated_serving_g': 9, 'count': 1, 'count_unit': '개', 'confidence': .9,
++        'nutrition_per_100g': {'calories': 500, 'carbs': 70, 'protein': 5, 'fat': 20},
++        'package': {'product_name': '참쌀설병', 'size_text': '9g', 'printed_kcal': 45},
++    }]}))
++    async def attach(candidates):
++        candidates[0]['label'] = {'product_name': '확인된 이름', 'confidence': .9,
++                                  'per_100g': {'calories': 500, 'carbs': 70, 'protein': 5, 'fat': 20}}
++    lookup = AsyncMock(side_effect=attach)
++    monkeypatch.setattr(vision.product_lookup, 'attach_labels', lookup)
++    body = client.post('/internal/analyze', json={'image_url': 'http://img/photo'}).json()
++    lookup.assert_awaited_once()
++    candidate = body['candidates'][0]
++    assert candidate['package']['printed_kcal'] == 45
++    assert candidate['package']['size_g'] == 9
++    assert (candidate['food_index'], candidate['image_index'], candidate['count'], candidate['count_unit']) == (0, 0, 1, '개')
++    assert candidate['label']['product_name'] == '확인된 이름'
++
++
++def test_prompt_and_schema_match_frozen_experiment():
++    prompt = vision._build_prompt('standard', 5)
++    assert hashlib.sha256(prompt.encode()).hexdigest() == 'ec03e8be7d47b2d48734f60354360246c78ea55c06d227de31907a7f8c71a7c7'
++    semantic = json.dumps(ANALYZE_RESPONSE_SCHEMA, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode()
++    assert hashlib.sha256(semantic).hexdigest() == '4e36ed481d5493f10d5e2ebc442559c542c1e1522142fdd7391f9ec53e25cf5d'
++
++
++def test_generate_json_defaults_preserve_existing_sdk_config(sdk_call):
++    asyncio.run(gemini_client.generate_json('other-caller', ['prompt']))
++    config = sdk_call.call_args.kwargs['config']
++    assert config.max_output_tokens is None
++    assert config.thinking_config.thinking_budget == 0
++    assert config.thinking_config.thinking_level is None

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1566931217",
+  "request_id": "followup_dev_neutral_full_dish_1566931217",
+  "started_at": "2026-10-25T08:04:02.002720+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "effb342d09148b507797ef24888be710b10f6ca6cdec6a543e58a6d1c357375e",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "8dbfc11a4a41d961e13cc7f6d6b88d503b7e3b4e8a5b0ec9a59457ceb77d016c",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"구운 연어\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": 1.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [198, 398, 398, 548], \"nutrition_per_100g\": {\"calories\": 208.0, \"carbs\": 0.0, \"protein\": 20.0, \"fat\": 13.0}}, {\"food_index\": 1, \"food_name\": \"흰 강낭콩 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 298, 300, 580], \"nutrition_per_100g\": {\"calories\": 130.0, \"carbs\": 20.0, \"protein\": 7.0, \"fat\": 2.0}}, {\"food_index\": 2, \"food_name\": \"시금치 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 80.0, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 540, 450, 860], \"nutrition_per_100g\": {\"calories\": 50.0, \"carbs\": 5.0, \"protein\": 3.0, \"fat\": 2.0}}, {\"food_index\": 3, \"food_name\": \"구운 콜리플라워\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [450, 250, 890, 580], \"nutrition_per_100g\": {\"calories\": 30.0, \"carbs\": 6.0, \"protein\": 2.0, \"fat\": 0.5}}, {\"food_index\": 4, \"food_name\": \"아보카도\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 70.0, \"count\": 0.5, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [470, 580, 790, 920], \"nutrition_per_100g\": {\"calories\": 160.0, \"carbs\": 9.0, \"protein\": 2.0, \"fat\": 15.0}}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 819,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2324,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5437.38,
+  "completed_at": "2026-10-25T08:04:07.830516+00:00"
+}

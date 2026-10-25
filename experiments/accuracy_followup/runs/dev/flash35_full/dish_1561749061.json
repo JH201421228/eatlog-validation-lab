@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561749061",
+  "request_id": "followup_dev_flash35_full_dish_1561749061",
+  "started_at": "2026-10-25T08:26:55.557123+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "2bf24b384adc1e13b41cce29c960bc93e5f6fc6873e7d821b18f52741eaa1704",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "93425f6834eb3919e19f30b6d5734006dfd4c5225cf03cd848bbe54b26f85c4f",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"연어구이 샐러드\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 250,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [133, 264, 942, 927],\n      \"nutrition_per_100g\": {\n        \"calories\": 130,\n        \"carbs\": 5.0,\n        \"protein\": 11.0,\n        \"fat\": 7.5\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1188
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 451
+      }
+    ],
+    "cached_content_token_count": 1639,
+    "candidates_token_count": 228,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4093,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2301.6,
+  "completed_at": "2026-10-25T08:26:58.543705+00:00"
+}

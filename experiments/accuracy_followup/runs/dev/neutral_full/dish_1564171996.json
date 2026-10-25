@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1564171996",
+  "request_id": "followup_dev_neutral_full_dish_1564171996",
+  "started_at": "2026-10-25T07:59:38.898979+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "14655ea3783f1fa8b142a633f04ca8dc30b744ec28beded4242dc547435775ba",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "88db12df00cb8eb9219d849ad1613a580367dfa52a09bb32f78d4efca7704e0b",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"연어 볶음밥\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 180.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [430, 298, 650, 620], \"nutrition_per_100g\": {\"calories\": 180.0, \"carbs\": 15.0, \"protein\": 12.0, \"fat\": 8.0}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"통곡물 샐러드\", \"confidence\": 0.85, \"estimated_serving\": 0.8, \"estimated_serving_g\": 150.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [80, 390, 390, 670], \"nutrition_per_100g\": {\"calories\": 120.0, \"carbs\": 20.0, \"protein\": 5.0, \"fat\": 3.0}, \"package\": null}, {\"food_index\": 2, \"food_name\": \"오이 토마토 샐러드\", \"confidence\": 0.8, \"estimated_serving\": 0.7, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [180, 660, 460, 930], \"nutrition_per_100g\": {\"calories\": 30.0, \"carbs\": 5.0, \"protein\": 1.0, \"fat\": 0.5}, \"package\": null}, {\"food_index\": 3, \"food_name\": \"호박 샐러드\", \"confidence\": 0.75, \"estimated_serving\": 0.6, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [470, 620, 830, 840], \"nutrition_per_100g\": {\"calories\": 40.0, \"carbs\": 7.0, \"protein\": 1.5, \"fat\": 1.0}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 701,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2206,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4802.66,
+  "completed_at": "2026-10-25T07:59:44.226827+00:00"
+}

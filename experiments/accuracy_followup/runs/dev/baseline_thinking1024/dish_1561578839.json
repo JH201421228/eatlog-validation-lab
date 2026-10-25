@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561578839",
+  "request_id": "followup_dev_baseline_thinking1024_dish_1561578839",
+  "started_at": "2026-10-25T07:46:23.233013+00:00",
+  "arm": "baseline_thinking1024",
+  "phase": "dev",
+  "image_sha256": "4cd9a28bc67ba8690dcdc3d5029f24619cfeb61c43bea371102d4486532bb3a8",
+  "request_config_sha256": "9b72cfd9a6fe5e3c3e8707cde73f58392990d3580f4601eab4e591e209bf4159",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3059,
+  "request_sha256": "4ed2d0f06d4ac21148559c2059b0ac93878fbaf51c99174850e069673a837b91",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"피자\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 120, \"count\": 2, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [450, 450, 750, 880], \"nutrition_per_100g\": {\"calories\": 266, \"carbs\": 33.3, \"protein\": 11.4, \"fat\": 9.7}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"루꼴라 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [450, 180, 750, 450], \"nutrition_per_100g\": {\"calories\": 25, \"carbs\": 3.7, \"protein\": 2.6, \"fat\": 0.7}, \"package\": null}, {\"food_index\": 2, \"food_name\": \"방울토마토\", \"confidence\": 0.9, \"estimated_serving\": 0.3, \"estimated_serving_g\": 40, \"count\": 8, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 660, 450, 830], \"nutrition_per_100g\": {\"calories\": 18, \"carbs\": 3.9, \"protein\": 0.9, \"fat\": 0.2}, \"package\": null}, {\"food_index\": 3, \"food_name\": \"브로콜리\", \"confidence\": 0.85, \"estimated_serving\": 0.2, \"estimated_serving_g\": 30, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 700, 450, 910], \"nutrition_per_100g\": {\"calories\": 34, \"carbs\": 6.6, \"protein\": 2.8, \"fat\": 0.4}, \"package\": null}, {\"food_index\": 4, \"food_name\": \"블랙 올리브\", \"confidence\": 0.8, \"estimated_serving\": 0.1, \"estimated_serving_g\": 5, \"count\": 1, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [480, 390, 550, 450], \"nutrition_per_100g\": {\"calories\": 115, \"carbs\": 6.3, \"protein\": 0.8, \"fat\": 10.7}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1945
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 179
+      }
+    ],
+    "cached_content_token_count": 2124,
+    "candidates_token_count": 845,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": 1020,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4924,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 9832.1,
+  "completed_at": "2026-10-25T07:46:33.464922+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "model": "gemini-2.5-flash",
+  "temperature": 0,
+  "seed": 20260722,
+  "thinking_budget": 0,
+  "max_output_tokens": 4096,
+  "http_timeout_ms": 90000,
+  "sdk_attempts": 1,
+  "max_counted_input_plus_schema_margin": 20000,
+  "schema_extra_margin_tokens": 4096,
+  "max_foods": 5,
+  "max_candidates_per_food": 3,
+  "grounding": false,
+  "user_text": null,
+  "image_transform": "none",
+  "one_generation_replayed_for_both_versions": true,
+  "prompt_sha256": "8bbed3c2b0119af546143d4df4af9b7b9f7fad207a1295ffabfebf575cc1b18f",
+  "schema_sha256": "6dc5136cca61318333d23cd275abf99dbb7b6cbbc7fbc275c8ccc07550309e7e"
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1563563527",
+  "request_id": "followup_dev_volume_consistency_dish_1563563527",
+  "started_at": "2026-10-25T07:42:40.922976+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "ccfe4d5fb582e02b52697fbc234ef0a180e4dc37141ebc73ae9b0f2500038d65",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "0924d05de4a188d71e1e824205750303fd32db19ea8249cf40efeb530dd14de9",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"피자\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80, \"count\": 1, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [80, 390, 490, 560], \"nutrition_per_100g\": {\"calories\": 266, \"carbs\": 33.3, \"protein\": 11.5, \"fat\": 9.7}}, {\"food_index\": 1, \"food_name\": \"샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1, \"estimated_serving_g\": 150, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [180, 260, 850, 940], \"nutrition_per_100g\": {\"calories\": 100, \"carbs\": 10, \"protein\": 5, \"fat\": 5}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"피자 한 조각이 접시 위에 놓여 있으며, 두께는 보통이고 토마토와 양파가 토핑으로 올라가 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"다양한 잎채소와 몇 가지 다른 재료가 섞여 있는 샐러드가 접시의 절반 이상을 채우고 있습니다. 드레싱이 뿌려져 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 200, \"bulk_density_g_per_ml\": 0.75, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 546,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2716,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4522.84,
+  "completed_at": "2026-10-25T07:42:45.998953+00:00"
+}

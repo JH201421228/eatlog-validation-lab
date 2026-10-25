@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1562691613",
+  "request_id": "followup_dev_volume_consistency_dish_1562691613",
+  "started_at": "2026-10-25T07:43:19.869284+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "27488521aedb9433b719c36bba560748c468c355a18ad738e9f1989c8bb8f3b8",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "7952524cab0320da6da33d680aeab4c976f82c0ec925310bd594fde6e1ee3676",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"브로콜리\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [140, 250, 440, 560], \"nutrition_per_100g\": {\"calories\": 34.0, \"carbs\": 7.0, \"protein\": 2.4, \"fat\": 0.4}}, {\"food_index\": 1, \"food_name\": \"고구마 구이\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [230, 550, 560, 850], \"nutrition_per_100g\": {\"calories\": 110.0, \"carbs\": 25.0, \"protein\": 2.0, \"fat\": 0.5}}, {\"food_index\": 2, \"food_name\": \"흰살 생선 구이\", \"confidence\": 0.8, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [440, 250, 680, 490], \"nutrition_per_100g\": {\"calories\": 100.0, \"carbs\": 0.0, \"protein\": 20.0, \"fat\": 2.0}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시 왼쪽 상단에 브로콜리 여러 조각이 쌓여 있습니다. 덩어리진 형태로 약 100g으로 추정됩니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 150.0, \"bulk_density_g_per_ml\": 0.67, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시 오른쪽 상단에 구운 고구마 조각들이 흩어져 있습니다. 약 120g으로 추정됩니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 100.0, \"bulk_density_g_per_ml\": 1.2, \"scale_uncertainty\": \"high\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"접시 중앙에 흰살 생선 조각들이 놓여 있습니다. 약 150g으로 추정됩니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 130.0, \"bulk_density_g_per_ml\": 1.15, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 849,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3019,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6034.46,
+  "completed_at": "2026-10-25T07:43:26.437622+00:00"
+}

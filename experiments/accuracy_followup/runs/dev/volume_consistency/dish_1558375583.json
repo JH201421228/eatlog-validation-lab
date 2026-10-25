@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1558375583",
+  "request_id": "followup_dev_volume_consistency_dish_1558375583",
+  "started_at": "2026-10-25T07:42:31.474173+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "a7194217a9f5bd72e4f50a306351ac27e5bcf5bc6db1cae2f468fe11772b8283",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "785eb18d75efd14a6389a3d109b20e76187f269ef34df853e42b3a8172f0a1de",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"사과\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 182.0, \"count\": 1.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [60, 430, 430, 580], \"nutrition_per_100g\": {\"calories\": 52.0, \"carbs\": 13.8, \"protein\": 0.3, \"fat\": 0.2}}, {\"food_index\": 1, \"food_name\": \"시금치 당근 샐러드\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 75.0, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [470, 200, 800, 500], \"nutrition_per_100g\": {\"calories\": 23.0, \"carbs\": 3.6, \"protein\": 2.9, \"fat\": 0.4}}, {\"food_index\": 2, \"food_name\": \"소시지\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": 8.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [340, 570, 790, 850], \"nutrition_per_100g\": {\"calories\": 250.0, \"carbs\": 2.0, \"protein\": 12.0, \"fat\": 20.0}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"중간 크기의 사과 한 개가 접시 중앙에 놓여 있습니다.\", \"scale_basis\": \"recognizable_reference\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 250.0, \"bulk_density_g_per_ml\": 0.728, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"시금치와 채 썬 당근이 접시 왼쪽에 쌓여 있습니다. 양이 많지 않습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 200.0, \"bulk_density_g_per_ml\": 0.375, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"작은 소시지 조각 8개가 접시 오른쪽에 쌓여 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": 120.0, \"bulk_density_g_per_ml\": 1.25, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 815,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2985,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5962.01,
+  "completed_at": "2026-10-25T07:42:37.998649+00:00"
+}

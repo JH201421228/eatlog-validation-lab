@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561661972",
+  "request_id": "followup_dev_baseline_thinking1024_dish_1561661972",
+  "started_at": "2026-10-25T07:46:46.612622+00:00",
+  "arm": "baseline_thinking1024",
+  "phase": "dev",
+  "image_sha256": "6f29ef2e57f1f7f429c11192de8d79c4aa18adaddc4e1a819d0dcedfbec2ae57",
+  "request_config_sha256": "9b72cfd9a6fe5e3c3e8707cde73f58392990d3580f4601eab4e591e209bf4159",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 3059,
+  "request_sha256": "f6c01d02028129b13b46530cfc12a3aef438bfb9da7945e2cc5bff20992f7105",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"줄기콩볶음\", \"confidence\": 0.9, \"estimated_serving\": 0.3, \"estimated_serving_g\": 40, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [450, 300, 750, 700], \"nutrition_per_100g\": {\"calories\": 90, \"carbs\": 9.0, \"protein\": 2.5, \"fat\": 6.0}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1945
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 179
+      }
+    ],
+    "cached_content_token_count": 2124,
+    "candidates_token_count": 169,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3059,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": 932,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4160,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 8918.0,
+  "completed_at": "2026-10-25T07:46:56.052962+00:00"
+}

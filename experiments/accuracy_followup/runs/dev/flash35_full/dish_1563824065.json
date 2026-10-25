@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1563824065",
+  "request_id": "followup_dev_flash35_full_dish_1563824065",
+  "started_at": "2026-10-25T08:26:59.335431+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "eff9f7285f5bdff341974ee5d461efff8254dffa4f9c2167886f9f8dc0c325d2",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "1b781a913079a4c8bdb4804d2408e089a50ecfa0f395aa3d65e52e464512810f",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"애호박볶음\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 0.2,\n      \"estimated_serving_g\": 30,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [468, 339, 936, 615],\n      \"nutrition_per_100g\": {\n        \"calories\": 45,\n        \"carbs\": 5.0,\n        \"protein\": 1.5,\n        \"fat\": 2.2\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 223,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4088,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2812.3,
+  "completed_at": "2026-10-25T08:27:02.449942+00:00"
+}

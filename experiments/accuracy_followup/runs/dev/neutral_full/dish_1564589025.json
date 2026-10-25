@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1564589025",
+  "request_id": "followup_dev_neutral_full_dish_1564589025",
+  "started_at": "2026-10-25T07:59:20.635677+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "85cb65be250e5a43a818caf5bf657cad089f1aaf1ed1f14925ebc7f6952fd601",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "5ddb11167ffe0e9f2e99d5dba53caefb84d4b65707ae4a5cb7a98f92bbfff5ec",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"웨지감자\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80, \"count\": 5, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [300, 480, 690, 700], \"nutrition_per_100g\": {\"calories\": 150, \"carbs\": 20, \"protein\": 2, \"fat\": 7}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 168,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1673,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2644.96,
+  "completed_at": "2026-10-25T07:59:23.739920+00:00"
+}

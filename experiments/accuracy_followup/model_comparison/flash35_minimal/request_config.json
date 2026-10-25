@@ -1,0 +1,23 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "temperature": 0,
+  "seed": 20260722,
+  "max_output_tokens": 4096,
+  "http_timeout_ms": 90000,
+  "sdk_attempts": 1,
+  "max_counted_input_plus_schema_margin": 20000,
+  "schema_extra_margin_tokens": 4096,
+  "max_foods": 5,
+  "max_candidates_per_food": 3,
+  "grounding": false,
+  "user_text": null,
+  "image_transform": "none",
+  "one_generation_replayed_for_both_versions": false,
+  "prompt_sha256": "ec03e8be7d47b2d48734f60354360246c78ea55c06d227de31907a7f8c71a7c7",
+  "schema_sha256": "4e36ed481d5493f10d5e2ebc442559c542c1e1522142fdd7391f9ec53e25cf5d",
+  "thinking_level": "MINIMAL",
+  "pricing_input_usd_per_million": 0.3,
+  "pricing_output_usd_per_million": 2.5,
+  "pricing_source": "https://ai.google.dev/gemini-api/docs/pricing",
+  "pricing_checked_date": "2026-10-25"
+}

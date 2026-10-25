@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1564169644",
+  "request_id": "followup_dev_flash35_full_dish_1564169644",
+  "started_at": "2026-10-25T08:26:05.082566+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "abab76274e2d55ce80430e19dae5c6ef50f5bb038a868c6f97d898fc39e3943a",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "f5efd5aa94541013c841c1c7886c63ef0e2a57f1f0e855a8ae364022bac62786",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"피자\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 240,\n      \"count\": 3,\n      \"count_unit\": \"조각\",\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [36, 608, 863, 1000],\n      \"nutrition_per_100g\": {\n        \"calories\": 266,\n        \"carbs\": 33.0,\n        \"protein\": 11.0,\n        \"fat\": 10.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 228,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4093,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2384.56,
+  "completed_at": "2026-10-25T08:26:08.132836+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565811423",
+  "request_id": "followup_dev_neutral_portion_dish_1565811423",
+  "started_at": "2026-10-25T07:39:41.143697+00:00",
+  "arm": "neutral_portion",
+  "phase": "dev",
+  "image_sha256": "90fe532778c0648d8b338abf48afcbf04402f199dbb122bd756c62375183f657",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 1505,
+  "request_sha256": "0907d3250502471e23a34ef6e5acec246019ac4f497a4f728bd8d23bdcd11264",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"렌틸콩 볶음\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [85, 569, 500, 825], \"nutrition_per_100g\": {\"calories\": 116.0, \"carbs\": 20.0, \"protein\": 9.0, \"fat\": 1.0}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"닭고기 구이\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [398, 562, 752, 894], \"nutrition_per_100g\": {\"calories\": 165.0, \"carbs\": 0.0, \"protein\": 31.0, \"fat\": 3.6}, \"package\": null}, {\"food_index\": 2, \"food_name\": \"청경채 볶음\", \"confidence\": 0.8, \"estimated_serving\": 1.0, \"estimated_serving_g\": 80.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [170, 286, 748, 580], \"nutrition_per_100g\": {\"calories\": 13.0, \"carbs\": 2.2, \"protein\": 1.5, \"fat\": 0.2}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 521,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2026,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4224.46,
+  "completed_at": "2026-10-25T07:39:45.692091+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561407283",
+  "request_id": "followup_dev_volume_consistency_dish_1561407283",
+  "started_at": "2026-10-25T07:43:10.666342+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "fcf83dfaca43e113dc649fe5aad909003ffe861bcf1afda023d71e3cb569f893",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "f9da9f7400678e8319eecea986981bc4cbb45924277b6e84dea3b1a10b8575d5",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"당근 볶음\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [146, 308, 562, 579], \"nutrition_per_100g\": {\"calories\": 41, \"carbs\": 9.6, \"protein\": 0.9, \"fat\": 0.2}}, {\"food_index\": 1, \"food_name\": \"샐러드\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 40, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [108, 550, 508, 848], \"nutrition_per_100g\": {\"calories\": 20, \"carbs\": 4.2, \"protein\": 1.2, \"fat\": 0.3}}, {\"food_index\": 2, \"food_name\": \"닭고기 튀김\", \"confidence\": 0.7, \"estimated_serving\": 0.3, \"estimated_serving_g\": 30, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [470, 590, 752, 823], \"nutrition_per_100g\": {\"calories\": 250, \"carbs\": 15, \"protein\": 18, \"fat\": 14}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시에 얇게 썬 당근 조각들이 겹쳐져 있으며, 약 5-6조각으로 보입니다. 전체적으로 납작하게 퍼져 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 70, \"bulk_density_g_per_ml\": 0.7, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"다양한 잎채소와 베리류가 섞여 있으며, 접시의 한쪽 구석에 작은 더미로 놓여 있습니다. 양이 많지 않습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 80, \"bulk_density_g_per_ml\": 0.5, \"scale_uncertainty\": \"high\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"작은 닭고기 조각들이 튀겨진 상태로 접시 아래쪽에 놓여 있습니다. 뼈가 일부 보이며, 양이 매우 적습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 40, \"bulk_density_g_per_ml\": 0.75, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 839,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3009,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6135.26,
+  "completed_at": "2026-10-25T07:43:17.107313+00:00"
+}

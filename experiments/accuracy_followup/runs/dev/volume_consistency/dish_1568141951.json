@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1568141951",
+  "request_id": "followup_dev_volume_consistency_dish_1568141951",
+  "started_at": "2026-10-25T07:41:32.842928+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "45688ddc98e944fbb03320ee7b1ece4be8d22a6cfc723f1ca8ed393504c877c4",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "547bc513d9f63c6a3bf857e9269c606bedc128610ff6e6a68ae5366f6a12dae5",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"케일 시저 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 0, 590, 470], \"nutrition_per_100g\": {\"calories\": 150.0, \"carbs\": 10.0, \"protein\": 5.0, \"fat\": 10.0}}, {\"food_index\": 1, \"food_name\": \"치즈 피자\", \"confidence\": 0.95, \"estimated_serving\": 2.0, \"estimated_serving_g\": 180.0, \"count\": 2.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 400, 370, 900], \"nutrition_per_100g\": {\"calories\": 260.0, \"carbs\": 30.0, \"protein\": 12.0, \"fat\": 10.0}}, {\"food_index\": 2, \"food_name\": \"구운 당근\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 80.0, \"count\": 6.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [340, 300, 890, 660], \"nutrition_per_100g\": {\"calories\": 60.0, \"carbs\": 14.0, \"protein\": 1.0, \"fat\": 0.5}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 왼쪽 상단에 케일 잎이 드레싱에 버무려져 쌓여 있습니다. 잎채소의 부피가 상당하며, 치즈 조각이 섞여 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 200.0, \"bulk_density_g_per_ml\": 0.6, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시의 오른쪽 상단에 치즈 피자 두 조각이 놓여 있습니다. 한 조각은 온전하고 다른 한 조각은 일부만 보입니다. 두께는 중간 정도입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"접시 중앙 하단에 얇게 썰어 구운 당근 조각 6개가 놓여 있습니다. 일부는 가장자리가 살짝 탄 흔적이 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1237
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 167
+      }
+    ],
+    "cached_content_token_count": 1404,
+    "candidates_token_count": 878,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3048,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6360.79,
+  "completed_at": "2026-10-25T07:41:39.899894+00:00"
+}

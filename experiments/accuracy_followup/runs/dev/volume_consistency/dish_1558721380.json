@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1558721380",
+  "request_id": "followup_dev_volume_consistency_dish_1558721380",
+  "started_at": "2026-10-25T07:43:03.163301+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "f4753471c6b6fe532e30695cf5f0676129979410dfb4fbd3142a9e4afe9145f1",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "dfbbc7ffb613539b37a58ca760e14a5a5463dd588b04b1c6671d22e4a81a4bc0",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"방울토마토\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 70, \"count\": 8, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [298, 399, 794, 794], \"nutrition_per_100g\": {\"calories\": 18, \"carbs\": 3.9, \"protein\": 0.9, \"fat\": 0.2}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"흰색 접시에 8개의 방울토마토가 놓여 있습니다. 크기는 일반적인 방울토마토와 비슷합니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 279,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2449,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3346.75,
+  "completed_at": "2026-10-25T07:43:06.797572+00:00"
+}

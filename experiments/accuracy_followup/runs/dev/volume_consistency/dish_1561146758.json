@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561146758",
+  "request_id": "followup_dev_volume_consistency_dish_1561146758",
+  "started_at": "2026-10-25T07:41:55.972166+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "f15eb243f4167729371f59b102c459f0228913d79a055534d41ac04645eba5a9",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "4f878e9e8d5c6dd20fa17fafb7f68881dc3afb895314e1a872afda045980e2dc",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"베이글\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": 1.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [300, 383, 685, 657], \"nutrition_per_100g\": {\"calories\": 250.0, \"carbs\": 50.0, \"protein\": 10.0, \"fat\": 2.0}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"흰색 사각 접시 중앙에 둥근 베이글 1개가 놓여 있습니다. 베이글은 갈색빛을 띠며 표면이 매끄럽습니다. 접시의 크기를 알 수 없어 베이글의 정확한 크기를 추정하기 어렵습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 317,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2487,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3513.07,
+  "completed_at": "2026-10-25T07:42:00.019776+00:00"
+}

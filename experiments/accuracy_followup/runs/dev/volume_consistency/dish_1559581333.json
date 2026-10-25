@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1559581333",
+  "request_id": "followup_dev_volume_consistency_dish_1559581333",
+  "started_at": "2026-10-25T07:42:38.072071+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "c3e127131b01f71510afbffa67162720c87799dd23218bdda825628f0cbb279e",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "613c2e0023ba1b6e71bc445c259ca03fe86187dbc025590033de77889b9b7271",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"스크램블 에그\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 120.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [380, 290, 810, 550], \"nutrition_per_100g\": {\"calories\": 149.0, \"carbs\": 1.1, \"protein\": 10.0, \"fat\": 11.0}}, {\"food_index\": 1, \"food_name\": \"베이컨\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 30.0, \"count\": 2.0, \"count_unit\": \"장\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 320, 540, 620], \"nutrition_per_100g\": {\"calories\": 541.0, \"carbs\": 0.0, \"protein\": 37.0, \"fat\": 43.0}}, {\"food_index\": 2, \"food_name\": \"시금치 샐러드\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 620, 490, 940], \"nutrition_per_100g\": {\"calories\": 23.0, \"carbs\": 3.6, \"protein\": 2.9, \"fat\": 0.4}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시 중앙에 스크램블 에그가 넉넉하게 쌓여 있습니다. 대략 밥 한 공기 정도의 부피로 보입니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 150.0, \"bulk_density_g_per_ml\": 0.8, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"스크램블 에그 위에 베이컨 두 조각이 놓여 있습니다. 바삭하게 구워진 상태입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"low\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"접시 오른쪽에 시금치, 오이, 당근이 섞인 샐러드가 놓여 있습니다. 드레싱이 약간 뿌려져 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 160.0, \"bulk_density_g_per_ml\": 0.5, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 848,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3018,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5282.05,
+  "completed_at": "2026-10-25T07:42:43.687677+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1550777566",
+  "request_id": "followup_dev_neutral_full_dish_1550777566",
+  "started_at": "2026-10-25T08:10:32.124780+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "326e5a1409d88d9a918fdce1d8b31c92af3dc15419a38233f55be139cee687bf",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "f9877de073928193e789dd24f83f45ff1907d0b0f30f9c356f65004b030383af",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"나초\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 30.0, \"count\": 6.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [10, 398, 270, 828], \"nutrition_per_100g\": {\"calories\": 490.0, \"carbs\": 60.0, \"protein\": 7.0, \"fat\": 25.0}}, {\"food_index\": 1, \"food_name\": \"멜론\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": 8.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [30, 240, 600, 500], \"nutrition_per_100g\": {\"calories\": 34.0, \"carbs\": 8.0, \"protein\": 0.8, \"fat\": 0.2}}, {\"food_index\": 2, \"food_name\": \"견과류\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 20.0, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [200, 300, 800, 780], \"nutrition_per_100g\": {\"calories\": 600.0, \"carbs\": 15.0, \"protein\": 15.0, \"fat\": 55.0}}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 527
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 109
+      }
+    ],
+    "cached_content_token_count": 636,
+    "candidates_token_count": 497,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2002,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5065.79,
+  "completed_at": "2026-10-25T08:10:37.817208+00:00"
+}

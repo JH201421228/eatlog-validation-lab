@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561578441",
+  "request_id": "followup_dev_neutral_full_dish_1561578441",
+  "started_at": "2026-10-25T08:04:29.563476+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "b9ad23d75a738c50063296713e6f0f688340af3683a244902c6f03197f9cae99",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "4bdfd194d7c8848b2bf54dc9fb6b0d2230ce5b30632b7a6e07ee22a041baeea0",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"치즈 피자\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 100, \"count\": 1, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [70, 198, 370, 460], \"nutrition_per_100g\": {\"calories\": 260, \"carbs\": 33, \"protein\": 11, \"fat\": 10}}, {\"food_index\": 1, \"food_name\": \"시저 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1, \"estimated_serving_g\": 150, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [20, 380, 290, 660], \"nutrition_per_100g\": {\"calories\": 150, \"carbs\": 10, \"protein\": 5, \"fat\": 10}}, {\"food_index\": 2, \"food_name\": \"구운 감자\", \"confidence\": 0.9, \"estimated_serving\": 1, \"estimated_serving_g\": 120, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [300, 670, 510, 850], \"nutrition_per_100g\": {\"calories\": 90, \"carbs\": 20, \"protein\": 2, \"fat\": 0.5}}, {\"food_index\": 3, \"food_name\": \"스테이크\", \"confidence\": 0.9, \"estimated_serving\": 1, \"estimated_serving_g\": 100, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [580, 450, 870, 620], \"nutrition_per_100g\": {\"calories\": 250, \"carbs\": 0, \"protein\": 25, \"fat\": 15}}, {\"food_index\": 4, \"food_name\": \"콜리플라워\", \"confidence\": 0.8, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [440, 620, 680, 810], \"nutrition_per_100g\": {\"calories\": 25, \"carbs\": 5, \"protein\": 2, \"fat\": 0.3}}, {\"food_index\": 5, \"food_name\": \"믹스 샐러드\", \"confidence\": 0.85, \"estimated_serving\": 1, \"estimated_serving_g\": 100, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [340, 200, 860, 510], \"nutrition_per_100g\": {\"calories\": 50, \"carbs\": 8, \"protein\": 2, \"fat\": 2}}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 886,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2391,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5663.61,
+  "completed_at": "2026-10-25T08:04:35.553369+00:00"
+}

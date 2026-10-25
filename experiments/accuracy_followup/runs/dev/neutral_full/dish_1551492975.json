@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1551492975",
+  "request_id": "followup_dev_neutral_full_dish_1551492975",
+  "started_at": "2026-10-25T08:08:23.871792+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "9a60099b08cb8fcc1d3f76c9b8f7753eaa2e9d71f73cce4b4e2b209f4d2cbbef",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "01d40178e3d9a75ea6324016295a26f702bde6859b01c872090c830637706d3e",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"슬라이스 햄\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 60.0, \"count\": 3.0, \"count_unit\": \"장\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 0, 700, 400], \"nutrition_per_100g\": {\"calories\": 150.0, \"carbs\": 2.0, \"protein\": 15.0, \"fat\": 9.0}}, {\"food_index\": 1, \"food_name\": \"닭가슴살 큐브\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 390, 400, 780], \"nutrition_per_100g\": {\"calories\": 110.0, \"carbs\": 1.0, \"protein\": 23.0, \"fat\": 2.0}}, {\"food_index\": 2, \"food_name\": \"옥수수 알갱이\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50.0, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [380, 400, 700, 730], \"nutrition_per_100g\": {\"calories\": 86.0, \"carbs\": 19.0, \"protein\": 3.2, \"fat\": 1.2}}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 527
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 109
+      }
+    ],
+    "cached_content_token_count": 636,
+    "candidates_token_count": 484,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1989,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4443.12,
+  "completed_at": "2026-10-25T08:08:29.070220+00:00"
+}

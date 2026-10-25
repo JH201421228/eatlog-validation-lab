@@ -1,0 +1,40 @@
+{
+  "created_at_utc": "2026-10-25T07:28:54.432322+00:00",
+  "source_metadata_rows": 5006,
+  "quality_rejected_rows": 277,
+  "eligible_rows": 4729,
+  "all_inferred_groups": 1309,
+  "eligible_groups": 1175,
+  "previous_selected_rows": 1020,
+  "previous_selected_plus_all_v1_pilot_groups": 1023,
+  "new_group_count": 155,
+  "previous_group_overlap": 0,
+  "previous_dish_overlap": 0,
+  "by_official_split": {
+    "test": 19,
+    "train": 136
+  },
+  "by_view_before_source_resolution": {
+    "side_camera_A_frame_0": 155
+  },
+  "new_1000_disjoint_groups_possible": false,
+  "source_file_availability_verified": false,
+  "model_outputs_consulted_for_selection": false,
+  "candidate_manifest_sha256": "197aee0e796982d4ffbd28a74a14eaafb1c966085e7f2b78a9f3f76ebc8b5f79",
+  "gold_sha256": "501c3d0d03c96052b949a6d57c33db7432abbfdf7a6e6660c4ba66d4f97c973e",
+  "input_hashes": {
+    "data/nutrition5k/groups.jsonl": "a0111ac20ff041675c4dd1a595215cf07a1b2452e3b67d207e9e4b6a28ab734b",
+    "data/nutrition5k/selection_manifest_v3.jsonl": "c7ab766b7ed73c4e9b7fc04fabf95d8a6298bd31d631f34faf130596eb80da22",
+    "data/nutrition5k/label_quality_exclusions.jsonl": "1012d518681608965e3fc3a0e5493b9a62772aa19c41a7a169de53947c000b46",
+    "data/nutrition5k/archive/v1_before_quality_audit/pilot_manifest.jsonl": "bab2541f076cbe46a9bce534eb25aab9fa6894ebf356338bc702e5efec3ba154",
+    "scripts/data/collect_nutrition5k.py": "fcea343fa0ecdee794b610d31b07d187bbaa94c1ba97986b1a0175e7568698a5",
+    "data/nutrition5k/source/metadata/dish_metadata_cafe1.csv": "881df31f27c2343d0ce219964527e0796f6ddadd60701ce6840fa801e8c2a960",
+    "data/nutrition5k/source/metadata/dish_metadata_cafe2.csv": "ef9f800d7b9c2e7e9a9e7cda5cbb4cfe51c760a8c1af4c05786ccf051bf5d77d"
+  },
+  "limits": [
+    "Inferred groups do not prove physical plate independence.",
+    "All residual groups are side-camera inputs, unlike the overhead-heavy prior evaluation.",
+    "Public-data model pretraining exposure is unknown.",
+    "Hash/decode checks do not prove visible-food and nutrition-label alignment."
+  ]
+}

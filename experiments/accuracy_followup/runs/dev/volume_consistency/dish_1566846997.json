@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1566846997",
+  "request_id": "followup_dev_volume_consistency_dish_1566846997",
+  "started_at": "2026-10-25T07:41:47.061631+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "69a4f33f5c8bb402d77ce9597c2b0bb7fabbb753463824942ae3853ebca57ad5",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "1fec38d7e1bbae431346d8d3d2c3e9e8f2764f229745b6a675897c2cc9022afb",
+  "status": "response_received",
+  "raw_text": "{\"candidates\":[{\"food_index\":0,\"food_name\":\"돼지고기 수육\",\"confidence\":0.85,\"estimated_serving\":0.5,\"estimated_serving_g\":100,\"count\":null,\"count_unit\":null,\"has_soup\":false,\"has_sauce\":false,\"image_index\":0,\"is_in_image\":true,\"box_2d\":[190,230,800,600],\"nutrition_per_100g\":{\"calories\":280,\"carbs\":0,\"protein\":25,\"fat\":20}}],\"portion_evidence\":[{\"food_index\":0,\"image_index\":0,\"visual_summary\":\"접시 한쪽에 흩뿌려진 형태로 놓여 있으며, 조각의 크기가 다양하고 일부는 튀겨진 듯한 갈색을 띠고 있습니다. 접시의 약 1/4 정도를 덮고 있으며, 높이는 비교적 낮습니다.\",\"scale_basis\":\"food_piece_prior\",\"method\":\"visual_estimate\",\"estimated_volume_ml\":null,\"bulk_density_g_per_ml\":null,\"scale_uncertainty\":\"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 257,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2427,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3469.39,
+  "completed_at": "2026-10-25T07:41:50.817415+00:00"
+}

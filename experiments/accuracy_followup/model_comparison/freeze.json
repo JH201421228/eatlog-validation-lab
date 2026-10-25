@@ -1,0 +1,8 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "configuration_sha256": "b135297473272ad3873cdeb0f9c48832c6118bc71adfd2e206de218ac1cfd6ab",
+  "runner_sha256": "662bdf2e9d579e4b88d38059d889e7cf0faa5541af2d95866eb0a8ff1d6c3c76",
+  "selection_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "protocol_sha256": "b7a077c84300ff514b9d13c25a05249c9d5ff76d67031151df1b6b1fd4727060",
+  "confirmation_gold_opened": false
+}

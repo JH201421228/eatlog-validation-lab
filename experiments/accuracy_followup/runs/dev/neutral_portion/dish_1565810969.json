@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565810969",
+  "request_id": "followup_dev_neutral_portion_dish_1565810969",
+  "started_at": "2026-10-25T07:40:57.860270+00:00",
+  "arm": "neutral_portion",
+  "phase": "dev",
+  "image_sha256": "34d543b6e207548d1f82167a4dc5f60e0182aab0025eac47dbbfc9eb31ba1ebb",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 1505,
+  "request_sha256": "cb7494191294a0bf98e8aad7f1f1207b4cf541f9d0455c1f3bcb30205020b6e4",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"시금치\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [68, 450, 938, 890], \"nutrition_per_100g\": {\"calories\": 23, \"carbs\": 3.6, \"protein\": 2.9, \"fat\": 0.4}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 170,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1675,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2693.03,
+  "completed_at": "2026-10-25T07:41:01.100874+00:00"
+}

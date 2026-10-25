@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1551390528",
+  "request_id": "followup_dev_flash35_full_dish_1551390528",
+  "started_at": "2026-10-25T08:31:20.239435+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "f83bc894555d0312cdeb0003cadaccbb4ff07e6bf2fbf4eac326695686a4bb37",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3901,
+  "request_sha256": "295ffea17f5f8a798bb97ff8ec0727a7dec078a388b099b82a926dc6488c5b7c",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"로마네스코 브로콜리\",\n      \"confidence\": 0.9,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 50.0,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [98, 185, 508, 612],\n      \"nutrition_per_100g\": {\n        \"calories\": 31.0,\n        \"carbs\": 4.9,\n        \"protein\": 2.4,\n        \"fat\": 0.3\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 228,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3901,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1100
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4129,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2759.68,
+  "completed_at": "2026-10-25T08:31:23.735201+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "sample_id": "dish_1550792143",
+  "request_id": "followup_dev_neutral_full_dish_1550792143",
+  "started_at": "2026-10-25T08:10:17.627057+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "0d0f17f2df625adb66e6ec81c37e1f9718fe5547b881bf94247437529f1bc069",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "607a175dce3ab397f7acfdde126b366d2ee91cf9b5a7dbb50b1d48320d74c64c",
+  "status": "generation_failed",
+  "error_type": "ReadTimeout",
+  "latency_ms": 90032.21,
+  "completed_at": "2026-10-25T08:11:48.218305+00:00"
+}

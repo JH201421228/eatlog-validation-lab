@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1562949242",
+  "request_id": "followup_dev_volume_consistency_dish_1562949242",
+  "started_at": "2026-10-25T07:44:09.355543+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "b81f19c784adcc725e8e28072c29f9a2232f32f9e27ecfaa43943ecc6394dbad",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "fec3c8c33132f9d27c8767e4fb878c084d2c26a9d2bb6e5d071f5011760d13d7",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"베이컨\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 20.0, \"count\": 2.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [690, 290, 810, 650], \"nutrition_per_100g\": {\"calories\": 541.0, \"carbs\": 0.0, \"protein\": 37.0, \"fat\": 43.0}}, {\"food_index\": 1, \"food_name\": \"멜론\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 80.0, \"count\": 10.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [240, 360, 600, 660], \"nutrition_per_100g\": {\"calories\": 34.0, \"carbs\": 8.2, \"protein\": 0.8, \"fat\": 0.2}}, {\"food_index\": 2, \"food_name\": \"감자 볶음\", \"confidence\": 0.8, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100.0, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [230, 670, 610, 860], \"nutrition_per_100g\": {\"calories\": 150.0, \"carbs\": 20.0, \"protein\": 3.0, \"fat\": 7.0}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시에 얇게 튀겨진 베이컨 두 조각이 놓여 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시에 멜론 조각 10개가 흩어져 있습니다. 조각들은 대략 2x2cm 크기입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"접시에 껍질째 썰어 볶은 감자 조각들이 쌓여 있습니다. 대략 100g 정도로 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 810,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2980,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 5401.3,
+  "completed_at": "2026-10-25T07:44:15.085741+00:00"
+}

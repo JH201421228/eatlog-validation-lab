@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1550777218",
+  "request_id": "followup_dev_neutral_full_dish_1550777218",
+  "started_at": "2026-10-25T08:09:08.258035+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "04a75c1ab982a7eb15e9b3043cf80bb9c5205fefe611a96547c264f0831bf052",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "d3e0860c12294377e137b539c07dfdd40c7390362eb7c123ebfd54c9346ee54a",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"바나나\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": 0.5, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [250, 170, 590, 390], \"nutrition_per_100g\": {\"calories\": 90, \"carbs\": 23, \"protein\": 1.1, \"fat\": 0.3}}, {\"food_index\": 1, \"food_name\": \"딸기\", \"confidence\": 0.95, \"estimated_serving\": 1.0, \"estimated_serving_g\": 100, \"count\": 5.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [280, 520, 770, 740], \"nutrition_per_100g\": {\"calories\": 32, \"carbs\": 7.7, \"protein\": 0.7, \"fat\": 0.3}}, {\"food_index\": 2, \"food_name\": \"블루베리\", \"confidence\": 0.9, \"estimated_serving\": 0.3, \"estimated_serving_g\": 30, \"count\": 10.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [190, 690, 280, 750], \"nutrition_per_100g\": {\"calories\": 57, \"carbs\": 14.5, \"protein\": 0.7, \"fat\": 0.3}}, {\"food_index\": 3, \"food_name\": \"오이\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [0, 370, 450, 710], \"nutrition_per_100g\": {\"calories\": 15, \"carbs\": 3.6, \"protein\": 0.7, \"fat\": 0.1}}, {\"food_index\": 4, \"food_name\": \"라즈베리\", \"confidence\": 0.8, \"estimated_serving\": 0.2, \"estimated_serving_g\": 20, \"count\": 5.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [440, 410, 570, 490], \"nutrition_per_100g\": {\"calories\": 52, \"carbs\": 11.9, \"protein\": 1.2, \"fat\": 0.7}}, {\"food_index\": 5, \"food_name\": \"블랙베리\", \"confidence\": 0.8, \"estimated_serving\": 0.2, \"estimated_serving_g\": 20, \"count\": 5.0, \"count_unit\": \"개\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [480, 350, 630, 430], \"nutrition_per_100g\": {\"calories\": 43, \"carbs\": 9.6, \"protein\": 1.4, \"fat\": 0.5}}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 527
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 109
+      }
+    ],
+    "cached_content_token_count": 636,
+    "candidates_token_count": 971,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2476,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 6780.15,
+  "completed_at": "2026-10-25T08:09:15.738183+00:00"
+}

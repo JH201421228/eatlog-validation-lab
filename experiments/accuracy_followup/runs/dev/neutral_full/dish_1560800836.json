@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1560800836",
+  "request_id": "followup_dev_neutral_full_dish_1560800836",
+  "started_at": "2026-10-25T08:00:40.082236+00:00",
+  "arm": "neutral_full",
+  "phase": "dev",
+  "image_sha256": "8d031798616a1ddb98f0f93309cb8f30c528c816a25bc06a34fc6dd99655ae56",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 1505,
+  "request_sha256": "7e131a4c0abb2bd42090f87706868bbe9df9602bcc7848c86b1efec61818e7ae",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"페퍼로니 피자\", \"confidence\": 0.95, \"estimated_serving\": 1.5, \"estimated_serving_g\": 150, \"count\": 3, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [275, 340, 783, 848], \"nutrition_per_100g\": {\"calories\": 260, \"carbs\": 28, \"protein\": 12, \"fat\": 11}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 590
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 122
+      }
+    ],
+    "cached_content_token_count": 712,
+    "candidates_token_count": 173,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1678,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2761.07,
+  "completed_at": "2026-10-25T08:00:43.453048+00:00"
+}

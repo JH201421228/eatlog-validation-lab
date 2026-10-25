@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1565117463",
+  "request_id": "followup_dev_volume_consistency_dish_1565117463",
+  "started_at": "2026-10-25T07:41:50.888290+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "596a5ba0d16564a006663d37b96e663cf20ae064f8e1ae95e002aa3d09b867d3",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "4473e8e10d5089fb1c388f070aba48b170c89497a97a4a36227389ec8a8b6615",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"치즈 피자\", \"confidence\": 0.95, \"estimated_serving\": 3.0, \"estimated_serving_g\": 240.0, \"count\": 3.0, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [68, 449, 844, 866], \"nutrition_per_100g\": {\"calories\": 266.0, \"carbs\": 33.0, \"protein\": 11.0, \"fat\": 10.0}}, {\"food_index\": 1, \"food_name\": \"시저 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [380, 230, 910, 596], \"nutrition_per_100g\": {\"calories\": 120.0, \"carbs\": 5.0, \"protein\": 3.0, \"fat\": 10.0}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"피자 세 조각이 접시에 놓여 있으며, 각 조각은 일반적인 피자 한 조각 크기입니다. 치즈와 토마토 소스가 덮여 있습니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시의 절반 정도를 채우고 있는 시저 샐러드입니다. 드레싱이 충분히 버무려져 있으며, 양상추 조각들이 쌓여 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 300.0, \"bulk_density_g_per_ml\": 0.5, \"scale_uncertainty\": \"medium\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 578,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2748,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4466.95,
+  "completed_at": "2026-10-25T07:41:55.886914+00:00"
+}

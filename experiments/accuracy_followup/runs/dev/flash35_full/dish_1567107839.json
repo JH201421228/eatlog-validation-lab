@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1567107839",
+  "request_id": "followup_dev_flash35_full_dish_1567107839",
+  "started_at": "2026-10-25T08:27:03.757598+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "8bc958e56690b8d6fe090ccb5d212eb4cf4dafeaec7bcdcf5af1bf31a08cb5c2",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "ead4447c87fd0528c02a2a1a6c0ed916deca86023ef1eafa06776e4b7e7793a7",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"리조또\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 0.5,\n      \"estimated_serving_g\": 120,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [178, 442, 599, 930],\n      \"nutrition_per_100g\": {\n        \"calories\": 160,\n        \"carbs\": 20.0,\n        \"protein\": 5.0,\n        \"fat\": 6.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 224,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4089,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 1799.76,
+  "completed_at": "2026-10-25T08:27:06.220035+00:00"
+}

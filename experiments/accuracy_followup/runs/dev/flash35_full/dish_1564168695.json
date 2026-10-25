@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1564168695",
+  "request_id": "followup_dev_flash35_full_dish_1564168695",
+  "started_at": "2026-10-25T08:17:56.123287+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "b6e8f21e19cac68f25166afbd34a344d0b259141777783c7b7af427b502b7b8f",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "ca11410afd38cc29b7ec53aed1cd322804233d75d5ae5c64c4901a82fdc046cb",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"페퍼로니 피자\",\n      \"confidence\": 0.95,\n      \"estimated_serving\": 0.3,\n      \"estimated_serving_g\": 120.0,\n      \"count\": 2,\n      \"count_unit\": \"조각\",\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [190, 327, 672, 642],\n      \"nutrition_per_100g\": {\n        \"calories\": 266,\n        \"carbs\": 30.0,\n        \"protein\": 12.0,\n        \"fat\": 11.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1188
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 451
+      }
+    ],
+    "cached_content_token_count": 1639,
+    "candidates_token_count": 234,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4099,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2356.51,
+  "completed_at": "2026-10-25T08:17:59.149576+00:00"
+}

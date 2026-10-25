@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1567107049",
+  "request_id": "followup_dev_flash35_full_dish_1567107049",
+  "started_at": "2026-10-25T08:19:02.342372+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "93976d6e92192883c539036be10897a345e2308e7d270636b0ecd2fe31fea484",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "8138fbd2a3dada0a05e381ac11b536997f47365f08826e408c44dc3676175c54",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"초콜릿\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 0.2,\n      \"estimated_serving_g\": 10,\n      \"count\": null,\n      \"count_unit\": null,\n      \"has_soup\": false,\n      \"has_sauce\": false,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [395, 532, 582, 663],\n      \"nutrition_per_100g\": {\n        \"calories\": 535,\n        \"carbs\": 59.0,\n        \"protein\": 6.3,\n        \"fat\": 30.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1188
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 451
+      }
+    ],
+    "cached_content_token_count": 1639,
+    "candidates_token_count": 224,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4089,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2434.69,
+  "completed_at": "2026-10-25T08:19:05.064838+00:00"
+}

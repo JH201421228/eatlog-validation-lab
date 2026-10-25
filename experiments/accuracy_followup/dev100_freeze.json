@@ -1,0 +1,8 @@
+{
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "count": 100,
+  "selection_rule": "Lowest SHA256(followup-dev-v1|sample_id), 100 from previous main1000",
+  "purpose": "Exploration only; original outcomes were already observed",
+  "prior_main1000_all_exploratory": true,
+  "source_manifest_sha256": "c7ab766b7ed73c4e9b7fc04fabf95d8a6298bd31d631f34faf130596eb80da22"
+}

@@ -1,0 +1,519 @@
+{
+  "generated_at": "2026-10-25T08:02:15.083578+00:00",
+  "exploratory": true,
+  "selected_family": "weighted_log_mass",
+  "fit_rows": 994,
+  "selected_rows": 1000,
+  "family_rule": {
+    "origin": "Additional exploratory family and candidate screen requested after observing high-mass deterioration; not a reviewer-prescribed rule",
+    "alpha_within_family": "lowest OOF mass MAE among 10,100,1000; tie lowest alpha",
+    "family_selection": "lowest overall OOF calorie MAE among eligible families",
+    "eligibility": "mass and calorie MAE both improve, all-selected calorie within15 count and valid coverage do not decrease; when truthmass>=400g selected group n>=30, calorie MAE worsening must not exceed 10%",
+    "linear_negative_prediction": "retain original mass/candidates for nonpositive mass, otherwise fixed factor clipping [0.5,2]",
+    "weighted_log_mass": "Final additional development loss hypothesis after log/linear high-mass failures; weight=clip(train truthmass/median(train truthmass),0.5,4); weights never used in inference"
+  },
+  "provenance": {
+    "generated_at": "2026-10-25T08:01:33.236857+00:00",
+    "manifest_sha256": "c7ab766b7ed73c4e9b7fc04fabf95d8a6298bd31d631f34faf130596eb80da22",
+    "predictions_sha256": "7baf4783e64068b0c03e5afa1b784130435a42e4ae5528905467cf2932944a73",
+    "ai_candidates_sha256": "9fa14b501d0995aafb4c7af822811ccc2e639bf6c29db75e9019e85f0e69ce20",
+    "calibrator_sha256": "ae9f096b08249461aefc6cb41cf815d104187bc7d75c75dfa39409af7156bc19",
+    "trainer_sha256": "c3bcfba7092f3e7edd08ba5abbc5106ba493ed8d101f001bb36d8489dd8a96cb",
+    "be_replay_sha256": "e1e53b32759947cdd06a56ba492679220035c0330af1d8951eb86507dd0a7536",
+    "be_worker_sha256": "6da01a20e0bbe33f7bc029869fe1a8d40db84a57dbf20d96068ced0cf8103c59",
+    "source_index_sha256": "d054b20dddad17a7432bb43972d7f31650ce362775bab5aaf83679e465070ff2",
+    "fit_rows": 994,
+    "selected_rows": 1000,
+    "target": "truth.mass_g only as training target",
+    "feature_source": "normalized model output only; no truth labels/ingredients/IDs/camera/dates",
+    "application": "Scale candidate estimated_serving_g only; preserve count/unit/density; actual pinned BE arithmetic/rounding",
+    "split_only_metadata": "group_id SHA256 modulo 5; group disjoint; standardization fitted on fold training only",
+    "regularization_candidates": [
+      10,
+      100,
+      1000
+    ],
+    "feature_names": [
+      "log_predmass",
+      "log_predkcal_per_g",
+      "foodgroup_count",
+      "confidence_min",
+      "confidence_mean",
+      "log_known_count_sum",
+      "count_present_fraction",
+      "ko_ngram_0",
+      "ko_ngram_1",
+      "ko_ngram_2",
+      "ko_ngram_3",
+      "ko_ngram_4",
+      "ko_ngram_5",
+      "ko_ngram_6",
+      "ko_ngram_7",
+      "ko_ngram_8",
+      "ko_ngram_9",
+      "ko_ngram_10",
+      "ko_ngram_11",
+      "ko_ngram_12",
+      "ko_ngram_13",
+      "ko_ngram_14",
+      "ko_ngram_15",
+      "ko_ngram_16",
+      "ko_ngram_17",
+      "ko_ngram_18",
+      "ko_ngram_19",
+      "ko_ngram_20",
+      "ko_ngram_21",
+      "ko_ngram_22",
+      "ko_ngram_23",
+      "ko_ngram_24",
+      "ko_ngram_25",
+      "ko_ngram_26",
+      "ko_ngram_27",
+      "ko_ngram_28",
+      "ko_ngram_29",
+      "ko_ngram_30",
+      "ko_ngram_31",
+      "ko_ngram_32",
+      "ko_ngram_33",
+      "ko_ngram_34",
+      "ko_ngram_35",
+      "ko_ngram_36",
+      "ko_ngram_37",
+      "ko_ngram_38",
+      "ko_ngram_39",
+      "ko_ngram_40",
+      "ko_ngram_41",
+      "ko_ngram_42",
+      "ko_ngram_43",
+      "ko_ngram_44",
+      "ko_ngram_45",
+      "ko_ngram_46",
+      "ko_ngram_47",
+      "ko_ngram_48",
+      "ko_ngram_49",
+      "ko_ngram_50",
+      "ko_ngram_51",
+      "ko_ngram_52",
+      "ko_ngram_53",
+      "ko_ngram_54",
+      "ko_ngram_55",
+      "ko_ngram_56",
+      "ko_ngram_57",
+      "ko_ngram_58",
+      "ko_ngram_59",
+      "ko_ngram_60",
+      "ko_ngram_61",
+      "ko_ngram_62",
+      "ko_ngram_63"
+    ],
+    "factor_bounds_predeclared": [
+      0.5,
+      2.0
+    ],
+    "feature_rules": {
+      "zero_kcal_log_density_floor_kcal_per_g": 1e-06,
+      "count": "known count sum plus availability fraction",
+      "korean_ngrams": "SHA256 signed 64 buckets, lengths 2/3, food mass weighting"
+    },
+    "training_features_sha256": "26e64383f1365009f5884c42f364b885814dc4c83795c672cfe872b8fbbc0cba",
+    "fold_sizes_all_selected": {
+      "1": 212,
+      "3": 200,
+      "0": 202,
+      "2": 198,
+      "4": 188
+    }
+  },
+  "families": {
+    "log_mass": {
+      "selected_alpha": 10,
+      "overall": {
+        "raw": {
+          "mass_g": {
+            "mae": 67.3430583501006,
+            "valid_prediction_count": 994,
+            "within_15_percent_count": 249
+          },
+          "calories": {
+            "mae": 107.41733431086519,
+            "valid_prediction_count": 994,
+            "within_15_percent_count": 190
+          }
+        },
+        "learned_oof": {
+          "mass_g": {
+            "mae": 58.099396378269624,
+            "valid_prediction_count": 994,
+            "within_15_percent_count": 309
+          },
+          "calories": {
+            "mae": 93.438430083501,
+            "valid_prediction_count": 994,
+            "within_15_percent_count": 234
+          }
+        }
+      },
+      "by_truth_mass_diagnostic_only": {
+        "low_lt150g": {
+          "raw": {
+            "mass_g": {
+              "mae": 39.59368421052631,
+              "valid_prediction_count": 475,
+              "within_15_percent_count": 93
+            },
+            "calories": {
+              "mae": 67.67160399789474,
+              "valid_prediction_count": 475,
+              "within_15_percent_count": 63
+            }
+          },
+          "learned_oof": {
+            "mass_g": {
+              "mae": 31.397263157894738,
+              "valid_prediction_count": 475,
+              "within_15_percent_count": 130
+            },
+            "calories": {
+              "mae": 57.275635703157896,
+              "valid_prediction_count": 475,
+              "within_15_percent_count": 94
+            }
+          }
+        },
+        "middle_150_to400g": {
+          "raw": {
+            "mass_g": {
+              "mae": 82.14932126696833,
+              "valid_prediction_count": 442,
+              "within_15_percent_count": 132
+            },
+            "calories": {
+              "mae": 136.80251961312217,
+              "valid_prediction_count": 442,
+              "within_15_percent_count": 106
+            }
+          },
+          "learned_oof": {
+            "mass_g": {
+              "mae": 63.69683257918552,
+              "valid_prediction_count": 442,
+              "within_15_percent_count": 170
+            },
+            "calories": {
+              "mae": 110.15971162217194,
+              "valid_prediction_count": 442,
+              "within_15_percent_count": 124
+            }
+          }
+        },
+        "high_ge400g": {
+          "raw": {
+            "mass_g": {
+              "mae": 153.53246753246754,
+              "valid_prediction_count": 77,
+              "within_15_percent_count": 24
+            },
+            "calories": {
+              "mae": 183.92343814285715,
+              "valid_prediction_count": 77,
+              "within_15_percent_count": 21
+            }
+          },
+          "learned_oof": {
+            "mass_g": {
+              "mae": 190.6896103896104,
+              "valid_prediction_count": 77,
+              "within_15_percent_count": 9
+            },
+            "calories": {
+              "mae": 220.536103987013,
+              "valid_prediction_count": 77,
+              "within_15_percent_count": 16
+            }
+          }
+        }
+      },
+      "candidate_screen": {
+        "eligible": false,
+        "checks": {
+          "mass_mae_improves": true,
+          "calorie_mae_improves": true,
+          "calorie_within15_count_not_decreased": true,
+          "calorie_valid_prediction_count_not_decreased": true,
+          "high_mass_calorie_mae_worsening_at_most_10_percent_when_n_ge30": false
+        },
+        "high_mass_group_selected_n": 78,
+        "high_mass_paired_valid_n": 77,
+        "high_mass_calorie_mae_ratio_learned_over_raw": 1.1990647098262595
+      },
+      "clipped_count": 18,
+      "negative_fallback_count": 0,
+      "display_contract_audit": {
+        "observed_count_or_unit_changes": [],
+        "count_vs_estimated_serving_mismatches": [],
+        "base_serving_mass_checked_foods": 2010,
+        "base_serving_mass_mismatches": []
+      }
+    },
+    "linear_mass": {
+      "selected_alpha": 10,
+      "overall": {
+        "raw": {
+          "mass_g": {
+            "mae": 67.3430583501006,
+            "valid_prediction_count": 994,
+            "within_15_percent_count": 249
+          },
+          "calories": {
+            "mae": 107.41733431086519,
+            "valid_prediction_count": 994,
+            "within_15_percent_count": 190
+          }
+        },
+        "learned_oof": {
+          "mass_g": {
+            "mae": 63.61136820925553,
+            "valid_prediction_count": 994,
+            "within_15_percent_count": 273
+          },
+          "calories": {
+            "mae": 101.40210700301812,
+            "valid_prediction_count": 994,
+            "within_15_percent_count": 222
+          }
+        }
+      },
+      "by_truth_mass_diagnostic_only": {
+        "low_lt150g": {
+          "raw": {
+            "mass_g": {
+              "mae": 39.59368421052631,
+              "valid_prediction_count": 475,
+              "within_15_percent_count": 93
+            },
+            "calories": {
+              "mae": 67.67160399789474,
+              "valid_prediction_count": 475,
+              "within_15_percent_count": 63
+            }
+          },
+          "learned_oof": {
+            "mass_g": {
+              "mae": 50.59115789473684,
+              "valid_prediction_count": 475,
+              "within_15_percent_count": 81
+            },
+            "calories": {
+              "mae": 79.86843801052632,
+              "valid_prediction_count": 475,
+              "within_15_percent_count": 78
+            }
+          }
+        },
+        "middle_150_to400g": {
+          "raw": {
+            "mass_g": {
+              "mae": 82.14932126696833,
+              "valid_prediction_count": 442,
+              "within_15_percent_count": 132
+            },
+            "calories": {
+              "mae": 136.80251961312217,
+              "valid_prediction_count": 442,
+              "within_15_percent_count": 106
+            }
+          },
+          "learned_oof": {
+            "mass_g": {
+              "mae": 55.627375565610855,
+              "valid_prediction_count": 442,
+              "within_15_percent_count": 187
+            },
+            "calories": {
+              "mae": 105.1667004321267,
+              "valid_prediction_count": 442,
+              "within_15_percent_count": 129
+            }
+          }
+        },
+        "high_ge400g": {
+          "raw": {
+            "mass_g": {
+              "mae": 153.53246753246754,
+              "valid_prediction_count": 77,
+              "within_15_percent_count": 24
+            },
+            "calories": {
+              "mae": 183.92343814285715,
+              "valid_prediction_count": 77,
+              "within_15_percent_count": 21
+            }
+          },
+          "learned_oof": {
+            "mass_g": {
+              "mae": 189.76103896103896,
+              "valid_prediction_count": 77,
+              "within_15_percent_count": 5
+            },
+            "calories": {
+              "mae": 212.6299313636364,
+              "valid_prediction_count": 77,
+              "within_15_percent_count": 15
+            }
+          }
+        }
+      },
+      "candidate_screen": {
+        "eligible": false,
+        "checks": {
+          "mass_mae_improves": true,
+          "calorie_mae_improves": true,
+          "calorie_within15_count_not_decreased": true,
+          "calorie_valid_prediction_count_not_decreased": true,
+          "high_mass_calorie_mae_worsening_at_most_10_percent_when_n_ge30": false
+        },
+        "high_mass_group_selected_n": 78,
+        "high_mass_paired_valid_n": 77,
+        "high_mass_calorie_mae_ratio_learned_over_raw": 1.156078493913768
+      },
+      "clipped_count": 57,
+      "negative_fallback_count": 54,
+      "display_contract_audit": {
+        "observed_count_or_unit_changes": [],
+        "count_vs_estimated_serving_mismatches": [],
+        "base_serving_mass_checked_foods": 2010,
+        "base_serving_mass_mismatches": []
+      }
+    },
+    "weighted_log_mass": {
+      "selected_alpha": 100,
+      "overall": {
+        "raw": {
+          "mass_g": {
+            "mae": 67.3430583501006,
+            "valid_prediction_count": 994,
+            "within_15_percent_count": 249
+          },
+          "calories": {
+            "mae": 107.41733431086519,
+            "valid_prediction_count": 994,
+            "within_15_percent_count": 190
+          }
+        },
+        "learned_oof": {
+          "mass_g": {
+            "mae": 61.73843058350101,
+            "valid_prediction_count": 994,
+            "within_15_percent_count": 269
+          },
+          "calories": {
+            "mae": 100.88710494869215,
+            "valid_prediction_count": 994,
+            "within_15_percent_count": 218
+          }
+        }
+      },
+      "by_truth_mass_diagnostic_only": {
+        "low_lt150g": {
+          "raw": {
+            "mass_g": {
+              "mae": 39.59368421052631,
+              "valid_prediction_count": 475,
+              "within_15_percent_count": 93
+            },
+            "calories": {
+              "mae": 67.67160399789474,
+              "valid_prediction_count": 475,
+              "within_15_percent_count": 63
+            }
+          },
+          "learned_oof": {
+            "mass_g": {
+              "mae": 45.152,
+              "valid_prediction_count": 475,
+              "within_15_percent_count": 94
+            },
+            "calories": {
+              "mae": 73.85037572421052,
+              "valid_prediction_count": 475,
+              "within_15_percent_count": 81
+            }
+          }
+        },
+        "middle_150_to400g": {
+          "raw": {
+            "mass_g": {
+              "mae": 82.14932126696833,
+              "valid_prediction_count": 442,
+              "within_15_percent_count": 132
+            },
+            "calories": {
+              "mae": 136.80251961312217,
+              "valid_prediction_count": 442,
+              "within_15_percent_count": 106
+            }
+          },
+          "learned_oof": {
+            "mass_g": {
+              "mae": 62.087556561085975,
+              "valid_prediction_count": 442,
+              "within_15_percent_count": 159
+            },
+            "calories": {
+              "mae": 114.15252524660633,
+              "valid_prediction_count": 442,
+              "within_15_percent_count": 119
+            }
+          }
+        },
+        "high_ge400g": {
+          "raw": {
+            "mass_g": {
+              "mae": 153.53246753246754,
+              "valid_prediction_count": 77,
+              "within_15_percent_count": 24
+            },
+            "calories": {
+              "mae": 183.92343814285715,
+              "valid_prediction_count": 77,
+              "within_15_percent_count": 21
+            }
+          },
+          "learned_oof": {
+            "mass_g": {
+              "mae": 162.05324675324675,
+              "valid_prediction_count": 77,
+              "within_15_percent_count": 16
+            },
+            "calories": {
+              "mae": 191.52516481818182,
+              "valid_prediction_count": 77,
+              "within_15_percent_count": 18
+            }
+          }
+        }
+      },
+      "candidate_screen": {
+        "eligible": true,
+        "checks": {
+          "mass_mae_improves": true,
+          "calorie_mae_improves": true,
+          "calorie_within15_count_not_decreased": true,
+          "calorie_valid_prediction_count_not_decreased": true,
+          "high_mass_calorie_mae_worsening_at_most_10_percent_when_n_ge30": true
+        },
+        "high_mass_group_selected_n": 78,
+        "high_mass_paired_valid_n": 77,
+        "high_mass_calorie_mae_ratio_learned_over_raw": 1.0413309296089837
+      },
+      "clipped_count": 25,
+      "negative_fallback_count": 0,
+      "display_contract_audit": {
+        "observed_count_or_unit_changes": [],
+        "count_vs_estimated_serving_mismatches": [],
+        "base_serving_mass_checked_foods": 2010,
+        "base_serving_mass_mismatches": []
+      }
+    }
+  }
+}

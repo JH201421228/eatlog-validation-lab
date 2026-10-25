@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1563217804",
+  "request_id": "followup_dev_volume_consistency_dish_1563217804",
+  "started_at": "2026-10-25T07:42:36.212855+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "15d1dbac3a164e9e69724f1b9be2ea8fd92d15aa640a1c6d467b125dc9e31704",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "15539bdcf91a908fc3c48ea213694f4600849b69396521fbe4b6f59eced15386",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 150.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [145, 279, 962, 508], \"nutrition_per_100g\": {\"calories\": 30, \"carbs\": 5, \"protein\": 1, \"fat\": 1}, \"package\": null}, {\"food_index\": 1, \"food_name\": \"밥과 고기볶음\", \"confidence\": 0.85, \"estimated_serving\": 1.0, \"estimated_serving_g\": 200.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [145, 492, 895, 933], \"nutrition_per_100g\": {\"calories\": 180, \"carbs\": 25, \"protein\": 10, \"fat\": 5}, \"package\": null}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"접시의 절반을 차지하며, 양상추, 브로콜리, 오이, 방울토마토 등이 섞여 있고 드레싱이 뿌려져 있습니다. 비교적 수북하게 쌓여 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 300.0, \"bulk_density_g_per_ml\": 0.5, \"scale_uncertainty\": \"high\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시의 나머지 절반을 차지하며, 밥과 볶은 고기, 호박 등이 섞여 있습니다. 밥알이 뭉쳐 있고 고기가 잘게 썰려 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 250.0, \"bulk_density_g_per_ml\": 0.8, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 593,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2763,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4596.02,
+  "completed_at": "2026-10-25T07:42:41.113738+00:00"
+}

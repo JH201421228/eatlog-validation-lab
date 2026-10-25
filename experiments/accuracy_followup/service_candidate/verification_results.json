@@ -1,0 +1,18 @@
+{
+  "cwd": "C:\\Users\\741u7\\Desktop\\soma_project\\AI_accuracy_candidate\\ai-server",
+  "command": "C:\\Users\\741u7\\Desktop\\soma_project\\AI\\ai-server\\venv\\Scripts\\python.exe -m pytest -q",
+  "observed_exit_code": 0,
+  "observed_summary": "258 passed in 4.14s",
+  "diff_check": "git diff --check: exit 0",
+  "patch_check": "git apply --check against clean original base: exit 0; not applied",
+  "initial_test_fixture_correction": "The new mocked package-label fixture initially omitted required per_100g; fixed the fixture, then ran the complete suite successfully.",
+  "coverage": [
+    "Route conditions and explicit operator settings",
+    "Actual SDK MINIMAL/4096/temp0/seed config",
+    "Actual selected model in success/provider/parse failure logs",
+    "Existing multi-image ordering and failure-index contracts",
+    "Package label attachment and printed nutrition candidate contract",
+    "Frozen prompt bytes and semantic schema hashes"
+  ],
+  "limitation": "Mocked contract/regression tests do not establish package-photo recognition accuracy; confirmation still required."
+}

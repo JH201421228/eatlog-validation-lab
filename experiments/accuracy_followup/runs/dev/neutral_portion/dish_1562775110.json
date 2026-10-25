@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1562775110",
+  "request_id": "followup_dev_neutral_portion_dish_1562775110",
+  "started_at": "2026-10-25T07:39:26.756125+00:00",
+  "arm": "neutral_portion",
+  "phase": "dev",
+  "image_sha256": "8245c5c78ed5c985b57091e4379e759274170831091dd5e28a6682b3175637e1",
+  "request_config_sha256": "e0b758f3a0593068fd4b87833d2a157fda91b04240890fdc518dc94b1c0373b4",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 1505,
+  "request_sha256": "af0848c8d18b666ad959765b282c6398aac1e20ec505a97495a30125f0f12033",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"과일 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 200.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [268, 399, 770, 829], \"nutrition_per_100g\": {\"calories\": 35.0, \"carbs\": 8.0, \"protein\": 0.5, \"fat\": 0.2}, \"package\": null}]}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 175,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 1505,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1247
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 1680,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2907.02,
+  "completed_at": "2026-10-25T07:39:30.408195+00:00"
+}

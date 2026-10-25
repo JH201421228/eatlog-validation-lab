@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1550859977",
+  "request_id": "followup_dev_volume_consistency_dish_1550859977",
+  "started_at": "2026-10-25T07:44:01.629773+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "53f3e80e7adc755bd37c8663258d89303dbbcd475ec9cfa833afff03cec658fc",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "6d92cc55cbb83224e3499f16e037c527ee8a513ce63d3cb52abecf7caa4ff457",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"흰죽\", \"confidence\": 0.9, \"estimated_serving\": 1.0, \"estimated_serving_g\": 200.0, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [100, 290, 490, 610], \"nutrition_per_100g\": {\"calories\": 60.0, \"carbs\": 13.0, \"protein\": 1.0, \"fat\": 0.2}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"흰죽이 접시 중앙에 둥글게 담겨 있으며, 약 2cm 높이로 쌓여 있습니다. 접시의 크기를 알 수 없어 정확한 양 추정은 어렵습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 200.0, \"bulk_density_g_per_ml\": 1.0, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1237
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 167
+      }
+    ],
+    "cached_content_token_count": 1404,
+    "candidates_token_count": 298,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2468,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 4060.36,
+  "completed_at": "2026-10-25T07:44:06.356964+00:00"
+}

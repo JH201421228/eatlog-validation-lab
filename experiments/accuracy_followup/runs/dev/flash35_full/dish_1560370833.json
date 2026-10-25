@@ -1,0 +1,40 @@
+{
+  "sample_id": "dish_1560370833",
+  "request_id": "followup_dev_flash35_full_dish_1560370833",
+  "started_at": "2026-10-25T08:16:15.145086+00:00",
+  "arm": "flash35_full",
+  "phase": "dev",
+  "image_sha256": "956b695f37d96b32ac2e7e693469e570219c57ef691dc8bd2d70f0acbe244856",
+  "request_config_sha256": "9de92988a258d439473b88e83699f9220d8a922ff63abcc41a5b5ca78bc2db9a",
+  "manifest_sha256": "28af253aedc36ca9a79d93f7c7f19ad8f7a3a773107c076deea06304db637ac9",
+  "counted_input_tokens": 3865,
+  "request_sha256": "9637d69f658cdd57e56d81429b633a402c431368c2b72d2f5f92823d09978650",
+  "status": "response_received",
+  "raw_text": "{\n  \"candidates\": [\n    {\n      \"food_index\": 0,\n      \"food_name\": \"초코 아이스크림\",\n      \"confidence\": 0.85,\n      \"estimated_serving\": 1.0,\n      \"estimated_serving_g\": 80.0,\n      \"count\": 1.0,\n      \"count_unit\": \"개\",\n      \"has_soup\": false,\n      \"has_sauce\": true,\n      \"image_index\": 0,\n      \"is_in_image\": true,\n      \"box_2d\": [283, 497, 542, 687],\n      \"nutrition_per_100g\": {\n        \"calories\": 210.0,\n        \"carbs\": 28.0,\n        \"protein\": 3.5,\n        \"fat\": 10.0\n      },\n      \"package\": null\n    }\n  ]\n}",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 234,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 3865,
+    "prompt_tokens_details": [
+      {
+        "modality": "IMAGE",
+        "token_count": 1064
+      },
+      {
+        "modality": "TEXT",
+        "token_count": 2801
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 4099,
+    "traffic_type": null
+  },
+  "model_version": "gemini-3.5-flash-lite",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 2402.75,
+  "completed_at": "2026-10-25T08:16:18.238593+00:00"
+}

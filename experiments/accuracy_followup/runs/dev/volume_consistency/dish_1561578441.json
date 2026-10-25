@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1561578441",
+  "request_id": "followup_dev_volume_consistency_dish_1561578441",
+  "started_at": "2026-10-25T07:41:45.878568+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "b9ad23d75a738c50063296713e6f0f688340af3683a244902c6f03197f9cae99",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "fc8e9fd9eb79effeb4e5ddf5f89e2b5f6beff9ee05e5ff14b986b00ba7b438a0",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"치즈 피자\", \"confidence\": 0.95, \"estimated_serving\": 0.5, \"estimated_serving_g\": 75, \"count\": 1, \"count_unit\": \"조각\", \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [60, 198, 370, 460], \"nutrition_per_100g\": {\"calories\": 266, \"carbs\": 33.3, \"protein\": 11.5, \"fat\": 9.7}}, {\"food_index\": 1, \"food_name\": \"시저 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 1, \"estimated_serving_g\": 100, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [15, 378, 290, 670], \"nutrition_per_100g\": {\"calories\": 120, \"carbs\": 6.5, \"protein\": 3.5, \"fat\": 9.5}}, {\"food_index\": 2, \"food_name\": \"구운 감자\", \"confidence\": 0.9, \"estimated_serving\": 1, \"estimated_serving_g\": 150, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [330, 670, 515, 858], \"nutrition_per_100g\": {\"calories\": 93, \"carbs\": 20.1, \"protein\": 2.1, \"fat\": 0.1}}, {\"food_index\": 3, \"food_name\": \"스테이크\", \"confidence\": 0.9, \"estimated_serving\": 1, \"estimated_serving_g\": 100, \"has_soup\": false, \"has_sauce\": false, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [590, 390, 875, 628], \"nutrition_per_100g\": {\"calories\": 250, \"carbs\": 0, \"protein\": 26, \"fat\": 15}}, {\"food_index\": 4, \"food_name\": \"혼합 샐러드\", \"confidence\": 0.85, \"estimated_serving\": 1, \"estimated_serving_g\": 80, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [330, 200, 870, 500], \"nutrition_per_100g\": {\"calories\": 80, \"carbs\": 5, \"protein\": 2, \"fat\": 6}}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"피자 한 조각이 접시의 왼쪽 상단에 놓여 있으며, 치즈가 녹아 있고 가장자리가 약간 탄 모습입니다. 두께는 보통이며, 한 조각의 크기는 일반적인 피자 한 조각과 비슷합니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 1, \"image_index\": 0, \"visual_summary\": \"접시 상단에 시저 드레싱이 뿌려진 로메인 상추와 크루통이 보입니다. 양은 중간 정도이며, 드레싱이 골고루 묻어 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 200, \"bulk_density_g_per_ml\": 0.5, \"scale_uncertainty\": \"high\"}, {\"food_index\": 2, \"image_index\": 0, \"visual_summary\": \"접시 오른쪽에 껍질째 구운 감자들이 여러 조각 놓여 있습니다. 일부는 반으로 잘려 있고, 표면에 양념이 보입니다. 총 5-6조각으로 보입니다.\", \"scale_basis\": \"food_piece_prior\", \"method\": \"count_piece_mass\", \"estimated_volume_ml\": null, \"bulk_density_g_per_ml\": null, \"scale_uncertainty\": \"medium\"}, {\"food_index\": 3, \"image_index\": 0, \"visual_summary\": \"접시 중앙 하단에 얇게 썰린 스테이크 조각들이 겹쳐져 있습니다. 표면에 허브 양념이 보이며, 굽기는 미디움 레어 정도로 추정됩니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 80, \"bulk_density_g_per_ml\": 1.25, \"scale_uncertainty\": \"high\"}, {\"food_index\": 4, \"image_index\": 0, \"visual_summary\": \"접시 왼쪽 하단에 다양한 잎채소, 적양파, 올리브, 방울토마토가 섞인 샐러드가 있습니다. 드레싱이 약간 뿌려져 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"visual_estimate\", \"estimated_volume_ml\": 150, \"bulk_density_g_per_ml\": 0.53, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 1382,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 3552,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 7692.17,
+  "completed_at": "2026-10-25T07:41:53.917235+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1558116399",
+  "request_id": "followup_dev_volume_consistency_dish_1558116399",
+  "started_at": "2026-10-25T07:42:51.065426+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "5220713c52ede101d4a8b06c94ac52437bf7b8391096f75d571704e6ab78591e",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "6c4b0c74c294c6e78072500168220a5001f9b6bda088762403482a01b36a0ee9",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"시금치 샐러드\", \"confidence\": 0.9, \"estimated_serving\": 0.5, \"estimated_serving_g\": 50, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [280, 398, 750, 725], \"nutrition_per_100g\": {\"calories\": 23, \"carbs\": 3.6, \"protein\": 2.9, \"fat\": 0.4}, \"package\": null}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"작은 종이 그릇에 시금치 잎이 절반 정도 채워져 있으며, 약간의 당근 조각과 드레싱이 묻어 있습니다. 그릇의 지름은 약 10cm로 추정됩니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 100, \"bulk_density_g_per_ml\": 0.5, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 309,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2479,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3572.85,
+  "completed_at": "2026-10-25T07:42:55.190090+00:00"
+}

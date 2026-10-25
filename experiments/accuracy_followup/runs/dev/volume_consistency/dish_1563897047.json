@@ -1,0 +1,49 @@
+{
+  "sample_id": "dish_1563897047",
+  "request_id": "followup_dev_volume_consistency_dish_1563897047",
+  "started_at": "2026-10-25T07:43:48.367181+00:00",
+  "arm": "volume_consistency",
+  "phase": "dev",
+  "image_sha256": "7f3a908b5d2ad8a4efcc7f7fe72be18a6b9dff2dca008a5675664abb1b4bf2d6",
+  "request_config_sha256": "eb0a243c263b87800d5c454ea93e946af929dae209fa1b4d930b4e8e2787bccb",
+  "manifest_sha256": "982008895475c9ffe25c82c28019b79062d1d61e920c2337cf458d61722d3a20",
+  "counted_input_tokens": 2170,
+  "request_sha256": "724d84c9c61043aa6b8c137a53f1fe674b595528840ff839133aefb4c0e09ab4",
+  "status": "response_received",
+  "raw_text": "{\"candidates\": [{\"food_index\": 0, \"food_name\": \"떡볶이\", \"confidence\": 0.85, \"estimated_serving\": 0.5, \"estimated_serving_g\": 150, \"count\": null, \"count_unit\": null, \"has_soup\": false, \"has_sauce\": true, \"image_index\": 0, \"is_in_image\": true, \"box_2d\": [280, 438, 650, 760], \"nutrition_per_100g\": {\"calories\": 150, \"carbs\": 30, \"protein\": 5, \"fat\": 2}, \"package\": null}], \"portion_evidence\": [{\"food_index\": 0, \"image_index\": 0, \"visual_summary\": \"작은 그릇에 떡볶이 조각들이 담겨 있으며, 그릇의 절반 정도 채워져 있습니다. 소스가 떡에 묻어 있습니다.\", \"scale_basis\": \"uncertain_container_prior\", \"method\": \"volume_density\", \"estimated_volume_ml\": 100, \"bulk_density_g_per_ml\": 1.5, \"scale_uncertainty\": \"high\"}]}",
+  "usage": {
+    "cache_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1347
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 181
+      }
+    ],
+    "cached_content_token_count": 1528,
+    "candidates_token_count": 287,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 2170,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 1912
+      },
+      {
+        "modality": "IMAGE",
+        "token_count": 258
+      }
+    ],
+    "thoughts_token_count": null,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 2457,
+    "traffic_type": null
+  },
+  "model_version": "gemini-2.5-flash",
+  "finish_reason": "FinishReason.STOP",
+  "latency_ms": 3298.3,
+  "completed_at": "2026-10-25T07:43:51.992073+00:00"
+}
