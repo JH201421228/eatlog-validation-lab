@@ -1,0 +1,20 @@
+{
+  "verified_at_utc": "2026-10-25T06:53:53.661436+00:00",
+  "raw_rows_examined_for_structure": 5006,
+  "base_columns": 6,
+  "repeating_ingredient_columns": 7,
+  "wrong_structure": [],
+  "frozen_rows_checked_against_raw_values": 1020,
+  "ingredient_rows_checked": 6364,
+  "field_mapping": {
+    "dish_id": 0,
+    "calories_kcal": 1,
+    "mass_g": 2,
+    "fat_g": 3,
+    "carbs_g": 4,
+    "protein_g": 5
+  },
+  "truth_values_unchanged": true,
+  "mapping_failures": [],
+  "cafe2_zero_nutrient_rows_excluded": true
+}

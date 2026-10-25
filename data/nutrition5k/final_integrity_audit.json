@@ -1,0 +1,126 @@
+{
+  "verified_at_utc": "2026-10-25T06:54:11.201257+00:00",
+  "selection_manifest": "data/nutrition5k/selection_manifest_v3.jsonl",
+  "selection_sha256": "c7ab766b7ed73c4e9b7fc04fabf95d8a6298bd31d631f34faf130596eb80da22",
+  "selected": 1020,
+  "selected_pilot": 20,
+  "selected_evaluation": 1000,
+  "available_images": 1019,
+  "available_pilot_images": 20,
+  "available_evaluation_images": 999,
+  "missing_source_rows": [
+    {
+      "sample_id": "dish_1564415499",
+      "split": "blind_test",
+      "source_key": "nutrition5k_dataset/imagery/side_angles/dish_1564415499/camera_A.h264",
+      "reason": "ValueError: Expected side-camera video not available"
+    }
+  ],
+  "actual_source_md5_against_official_checks": 1019,
+  "actual_image_sha256_checks": 1019,
+  "original_side_video_hash_checks": 163,
+  "unique_image_sha256": 1019,
+  "duplicate_image_sha256_count": 0,
+  "unique_dish_ids": 1020,
+  "unique_inferred_groups": 1020,
+  "pilot_evaluation_dish_overlap": [],
+  "pilot_evaluation_group_overlap": [],
+  "original_v1_pilot_group_in_evaluation": [],
+  "available_by_view": {
+    "overhead_rgb": 856,
+    "side_camera_A_frame_0": 157,
+    "side_camera_B_frame_0": 6
+  },
+  "actual_selected_image_bytes": 578224710,
+  "actual_selected_source_bytes": 3276770779,
+  "source_metadata_hash_checks": [
+    {
+      "path": "data/nutrition5k/source/metadata/dish_metadata_cafe1.csv",
+      "hash_valid": true,
+      "sha256": "881df31f27c2343d0ce219964527e0796f6ddadd60701ce6840fa801e8c2a960",
+      "md5": "7d936c3b3f70a87fd363cfa0cf9298bc",
+      "size_bytes": 2206282
+    },
+    {
+      "path": "data/nutrition5k/source/metadata/dish_metadata_cafe2.csv",
+      "hash_valid": true,
+      "sha256": "ef9f800d7b9c2e7e9a9e7cda5cbb4cfe51c760a8c1af4c05786ccf051bf5d77d",
+      "md5": "6778561ef4da1ca54b9da0747f98198f",
+      "size_bytes": 101817
+    },
+    {
+      "path": "data/nutrition5k/source/metadata/ingredients_metadata.csv",
+      "hash_valid": true,
+      "sha256": "87a9bbd1fd2e28f09f16305a04946ddbe31eb7d9d03686d7e2fb3d8f19f3effb",
+      "md5": "d60e3822d15a5cc0a8df3249580ca609",
+      "size_bytes": 21540
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/README",
+      "hash_valid": true,
+      "sha256": "5110e71f40fef2e5732897d4f5f34d146253ec11caaa07f466bd4faf322fb4b1",
+      "md5": "fc15f47fbd960fcc185cd163081c8a99",
+      "size_bytes": 473
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/dish_ids_all.txt",
+      "hash_valid": true,
+      "sha256": "cd71f64b9092d7917384b477e62fbe8840409e606dc488b436f05aa2b404c2f5",
+      "md5": "c854f16886e6320b6ebc6e2aebc0d2b5",
+      "size_bytes": 80096
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/dish_ids_cafe1.txt",
+      "hash_valid": true,
+      "sha256": "bb2d2a8a918e8c4d6d212b158840d92c304d7b9757d6ffe14b4948446f7682a0",
+      "md5": "6d14573e2ce8d77d78af4c6e8dc9e50c",
+      "size_bytes": 76288
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/dish_ids_cafe2.txt",
+      "hash_valid": true,
+      "sha256": "2e8cb76a9204277701e06b11476bf5a45f20f23a65dee8fc1399e9663648fc94",
+      "md5": "4637f23b8fcf5e9178105d69415b483d",
+      "size_bytes": 3808
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/splits/depth_test_ids.txt",
+      "hash_valid": true,
+      "sha256": "6e43a5334a72bd06fa9c0d4b3bc86e2f57e5342b0b260d3fa003a76f7e39eca2",
+      "md5": "2baf63c650b70d7116b36e9ba206a7e6",
+      "size_bytes": 8112
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/splits/depth_train_ids.txt",
+      "hash_valid": true,
+      "sha256": "d9702b71ade32b012fcb272f1f58b1d19178acd4536eccc651857760eab4bc30",
+      "md5": "a6f9008103a0de460e10355c88299bf1",
+      "size_bytes": 44128
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/splits/rgb_test_ids.txt",
+      "hash_valid": true,
+      "sha256": "560ff0eedb1a2027c21f5da3a4c38a53fa201c87d108e76b11cceaa1d956ac8e",
+      "md5": "5d89d2dae124b4dff3f3468ab24b42ca",
+      "size_bytes": 11344
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/splits/rgb_train_ids.txt",
+      "hash_valid": true,
+      "sha256": "efd34a682b5483b01e6bd0a7c1267efec28440a8194985f9d3817d8ebc8169bd",
+      "md5": "61b137949e36be56c928d569b27d56f9",
+      "size_bytes": 64944
+    },
+    {
+      "path": "data/nutrition5k/source/README.upstream.md",
+      "hash_valid": true,
+      "sha256": "4c77ceab6dfcaf7b23019fae6c323f237f93ecd4213ebe44b36b8f8583c84ae0",
+      "md5": "963e480607a121e80b596728d7524381",
+      "size_bytes": 7400
+    }
+  ],
+  "independent_label_mapping_pass": true,
+  "integrity_failures": [],
+  "all_available_artifacts_verified": true,
+  "completeness_note": "The frozen denominator retains unavailable source rows. Integrity success does not imply all selected sources exist."
+}

@@ -1,0 +1,28 @@
+{
+  "verified_at_utc": "2026-10-25T06:33:09.678415+00:00",
+  "selection_manifest_sha256": "2f6df93c563bc014029aa4a518bbecddc3c0098774684efe0f38a5eacbc5b942",
+  "selection_hash_unchanged": true,
+  "selected_rows": 1020,
+  "manifest_rows": 1020,
+  "expected_split_sizes": {
+    "pilot": 20,
+    "blind_test": 1000
+  },
+  "status_counts": {
+    "ok": 20,
+    "pending": 1000
+  },
+  "status_by_split": {
+    "pilot|ok": 20,
+    "blind_test|pending": 1000
+  },
+  "downloaded_image_bytes": 8310145,
+  "downloaded_source_bytes": 8310145,
+  "unique_sample_ids": 1020,
+  "unique_inferred_groups": 1020,
+  "unique_downloaded_image_sha256": 20,
+  "duplicate_image_hash_groups": [],
+  "validation_failures": [],
+  "all_complete": false,
+  "all_integrity_checks_pass": true
+}

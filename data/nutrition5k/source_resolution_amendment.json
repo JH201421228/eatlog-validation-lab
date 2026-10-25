@@ -1,0 +1,437 @@
+{
+  "started_at_utc": "2026-10-25T06:48:15.812018+00:00",
+  "frozen_at_utc": "2026-10-25T06:49:46.757396+00:00",
+  "selection_version": 3,
+  "v2_selection_sha256": "9000890d37127b639684662b63e719b8d2b31e1439ad465057ca5b249fafde1d",
+  "v3_selection_sha256": "c7ab766b7ed73c4e9b7fc04fabf95d8a6298bd31d631f34faf130596eb80da22",
+  "sample_membership_labels_groups_splits_unchanged": true,
+  "changes": [
+    {
+      "sample_id": "dish_1561996813",
+      "dish_id": "dish_1561996813",
+      "group_id": "inferred_plate_9f4a9d061a8c173979a2",
+      "reason": "Preferred camera_A.h264 object absent from official bucket listing",
+      "old_source_key": "nutrition5k_dataset/imagery/side_angles/dish_1561996813/camera_A.h264",
+      "new_source_key": "nutrition5k_dataset/imagery/side_angles/dish_1561996813/camera_B.h264",
+      "old_camera_view": "side_camera_A_frame_0",
+      "new_camera_view": "side_camera_B_frame_0",
+      "source_object": {
+        "key": "nutrition5k_dataset/imagery/side_angles/dish_1561996813/camera_B.h264",
+        "generation": "1623824222265836",
+        "md5": "361c552fe79d38758d0fb4a10321e984",
+        "size_bytes": 2650844,
+        "last_modified": "2021-06-16T06:17:02.287Z"
+      },
+      "frame_index": 0,
+      "model_output_consulted": false
+    },
+    {
+      "sample_id": "dish_1558723015",
+      "dish_id": "dish_1558723015",
+      "group_id": "inferred_plate_7b6d31dd52c3ff385ec9",
+      "reason": "Preferred camera_A.h264 object absent from official bucket listing",
+      "old_source_key": "nutrition5k_dataset/imagery/side_angles/dish_1558723015/camera_A.h264",
+      "new_source_key": "nutrition5k_dataset/imagery/side_angles/dish_1558723015/camera_B.h264",
+      "old_camera_view": "side_camera_A_frame_0",
+      "new_camera_view": "side_camera_B_frame_0",
+      "source_object": {
+        "key": "nutrition5k_dataset/imagery/side_angles/dish_1558723015/camera_B.h264",
+        "generation": "1623824127222258",
+        "md5": "22d6bd1472ac47cf53b0e181a9a36a4e",
+        "size_bytes": 8431922,
+        "last_modified": "2021-06-16T06:15:27.251Z"
+      },
+      "frame_index": 0,
+      "model_output_consulted": false
+    },
+    {
+      "sample_id": "dish_1559242324",
+      "dish_id": "dish_1559242324",
+      "group_id": "inferred_plate_35ee664119d91273da20",
+      "reason": "Preferred camera_A.h264 object absent from official bucket listing",
+      "old_source_key": "nutrition5k_dataset/imagery/side_angles/dish_1559242324/camera_A.h264",
+      "new_source_key": "nutrition5k_dataset/imagery/side_angles/dish_1559242324/camera_B.h264",
+      "old_camera_view": "side_camera_A_frame_0",
+      "new_camera_view": "side_camera_B_frame_0",
+      "source_object": {
+        "key": "nutrition5k_dataset/imagery/side_angles/dish_1559242324/camera_B.h264",
+        "generation": "1623823348725284",
+        "md5": "0395ae9e2e93919afa2011c2e44161ce",
+        "size_bytes": 10855713,
+        "last_modified": "2021-06-16T06:02:28.747Z"
+      },
+      "frame_index": 0,
+      "model_output_consulted": false
+    },
+    {
+      "sample_id": "dish_1561996554",
+      "dish_id": "dish_1561996554",
+      "group_id": "inferred_plate_c1733931a96cd3435d51",
+      "reason": "Preferred camera_A.h264 object absent from official bucket listing",
+      "old_source_key": "nutrition5k_dataset/imagery/side_angles/dish_1561996554/camera_A.h264",
+      "new_source_key": "nutrition5k_dataset/imagery/side_angles/dish_1561996554/camera_B.h264",
+      "old_camera_view": "side_camera_A_frame_0",
+      "new_camera_view": "side_camera_B_frame_0",
+      "source_object": {
+        "key": "nutrition5k_dataset/imagery/side_angles/dish_1561996554/camera_B.h264",
+        "generation": "1623823340061291",
+        "md5": "d22ea69bbfe0b6dde4761ef31abba848",
+        "size_bytes": 1886403,
+        "last_modified": "2021-06-16T06:02:20.084Z"
+      },
+      "frame_index": 0,
+      "model_output_consulted": false
+    },
+    {
+      "sample_id": "dish_1561997933",
+      "dish_id": "dish_1561997933",
+      "group_id": "inferred_plate_9e063a7f1b958205ec4c",
+      "reason": "Preferred camera_A.h264 object absent from official bucket listing",
+      "old_source_key": "nutrition5k_dataset/imagery/side_angles/dish_1561997933/camera_A.h264",
+      "new_source_key": "nutrition5k_dataset/imagery/side_angles/dish_1561997933/camera_B.h264",
+      "old_camera_view": "side_camera_A_frame_0",
+      "new_camera_view": "side_camera_B_frame_0",
+      "source_object": {
+        "key": "nutrition5k_dataset/imagery/side_angles/dish_1561997933/camera_B.h264",
+        "generation": "1623822934260783",
+        "md5": "250930d77b38d002503a610ef2468249",
+        "size_bytes": 4469600,
+        "last_modified": "2021-06-16T05:55:34.297Z"
+      },
+      "frame_index": 0,
+      "model_output_consulted": false
+    },
+    {
+      "sample_id": "dish_1561997365",
+      "dish_id": "dish_1561997365",
+      "group_id": "inferred_plate_61a35a7dbdcca2222546",
+      "reason": "Preferred camera_A.h264 object absent from official bucket listing",
+      "old_source_key": "nutrition5k_dataset/imagery/side_angles/dish_1561997365/camera_A.h264",
+      "new_source_key": "nutrition5k_dataset/imagery/side_angles/dish_1561997365/camera_B.h264",
+      "old_camera_view": "side_camera_A_frame_0",
+      "new_camera_view": "side_camera_B_frame_0",
+      "source_object": {
+        "key": "nutrition5k_dataset/imagery/side_angles/dish_1561997365/camera_B.h264",
+        "generation": "1623822675899563",
+        "md5": "f91e05fa364d87d927f46189ab983a2e",
+        "size_bytes": 2760248,
+        "last_modified": "2021-06-16T05:51:15.934Z"
+      },
+      "frame_index": 0,
+      "model_output_consulted": false
+    }
+  ],
+  "changed_source_rows": 6,
+  "model_outputs_or_scores_consulted": false,
+  "timing_disclosure": "Some verified overhead evaluation calls had begun before this source-only amendment. The data collector did not inspect model responses or scores.",
+  "rule": "Keep existing camera A. If absent, use first officially present camera among B,C,D; decode frame index 0. No new dish or preferred-frame replacement.",
+  "availability_evidence": [
+    {
+      "dish_id": "dish_1561996813",
+      "listed_at_utc": "2026-10-25T06:49:23.664855+00:00",
+      "prefix": "nutrition5k_dataset/imagery/side_angles/dish_1561996813/",
+      "objects": [
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1561996813/camera_B.h264",
+          "generation": "1623824222265836",
+          "md5": "361c552fe79d38758d0fb4a10321e984",
+          "size_bytes": 2650844,
+          "last_modified": "2021-06-16T06:17:02.287Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1561996813/camera_C.h264",
+          "generation": "1623824222764816",
+          "md5": "1884f706c051c5062e18ac75ab5a078e",
+          "size_bytes": 4948981,
+          "last_modified": "2021-06-16T06:17:02.786Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1561996813/camera_D.h264",
+          "generation": "1623824225132954",
+          "md5": "e3afd55bc1b068e672e3579c3299f28d",
+          "size_bytes": 4412553,
+          "last_modified": "2021-06-16T06:17:05.155Z"
+        }
+      ]
+    },
+    {
+      "dish_id": "dish_1558723015",
+      "listed_at_utc": "2026-10-25T06:49:27.141987+00:00",
+      "prefix": "nutrition5k_dataset/imagery/side_angles/dish_1558723015/",
+      "objects": [
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1558723015/camera_B.h264",
+          "generation": "1623824127222258",
+          "md5": "22d6bd1472ac47cf53b0e181a9a36a4e",
+          "size_bytes": 8431922,
+          "last_modified": "2021-06-16T06:15:27.251Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1558723015/camera_D.h264",
+          "generation": "1623824126023810",
+          "md5": "78a1210a1afb17a538605b36490214ba",
+          "size_bytes": 7602207,
+          "last_modified": "2021-06-16T06:15:26.058Z"
+        }
+      ]
+    },
+    {
+      "dish_id": "dish_1559242324",
+      "listed_at_utc": "2026-10-25T06:49:27.361728+00:00",
+      "prefix": "nutrition5k_dataset/imagery/side_angles/dish_1559242324/",
+      "objects": [
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1559242324/camera_B.h264",
+          "generation": "1623823348725284",
+          "md5": "0395ae9e2e93919afa2011c2e44161ce",
+          "size_bytes": 10855713,
+          "last_modified": "2021-06-16T06:02:28.747Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1559242324/camera_C.h264",
+          "generation": "1623823350706398",
+          "md5": "3a2489c7e627c3d3b45d0df358d63250",
+          "size_bytes": 13523251,
+          "last_modified": "2021-06-16T06:02:30.738Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1559242324/camera_D.h264",
+          "generation": "1623823352921843",
+          "md5": "9a27ddb780ffd4440a72f2a378ae9b72",
+          "size_bytes": 8039355,
+          "last_modified": "2021-06-16T06:02:32.951Z"
+        }
+      ]
+    },
+    {
+      "dish_id": "dish_1564415499",
+      "listed_at_utc": "2026-10-25T06:49:28.230223+00:00",
+      "prefix": "nutrition5k_dataset/imagery/side_angles/dish_1564415499/",
+      "objects": []
+    },
+    {
+      "dish_id": "dish_1561996554",
+      "listed_at_utc": "2026-10-25T06:49:30.141074+00:00",
+      "prefix": "nutrition5k_dataset/imagery/side_angles/dish_1561996554/",
+      "objects": [
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1561996554/camera_B.h264",
+          "generation": "1623823340061291",
+          "md5": "d22ea69bbfe0b6dde4761ef31abba848",
+          "size_bytes": 1886403,
+          "last_modified": "2021-06-16T06:02:20.084Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1561996554/camera_C.h264",
+          "generation": "1623823340877301",
+          "md5": "2d9f69142e636ee8ddd5482e65001652",
+          "size_bytes": 3170829,
+          "last_modified": "2021-06-16T06:02:20.899Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1561996554/camera_D.h264",
+          "generation": "1623823340408052",
+          "md5": "e7a817316e92dd8b8a9affb7b94fd314",
+          "size_bytes": 2419557,
+          "last_modified": "2021-06-16T06:02:20.429Z"
+        }
+      ]
+    },
+    {
+      "dish_id": "dish_1561997933",
+      "listed_at_utc": "2026-10-25T06:49:30.358856+00:00",
+      "prefix": "nutrition5k_dataset/imagery/side_angles/dish_1561997933/",
+      "objects": [
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1561997933/camera_B.h264",
+          "generation": "1623822934260783",
+          "md5": "250930d77b38d002503a610ef2468249",
+          "size_bytes": 4469600,
+          "last_modified": "2021-06-16T05:55:34.297Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1561997933/camera_C.h264",
+          "generation": "1623822933003516",
+          "md5": "5ac8da6a178978a1ad9287939de20bad",
+          "size_bytes": 5640108,
+          "last_modified": "2021-06-16T05:55:33.038Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1561997933/camera_D.h264",
+          "generation": "1623822934152858",
+          "md5": "f862c124b8a72520e31a58d3e2c19a9e",
+          "size_bytes": 3549723,
+          "last_modified": "2021-06-16T05:55:34.175Z"
+        }
+      ]
+    },
+    {
+      "dish_id": "dish_1561997365",
+      "listed_at_utc": "2026-10-25T06:49:43.823229+00:00",
+      "prefix": "nutrition5k_dataset/imagery/side_angles/dish_1561997365/",
+      "objects": [
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1561997365/camera_B.h264",
+          "generation": "1623822675899563",
+          "md5": "f91e05fa364d87d927f46189ab983a2e",
+          "size_bytes": 2760248,
+          "last_modified": "2021-06-16T05:51:15.934Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1561997365/camera_C.h264",
+          "generation": "1623822675897629",
+          "md5": "c2fdb43b43085f40c5d13154abefaf86",
+          "size_bytes": 4216713,
+          "last_modified": "2021-06-16T05:51:15.918Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1561997365/camera_D.h264",
+          "generation": "1623822677488717",
+          "md5": "e2c79763137a5882eb8f3f243f7d7dda",
+          "size_bytes": 2725035,
+          "last_modified": "2021-06-16T05:51:17.524Z"
+        }
+      ]
+    },
+    {
+      "dish_id": "dish_1550710207",
+      "listed_at_utc": "2026-10-25T06:49:44.045786+00:00",
+      "prefix": "nutrition5k_dataset/imagery/side_angles/dish_1550710207/",
+      "objects": [
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1550710207/camera_A.h264",
+          "generation": "1623823221948903",
+          "md5": "97ca3ac681a72a595c26f74fcec29d79",
+          "size_bytes": 20003333,
+          "last_modified": "2021-06-16T06:00:21.972Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1550710207/camera_B.h264",
+          "generation": "1623823209119714",
+          "md5": "dde6d205c3ae70d79f4d4401e906d2b8",
+          "size_bytes": 20584195,
+          "last_modified": "2021-06-16T06:00:09.142Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1550710207/camera_C.h264",
+          "generation": "1623823217512629",
+          "md5": "1ed9d224e7337148353e24ed5b1362b9",
+          "size_bytes": 20575965,
+          "last_modified": "2021-06-16T06:00:17.535Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1550710207/camera_D.h264",
+          "generation": "1623823211585232",
+          "md5": "c2fe5a41acc1200647c8b90c9a34897d",
+          "size_bytes": 21219040,
+          "last_modified": "2021-06-16T06:00:11.621Z"
+        }
+      ]
+    },
+    {
+      "dish_id": "dish_1551134053",
+      "listed_at_utc": "2026-10-25T06:49:45.845851+00:00",
+      "prefix": "nutrition5k_dataset/imagery/side_angles/dish_1551134053/",
+      "objects": [
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1551134053/camera_A.h264",
+          "generation": "1623823519408704",
+          "md5": "a2e9668bd0a1ba932125681d79020a3f",
+          "size_bytes": 20132419,
+          "last_modified": "2021-06-16T06:05:19.445Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1551134053/camera_B.h264",
+          "generation": "1623823518708180",
+          "md5": "dd5376583a2d06f361e16d2e30f602e7",
+          "size_bytes": 19932414,
+          "last_modified": "2021-06-16T06:05:18.743Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1551134053/camera_C.h264",
+          "generation": "1623823512843430",
+          "md5": "c8d4dad1a2db32340e552e09ca8b5c68",
+          "size_bytes": 19894613,
+          "last_modified": "2021-06-16T06:05:12.865Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1551134053/camera_D.h264",
+          "generation": "1623823517877156",
+          "md5": "f5c3de08975f5bbb7092417c1e34c905",
+          "size_bytes": 18978417,
+          "last_modified": "2021-06-16T06:05:17.899Z"
+        }
+      ]
+    },
+    {
+      "dish_id": "dish_1551486372",
+      "listed_at_utc": "2026-10-25T06:49:46.053162+00:00",
+      "prefix": "nutrition5k_dataset/imagery/side_angles/dish_1551486372/",
+      "objects": [
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1551486372/camera_A.h264",
+          "generation": "1623823069221766",
+          "md5": "7cca991ab37b6defab9b10029c6ba633",
+          "size_bytes": 20570626,
+          "last_modified": "2021-06-16T05:57:49.254Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1551486372/camera_B.h264",
+          "generation": "1623823075967139",
+          "md5": "153bf32ff08d05a064bb294582b2e594",
+          "size_bytes": 20973047,
+          "last_modified": "2021-06-16T05:57:55.989Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1551486372/camera_C.h264",
+          "generation": "1623823069437499",
+          "md5": "f4c35acfd3027476983710db40f4fdd3",
+          "size_bytes": 20647916,
+          "last_modified": "2021-06-16T05:57:49.460Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1551486372/camera_D.h264",
+          "generation": "1623823068537192",
+          "md5": "1ad188bef1f3f327a8f2f756672fed39",
+          "size_bytes": 19989682,
+          "last_modified": "2021-06-16T05:57:48.559Z"
+        }
+      ]
+    },
+    {
+      "dish_id": "dish_1550876748",
+      "listed_at_utc": "2026-10-25T06:49:46.528041+00:00",
+      "prefix": "nutrition5k_dataset/imagery/side_angles/dish_1550876748/",
+      "objects": [
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1550876748/camera_A.h264",
+          "generation": "1623822908269511",
+          "md5": "050cc91cc95d3b798f64c2e24fe05371",
+          "size_bytes": 17871399,
+          "last_modified": "2021-06-16T05:55:08.291Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1550876748/camera_B.h264",
+          "generation": "1623822905471626",
+          "md5": "7437a2d35db6605a0b06bc201868091d",
+          "size_bytes": 20634049,
+          "last_modified": "2021-06-16T05:55:05.494Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1550876748/camera_C.h264",
+          "generation": "1623822912481733",
+          "md5": "749179cb85d76856e177c3cbbc447f21",
+          "size_bytes": 25161598,
+          "last_modified": "2021-06-16T05:55:12.504Z"
+        },
+        {
+          "key": "nutrition5k_dataset/imagery/side_angles/dish_1550876748/camera_D.h264",
+          "generation": "1623822908445908",
+          "md5": "9de157c3a1cd30ed955f1089fdbbd8b4",
+          "size_bytes": 20738215,
+          "last_modified": "2021-06-16T05:55:08.468Z"
+        }
+      ]
+    }
+  ]
+}

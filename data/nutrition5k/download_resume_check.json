@@ -1,0 +1,16 @@
+{
+  "verified_at_utc": "2026-10-25T06:59:05.053774+00:00",
+  "method": "Temporary clone-like directory with frozen manifest, one absent PNG and one corrupted PNG; real official downloads and SHA256 comparison",
+  "sample_ids": [
+    "dish_1558642458",
+    "dish_1562602860"
+  ],
+  "assertions": {
+    "missing_payload_recovered": true,
+    "corrupt_payload_recovered": true,
+    "all_20_pilot_files_ok": true
+  },
+  "original_data_modified": false,
+  "paid_model_calls": 0,
+  "passed": true
+}

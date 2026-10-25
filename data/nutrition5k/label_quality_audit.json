@@ -1,0 +1,130 @@
+{
+  "audited_at_utc": "2026-10-25T06:39:37.455191+00:00",
+  "rules_version": "source_consistency_v2",
+  "invalid_syntax_numeric_rows": 0,
+  "source_rows": 5006,
+  "rejected_unique_rows": 277,
+  "eligible_rows": 4729,
+  "rejected_by_cafe": {
+    "cafe1": 39,
+    "cafe2": 238
+  },
+  "reason_counts_overlap_allowed": {
+    "mass_total_ingredient_sum_mismatch_gt_max_5g_2pct": 37,
+    "empty_plate_only": 2,
+    "calories_exceed_9kcal_per_g_plus_5kcal": 4,
+    "macro_mass_exceeds_total_plus_max_2g_2pct": 6,
+    "zero_dish_nutrient_placeholders_with_positive_ingredient_calories": 238,
+    "calories_total_ingredient_sum_mismatch_gt_max_1kcal_1pct": 238
+  },
+  "reason_combinations_disjoint": {
+    "mass_total_ingredient_sum_mismatch_gt_max_5g_2pct": 31,
+    "empty_plate_only": 2,
+    "mass_total_ingredient_sum_mismatch_gt_max_5g_2pct|calories_exceed_9kcal_per_g_plus_5kcal|macro_mass_exceeds_total_plus_max_2g_2pct": 4,
+    "mass_total_ingredient_sum_mismatch_gt_max_5g_2pct|macro_mass_exceeds_total_plus_max_2g_2pct": 2,
+    "zero_dish_nutrient_placeholders_with_positive_ingredient_calories|calories_total_ingredient_sum_mismatch_gt_max_1kcal_1pct": 238
+  },
+  "truth_policy": "Use unchanged original dish-level labels after QC. Never synthesize gold from model predictions or replace cafe2 zero totals with inferred totals.",
+  "results": {
+    "all_metadata": {
+      "rows": 5006,
+      "fields": {
+        "mass_g": {
+          "dish_label_min": 1.0,
+          "dish_label_max": 7975.0,
+          "dish_label_mean": 189.9802237315222,
+          "ingredient_sum_absolute_residual_max": 7935.0,
+          "ingredient_sum_absolute_residual_p95": 2.0,
+          "ingredient_sum_absolute_residual_gt_1": 268,
+          "ingredient_sum_absolute_residual_gt_5": 37
+        },
+        "calories_kcal": {
+          "dish_label_min": 0.0,
+          "dish_label_max": 9485.81543,
+          "dish_label_mean": 213.33212532161403,
+          "ingredient_sum_absolute_residual_max": 814.762771055,
+          "ingredient_sum_absolute_residual_p95": 0.00010744999997314153,
+          "ingredient_sum_absolute_residual_gt_1": 238,
+          "ingredient_sum_absolute_residual_gt_5": 237
+        },
+        "fat_g": {
+          "dish_label_min": 0.0,
+          "dish_label_max": 875.541016,
+          "dish_label_mean": 10.721587421893727,
+          "ingredient_sum_absolute_residual_max": 60.629999999999995,
+          "ingredient_sum_absolute_residual_p95": 4.89500000355747e-06,
+          "ingredient_sum_absolute_residual_gt_1": 216,
+          "ingredient_sum_absolute_residual_gt_5": 184
+        },
+        "carbs_g": {
+          "dish_label_min": 0.0,
+          "dish_label_max": 844.568604,
+          "dish_label_mean": 17.002986858170196,
+          "ingredient_sum_absolute_residual_max": 96.33884107300001,
+          "ingredient_sum_absolute_residual_p95": 1.0407000004875044e-05,
+          "ingredient_sum_absolute_residual_gt_1": 222,
+          "ingredient_sum_absolute_residual_gt_5": 174
+        },
+        "protein_g": {
+          "dish_label_min": 0.0,
+          "dish_label_max": 147.491821,
+          "dish_label_mean": 14.476484176588094,
+          "ingredient_sum_absolute_residual_max": 55.607078191,
+          "ingredient_sum_absolute_residual_p95": 9.413000000790817e-06,
+          "ingredient_sum_absolute_residual_gt_1": 232,
+          "ingredient_sum_absolute_residual_gt_5": 188
+        }
+      }
+    },
+    "selected": {
+      "rows": 1020,
+      "fields": {
+        "mass_g": {
+          "dish_label_min": 5.0,
+          "dish_label_max": 886.0,
+          "dish_label_mean": 189.19313725490196,
+          "ingredient_sum_absolute_residual_max": 5.0,
+          "ingredient_sum_absolute_residual_p95": 1.1999999998124622e-05,
+          "ingredient_sum_absolute_residual_gt_1": 23,
+          "ingredient_sum_absolute_residual_gt_5": 0
+        },
+        "calories_kcal": {
+          "dish_label_min": 1.84,
+          "dish_label_max": 1238.033691,
+          "dish_label_mean": 232.2580826735294,
+          "ingredient_sum_absolute_residual_max": 0.0001277409999147494,
+          "ingredient_sum_absolute_residual_p95": 3.800000001774606e-05,
+          "ingredient_sum_absolute_residual_gt_1": 0,
+          "ingredient_sum_absolute_residual_gt_5": 0
+        },
+        "fat_g": {
+          "dish_label_min": 0.0,
+          "dish_label_max": 84.153,
+          "dish_label_mean": 11.795094919607843,
+          "ingredient_sum_absolute_residual_max": 6.942999995374066e-06,
+          "ingredient_sum_absolute_residual_p95": 2.160999997613544e-06,
+          "ingredient_sum_absolute_residual_gt_1": 0,
+          "ingredient_sum_absolute_residual_gt_5": 0
+        },
+        "carbs_g": {
+          "dish_label_min": 0.0,
+          "dish_label_max": 79.60125,
+          "dish_label_mean": 17.410453501960784,
+          "ingredient_sum_absolute_residual_max": 1.1044000004289956e-05,
+          "ingredient_sum_absolute_residual_p95": 2.704000003461715e-06,
+          "ingredient_sum_absolute_residual_gt_1": 0,
+          "ingredient_sum_absolute_residual_gt_5": 0
+        },
+        "protein_g": {
+          "dish_label_min": 0.085,
+          "dish_label_max": 133.227585,
+          "dish_label_mean": 16.18377836666667,
+          "ingredient_sum_absolute_residual_max": 9.020000000248274e-06,
+          "ingredient_sum_absolute_residual_p95": 2.999999992425728e-06,
+          "ingredient_sum_absolute_residual_gt_1": 0,
+          "ingredient_sum_absolute_residual_gt_5": 0
+        }
+      }
+    }
+  }
+}

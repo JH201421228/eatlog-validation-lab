@@ -1,0 +1,313 @@
+{
+  "scope": "data/nutrition5k and scripts/data; raw payloads/tools and Python caches excluded",
+  "files": [
+    {
+      "path": "data/nutrition5k/README.md",
+      "size_bytes": 13749,
+      "sha256": "d59d0480abf8a727280a0446a93721afe1f2400a52920a1f5b634054355c8fd9"
+    },
+    {
+      "path": "data/nutrition5k/archive/README.md",
+      "size_bytes": 844,
+      "sha256": "407cdd5095357d5babccd11ccf0f991b299d4c9ce616abeba5121a7e4d5bd755"
+    },
+    {
+      "path": "data/nutrition5k/archive/v1_before_quality_audit/blind_test_manifest.jsonl",
+      "size_bytes": 2929497,
+      "sha256": "dac7a55e4f454844180f18f18b3449d66d8048c1fa1aae306d167deb6f4a906b"
+    },
+    {
+      "path": "data/nutrition5k/archive/v1_before_quality_audit/download_validation.json",
+      "size_bytes": 791,
+      "sha256": "83197c802f6c19be0cadb197a6346bd9cd26bceff6a07f0afc065ecfb81715a1"
+    },
+    {
+      "path": "data/nutrition5k/archive/v1_before_quality_audit/exclusions.jsonl",
+      "size_bytes": 562110,
+      "sha256": "ddfc52c9038669e246251390c401580b69e218684e1545bdf612ed58b7e5bba8"
+    },
+    {
+      "path": "data/nutrition5k/archive/v1_before_quality_audit/group_edges.jsonl",
+      "size_bytes": 597574,
+      "sha256": "cebe17d075b35ea61e886ac4462d890a6a98769aadc79cbdacd16aef5b627c3c"
+    },
+    {
+      "path": "data/nutrition5k/archive/v1_before_quality_audit/groups.jsonl",
+      "size_bytes": 391886,
+      "sha256": "9ea42acdc8284c53bc575fef685d60c960bd6a6b665a06129215b56910dc1787"
+    },
+    {
+      "path": "data/nutrition5k/archive/v1_before_quality_audit/label_quality_audit.json",
+      "size_bytes": 4433,
+      "sha256": "8d9aa21db279948dd3e3ce7cf5a34c7662e268022bb3dd9b027d36eac53c86e5"
+    },
+    {
+      "path": "data/nutrition5k/archive/v1_before_quality_audit/manifest.jsonl",
+      "size_bytes": 2997504,
+      "sha256": "8fb06b36c55cd6782ef05b7672fa8d73989a6f6f6116db9e6cc07d2830d5a447"
+    },
+    {
+      "path": "data/nutrition5k/archive/v1_before_quality_audit/pilot_manifest.jsonl",
+      "size_bytes": 57284,
+      "sha256": "bab2541f076cbe46a9bce534eb25aab9fa6894ebf356338bc702e5efec3ba154"
+    },
+    {
+      "path": "data/nutrition5k/archive/v1_before_quality_audit/selection_manifest.jsonl",
+      "size_bytes": 2468461,
+      "sha256": "2f6df93c563bc014029aa4a518bbecddc3c0098774684efe0f38a5eacbc5b942"
+    },
+    {
+      "path": "data/nutrition5k/archive/v1_before_quality_audit/selection_summary.json",
+      "size_bytes": 1607,
+      "sha256": "25f4791f909e3c430107aea86a2836aa8388b141a537e113361d30a14905ad6a"
+    },
+    {
+      "path": "data/nutrition5k/archive/v2_before_source_resolution/blind_test_manifest.jsonl",
+      "size_bytes": 3009727,
+      "sha256": "f122bc57403abf55829bac57483ce9196a0f2c09e49725b0e8b9a71bec4ffc62"
+    },
+    {
+      "path": "data/nutrition5k/archive/v2_before_source_resolution/download_validation.json",
+      "size_bytes": 822,
+      "sha256": "bcc246a6ab41ed7a707f67aa5a670805f5da7b626cd5e4b87d443b96c6fff303"
+    },
+    {
+      "path": "data/nutrition5k/archive/v2_before_source_resolution/manifest.jsonl",
+      "size_bytes": 3067010,
+      "sha256": "f4c32db27b8fd269930704d2380e48a0d7b6126848821ca05d0f448ee00b33cb"
+    },
+    {
+      "path": "data/nutrition5k/archive/v2_before_source_resolution/pilot_manifest.jsonl",
+      "size_bytes": 57283,
+      "sha256": "817ef8a348785e795f3dbbdde4522ed3143ee23b7d1c1ba719cd87b79c337074"
+    },
+    {
+      "path": "data/nutrition5k/archive/v2_before_source_resolution/selection_manifest.jsonl",
+      "size_bytes": 2453825,
+      "sha256": "9000890d37127b639684662b63e719b8d2b31e1439ad465057ca5b249fafde1d"
+    },
+    {
+      "path": "data/nutrition5k/archive/v2_before_source_resolution/selection_summary.json",
+      "size_bytes": 5771,
+      "sha256": "4d33db65ee770f5b27f31123255d72093813077acb373ef3684a844ac199358c"
+    },
+    {
+      "path": "data/nutrition5k/blind_test_manifest.jsonl",
+      "size_bytes": 3019246,
+      "sha256": "547524a223e78984ad02fc7f252e53b795a517428f513daca9d1360e2ec2d677"
+    },
+    {
+      "path": "data/nutrition5k/download_resume_check.json",
+      "size_bytes": 509,
+      "sha256": "c26ddc3e56747865cb59b60d3e26b35a65a9a29a4e240277f73d4f3a33310827"
+    },
+    {
+      "path": "data/nutrition5k/download_validation.json",
+      "size_bytes": 819,
+      "sha256": "8d8958351b624c028c5bb054afdabb95d5e8bbe7f9a257d5326ea1fc5f21a6fa"
+    },
+    {
+      "path": "data/nutrition5k/exclusions.jsonl",
+      "size_bytes": 693053,
+      "sha256": "cfd3d7c8b5102911504c91e24e84bfd62deb6b4863e9283e5db0b6af4ce94024"
+    },
+    {
+      "path": "data/nutrition5k/final_integrity_audit.json",
+      "size_bytes": 4911,
+      "sha256": "2ffc9671305899d433b18a1a3791ee9e4d08c86b865e8f6d7034ce20f8e99c58"
+    },
+    {
+      "path": "data/nutrition5k/group_edges.jsonl",
+      "size_bytes": 597574,
+      "sha256": "cebe17d075b35ea61e886ac4462d890a6a98769aadc79cbdacd16aef5b627c3c"
+    },
+    {
+      "path": "data/nutrition5k/groups.jsonl",
+      "size_bytes": 375150,
+      "sha256": "a0111ac20ff041675c4dd1a595215cf07a1b2452e3b67d207e9e4b6a28ab734b"
+    },
+    {
+      "path": "data/nutrition5k/image_pixel_audit.jsonl",
+      "size_bytes": 418632,
+      "sha256": "082e211bd637832c72125689279fe59059d32f0de86bac64883a2d527acb1704"
+    },
+    {
+      "path": "data/nutrition5k/image_pixel_audit_summary.json",
+      "size_bytes": 602,
+      "sha256": "e1fe4d2d96e3246f6bbc3ea16bb6bd39f4d8e473564d61ab164f5bd9df9b5427"
+    },
+    {
+      "path": "data/nutrition5k/label_mapping_validation.json",
+      "size_bytes": 534,
+      "sha256": "073660295c4eaeefb6b60031acc154c3bdf62987a07c7d9f6bb309359bb94be2"
+    },
+    {
+      "path": "data/nutrition5k/label_quality_audit.json",
+      "size_bytes": 5639,
+      "sha256": "eb3dd3f774d3d0b7bf62995c185faa324ff313694da5327fa6d0ce2b5a18dc34"
+    },
+    {
+      "path": "data/nutrition5k/label_quality_exclusions.jsonl",
+      "size_bytes": 116266,
+      "sha256": "1012d518681608965e3fc3a0e5493b9a62772aa19c41a7a169de53947c000b46"
+    },
+    {
+      "path": "data/nutrition5k/manifest.jsonl",
+      "size_bytes": 3076529,
+      "sha256": "528b4c05873ee6ab883838f3e690144ca57c734678b1f0f8c82037fa217129db"
+    },
+    {
+      "path": "data/nutrition5k/pilot_manifest.jsonl",
+      "size_bytes": 57283,
+      "sha256": "3bf1b8afea20fcc31b0dbad3a9b3f9135a20b24e9f0b12281981c67fba4a372f"
+    },
+    {
+      "path": "data/nutrition5k/reproducibility_check.json",
+      "size_bytes": 436,
+      "sha256": "6043a98ea9e9a43131e62bf7dd18aef588aaa9fa2822c5b71919a4475804a9c0"
+    },
+    {
+      "path": "data/nutrition5k/selection_manifest.jsonl",
+      "size_bytes": 2489989,
+      "sha256": "c7ab766b7ed73c4e9b7fc04fabf95d8a6298bd31d631f34faf130596eb80da22"
+    },
+    {
+      "path": "data/nutrition5k/selection_manifest_v2.jsonl",
+      "size_bytes": 2453825,
+      "sha256": "9000890d37127b639684662b63e719b8d2b31e1439ad465057ca5b249fafde1d"
+    },
+    {
+      "path": "data/nutrition5k/selection_manifest_v3.jsonl",
+      "size_bytes": 2489989,
+      "sha256": "c7ab766b7ed73c4e9b7fc04fabf95d8a6298bd31d631f34faf130596eb80da22"
+    },
+    {
+      "path": "data/nutrition5k/selection_summary.json",
+      "size_bytes": 6718,
+      "sha256": "db4a286807b8fd0df917d7aa9e976f575427d658392e03423841c8ecf821efd6"
+    },
+    {
+      "path": "data/nutrition5k/source/README.upstream.md",
+      "size_bytes": 7400,
+      "sha256": "4c77ceab6dfcaf7b23019fae6c323f237f93ecd4213ebe44b36b8f8583c84ae0"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/README",
+      "size_bytes": 473,
+      "sha256": "5110e71f40fef2e5732897d4f5f34d146253ec11caaa07f466bd4faf322fb4b1"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/dish_ids_all.txt",
+      "size_bytes": 80096,
+      "sha256": "cd71f64b9092d7917384b477e62fbe8840409e606dc488b436f05aa2b404c2f5"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/dish_ids_cafe1.txt",
+      "size_bytes": 76288,
+      "sha256": "bb2d2a8a918e8c4d6d212b158840d92c304d7b9757d6ffe14b4948446f7682a0"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/dish_ids_cafe2.txt",
+      "size_bytes": 3808,
+      "sha256": "2e8cb76a9204277701e06b11476bf5a45f20f23a65dee8fc1399e9663648fc94"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/splits/depth_test_ids.txt",
+      "size_bytes": 8112,
+      "sha256": "6e43a5334a72bd06fa9c0d4b3bc86e2f57e5342b0b260d3fa003a76f7e39eca2"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/splits/depth_train_ids.txt",
+      "size_bytes": 44128,
+      "sha256": "d9702b71ade32b012fcb272f1f58b1d19178acd4536eccc651857760eab4bc30"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/splits/rgb_test_ids.txt",
+      "size_bytes": 11344,
+      "sha256": "560ff0eedb1a2027c21f5da3a4c38a53fa201c87d108e76b11cceaa1d956ac8e"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/splits/rgb_train_ids.txt",
+      "size_bytes": 64944,
+      "sha256": "efd34a682b5483b01e6bd0a7c1267efec28440a8194985f9d3817d8ebc8169bd"
+    },
+    {
+      "path": "data/nutrition5k/source/ffmpeg_license.txt",
+      "size_bytes": 606,
+      "sha256": "35fed3bda7c88eef3ff67a96c7c029a0b530a1e9d811f620280f8c2bf2ab8153"
+    },
+    {
+      "path": "data/nutrition5k/source/ffmpeg_provenance.json",
+      "size_bytes": 2281,
+      "sha256": "6d2a5c31da24eff208b5dd45c9cabfe40ec3329a466cef4d41f4663d73bb671f"
+    },
+    {
+      "path": "data/nutrition5k/source/imageio_ffmpeg-0.6.0.dist-info_LICENSE",
+      "size_bytes": 1317,
+      "sha256": "eca73421d0c905a92e952a553d4d58919c5a507c2c2c76e3c0cf9ba408c299e4"
+    },
+    {
+      "path": "data/nutrition5k/source/metadata/dish_metadata_cafe1.csv",
+      "size_bytes": 2206282,
+      "sha256": "881df31f27c2343d0ce219964527e0796f6ddadd60701ce6840fa801e8c2a960"
+    },
+    {
+      "path": "data/nutrition5k/source/metadata/dish_metadata_cafe2.csv",
+      "size_bytes": 101817,
+      "sha256": "ef9f800d7b9c2e7e9a9e7cda5cbb4cfe51c760a8c1af4c05786ccf051bf5d77d"
+    },
+    {
+      "path": "data/nutrition5k/source/metadata/ingredients_metadata.csv",
+      "size_bytes": 21540,
+      "sha256": "87a9bbd1fd2e28f09f16305a04946ddbe31eb7d9d03686d7e2fb3d8f19f3effb"
+    },
+    {
+      "path": "data/nutrition5k/source/metadata_objects.json",
+      "size_bytes": 2628,
+      "sha256": "64a56c20b36c3a0ed6d9e525377ee0c13c5a73e2516140ae6f7f3d7d11a6a646"
+    },
+    {
+      "path": "data/nutrition5k/source/overhead_rgb_objects.json",
+      "size_bytes": 956473,
+      "sha256": "98cc730cb5f014d7f4d7ed4a2fed5e0feb6a6b38c7ba911f09296baa183d2b71"
+    },
+    {
+      "path": "data/nutrition5k/source/provenance.json",
+      "size_bytes": 6714,
+      "sha256": "e560979219f4e1a1ec44b7df9f6524c46b6c069332068be025c22379bea83a51"
+    },
+    {
+      "path": "data/nutrition5k/source_resolution_amendment.json",
+      "size_bytes": 18647,
+      "sha256": "829d7bef458baff3a9b966a225f2da0d108cb4f1f6d7e8198612724b5a05649e"
+    },
+    {
+      "path": "scripts/data/collect_nutrition5k.py",
+      "size_bytes": 44428,
+      "sha256": "fcea343fa0ecdee794b610d31b07d187bbaa94c1ba97986b1a0175e7568698a5"
+    },
+    {
+      "path": "scripts/data/prepare_ffmpeg.py",
+      "size_bytes": 3120,
+      "sha256": "35a7eb960edad89cb999c53576c533b8f5d2b312a5c6d91fb4a4dfe3c6e11365"
+    },
+    {
+      "path": "scripts/data/validate_images.py",
+      "size_bytes": 2977,
+      "sha256": "66ef95e5e3fef13fa0999b01da90e1ed8db095d23ef7f8b4347427bdf896a9e7"
+    },
+    {
+      "path": "scripts/data/verify_dataset.py",
+      "size_bytes": 9821,
+      "sha256": "aa68bc012d82a06e38c84dc3ca2582184fe4fd6c9daae6df089e2c67f8e52c2d"
+    },
+    {
+      "path": "scripts/data/verify_download_resume.py",
+      "size_bytes": 3557,
+      "sha256": "c503c18bac626f030c3a3e7103e4a47acb3971ee884c7cc321997d8e742fa441"
+    }
+  ],
+  "file_count": 61,
+  "total_bytes": 38106683,
+  "raw_payloads_excluded": true
+}

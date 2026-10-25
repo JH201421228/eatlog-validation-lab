@@ -1,0 +1,3 @@
+# Evidence manifests, source metadata and request files are identified by byte hashes.
+# Preserve their exact bytes on every platform, including Windows checkouts.
+* -text

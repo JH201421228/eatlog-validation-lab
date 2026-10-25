@@ -1,0 +1,79 @@
+[
+  {
+    "key": "nutrition5k_dataset/metadata/dish_metadata_cafe1.csv",
+    "generation": "1623822481670671",
+    "md5": "7d936c3b3f70a87fd363cfa0cf9298bc",
+    "size_bytes": 2206282,
+    "last_modified": "2021-06-16T05:48:01.692Z"
+  },
+  {
+    "key": "nutrition5k_dataset/metadata/dish_metadata_cafe2.csv",
+    "generation": "1623822481309779",
+    "md5": "6778561ef4da1ca54b9da0747f98198f",
+    "size_bytes": 101817,
+    "last_modified": "2021-06-16T05:48:01.343Z"
+  },
+  {
+    "key": "nutrition5k_dataset/metadata/ingredients_metadata.csv",
+    "generation": "1623822481230721",
+    "md5": "d60e3822d15a5cc0a8df3249580ca609",
+    "size_bytes": 21540,
+    "last_modified": "2021-06-16T05:48:01.267Z"
+  },
+  {
+    "key": "nutrition5k_dataset/dish_ids/README",
+    "generation": "1623822481288760",
+    "md5": "fc15f47fbd960fcc185cd163081c8a99",
+    "size_bytes": 473,
+    "last_modified": "2021-06-16T05:48:01.319Z"
+  },
+  {
+    "key": "nutrition5k_dataset/dish_ids/dish_ids_all.txt",
+    "generation": "1623822481295900",
+    "md5": "c854f16886e6320b6ebc6e2aebc0d2b5",
+    "size_bytes": 80096,
+    "last_modified": "2021-06-16T05:48:01.332Z"
+  },
+  {
+    "key": "nutrition5k_dataset/dish_ids/dish_ids_cafe1.txt",
+    "generation": "1623822481314356",
+    "md5": "6d14573e2ce8d77d78af4c6e8dc9e50c",
+    "size_bytes": 76288,
+    "last_modified": "2021-06-16T05:48:01.347Z"
+  },
+  {
+    "key": "nutrition5k_dataset/dish_ids/dish_ids_cafe2.txt",
+    "generation": "1623822481272118",
+    "md5": "4637f23b8fcf5e9178105d69415b483d",
+    "size_bytes": 3808,
+    "last_modified": "2021-06-16T05:48:01.301Z"
+  },
+  {
+    "key": "nutrition5k_dataset/dish_ids/splits/depth_test_ids.txt",
+    "generation": "1623822481337306",
+    "md5": "2baf63c650b70d7116b36e9ba206a7e6",
+    "size_bytes": 8112,
+    "last_modified": "2021-06-16T05:48:01.375Z"
+  },
+  {
+    "key": "nutrition5k_dataset/dish_ids/splits/depth_train_ids.txt",
+    "generation": "1623822481330817",
+    "md5": "a6f9008103a0de460e10355c88299bf1",
+    "size_bytes": 44128,
+    "last_modified": "2021-06-16T05:48:01.368Z"
+  },
+  {
+    "key": "nutrition5k_dataset/dish_ids/splits/rgb_test_ids.txt",
+    "generation": "1623822481321743",
+    "md5": "5d89d2dae124b4dff3f3468ab24b42ca",
+    "size_bytes": 11344,
+    "last_modified": "2021-06-16T05:48:01.358Z"
+  },
+  {
+    "key": "nutrition5k_dataset/dish_ids/splits/rgb_train_ids.txt",
+    "generation": "1623822481294985",
+    "md5": "61b137949e36be56c928d569b27d56f9",
+    "size_bytes": 64944,
+    "last_modified": "2021-06-16T05:48:01.327Z"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "verified_at_utc": "2026-10-25T06:45:18.810943+00:00",
+  "method": "Fresh prepare() from pinned local official source metadata and deterministic seed, without v1 pilot archive or model outputs",
+  "expected_selection_sha256": "9000890d37127b639684662b63e719b8d2b31e1439ad465057ca5b249fafde1d",
+  "reproduced_selection_sha256": "9000890d37127b639684662b63e719b8d2b31e1439ad465057ca5b249fafde1d",
+  "exact_bytes_match": true
+}

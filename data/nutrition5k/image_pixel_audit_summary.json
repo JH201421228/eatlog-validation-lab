@@ -1,0 +1,22 @@
+{
+  "verified_at_utc": "2026-10-25T06:54:26.916498+00:00",
+  "pillow_version": "12.2.0",
+  "selected_count": 1020,
+  "decoded_count": 1019,
+  "decode_failures": [],
+  "dimensions": {
+    "640x480": 856,
+    "1920x1080": 163
+  },
+  "constant_rgb_ids": [],
+  "near_black_ids": [],
+  "duplicate_decoded_pixel_groups": [],
+  "selection_changed": false,
+  "interpretation": "Image decode/identity audit only. No frame or sample chosen based on model performance.",
+  "unavailable_source_rows": [
+    {
+      "sample_id": "dish_1564415499",
+      "reason": "not_downloaded"
+    }
+  ]
+}

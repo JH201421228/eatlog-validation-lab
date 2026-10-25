@@ -1,0 +1,44 @@
+{
+  "frozen_at_utc": "2026-10-25T06:32:22.814241+00:00",
+  "selection_seed": "eatlog-public-nutrition5k-2026-10-25-v1",
+  "selection_manifest_sha256": "2f6df93c563bc014029aa4a518bbecddc3c0098774684efe0f38a5eacbc5b942",
+  "group_window_seconds": 600,
+  "group_mass_tolerance_g": 0.002,
+  "metadata_rows": 5006,
+  "metadata_invalid_rows": 0,
+  "official_overhead_rgb_objects": 3490,
+  "official_overhead_unique_md5": 3490,
+  "inferred_groups": 1309,
+  "eligible_overhead_groups": 989,
+  "eligible_side_only_groups": 320,
+  "groups_spanning_official_splits": 84,
+  "selected": 1020,
+  "by_split": {
+    "pilot": 20,
+    "blind_test": 1000
+  },
+  "by_view": {
+    "overhead_rgb": 989,
+    "side_camera_A_frame_0": 31
+  },
+  "by_original_split": {
+    "train": 752,
+    "cafe2_unassigned": 132,
+    "test": 136
+  },
+  "strata": {
+    "pilot|train|overhead_rgb": 15,
+    "pilot|cafe2_unassigned|overhead_rgb": 3,
+    "pilot|test|overhead_rgb": 2,
+    "blind_test|train|overhead_rgb": 712,
+    "blind_test|test|overhead_rgb": 129,
+    "blind_test|cafe2_unassigned|overhead_rgb": 128,
+    "blind_test|train|side_camera_A_frame_0": 25,
+    "blind_test|cafe2_unassigned|side_camera_A_frame_0": 1,
+    "blind_test|test|side_camera_A_frame_0": 5
+  },
+  "sample_ids_unique": true,
+  "groups_unique": true,
+  "independence_limit": "Inferred groups, not official physical plate IDs; residual correlation and over-merging are possible.",
+  "replacement_policy": "No replacement or favorable-frame selection. Retry identical sources; retain failures in the frozen denominator."
+}

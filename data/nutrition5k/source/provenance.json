@@ -1,0 +1,128 @@
+{
+  "retrieved_at_utc": "2026-10-25T06:28:29.975442+00:00",
+  "dataset_repo": "https://github.com/google-research-datasets/Nutrition5k",
+  "upstream_commit": "c1f80d7227568cd2e3e8dd6ea214f6b08d5cccf1",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "files": [
+    {
+      "path": "data/nutrition5k/source/metadata/dish_metadata_cafe1.csv",
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/metadata/dish_metadata_cafe1.csv",
+      "retrieved_at_utc": "2026-10-25T06:25:42.373797+00:00",
+      "sha256": "881df31f27c2343d0ce219964527e0796f6ddadd60701ce6840fa801e8c2a960",
+      "md5": "7d936c3b3f70a87fd363cfa0cf9298bc",
+      "size_bytes": 2206282,
+      "gcs_generation": "1623822481670671",
+      "official_md5": "7d936c3b3f70a87fd363cfa0cf9298bc"
+    },
+    {
+      "path": "data/nutrition5k/source/metadata/dish_metadata_cafe2.csv",
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/metadata/dish_metadata_cafe2.csv",
+      "retrieved_at_utc": "2026-10-25T06:26:08.682349+00:00",
+      "sha256": "ef9f800d7b9c2e7e9a9e7cda5cbb4cfe51c760a8c1af4c05786ccf051bf5d77d",
+      "md5": "6778561ef4da1ca54b9da0747f98198f",
+      "size_bytes": 101817,
+      "gcs_generation": "1623822481309779",
+      "official_md5": "6778561ef4da1ca54b9da0747f98198f"
+    },
+    {
+      "path": "data/nutrition5k/source/metadata/ingredients_metadata.csv",
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/metadata/ingredients_metadata.csv",
+      "retrieved_at_utc": "2026-10-25T06:25:42.992449+00:00",
+      "sha256": "87a9bbd1fd2e28f09f16305a04946ddbe31eb7d9d03686d7e2fb3d8f19f3effb",
+      "md5": "d60e3822d15a5cc0a8df3249580ca609",
+      "size_bytes": 21540,
+      "gcs_generation": "1623822481230721",
+      "official_md5": "d60e3822d15a5cc0a8df3249580ca609"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/README",
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/dish_ids/README",
+      "retrieved_at_utc": "2026-10-25T06:25:45.299105+00:00",
+      "sha256": "5110e71f40fef2e5732897d4f5f34d146253ec11caaa07f466bd4faf322fb4b1",
+      "md5": "fc15f47fbd960fcc185cd163081c8a99",
+      "size_bytes": 473,
+      "gcs_generation": "1623822481288760",
+      "official_md5": "fc15f47fbd960fcc185cd163081c8a99"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/dish_ids_all.txt",
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/dish_ids/dish_ids_all.txt",
+      "retrieved_at_utc": "2026-10-25T06:25:42.673274+00:00",
+      "sha256": "cd71f64b9092d7917384b477e62fbe8840409e606dc488b436f05aa2b404c2f5",
+      "md5": "c854f16886e6320b6ebc6e2aebc0d2b5",
+      "size_bytes": 80096,
+      "gcs_generation": "1623822481295900",
+      "official_md5": "c854f16886e6320b6ebc6e2aebc0d2b5"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/dish_ids_cafe1.txt",
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/dish_ids/dish_ids_cafe1.txt",
+      "retrieved_at_utc": "2026-10-25T06:25:48.543588+00:00",
+      "sha256": "bb2d2a8a918e8c4d6d212b158840d92c304d7b9757d6ffe14b4948446f7682a0",
+      "md5": "6d14573e2ce8d77d78af4c6e8dc9e50c",
+      "size_bytes": 76288,
+      "gcs_generation": "1623822481314356",
+      "official_md5": "6d14573e2ce8d77d78af4c6e8dc9e50c"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/dish_ids_cafe2.txt",
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/dish_ids/dish_ids_cafe2.txt",
+      "retrieved_at_utc": "2026-10-25T06:25:42.862675+00:00",
+      "sha256": "2e8cb76a9204277701e06b11476bf5a45f20f23a65dee8fc1399e9663648fc94",
+      "md5": "4637f23b8fcf5e9178105d69415b483d",
+      "size_bytes": 3808,
+      "gcs_generation": "1623822481272118",
+      "official_md5": "4637f23b8fcf5e9178105d69415b483d"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/splits/depth_test_ids.txt",
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/dish_ids/splits/depth_test_ids.txt",
+      "retrieved_at_utc": "2026-10-25T06:25:42.867601+00:00",
+      "sha256": "6e43a5334a72bd06fa9c0d4b3bc86e2f57e5342b0b260d3fa003a76f7e39eca2",
+      "md5": "2baf63c650b70d7116b36e9ba206a7e6",
+      "size_bytes": 8112,
+      "gcs_generation": "1623822481337306",
+      "official_md5": "2baf63c650b70d7116b36e9ba206a7e6"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/splits/depth_train_ids.txt",
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/dish_ids/splits/depth_train_ids.txt",
+      "retrieved_at_utc": "2026-10-25T06:25:43.066022+00:00",
+      "sha256": "d9702b71ade32b012fcb272f1f58b1d19178acd4536eccc651857760eab4bc30",
+      "md5": "a6f9008103a0de460e10355c88299bf1",
+      "size_bytes": 44128,
+      "gcs_generation": "1623822481330817",
+      "official_md5": "a6f9008103a0de460e10355c88299bf1"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/splits/rgb_test_ids.txt",
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/dish_ids/splits/rgb_test_ids.txt",
+      "retrieved_at_utc": "2026-10-25T06:25:56.231953+00:00",
+      "sha256": "560ff0eedb1a2027c21f5da3a4c38a53fa201c87d108e76b11cceaa1d956ac8e",
+      "md5": "5d89d2dae124b4dff3f3468ab24b42ca",
+      "size_bytes": 11344,
+      "gcs_generation": "1623822481321743",
+      "official_md5": "5d89d2dae124b4dff3f3468ab24b42ca"
+    },
+    {
+      "path": "data/nutrition5k/source/dish_ids/splits/rgb_train_ids.txt",
+      "url": "https://storage.googleapis.com/nutrition5k_dataset/nutrition5k_dataset/dish_ids/splits/rgb_train_ids.txt",
+      "retrieved_at_utc": "2026-10-25T06:25:43.912973+00:00",
+      "sha256": "efd34a682b5483b01e6bd0a7c1267efec28440a8194985f9d3817d8ebc8169bd",
+      "md5": "61b137949e36be56c928d569b27d56f9",
+      "size_bytes": 64944,
+      "gcs_generation": "1623822481294985",
+      "official_md5": "61b137949e36be56c928d569b27d56f9"
+    },
+    {
+      "path": "data/nutrition5k/source/README.upstream.md",
+      "url": "https://raw.githubusercontent.com/google-research-datasets/Nutrition5k/c1f80d7227568cd2e3e8dd6ea214f6b08d5cccf1/README.md",
+      "upstream_commit": "c1f80d7227568cd2e3e8dd6ea214f6b08d5cccf1",
+      "retrieved_at_utc": "2026-10-25T06:26:09.282071+00:00",
+      "sha256": "4c77ceab6dfcaf7b23019fae6c323f237f93ecd4213ebe44b36b8f8583c84ae0",
+      "md5": "963e480607a121e80b596728d7524381",
+      "size_bytes": 7400
+    }
+  ]
+}
